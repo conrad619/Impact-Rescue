@@ -1,0 +1,366 @@
+{% liquid
+  assign h1_title = product.metafields.custom.highlight_one_title.value | default: "Tough Cleaning Head"
+  assign h1_desc = product.metafields.custom.highlight_one_description.value | default: "Our Cleaning Head is made out of super durable aramid fiber (the same stuff in firefighter gear) to ensure it's always extremely heat resistant."
+
+  assign h2_title = product.metafields.custom.highlight_two_title.value | default: "Robust Handle"
+  assign h2_desc = product.metafields.custom.highlight_two_description.value | default: "This handle is so strong you can run it over with your truck and it still won't snap."
+
+  assign h3_title = product.metafields.custom.highlight_three_title.value | default: "Bristle Free"
+  assign h3_desc = product.metafields.custom.highlight_three_description.value | default: "No longer will you need to stress if you or your family member will accidentally swallow a metal bristle from that old grill brush."
+
+  assign h4_title = product.metafields.custom.highlight_four_title.value | default: "Dishwasher Friendly"
+  assign h4_desc = product.metafields.custom.highlight_four_description.value | default: "Our Cleaning Head detaches and can easily be replaced or cleaned."
+
+  assign highlight_image = product.metafields.custom.highlight_product_image.value | default: product.featured_image
+%}
+
+<section class="product-feature-highlights section-{{ section.id }}">
+  <div class="page-width">
+    {% if section.settings.heading != blank %}
+      <div class="pfh__header">
+        <h2 class="pfh__heading">{{ section.settings.heading }}</h2>
+      </div>
+    {% endif %}
+
+    <div class="pfh pfh--desktop">
+      <div class="pfh__col pfh__col--left">
+        {% if h1_title != blank or h1_desc != blank %}
+          <div class="pfh__item pfh__item--1">
+            <div class="pfh__item-top">
+              <span class="pfh__pill">{{ h1_title }}</span>
+            </div>
+            {% if h1_desc != blank %}
+              <div class="pfh__desc rte">{{ h1_desc }}</div>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        {% if h2_title != blank or h2_desc != blank %}
+          <div class="pfh__item pfh__item--2">
+            <div class="pfh__item-top">
+              <span class="pfh__pill">{{ h2_title }}</span>
+            </div>
+            {% if h2_desc != blank %}
+              <div class="pfh__desc rte">{{ h2_desc }}</div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="pfh__image-wrap">
+        {% if highlight_image != blank %}
+          <div class="pfh__image-holder">
+            {{
+              highlight_image
+              | image_url: width: 1200
+              | image_tag:
+                loading: 'lazy',
+                widths: '400,600,800,1000,1200',
+                sizes: '(max-width: 749px) 70vw, 34vw',
+                class: 'pfh__image'
+            }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="pfh__col pfh__col--right">
+        {% if h3_title != blank or h3_desc != blank %}
+          <div class="pfh__item pfh__item--3">
+            <div class="pfh__item-top">
+              <span class="pfh__pill">{{ h3_title }}</span>
+            </div>
+            {% if h3_desc != blank %}
+              <div class="pfh__desc rte">{{ h3_desc }}</div>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        {% if h4_title != blank or h4_desc != blank %}
+          <div class="pfh__item pfh__item--4">
+            <div class="pfh__item-top">
+              <span class="pfh__pill">{{ h4_title }}</span>
+            </div>
+            {% if h4_desc != blank %}
+              <div class="pfh__desc rte">{{ h4_desc }}</div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="pfh-mobile">
+      <div class="pfh-mobile__scroll">
+        <div class="pfh-mobile__inner">
+          {% if h1_title != blank or h1_desc != blank %}
+            <div class="pfh-mobile__item">
+              <div class="pfh__item-top">
+                <span class="pfh__pill">{{ h1_title }}</span>
+              </div>
+              {% if h1_desc != blank %}
+                <div class="pfh__desc rte">{{ h1_desc }}</div>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          {% if h2_title != blank or h2_desc != blank %}
+            <div class="pfh-mobile__item">
+              <div class="pfh__item-top">
+                <span class="pfh__pill">{{ h2_title }}</span>
+              </div>
+              {% if h2_desc != blank %}
+                <div class="pfh__desc rte">{{ h2_desc }}</div>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          {% if highlight_image != blank %}
+            <div class="pfh-mobile__image-card">
+              <div class="pfh__image-holder">
+                {{
+                  highlight_image
+                  | image_url: width: 900
+                  | image_tag:
+                    loading: 'lazy',
+                    widths: '300,400,500,700,900',
+                    sizes: '70vw',
+                    class: 'pfh__image'
+                }}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if h3_title != blank or h3_desc != blank %}
+            <div class="pfh-mobile__item">
+              <div class="pfh__item-top">
+                <span class="pfh__pill">{{ h3_title }}</span>
+              </div>
+              {% if h3_desc != blank %}
+                <div class="pfh__desc rte">{{ h3_desc }}</div>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          {% if h4_title != blank or h4_desc != blank %}
+            <div class="pfh-mobile__item">
+              <div class="pfh__item-top">
+                <span class="pfh__pill">{{ h4_title }}</span>
+              </div>
+              {% if h4_desc != blank %}
+                <div class="pfh__desc rte">{{ h4_desc }}</div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  .section-{{ section.id }} .pfh__header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .section-{{ section.id }} .pfh__heading {
+    margin: 0;
+    font-size: clamp(28px, 4vw, 54px);
+    line-height: 1.05;
+    font-weight: 700;
+    color: rgb(var(--text-primary));
+  }
+
+  .section-{{ section.id }} .pfh {
+    display: grid;
+    grid-template-columns: minmax(220px, 1fr) minmax(260px, 420px) minmax(220px, 1fr);
+    gap: 36px;
+    align-items: center;
+  }
+
+  .section-{{ section.id }} .pfh__col {
+    display: grid;
+    gap: 100px;
+  }
+
+  .section-{{ section.id }} .pfh__item-top {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+
+  .section-{{ section.id }} .pfh__pill {
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
+    padding: 6px 0;
+    border-radius: 999px;
+    color: rgb(var(--text-primary));
+    font-size: 28px;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+
+  .section-{{ section.id }} .pfh__desc {
+    font-size: 22px;
+    line-height: 1.6;
+    color: rgb(var(--text-primary));
+  }
+
+  .section-{{ section.id }} .pfh__desc p {
+    margin: 0;
+  }
+
+  .section-{{ section.id }} .pfh__image-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-{{ section.id }} .pfh__image-holder {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .section-{{ section.id }} .pfh__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .section-{{ section.id }} .pfh-mobile {
+    display: none;
+  }
+
+  @media screen and (max-width: 989px) {
+    .section-{{ section.id }} .pfh {
+      gap: 22px;
+      grid-template-columns: 1fr 300px 1fr;
+    }
+
+    .section-{{ section.id }} .pfh__col {
+      gap: 50px;
+    }
+
+    .section-{{ section.id }} .pfh__pill {
+      font-size: 20px;
+    }
+
+    .section-{{ section.id }} .pfh__desc {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .section-{{ section.id }} .pfh--desktop {
+      display: none;
+    }
+
+    .section-{{ section.id }} .pfh-mobile {
+      display: block;
+    }
+
+    .section-{{ section.id }} .pfh-mobile__scroll {
+      overflow: visible;
+      padding-bottom: 0;
+    }
+
+    .section-{{ section.id }} .pfh-mobile__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+      padding: 0;
+    }
+
+    .section-{{ section.id }} .pfh-mobile__item,
+    .section-{{ section.id }} .pfh-mobile__image-card {
+      width: 100%;
+      max-width: 100%;
+      flex: 0 0 auto;
+      padding-right: 0;
+      box-sizing: border-box;
+    }
+
+    .section-{{ section.id }} .pfh-mobile__image-card {
+      display: block;
+      padding-top: 8px;
+    }
+
+    .section-{{ section.id }} .pfh__pill {
+      font-size: 18px;
+      min-height: 30px;
+      padding: 5px 0;
+    }
+
+    .section-{{ section.id }} .pfh__desc {
+      font-size: 15px;
+      line-height: 1.5;
+      max-width: none;
+    }
+
+    .section-{{ section.id }} .pfh__header {
+      margin-bottom: 24px;
+    }
+
+    .section-{{ section.id }} .pfh__heading {
+      font-size: 34px;
+    }
+
+    .section-{{ section.id }} .pfh__image-holder {
+      max-width: 260px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Product features",
+  "tag": "section",
+  "class": "section",
+  "templates": ["product"],
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Feel the difference"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product features"
+    }
+  ]
+}
+{% endschema %}

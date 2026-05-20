@@ -1,0 +1,229 @@
+{% style %}
+  #shopify-section-{{ section.id }} .fox-header-bar {
+    width: 100%;
+    background: {{ section.settings.bg_color }};
+    color: {{ section.settings.text_color }};
+    text-align: center;
+    padding: {{ section.settings.padding_y }}px 15px;
+    font-weight: 700;
+    font-size: {{ section.settings.font_size }}px;
+    letter-spacing: .5px;
+    z-index: 20;
+  }
+
+  #shopify-section-{{ section.id }} .fox-header-bar__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  #shopify-section-{{ section.id }} .fox-header-bar__timer {
+    color: {{ section.settings.timer_color }};
+  }
+
+  @media screen and (max-width: 749px) {
+    #shopify-section-{{ section.id }} .fox-header-bar {
+      font-size: {{ section.settings.mobile_font_size }}px;
+      padding: {{ section.settings.mobile_padding_y }}px 10px;
+    }
+  }
+{% endstyle %}
+
+<div class="fox-header-bar" data-section-id="{{ section.id }}">
+  <div class="fox-header-bar__inner">
+    <span class="fox-header-bar__prefix">
+      {{ section.settings.prefix_text }}
+    </span>
+
+    {% if section.settings.enable_timer %}
+      <span class="fox-header-bar__timer" id="fox-timer-{{ section.id }}">
+        00 min 00 sec
+      </span>
+    {% endif %}
+
+    {% if section.settings.code_text != blank %}
+      <span class="fox-header-bar__code">
+        {{ section.settings.code_text }}
+      </span>
+    {% endif %}
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const timerEl = document.getElementById('fox-timer-{{ section.id }}');
+    if (!timerEl) return;
+
+    const TIMER_KEY = 'fox_sale_timer_{{ section.id }}';
+    const REFRESHED_KEY = 'fox_sale_refreshed_{{ section.id }}';
+    const DURATION_SEC = {{ section.settings.timer_minutes | times: 60 }};
+
+    function getEasternTime() {
+      const formatter = new Intl.DateTimeFormat("en-US", {
+        timeZone: "America/New_York",
+        hour12: false,
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+      });
+
+      const parts = formatter.formatToParts(new Date()).reduce((acc, part) => {
+        if (part.type !== "literal") acc[part.type] = part.value;
+        return acc;
+      }, {});
+
+      return new Date(`${parts.year}-${parts.month}-${parts.day}T${parts.hour}:${parts.minute}:${parts.second}`);
+    }
+
+    function getLastResetTime() {
+      const now = getEasternTime();
+      const resetTime = new Date(now);
+
+      resetTime.setHours({{ section.settings.reset_hour }}, 0, 0, 0);
+
+      if (now >= resetTime) {
+        return resetTime.getTime();
+      } else {
+        resetTime.setDate(resetTime.getDate() - 1);
+        return resetTime.getTime();
+      }
+    }
+
+    function initDeadline() {
+      const now = Date.now();
+      const lastResetTime = getLastResetTime();
+
+      let deadline = parseInt(localStorage.getItem(TIMER_KEY), 10);
+      let lastSavedReset = parseInt(localStorage.getItem(REFRESHED_KEY), 10);
+
+      if (!deadline || !lastSavedReset || lastSavedReset < lastResetTime || deadline <= now) {
+        deadline = now + DURATION_SEC * 1000;
+        localStorage.setItem(TIMER_KEY, deadline);
+        localStorage.setItem(REFRESHED_KEY, lastResetTime);
+      }
+
+      return deadline;
+    }
+
+    function updateTimer() {
+      const deadline = initDeadline();
+      const diff = Math.max(0, Math.floor((deadline - Date.now()) / 1000));
+
+      const mins = String(Math.floor((diff % 3600) / 60)).padStart(2, '0');
+      const secs = String(diff % 60).padStart(2, '0');
+
+      timerEl.textContent = `${mins} min ${secs} sec`;
+    }
+
+    updateTimer();
+    setInterval(updateTimer, 1000);
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Header Timer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "prefix_text",
+      "label": "Main text",
+      "default": "FOX SALE ENDS IN"
+    },
+    {
+      "type": "text",
+      "id": "code_text",
+      "label": "Code text",
+      "default": "TAKE 25% OFF W/ CODE: FOX"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_timer",
+      "label": "Enable countdown timer",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "timer_minutes",
+      "label": "Timer duration in minutes",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "default": 54
+    },
+    {
+      "type": "range",
+      "id": "reset_hour",
+      "label": "Daily reset hour Eastern Time",
+      "min": 0,
+      "max": 23,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#c90000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "timer_color",
+      "label": "Timer color",
+      "default": "#fff200"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Desktop font size",
+      "min": 10,
+      "max": 32,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "mobile_font_size",
+      "label": "Mobile font size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "default": 13
+    },
+    {
+      "type": "range",
+      "id": "padding_y",
+      "label": "Desktop vertical padding",
+      "min": 4,
+      "max": 30,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_y",
+      "label": "Mobile vertical padding",
+      "min": 4,
+      "max": 24,
+      "step": 1,
+      "default": 8
+    }
+  ],
+  "presets": [
+    {
+      "name": "Header Timer"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,232 @@
+{% doc %}
+  @prompt
+    Video gallery that pulls videos from a product metafield list of files (video),
+    shows 4 vertical 9:16 videos on desktop,
+    shows 4 vertical videos on mobile too,
+    allows control over corner radius, gap, and gallery width,
+    and autoplays muted/looping videos.
+{% enddoc %}
+
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% liquid
+  assign video_list = product.metafields.custom.product_videos.value
+%}
+
+{% style %}
+  .ai-video-gallery-{{ ai_gen_id }} {
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    display: block;
+  }
+
+  .ai-video-gallery__container-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: {{ block.settings.gap }}px;
+  }
+
+  .ai-video-gallery__item-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 11 / 16;
+    overflow: hidden;
+    border-radius: {{ block.settings.corner_radius }}px;
+    background-color: #f4f4f4;
+  }
+
+  .ai-video-gallery__video-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-video-gallery__placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    position: relative;
+    border-radius: {{ block.settings.corner_radius }}px;
+    overflow: hidden;
+  }
+
+  .ai-video-gallery__placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-video-gallery__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-video-gallery-{{ ai_gen_id }} {
+      width: 100%;
+    }
+
+    .ai-video-gallery__container-{{ ai_gen_id }} {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: {{ block.settings.gap }}px;
+      padding-bottom: 10px;
+    }
+
+    .ai-video-gallery__item-{{ ai_gen_id }} {
+      width:90%;
+      min-width: 60%;
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+    }
+
+    /* Optional: hide scrollbar */
+    .ai-video-gallery__container-{{ ai_gen_id }}::-webkit-scrollbar {
+      display: none;
+    }
+  }
+{% endstyle %}
+
+<video-gallery-{{ ai_gen_id }}
+  class="ai-video-gallery-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-video-gallery__container-{{ ai_gen_id }}">
+    {% if product and video_list != blank %}
+      {% assign rendered_count = 0 %}
+
+      {% for media in video_list limit: 4 %}
+        {% if media.media_type == 'video' or media.preview_image or media.sources %}
+          {% assign rendered_count = rendered_count | plus: 1 %}
+
+          <div class="ai-video-gallery__item-{{ ai_gen_id }}">
+            <video
+              class="ai-video-gallery__video-{{ ai_gen_id }}"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+            >
+              {% if media.sources %}
+                {% for source in media.sources %}
+                  <source src="{{ source.url }}" type="{{ source.mime_type }}">
+                {% endfor %}
+              {% else %}
+                <source src="{{ media | file_url }}" type="video/mp4">
+              {% endif %}
+            </video>
+          </div>
+        {% endif %}
+      {% endfor %}
+
+      {% if rendered_count == 0 %}
+        <div class="ai-video-gallery__placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-video-gallery__empty-state-{{ ai_gen_id }}">
+            No videos found in metafield
+          </div>
+        </div>
+      {% endif %}
+    {% else %}
+      <div class="ai-video-gallery__placeholder-{{ ai_gen_id }}">
+        {{ 'image' | placeholder_svg_tag }}
+        <div class="ai-video-gallery__empty-state-{{ ai_gen_id }}">
+          Connect a product metafield list of videos
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</video-gallery-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class VideoGallery{{ ai_gen_id }} extends HTMLElement {
+      connectedCallback() {
+        this.videos = this.querySelectorAll('.ai-video-gallery__video-{{ ai_gen_id }}');
+        this.handleVideoPlayback();
+      }
+
+      handleVideoPlayback() {
+        this.videos.forEach((video) => {
+          const playPromise = video.play();
+          if (playPromise !== undefined) {
+            playPromise.catch(() => {
+              video.muted = true;
+              video.play().catch(() => {});
+            });
+          }
+        });
+      }
+    }
+
+    if (!customElements.get('video-gallery-{{ ai_gen_id }}')) {
+      customElements.define('video-gallery-{{ ai_gen_id }}', VideoGallery{{ ai_gen_id }});
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Video gallery Upload",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Metafield source"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Gap between videos",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "corner_radius",
+      "label": "Corner radius",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 8
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video gallery Upload"
+    }
+  ]
+}
+{% endschema %}

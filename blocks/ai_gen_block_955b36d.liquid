@@ -1,0 +1,595 @@
+{% doc %}
+  @prompt
+    I would like a text focused metrics box style section that allows me to change all of the colors of everything. It should have a sub header and a header both of which I am able to change the font sizes of. I should be able to add up to 6 boxes that make up 3 columns of 2. Each box should allow for a header, a highlight icon like a dollar sign, percentage, asterisk or whatever, a paragraph and a tiny note at the bottom, I should be able to change the colors of each element in the box. There should be an aesthetically pleasing border around each box. I should also be able to add another small text line to the bottom of the section.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-metrics-box-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: 40px;
+    background-color: {{ block.settings.section_background_color }};
+  }
+
+  .ai-metrics-box__header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .ai-metrics-box__subheader-{{ ai_gen_id }} {
+    color: {{ block.settings.subheader_color }};
+    font-size: {{ block.settings.subheader_font_size }}px;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .ai-metrics-box__heading-{{ ai_gen_id }} {
+    color: {{ block.settings.header_color }};
+    font-size: {{ block.settings.header_font_size }}px;
+    margin: 0;
+  }
+
+  .ai-metrics-box__grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+
+  .ai-metrics-box__item-{{ ai_gen_id }} {
+    background-color: {{ block.settings.box_background_color }};
+    border: {{ block.settings.box_border_width }}px solid {{ block.settings.box_border_color }};
+    border-radius: {{ block.settings.box_border_radius }}px;
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  .ai-metrics-box__item-header-{{ ai_gen_id }} {
+    color: {{ block.settings.box_header_color }};
+    font-size: {{ block.settings.box_header_font_size }}px;
+    margin: 0 0 16px 0;
+    font-weight: 600;
+  }
+
+  .ai-metrics-box__item-icon-{{ ai_gen_id }} {
+    color: {{ block.settings.box_icon_color }};
+    font-size: {{ block.settings.box_icon_font_size }}px;
+    margin: 0 0 16px 0;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .ai-metrics-box__item-paragraph-{{ ai_gen_id }} {
+    color: {{ block.settings.box_paragraph_color }};
+    font-size: {{ block.settings.box_paragraph_font_size }}px;
+    margin: 0 0 16px 0;
+    line-height: 1.6;
+  }
+
+  .ai-metrics-box__item-note-{{ ai_gen_id }} {
+    color: {{ block.settings.box_note_color }};
+    font-size: {{ block.settings.box_note_font_size }}px;
+    margin: 0;
+    font-style: italic;
+  }
+
+  .ai-metrics-box__footer-{{ ai_gen_id }} {
+    text-align: center;
+    color: {{ block.settings.footer_text_color }};
+    font-size: {{ block.settings.footer_text_font_size }}px;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-metrics-box__grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-metrics-box-{{ ai_gen_id }} {
+      padding: 24px;
+    }
+
+    .ai-metrics-box__grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .ai-metrics-box__header-{{ ai_gen_id }} {
+      margin-bottom: 24px;
+    }
+  }
+{% endstyle %}
+
+<metrics-box-{{ ai_gen_id }} class="ai-metrics-box-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-metrics-box__header-{{ ai_gen_id }}">
+    {% if block.settings.subheader != blank %}
+      <div class="ai-metrics-box__subheader-{{ ai_gen_id }}">{{ block.settings.subheader }}</div>
+    {% endif %}
+    {% if block.settings.header != blank %}
+      <h2 class="ai-metrics-box__heading-{{ ai_gen_id }}">{{ block.settings.header }}</h2>
+    {% endif %}
+  </div>
+
+  <div class="ai-metrics-box__grid-{{ ai_gen_id }}">
+    {% for i in (1..6) %}
+      {% liquid
+        assign box_enabled_key = 'box_' | append: i | append: '_enabled'
+        assign box_header_key = 'box_' | append: i | append: '_header'
+        assign box_icon_key = 'box_' | append: i | append: '_icon'
+        assign box_paragraph_key = 'box_' | append: i | append: '_paragraph'
+        assign box_note_key = 'box_' | append: i | append: '_note'
+
+        assign box_enabled = block.settings[box_enabled_key]
+        assign box_header = block.settings[box_header_key]
+        assign box_icon = block.settings[box_icon_key]
+        assign box_paragraph = block.settings[box_paragraph_key]
+        assign box_note = block.settings[box_note_key]
+      %}
+
+      {% if box_enabled %}
+        <div class="ai-metrics-box__item-{{ ai_gen_id }}">
+          {% if box_header != blank %}
+            <h3 class="ai-metrics-box__item-header-{{ ai_gen_id }}">{{ box_header }}</h3>
+          {% endif %}
+          {% if box_icon != blank %}
+            <div class="ai-metrics-box__item-icon-{{ ai_gen_id }}">{{ box_icon }}</div>
+          {% endif %}
+          {% if box_paragraph != blank %}
+            <div class="ai-metrics-box__item-paragraph-{{ ai_gen_id }}">{{ box_paragraph }}</div>
+          {% endif %}
+          {% if box_note != blank %}
+            <div class="ai-metrics-box__item-note-{{ ai_gen_id }}">{{ box_note }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  {% if block.settings.footer_text != blank %}
+    <div class="ai-metrics-box__footer-{{ ai_gen_id }}">{{ block.settings.footer_text }}</div>
+  {% endif %}
+</metrics-box-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class MetricsBox{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+    }
+
+    customElements.define('metrics-box-{{ ai_gen_id }}', MetricsBox{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Metrics box",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section header"
+    },
+    {
+      "type": "text",
+      "id": "subheader",
+      "label": "Subheader"
+    },
+    {
+      "type": "range",
+      "id": "subheader_font_size",
+      "label": "Subheader font size",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "subheader_color",
+      "label": "Subheader color",
+      "default": "#677279"
+    },
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header",
+      "default": "Our key metrics"
+    },
+    {
+      "type": "range",
+      "id": "header_font_size",
+      "label": "Header font size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "color",
+      "id": "header_color",
+      "label": "Header color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Section style"
+    },
+    {
+      "type": "color",
+      "id": "section_background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Box style"
+    },
+    {
+      "type": "color",
+      "id": "box_background_color",
+      "label": "Background color",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "color",
+      "id": "box_border_color",
+      "label": "Border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "range",
+      "id": "box_border_width",
+      "label": "Border width",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "box_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Box header"
+    },
+    {
+      "type": "range",
+      "id": "box_header_font_size",
+      "label": "Font size",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "color",
+      "id": "box_header_color",
+      "label": "Color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Box icon"
+    },
+    {
+      "type": "range",
+      "id": "box_icon_font_size",
+      "label": "Font size",
+      "min": 20,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "color",
+      "id": "box_icon_color",
+      "label": "Color",
+      "default": "#00badb"
+    },
+    {
+      "type": "header",
+      "content": "Box paragraph"
+    },
+    {
+      "type": "range",
+      "id": "box_paragraph_font_size",
+      "label": "Font size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "box_paragraph_color",
+      "label": "Color",
+      "default": "#677279"
+    },
+    {
+      "type": "header",
+      "content": "Box note"
+    },
+    {
+      "type": "range",
+      "id": "box_note_font_size",
+      "label": "Font size",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "box_note_color",
+      "label": "Color",
+      "default": "#999999"
+    },
+    {
+      "type": "header",
+      "content": "Box 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "box_1_enabled",
+      "label": "Enable box 1",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "box_1_header",
+      "label": "Header",
+      "default": "Revenue growth"
+    },
+    {
+      "type": "text",
+      "id": "box_1_icon",
+      "label": "Icon",
+      "default": "$"
+    },
+    {
+      "type": "textarea",
+      "id": "box_1_paragraph",
+      "label": "Paragraph",
+      "default": "Our revenue has grown by 150% year over year"
+    },
+    {
+      "type": "text",
+      "id": "box_1_note",
+      "label": "Note",
+      "default": "*Based on 2025 data"
+    },
+    {
+      "type": "header",
+      "content": "Box 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "box_2_enabled",
+      "label": "Enable box 2",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "box_2_header",
+      "label": "Header",
+      "default": "Customer satisfaction"
+    },
+    {
+      "type": "text",
+      "id": "box_2_icon",
+      "label": "Icon",
+      "default": "%"
+    },
+    {
+      "type": "textarea",
+      "id": "box_2_paragraph",
+      "label": "Paragraph",
+      "default": "98% of our customers rate us 5 stars"
+    },
+    {
+      "type": "text",
+      "id": "box_2_note",
+      "label": "Note",
+      "default": "*From verified reviews"
+    },
+    {
+      "type": "header",
+      "content": "Box 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "box_3_enabled",
+      "label": "Enable box 3",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "box_3_header",
+      "label": "Header",
+      "default": "Products sold"
+    },
+    {
+      "type": "text",
+      "id": "box_3_icon",
+      "label": "Icon",
+      "default": "+"
+    },
+    {
+      "type": "textarea",
+      "id": "box_3_paragraph",
+      "label": "Paragraph",
+      "default": "Over 10,000 products delivered worldwide"
+    },
+    {
+      "type": "text",
+      "id": "box_3_note",
+      "label": "Note",
+      "default": "*Since 2020"
+    },
+    {
+      "type": "header",
+      "content": "Box 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "box_4_enabled",
+      "label": "Enable box 4",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "box_4_header",
+      "label": "Header",
+      "default": "Team members"
+    },
+    {
+      "type": "text",
+      "id": "box_4_icon",
+      "label": "Icon",
+      "default": "#"
+    },
+    {
+      "type": "textarea",
+      "id": "box_4_paragraph",
+      "label": "Paragraph",
+      "default": "50+ dedicated professionals working for you"
+    },
+    {
+      "type": "text",
+      "id": "box_4_note",
+      "label": "Note",
+      "default": "*And growing"
+    },
+    {
+      "type": "header",
+      "content": "Box 5"
+    },
+    {
+      "type": "checkbox",
+      "id": "box_5_enabled",
+      "label": "Enable box 5",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "box_5_header",
+      "label": "Header",
+      "default": "Response time"
+    },
+    {
+      "type": "text",
+      "id": "box_5_icon",
+      "label": "Icon",
+      "default": "*"
+    },
+    {
+      "type": "textarea",
+      "id": "box_5_paragraph",
+      "label": "Paragraph",
+      "default": "Average response time under 2 hours"
+    },
+    {
+      "type": "text",
+      "id": "box_5_note",
+      "label": "Note",
+      "default": "*During business hours"
+    },
+    {
+      "type": "header",
+      "content": "Box 6"
+    },
+    {
+      "type": "checkbox",
+      "id": "box_6_enabled",
+      "label": "Enable box 6",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "box_6_header",
+      "label": "Header",
+      "default": "Countries served"
+    },
+    {
+      "type": "text",
+      "id": "box_6_icon",
+      "label": "Icon",
+      "default": "~"
+    },
+    {
+      "type": "textarea",
+      "id": "box_6_paragraph",
+      "label": "Paragraph",
+      "default": "Shipping to over 30 countries globally"
+    },
+    {
+      "type": "text",
+      "id": "box_6_note",
+      "label": "Note",
+      "default": "*More coming soon"
+    },
+    {
+      "type": "header",
+      "content": "Footer"
+    },
+    {
+      "type": "text",
+      "id": "footer_text",
+      "label": "Footer text",
+      "default": "All metrics updated monthly"
+    },
+    {
+      "type": "range",
+      "id": "footer_text_font_size",
+      "label": "Font size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "footer_text_color",
+      "label": "Color",
+      "default": "#999999"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Metrics box"
+    }
+  ]
+}
+{% endschema %}
