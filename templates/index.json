@@ -56,8 +56,8 @@
       ],
       "custom_css": [
         ".shopify-block {margin-inline-start: calc(-1 * var(--container-outer-width)); margin-inline-end: calc(-1 * var(--container-outer-width));}",
-        "[class*=\"ai-video-hero__content\"] {width: fit-content; margin: 0;}",
-        "[class*=\"ai-video-hero__content\"] > * {margin: 20px;}",
+        "[class*=\"ai-video-hero__wrapper\"] {width: fit-content;}",
+        "[class*=\"ai-video-hero__wrapper\"] > * {margin: 20px;}",
         "[class*=\"ai-video-hero__video\"] {object-position: top;}"
       ],
       "name": "Video hero blocks",
