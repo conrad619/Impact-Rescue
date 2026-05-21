@@ -120,17 +120,25 @@
         "section_store_block_badge_EeFFmT": {
           "type": "shopify://apps/section-store/blocks/block-badge/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
+            "first_icon": "none",
             "first_title": "30-Day Money Back Guarantee",
             "first_bg_color": "#1a1a1a",
+            "first_background_gradient": "",
             "first_title_color": "#ffffff",
+            "second_icon": "none",
             "second_title": "",
             "second_bg_color": "#22c55e",
+            "second_background_gradient": "",
             "second_title_color": "#ffffff",
+            "third_icon": "none",
             "third_title": "",
             "third_bg_color": "#000000",
+            "third_background_gradient": "",
             "third_title_color": "#ffffff",
             "title_size": 17,
+            "icon_size": 16,
             "font_weight": "bold",
+            "effect": "none",
             "card_border": "none",
             "card_border_width": 1,
             "card_border_color": "#000000",
@@ -138,7 +146,9 @@
             "card_align": "center",
             "background_gradient": "",
             "padding_vertical": 0,
-            "padding_sides": 0
+            "padding_sides": 0,
+            "card_padding_horizontal": 14,
+            "card_padding_vertical": 7
           }
         },
         "payment_terms": {
@@ -478,6 +488,16 @@
         "background": "",
         "background_gradient": "",
         "text_color": ""
+      }
+    },
+    "product_features_kTqqmc": {
+      "type": "product-features",
+      "disabled": true,
+      "name": "Product features",
+      "settings": {
+        "heading": "Feel the difference",
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "media_with_text_eNmYYV": {
@@ -871,16 +891,6 @@
         "background_gradient": "",
         "text_color": ""
       }
-    },
-    "product_features_kTqqmc": {
-      "type": "product-features",
-      "disabled": true,
-      "name": "Product features",
-      "settings": {
-        "heading": "Feel the difference",
-        "padding_top": 48,
-        "padding_bottom": 48
-      }
     }
   },
   "order": [
@@ -891,12 +901,12 @@
     "blocks_CXG9n8",
     "1767804295d4bb16f1",
     "17691913668d703418",
+    "product_features_kTqqmc",
     "media_with_text_eNmYYV",
     "multi_column_FHmxjT",
     "comparison_table_GwKhPW",
     "custom_html_pGkFry",
     "rich_text_NkGMym",
-    "1772817505a65336f3",
-    "product_features_kTqqmc"
+    "1772817505a65336f3"
   ]
 }

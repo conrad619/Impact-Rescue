@@ -9,6 +9,88 @@
  */
 {
   "sections": {
+    "video_hero_L8FA4M": {
+      "type": "video-hero",
+      "blocks": {
+        "image_a6FCrU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Rescue_Graphics_Website_Homepage_Memorial_Day_Graphic_Full_Hero_Graphic.png",
+            "image_width": 500
+          }
+        },
+        "subheading_8bhJLU": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Welcome to our store"
+          }
+        },
+        "heading_GEjkzV": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "Discover amazing products"
+          }
+        },
+        "text_gUJTXw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Premium tools for the people</p><p>who serve and protect</p>"
+          }
+        },
+        "button_8zPjeD": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Best Sellers",
+            "button_link": "shopify://collections/grilling"
+          }
+        }
+      },
+      "block_order": [
+        "image_a6FCrU",
+        "subheading_8bhJLU",
+        "heading_GEjkzV",
+        "text_gUJTXw",
+        "button_8zPjeD"
+      ],
+      "custom_css": [
+        ".shopify-block {margin-inline-start: calc(-1 * var(--container-outer-width)); margin-inline-end: calc(-1 * var(--container-outer-width));}",
+        "[class*=\"ai-video-hero__wrapper\"] {width: fit-content;}",
+        "[class*=\"ai-video-hero__wrapper\"] > * {margin: 20px;}",
+        "[class*=\"ai-video-hero__video\"] {object-position: top;}"
+      ],
+      "name": "Video hero blocks",
+      "settings": {
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/3c390287cf3a444ebaabd23a2c4a5986.mp4",
+        "section_height_mobile": 500,
+        "section_height_desktop": 700,
+        "show_flag": true,
+        "flag_width": 200,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0.5,
+        "content_max_width": 1600,
+        "text_alignment": "center",
+        "content_vertical_alignment_mobile": "center",
+        "content_vertical_alignment_desktop": "center",
+        "content_horizontal_alignment_mobile": "center",
+        "content_horizontal_alignment_desktop": "flex-start",
+        "text_color": "#ffffff",
+        "heading_font": "assistant_n4",
+        "subheading_size_mobile": 14,
+        "subheading_size_desktop": 16,
+        "heading_size_mobile": 32,
+        "heading_size_desktop": 60,
+        "paragraph_size_mobile": 16,
+        "paragraph_size_desktop": 20,
+        "button_background": "#cb0101",
+        "button_text_color": "#ffffff",
+        "button_hover_background": "#a00000",
+        "button_hover_text_color": "#ffffff",
+        "button_font_size": 16,
+        "button_border_radius": 8
+      }
+    },
     "image_with_text_overlay_TYe6EQ": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -108,6 +190,7 @@
       "block_order": [
         "ai_gen_block_072ad83_EHRKk4"
       ],
+      "disabled": true,
       "custom_css": [
         ".shopify-block {margin-inline-start: calc(-1 * var(--container-outer-width)); margin-inline-end: calc(-1 * var(--container-outer-width));}",
         "[class*=\"ai-video-hero__content\"] {width: 100%; margin: 0 auto;}",
@@ -532,6 +615,7 @@
         "heading_QmxiY8",
         "richtext_BpYcdU"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -1153,6 +1237,7 @@
     }
   },
   "order": [
+    "video_hero_L8FA4M",
     "image_with_text_overlay_TYe6EQ",
     "blocks_6Uj9j9",
     "featured_collection_qF6UDL",
