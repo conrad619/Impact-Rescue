@@ -38,7 +38,7 @@
         "image_jNLEcd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Rescue_Graphics_Website_Homepage_Memorial_Day_Graphic_Memorial_Day_Text.png",
+            "image": "shopify://shop_images/Rescue_Graphics_Website_Homepage_Memorial_Day_Graphic_Announcement_Bar.svg",
             "url": "",
             "image_height_mobile": 13,
             "image_height_desktop": 20
@@ -81,7 +81,7 @@
       "settings": {
         "enable_sticky": false,
         "show_on_homepage_only": false,
-        "navigation_mode": "scrolling",
+        "navigation_mode": "arrows",
         "autoplay": false,
         "cycle_speed": 6,
         "scrolling_speed": 30,
