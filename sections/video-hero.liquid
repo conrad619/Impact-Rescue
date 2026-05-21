@@ -80,6 +80,7 @@
     padding: 40px 20px;
     text-align: {{ section.settings.text_alignment }};
     color: {{ section.settings.text_color }};
+    margin:0 auto;
   }
 
   @media screen and (min-width: 750px) {
@@ -175,16 +176,6 @@
   {% endif %}
 
   
-    <div class="extra-image">
-        <img
-        src="https://cdn.shopify.com/s/files/1/0397/1946/9215/files/Rescue_Graphics_Website_Homepage_Memorial_Day_Graphic_Honoring_Our_Heroes_Circle_Banner.png?v=1779319920"
-        class="flag"
-        width="150"
-        height="150"
-        alt="Honoring Heroes"
-        loading="lazy"
-        >
-    </div>
 
   <div class="ai-video-hero__video-wrapper-{{ ai_gen_id }}">
     {% if section.settings.video_url != blank %}
@@ -213,67 +204,79 @@
   <div class="ai-video-hero__overlay-{{ ai_gen_id }}"></div>
 
   <div class="ai-video-hero__content-{{ ai_gen_id }}">
-    {% for block in section.blocks %}
-      {% case block.type %}
+    <div class="extra-image">
+        <img
+        src="https://cdn.shopify.com/s/files/1/0397/1946/9215/files/Rescue_Graphics_Website_Homepage_Memorial_Day_Graphic_Honoring_Our_Heroes_Circle_Banner.png?v=1779319920"
+        class="flag"
+        width="150"
+        height="150"
+        alt="Honoring Heroes"
+        loading="lazy"
+        >
+    </div>
+    <div class="ai-video-hero__wrapper-{{ ai_gen_id }}">
+      {% for block in section.blocks %}
+        {% case block.type %}
 
-        {% when 'subheading' %}
-          {% if block.settings.text != blank %}
-            <div
-              class="ai-video-hero__block-{{ ai_gen_id }} ai-video-hero__subheading-{{ ai_gen_id }}"
-              {{ block.shopify_attributes }}
-            >
-              {{ block.settings.text }}
-            </div>
-          {% endif %}
-
-        {% when 'heading' %}
-          {% if block.settings.text != blank %}
-            <h2
-              class="ai-video-hero__block-{{ ai_gen_id }} ai-video-hero__heading-{{ ai_gen_id }}"
-              {{ block.shopify_attributes }}
-            >
-              {{ block.settings.text }}
-            </h2>
-          {% endif %}
-
-        {% when 'text' %}
-          {% if block.settings.text != blank %}
-            <div
-              class="ai-video-hero__block-{{ ai_gen_id }} ai-video-hero__text-{{ ai_gen_id }}"
-              {{ block.shopify_attributes }}
-            >
-              {{ block.settings.text }}
-            </div>
-          {% endif %}
-
-        {% when 'button' %}
-          {% if block.settings.button_text != blank %}
-            <div {{ block.shopify_attributes }}>
-              <a
-                href="{{ block.settings.button_link | default: '#' }}"
-                class="ai-video-hero__button-{{ ai_gen_id }}"
+          {% when 'subheading' %}
+            {% if block.settings.text != blank %}
+              <div
+                class="ai-video-hero__block-{{ ai_gen_id }} ai-video-hero__subheading-{{ ai_gen_id }}"
+                {{ block.shopify_attributes }}
               >
-                {{ block.settings.button_text }}
-              </a>
-            </div>
-          {% endif %}
+                {{ block.settings.text }}
+              </div>
+            {% endif %}
 
-        {% when 'image' %}
-          {% if block.settings.image != blank %}
-            <div {{ block.shopify_attributes }}>
-              <img
-                src="{{ block.settings.image | image_url: width: block.settings.image_width }}"
-                alt="{{ block.settings.image.alt | escape }}"
-                width="{{ block.settings.image_width }}"
-                height="auto"
-                loading="lazy"
-                class="ai-video-hero__image-{{ ai_gen_id }}"
+          {% when 'heading' %}
+            {% if block.settings.text != blank %}
+              <h2
+                class="ai-video-hero__block-{{ ai_gen_id }} ai-video-hero__heading-{{ ai_gen_id }}"
+                {{ block.shopify_attributes }}
               >
-            </div>
-          {% endif %}
+                {{ block.settings.text }}
+              </h2>
+            {% endif %}
 
-      {% endcase %}
-    {% endfor %}
+          {% when 'text' %}
+            {% if block.settings.text != blank %}
+              <div
+                class="ai-video-hero__block-{{ ai_gen_id }} ai-video-hero__text-{{ ai_gen_id }}"
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.text }}
+              </div>
+            {% endif %}
+
+          {% when 'button' %}
+            {% if block.settings.button_text != blank %}
+              <div {{ block.shopify_attributes }}>
+                <a
+                  href="{{ block.settings.button_link | default: '#' }}"
+                  class="ai-video-hero__button-{{ ai_gen_id }}"
+                >
+                  {{ block.settings.button_text }}
+                </a>
+              </div>
+            {% endif %}
+
+          {% when 'image' %}
+            {% if block.settings.image != blank %}
+              <div {{ block.shopify_attributes }}>
+                <img
+                  src="{{ block.settings.image | image_url: width: block.settings.image_width }}"
+                  alt="{{ block.settings.image.alt | escape }}"
+                  width="{{ block.settings.image_width }}"
+                  height="auto"
+                  loading="lazy"
+                  class="ai-video-hero__image-{{ ai_gen_id }}"
+                >
+              </div>
+            {% endif %}
+
+        {% endcase %}
+      {% endfor %}
+    </div>
   </div>
 </video-hero-{{ ai_gen_id }}>
 
