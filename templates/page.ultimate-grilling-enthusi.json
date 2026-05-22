@@ -41,7 +41,7 @@
         "liquid_8gHEkX": {
           "type": "liquid",
           "settings": {
-            "liquid": "<price-list class=\"price-list price-list--lg \"><sale-price class=\"text-lg text-on-sale\">\n      <span class=\"sr-only\">Sale price</span>$39.99</sale-price><compare-at-price class=\"text-subdued line-through\">\n        <span class=\"sr-only\">Regular price</span>$49.99</compare-at-price></price-list>"
+            "liquid": "<price-list class=\"price-list price-list--lg \"><sale-price class=\"text-lg text-on-sale\">\n      <span class=\"sr-only\">Sale price</span>$109.95</sale-price><compare-at-price class=\"text-subdued line-through\">\n        <span class=\"sr-only\">Regular price</span>$124.95</compare-at-price></price-list>"
           }
         },
         "description_TPyBp9": {
@@ -50,12 +50,6 @@
             "icon": "none",
             "icon_width": 20,
             "collapse_content": false
-          }
-        },
-        "text_aBQYFT": {
-          "type": "text",
-          "settings": {
-            "text": "<p>PATENTED D945728 / D945729 / D945730 / D946850</p>"
           }
         },
         "variant_picker_JrcqNA": {
@@ -139,7 +133,6 @@
         "badges_xbJmNd",
         "liquid_8gHEkX",
         "description_TPyBp9",
-        "text_aBQYFT",
         "variant_picker_JrcqNA",
         "quantity_selector_C96dnL",
         "button_XHUNJJ",
@@ -149,7 +142,7 @@
       "name": "Featured product",
       "settings": {
         "full_width": true,
-        "product": "grill-brush-w-scraper",
+        "product": "ultimate-grilling-enthusiast-pack",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "expanded",
