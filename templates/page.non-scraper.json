@@ -41,7 +41,7 @@
         "liquid_8gHEkX": {
           "type": "liquid",
           "settings": {
-            "liquid": "<price-list class=\"price-list price-list--lg \"><sale-price class=\"text-lg text-on-sale\">\n      <span class=\"sr-only\">Sale price</span>$39.99</sale-price><compare-at-price class=\"text-subdued line-through\">\n        <span class=\"sr-only\">Regular price</span>$49.99</compare-at-price></price-list>"
+            "liquid": "<price-list class=\"price-list price-list--lg \"><sale-price class=\"text-lg text-on-sale\">\n      <span class=\"sr-only\">Sale price</span>$34.95</sale-price><compare-at-price class=\"text-subdued line-through\">\n        <span class=\"sr-only\">Regular price</span>$39.99</compare-at-price></price-list>"
           }
         },
         "description_TPyBp9": {
@@ -75,6 +75,7 @@
         },
         "button_XHUNJJ": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "link": "",
             "text": "ADD TO CART",
@@ -83,6 +84,17 @@
             "stretch": true,
             "background": "",
             "text_color": ""
+          }
+        },
+        "buy_buttons_xdfmir": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
           }
         },
         "offer_cAdAFj": {
@@ -143,6 +155,7 @@
         "variant_picker_JrcqNA",
         "quantity_selector_C96dnL",
         "button_XHUNJJ",
+        "buy_buttons_xdfmir",
         "offer_cAdAFj",
         "section_store_block_badge_qieYxG"
       ],
@@ -727,7 +740,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "liquid": "document.addEventListener('DOMContentLoaded', () => {\n  const variantid=\"34493495410847\"\n  const qtyInput = document.querySelector('.quantity-selector__input');\n  const button = document.querySelector('[data-block-id=\"button_XHUNJJ\"] .button');\n\n  if (!qtyInput || !button) return;\n\n  button.addEventListener('click', async (e) => {\n    e.preventDefault();\n\n    const quantity = parseInt(qtyInput.value, 10) || 1;\n\n    try {\n      const response = await fetch('/cart/add.js', {\n        method: 'POST',\n        headers: {\n          'Content-Type': 'application/json',\n          Accept: 'application/json'\n        },\n        body: JSON.stringify({\n          items: [\n            {\n              id: variantid,\n              quantity: quantity\n            }\n          ]\n        })\n      });\n\n      const data = await response.json();\n\n      console.log('Added to cart:', data);\n\n      // Optional:\n      // open cart drawer\n      // refresh cart count\n      // show success popup\n\n    } catch (error) {\n      console.error('Error adding to cart:', error);\n    }\n  });\n});",
+        "liquid": "<script>\n\ndocument.addEventListener('DOMContentLoaded', () => {\ndocument.cookie = \"discount_code=GRPDPORIGINAL; path=/\";\n})\n</script>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
