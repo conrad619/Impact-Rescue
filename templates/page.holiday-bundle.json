@@ -41,7 +41,7 @@
         "liquid_8gHEkX": {
           "type": "liquid",
           "settings": {
-            "liquid": "<price-list class=\"price-list price-list--lg \"><sale-price class=\"text-lg text-on-sale\">\n      <span class=\"sr-only\">Sale price</span>$39.99</sale-price><compare-at-price class=\"text-subdued line-through\">\n        <span class=\"sr-only\">Regular price</span>$49.99</compare-at-price></price-list>"
+            "liquid": "<price-list class=\"price-list price-list--lg \"><sale-price class=\"text-lg text-on-sale\">\n      <span class=\"sr-only\">Sale price</span>$126.51</sale-price><compare-at-price class=\"text-subdued line-through\">\n        <span class=\"sr-only\">Regular price</span>$149.95</compare-at-price></price-list>"
           }
         },
         "description_TPyBp9": {
@@ -50,12 +50,6 @@
             "icon": "none",
             "icon_width": 20,
             "collapse_content": false
-          }
-        },
-        "text_aBQYFT": {
-          "type": "text",
-          "settings": {
-            "text": "<p>PATENTED D945728 / D945729 / D945730 / D946850</p>"
           }
         },
         "variant_picker_JrcqNA": {
@@ -76,7 +70,7 @@
         "button_XHUNJJ": {
           "type": "button",
           "settings": {
-            "link": "https://grillrescue.com/cart/35829614346399:1?discount=GRPDPSCRAPER&storefront=true",
+            "link": "https://grillrescue.com/cart/62736434921631:1?discount=GRPDPHOLIDAY&storefront=true",
             "text": "ADD TO CART",
             "size": "xl",
             "style": "fill",
@@ -139,7 +133,6 @@
         "badges_xbJmNd",
         "liquid_8gHEkX",
         "description_TPyBp9",
-        "text_aBQYFT",
         "variant_picker_JrcqNA",
         "quantity_selector_C96dnL",
         "button_XHUNJJ",
