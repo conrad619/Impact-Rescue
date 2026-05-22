@@ -76,7 +76,7 @@
         "button_XHUNJJ": {
           "type": "button",
           "settings": {
-            "link": "",
+            "link": "https://grillrescue.com/cart/34493495410847:1?discount=GRPDPORIGINAL&storefront=true",
             "text": "ADD TO CART",
             "size": "xl",
             "style": "fill",
@@ -149,7 +149,7 @@
       "name": "Featured product",
       "settings": {
         "full_width": true,
-        "product": "grill-brush-w-scraper",
+        "product": "grill-brush",
         "desktop_media_width": 45,
         "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "expanded",
@@ -317,10 +317,10 @@
         "ai_gen_block_efa3b28_8tA8G4": {
           "type": "ai_gen_block_efa3b28",
           "settings": {
-            "video_1": "shopify://files/videos/vid1.mp4",
-            "video_2": "shopify://files/videos/Grill Rescue Review.mp4",
-            "video_3": "shopify://files/videos/vid4.mp4",
-            "video_4": "shopify://files/videos/Brad Fs-2.mp4",
+            "video_1": "shopify://files/videos/original review  (1).mp4",
+            "video_2": "shopify://files/videos/original review  (2).mp4",
+            "video_3": "shopify://files/videos/original review (3).mp4",
+            "video_4": "shopify://files/videos/original review .mp4",
             "desktop_width_percent": 100,
             "gap": 16,
             "corner_radius": 8
@@ -347,9 +347,9 @@
         "video_hr7KiL": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/GR Banner Video.mp4",
+            "video": "shopify://files/videos/Rescue_Videos_Brand Video_Grill Rescue_Last Meal.mp4",
             "external_video_url": "",
-            "poster_image": "shopify://shop_images/Rescue_StaticImage_Website_ScraperBrush_ScraperBrushusedonaGrill_62aee89d-55aa-47f7-9529-54cf4d64c3ac.png",
+            "poster_image": "shopify://shop_images/Rescue_StaticImage_Website_Non-Scraper_PremiumConstruction_Non-scraperbrushbesideaBurger.png",
             "aspect_ratio": "16/9",
             "autoplay": false,
             "media_width": 50,
@@ -549,8 +549,8 @@
         "values_rrNaLm": {
           "type": "values",
           "settings": {
-            "custom_title": "Scraper Brush",
-            "custom_image": "shopify://shop_images/Rescue_Image_Product_Image_Scraper_Brush_Transparent_Typical_Profile.png",
+            "custom_title": "The Original",
+            "custom_image": "shopify://shop_images/Rescue_Image_Product_Image_Original_Brush_Transparent_Typical_Profile.png",
             "value_1": "<p>✔</p>",
             "value_2": "<p>✔</p>",
             "value_3": "<p>✔</p>",
