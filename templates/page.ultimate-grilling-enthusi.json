@@ -143,7 +143,7 @@
       "settings": {
         "full_width": true,
         "product": "ultimate-grilling-enthusiast-pack",
-        "desktop_media_width": 55,
+        "desktop_media_width": 45,
         "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "expanded",
         "mobile_carousel_control": "floating_dots",
