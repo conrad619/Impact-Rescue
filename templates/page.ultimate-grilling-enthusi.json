@@ -41,7 +41,7 @@
         "liquid_8gHEkX": {
           "type": "liquid",
           "settings": {
-            "liquid": "<price-list class=\"price-list price-list--lg \"><sale-price class=\"text-lg text-on-sale\">\n      <span class=\"sr-only\">Sale price</span>$109.95</sale-price><compare-at-price class=\"text-subdued line-through\">\n        <span class=\"sr-only\">Regular price</span>$124.95</compare-at-price></price-list>"
+            "liquid": "<price-list class=\"price-list price-list--lg \"><sale-price class=\"text-lg text-on-sale\">\n      <span class=\"sr-only\">Sale price</span>$109.95</sale-price><compare-at-price class=\"text-subdued line-through\">\n        <span class=\"sr-only\">Regular price</span>$199.99</compare-at-price></price-list>"
           }
         },
         "description_TPyBp9": {
