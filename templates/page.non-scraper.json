@@ -1,0 +1,736 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {display: none;}"
+      ],
+      "settings": {
+        "content_width": "100%"
+      }
+    },
+    "featured_product_FzrXFF": {
+      "type": "featured-product",
+      "blocks": {
+        "rating_VnPnFr": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "title_qnQxRM": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges_xbJmNd": {
+          "type": "badges",
+          "settings": {}
+        },
+        "liquid_8gHEkX": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<price-list class=\"price-list price-list--lg \"><sale-price class=\"text-lg text-on-sale\">\n      <span class=\"sr-only\">Sale price</span>$39.99</sale-price><compare-at-price class=\"text-subdued line-through\">\n        <span class=\"sr-only\">Regular price</span>$49.99</compare-at-price></price-list>"
+          }
+        },
+        "description_TPyBp9": {
+          "type": "description",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "collapse_content": false
+          }
+        },
+        "text_aBQYFT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>PATENTED D945728 / D945729 / D945730 / D946850</p>"
+          }
+        },
+        "variant_picker_JrcqNA": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_C96dnL": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "button_XHUNJJ": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "text": "ADD TO CART",
+            "size": "xl",
+            "style": "fill",
+            "stretch": true,
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "offer_cAdAFj": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "center",
+            "icon_position": "aligned",
+            "icon": "none",
+            "icon_width": 20,
+            "title": "",
+            "content": "<h5>Every Purchase Helps First Responders</h5>",
+            "background": "#f0f0f0",
+            "text_color": "#cb0101"
+          }
+        },
+        "section_store_block_badge_qieYxG": {
+          "type": "shopify://apps/section-store/blocks/block-badge/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "first_icon": "none",
+            "first_title": "30-Day Money Back Guarantee",
+            "first_bg_color": "#1a1a1a",
+            "first_background_gradient": "",
+            "first_title_color": "#ffffff",
+            "second_icon": "none",
+            "second_title": "",
+            "second_bg_color": "#22c55e",
+            "second_background_gradient": "",
+            "second_title_color": "#ffffff",
+            "third_icon": "none",
+            "third_title": "",
+            "third_bg_color": "#000000",
+            "third_background_gradient": "",
+            "third_title_color": "#ffffff",
+            "title_size": 17,
+            "icon_size": 16,
+            "font_weight": "bold",
+            "effect": "none",
+            "card_border": "none",
+            "card_border_width": 1,
+            "card_border_color": "#000000",
+            "card_radius": 16,
+            "card_align": "center",
+            "background_gradient": "",
+            "padding_vertical": 0,
+            "padding_sides": 0,
+            "card_padding_horizontal": 14,
+            "card_padding_vertical": 7
+          }
+        }
+      },
+      "block_order": [
+        "rating_VnPnFr",
+        "title_qnQxRM",
+        "badges_xbJmNd",
+        "liquid_8gHEkX",
+        "description_TPyBp9",
+        "text_aBQYFT",
+        "variant_picker_JrcqNA",
+        "quantity_selector_C96dnL",
+        "button_XHUNJJ",
+        "offer_cAdAFj",
+        "section_store_block_badge_qieYxG"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "full_width": true,
+        "product": "grill-brush-w-scraper",
+        "desktop_media_width": 45,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "flip": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "ss_scrolling_logo_cloud_F3XcX9": {
+      "type": "ss-scrolling-logo-cloud",
+      "blocks": {
+        "slide_EgU8RR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/forbes.png",
+            "link": ""
+          }
+        },
+        "slide_nbEJR4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/new_york_post.png",
+            "link": ""
+          }
+        },
+        "slide_djCM6K": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/variety.png",
+            "link": ""
+          }
+        },
+        "slide_pLMV4E": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/abc.png",
+            "link": ""
+          }
+        },
+        "slide_yKmhxA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/usa_today.png",
+            "link": ""
+          }
+        },
+        "slide_WmGzL7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/nbc.png",
+            "link": ""
+          }
+        },
+        "slide_kKkNyc": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/new_york_times.png",
+            "link": ""
+          }
+        },
+        "slide_XiH6cf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/entrepreneur.png",
+            "link": ""
+          }
+        },
+        "slide_kQT6gy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/fox.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_EgU8RR",
+        "slide_nbEJR4",
+        "slide_djCM6K",
+        "slide_pLMV4E",
+        "slide_yKmhxA",
+        "slide_WmGzL7",
+        "slide_kKkNyc",
+        "slide_XiH6cf",
+        "slide_kQT6gy"
+      ],
+      "name": "SS - Scrolling logo cloud",
+      "settings": {
+        "ss_title": "",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "header_size": 20,
+        "header_align": "center",
+        "scrolling_velocity": 32,
+        "slider_direction": "left",
+        "pause_hover": false,
+        "shadow": false,
+        "slider_advanced": true,
+        "sliders_mt": 0,
+        "logo_padding_top": 0,
+        "logo_padding_bottom": 0,
+        "slider_gap": 60,
+        "slider_gap_mobile": 30,
+        "icon_width": 150,
+        "slider_background_color": "#ffffff",
+        "header_color": "#121212",
+        "background_style": "solid",
+        "background_color": "#ffffff",
+        "background_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 24,
+        "padding_bottom": 8,
+        "width": "full",
+        "content_width": 1200,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "rich_text_FNRLML": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8befRB": {
+          "type": "heading",
+          "settings": {
+            "text": "Over 12,000 5-Star Reviews",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_76fWi4": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Don't just take it from us, check out what our customers have to say!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8befRB",
+        "richtext_76fWi4"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "blocks_HtRiw4": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_efa3b28_8tA8G4": {
+          "type": "ai_gen_block_efa3b28",
+          "settings": {
+            "video_1": "shopify://files/videos/vid1.mp4",
+            "video_2": "shopify://files/videos/Grill Rescue Review.mp4",
+            "video_3": "shopify://files/videos/vid4.mp4",
+            "video_4": "shopify://files/videos/Brad Fs-2.mp4",
+            "desktop_width_percent": 100,
+            "gap": 16,
+            "corner_radius": 8
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_efa3b28_8tA8G4"
+      ],
+      "name": "Video gallery",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_hWAWdk": {
+      "type": "media-with-text",
+      "blocks": {
+        "video_hr7KiL": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/GR Banner Video.mp4",
+            "external_video_url": "",
+            "poster_image": "shopify://shop_images/Rescue_StaticImage_Website_ScraperBrush_ScraperBrushusedonaGrill_62aee89d-55aa-47f7-9529-54cf4d64c3ac.png",
+            "aspect_ratio": "16/9",
+            "autoplay": false,
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Get Clean. Stay Clean.",
+            "content": "<p>Remove the fear of swallowing wire bristles from your life and keep an overall cleaner grill.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_nrKgH3": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/download.avif",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Created by a Firefighter",
+            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best Grill Brush</strong>.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_wfLAcr": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/firefighter.jpg",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Giving Back With Every Purchase",
+            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation</strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_PBe9Pg": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/IMG_3522_copy-2.avif",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Premium Construction",
+            "content": "<p><strong>Everything we build is premium grade</strong>, obsessivel y engineered so you can trust every part is made as strong, durable, and refined as possible every time always!</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_hr7KiL",
+        "image_nrKgH3",
+        "image_wfLAcr",
+        "image_PBe9Pg"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
+    "multi_column_ybkMdN": {
+      "type": "multi-column",
+      "blocks": {
+        "item_kQBcTH": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/download.avif",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Created by a Firefighter",
+            "heading_tag": "h4",
+            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best Grill Brush</strong>.<br/><br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_RDKYLq": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/firefighter.jpg",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Giving Back With Every Purchase",
+            "heading_tag": "h4",
+            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation</strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_iVVbGg": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Rescue_StaticImage_Website_ScraperBrush_CloseupshotoftheScraperBrushHeadPart_066fbc0e-6e74-445c-98f9-1518a578eb50.png",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "Premium Construction",
+            "heading_tag": "h4",
+            "content": "<p><strong>Everything we build is premium grade</strong>, obsessively engineered so you can trust every part is made as strong, durable, and refined as possible every time always!<br/><br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_kQBcTH",
+        "item_RDKYLq",
+        "item_iVVbGg"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "comparison_table_an4ejM": {
+      "type": "comparison-table",
+      "blocks": {
+        "headings_GVVP9q": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Won't Send You To The Emergency Room",
+            "heading_2": "Doesn’t Leave A Residue On Your Grill",
+            "heading_3": "Doesn’t Fall Off And Get Stuck In Your Food",
+            "heading_4": "Cleans Exceptionally Well",
+            "heading_5": "Uses Steam To Clean",
+            "heading_6": "Has A Long Life Span",
+            "heading_7": "Dishwasher Friendly",
+            "heading_8": "Can Use On A Hot Surface",
+            "heading_9": "Doesn’t Get Clogged With Grease And Grime",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "values_rrNaLm": {
+          "type": "values",
+          "settings": {
+            "custom_title": "Scraper Brush",
+            "custom_image": "shopify://shop_images/Rescue_Image_Product_Image_Scraper_Brush_Transparent_Typical_Profile.png",
+            "value_1": "<p>✔</p>",
+            "value_2": "<p>✔</p>",
+            "value_3": "<p>✔</p>",
+            "value_4": "<p>✔</p>",
+            "value_5": "<p>✔</p>",
+            "value_6": "<p>✔</p>",
+            "value_7": "<p>✔</p>",
+            "value_8": "<p>✔</p>",
+            "value_9": "<p>✔</p>",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": ""
+          }
+        },
+        "values_KQjcAf": {
+          "type": "values",
+          "settings": {
+            "custom_title": "Bristle Brushes",
+            "custom_image": "shopify://shop_images/wirebrush.webp",
+            "value_1": "<p>✕</p>",
+            "value_2": "<p>✔</p>",
+            "value_3": "<p>✕</p>",
+            "value_4": "<p>✕</p>",
+            "value_5": "<p>✕</p>",
+            "value_6": "<p>✕</p>",
+            "value_7": "<p>✕</p>",
+            "value_8": "<p>✕</p>",
+            "value_9": "<p>✕</p>",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": ""
+          }
+        },
+        "values_WnqkAg": {
+          "type": "values",
+          "settings": {
+            "custom_title": "Wood Scraper",
+            "custom_image": "shopify://shop_images/wood_scraper.webp",
+            "value_1": "<p>✔</p>",
+            "value_2": "<p>✔</p>",
+            "value_3": "<p>✔</p>",
+            "value_4": "<p>✕</p>",
+            "value_5": "<p>✕</p>",
+            "value_6": "<p>✕</p>",
+            "value_7": "<p>✕</p>",
+            "value_8": "<p>✔</p>",
+            "value_9": "<p>✔</p>",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": ""
+          }
+        }
+      },
+      "block_order": [
+        "headings_GVVP9q",
+        "values_rrNaLm",
+        "values_KQjcAf",
+        "values_WnqkAg"
+      ],
+      "custom_css": [],
+      "name": "Comparison table",
+      "settings": {
+        "full_width": false,
+        "subheading": "",
+        "title": "Compare Grill Rescue",
+        "content": "<p>Find out how Grill Rescue compares to other leading grill brushes<br/><br/></p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "max_rows": 20,
+        "view_all_text": "",
+        "view_less_text": "",
+        "show_product_info": true,
+        "show_product_image": true,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "rgba(0,0,0,0)",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "rich_text_gbUWtg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_e7hhCD": {
+          "type": "heading",
+          "settings": {
+            "text": "See Why People Love Grill Rescue",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_e7hhCD"
+      ],
+      "custom_css": [
+        ".section-blends {padding: 0;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1779475859b9784eb0": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_agg_section_EjMCPj": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-agg-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "product_reviews_only",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "product_handle": "grill-brush-w-scraper",
+            "aggregated": false,
+            "data-limit": 20,
+            "maxwidth": 1600,
+            "is_sample": false
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_agg_section_EjMCPj"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_product_FzrXFF",
+    "ss_scrolling_logo_cloud_F3XcX9",
+    "rich_text_FNRLML",
+    "blocks_HtRiw4",
+    "media_with_text_hWAWdk",
+    "multi_column_ybkMdN",
+    "comparison_table_an4ejM",
+    "rich_text_gbUWtg",
+    "1779475859b9784eb0"
+  ]
+}
