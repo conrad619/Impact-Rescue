@@ -41,7 +41,7 @@
         "liquid_8gHEkX": {
           "type": "liquid",
           "settings": {
-            "liquid": "<price-list class=\"price-list price-list--lg \"><sale-price class=\"text-lg text-on-sale\">\n      <span class=\"sr-only\">Sale price</span>$39.99</sale-price><compare-at-price class=\"text-subdued line-through\">\n        <span class=\"sr-only\">Regular price</span>$49.99</compare-at-price></price-list>"
+            "liquid": "<price-list class=\"price-list price-list--lg \"><sale-price class=\"text-lg text-on-sale\">\n      <span class=\"sr-only\">Sale price</span>$59.99</sale-price><compare-at-price class=\"text-subdued line-through\">\n        <span class=\"sr-only\">Regular price</span>$69.99</compare-at-price></price-list>"
           }
         },
         "description_TPyBp9": {
@@ -50,12 +50,6 @@
             "icon": "none",
             "icon_width": 20,
             "collapse_content": false
-          }
-        },
-        "text_aBQYFT": {
-          "type": "text",
-          "settings": {
-            "text": "<p>PATENTED D945728 / D945729 / D945730 / D946850</p>"
           }
         },
         "variant_picker_JrcqNA": {
@@ -139,7 +133,6 @@
         "badges_xbJmNd",
         "liquid_8gHEkX",
         "description_TPyBp9",
-        "text_aBQYFT",
         "variant_picker_JrcqNA",
         "quantity_selector_C96dnL",
         "button_XHUNJJ",
@@ -149,7 +142,7 @@
       "name": "Featured product",
       "settings": {
         "full_width": true,
-        "product": "grill-brush-w-scraper",
+        "product": "grilling-gloves",
         "desktop_media_width": 45,
         "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "expanded",
@@ -318,9 +311,9 @@
           "type": "ai_gen_block_efa3b28",
           "settings": {
             "video_1": "shopify://files/videos/vid1.mp4",
-            "video_2": "shopify://files/videos/Grill Rescue Review.mp4",
-            "video_3": "shopify://files/videos/vid4.mp4",
-            "video_4": "shopify://files/videos/Brad Fs-2.mp4",
+            "video_2": "shopify://files/videos/UGC - Camo Gloves.mp4",
+            "video_3": "shopify://files/videos/USA - Alex 4.mov",
+            "video_4": "shopify://files/videos/Camo - Julian.mov",
             "desktop_width_percent": 100,
             "gap": 16,
             "corner_radius": 8
@@ -347,9 +340,8 @@
         "video_hr7KiL": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/GR Banner Video.mp4",
-            "external_video_url": "",
-            "poster_image": "shopify://shop_images/Rescue_StaticImage_Website_ScraperBrush_ScraperBrushusedonaGrill_62aee89d-55aa-47f7-9529-54cf4d64c3ac.png",
+            "external_video_url": "https://www.youtube.com/watch?v=zx5FMpFAuMs",
+            "poster_image": "shopify://shop_images/gloves_0698877a-bb00-4c65-b351-dfdcaa2068b1.jpg",
             "aspect_ratio": "16/9",
             "autoplay": false,
             "media_width": 50,
@@ -487,7 +479,7 @@
         "item_iVVbGg": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Rescue_StaticImage_Website_ScraperBrush_CloseupshotoftheScraperBrushHeadPart_066fbc0e-6e74-445c-98f9-1518a578eb50.png",
+            "image": "shopify://shop_images/gloves_286bafe0-dc31-4481-82dd-af34ddc5e0af.jpg",
             "show_controls": false,
             "column_size": "3",
             "title": "Premium Construction",
@@ -516,149 +508,6 @@
         "background": "",
         "background_gradient": "",
         "text_color": ""
-      }
-    },
-    "comparison_table_an4ejM": {
-      "type": "comparison-table",
-      "blocks": {
-        "headings_GVVP9q": {
-          "type": "headings",
-          "settings": {
-            "heading_1": "Won't Send You To The Emergency Room",
-            "heading_2": "Doesn’t Leave A Residue On Your Grill",
-            "heading_3": "Doesn’t Fall Off And Get Stuck In Your Food",
-            "heading_4": "Cleans Exceptionally Well",
-            "heading_5": "Uses Steam To Clean",
-            "heading_6": "Has A Long Life Span",
-            "heading_7": "Dishwasher Friendly",
-            "heading_8": "Can Use On A Hot Surface",
-            "heading_9": "Doesn’t Get Clogged With Grease And Grime",
-            "heading_10": "",
-            "heading_11": "",
-            "heading_12": "",
-            "heading_13": "",
-            "heading_14": "",
-            "heading_15": "",
-            "heading_16": "",
-            "heading_17": "",
-            "heading_18": "",
-            "heading_19": "",
-            "heading_20": ""
-          }
-        },
-        "values_rrNaLm": {
-          "type": "values",
-          "settings": {
-            "custom_title": "Scraper Brush",
-            "custom_image": "shopify://shop_images/Rescue_Image_Product_Image_Scraper_Brush_Transparent_Typical_Profile.png",
-            "value_1": "<p>✔</p>",
-            "value_2": "<p>✔</p>",
-            "value_3": "<p>✔</p>",
-            "value_4": "<p>✔</p>",
-            "value_5": "<p>✔</p>",
-            "value_6": "<p>✔</p>",
-            "value_7": "<p>✔</p>",
-            "value_8": "<p>✔</p>",
-            "value_9": "<p>✔</p>",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": ""
-          }
-        },
-        "values_KQjcAf": {
-          "type": "values",
-          "settings": {
-            "custom_title": "Bristle Brushes",
-            "custom_image": "shopify://shop_images/wirebrush.webp",
-            "value_1": "<p>✕</p>",
-            "value_2": "<p>✔</p>",
-            "value_3": "<p>✕</p>",
-            "value_4": "<p>✕</p>",
-            "value_5": "<p>✕</p>",
-            "value_6": "<p>✕</p>",
-            "value_7": "<p>✕</p>",
-            "value_8": "<p>✕</p>",
-            "value_9": "<p>✕</p>",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": ""
-          }
-        },
-        "values_WnqkAg": {
-          "type": "values",
-          "settings": {
-            "custom_title": "Wood Scraper",
-            "custom_image": "shopify://shop_images/wood_scraper.webp",
-            "value_1": "<p>✔</p>",
-            "value_2": "<p>✔</p>",
-            "value_3": "<p>✔</p>",
-            "value_4": "<p>✕</p>",
-            "value_5": "<p>✕</p>",
-            "value_6": "<p>✕</p>",
-            "value_7": "<p>✕</p>",
-            "value_8": "<p>✔</p>",
-            "value_9": "<p>✔</p>",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": ""
-          }
-        }
-      },
-      "block_order": [
-        "headings_GVVP9q",
-        "values_rrNaLm",
-        "values_KQjcAf",
-        "values_WnqkAg"
-      ],
-      "custom_css": [],
-      "name": "Comparison table",
-      "settings": {
-        "full_width": false,
-        "subheading": "",
-        "title": "Compare Grill Rescue",
-        "content": "<p>Find out how Grill Rescue compares to other leading grill brushes<br/><br/></p>",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "center",
-        "max_rows": 20,
-        "view_all_text": "",
-        "view_less_text": "",
-        "show_product_info": true,
-        "show_product_image": true,
-        "background": "rgba(0,0,0,0)",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "chart_background": "rgba(0,0,0,0)",
-        "chart_text_color": "",
-        "chart_true_false_color": ""
       }
     },
     "rich_text_gbUWtg": {
@@ -700,7 +549,7 @@
             "default_tab": "automatic",
             "only_photos": false,
             "hide_thumbnails": false,
-            "product_handle": "grill-brush-w-scraper",
+            "product_handle": "grilling-gloves",
             "aggregated": false,
             "data-limit": 20,
             "maxwidth": 1600,
@@ -742,7 +591,6 @@
     "blocks_HtRiw4",
     "media_with_text_hWAWdk",
     "multi_column_ybkMdN",
-    "comparison_table_an4ejM",
     "rich_text_gbUWtg",
     "1779475859b9784eb0",
     "custom_liquid_GrbLGQ"
