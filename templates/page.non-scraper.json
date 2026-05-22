@@ -75,9 +75,8 @@
         },
         "button_XHUNJJ": {
           "type": "button",
-          "disabled": true,
           "settings": {
-            "link": "",
+            "link": "https://grillrescue.com/cart/34493495410847:1?discount=GRPDPORIGINAL&storefront=true",
             "text": "ADD TO CART",
             "size": "xl",
             "style": "fill",
@@ -88,6 +87,7 @@
         },
         "buy_buttons_xdfmir": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": false,
