@@ -70,7 +70,7 @@
         "button_XHUNJJ": {
           "type": "button",
           "settings": {
-            "link": "",
+            "link": "https://grillrescue.com/cart/53159785857183:1?discount=GRPDPENTHUSIAST&storefront=true",
             "text": "ADD TO CART",
             "size": "xl",
             "style": "fill",
@@ -712,6 +712,19 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "custom_liquid_JKPLhc": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<script>\ndocument.addEventListener('DOMContentLoaded', () => {\n  const variantid=\"53159785857183\"\n  const discount=\"GRPDPENTHUSIAST\"\n  const buybutton=\"button_XHUNJJ\"\n  const qtyInput = document.querySelector('.quantity-selector__input');\n  const button = document.querySelector(`[data-block-id=\"${buybutton}\"] .button`);\n\n  if (!qtyInput || !button) return;\n\n  const baseUrl =\n    `https://grillrescue.com/cart/${variantid}:1?discount=${discount}&storefront=true`;\n\n  const updatePermalinkQuantity = () => {\n    const qty = parseInt(qtyInput.value, 10) || 1;\n\n    // Replace the quantity after the colon\n    const updatedUrl = baseUrl.replace(/:\\d+/, `:${qty}`);\n\n    button.href = updatedUrl;\n  };\n\n  // Initial set\n  updatePermalinkQuantity();\n\n  // Watch quantity changes\n  qtyInput.addEventListener('input', updatePermalinkQuantity);\n  qtyInput.addEventListener('change', updatePermalinkQuantity);\n});\n</script>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -724,6 +737,7 @@
     "multi_column_ybkMdN",
     "comparison_table_an4ejM",
     "rich_text_gbUWtg",
-    "1779475859b9784eb0"
+    "1779475859b9784eb0",
+    "custom_liquid_JKPLhc"
   ]
 }
