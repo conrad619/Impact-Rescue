@@ -22,10 +22,11 @@
     "featured_product_FzrXFF": {
       "type": "featured-product",
       "blocks": {
-        "vendor_UA9Epf": {
-          "type": "vendor",
-          "disabled": true,
-          "settings": {}
+        "rating_VnPnFr": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
         },
         "title_qnQxRM": {
           "type": "title",
@@ -37,27 +38,11 @@
           "type": "badges",
           "settings": {}
         },
-        "price_AkU7qY": {
-          "type": "price",
+        "liquid_8gHEkX": {
+          "type": "liquid",
           "settings": {
-            "show_taxes_notice": false
+            "liquid": "<price-list class=\"price-list price-list--lg \"><sale-price class=\"text-lg text-on-sale\">\n      <span class=\"sr-only\">Sale price</span>$39.99</sale-price><compare-at-price class=\"text-subdued line-through\">\n        <span class=\"sr-only\">Regular price</span>$49.99</compare-at-price></price-list>"
           }
-        },
-        "text_haDKB3": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share some content to your customers about your products.</p>"
-          }
-        },
-        "rating_VnPnFr": {
-          "type": "rating",
-          "settings": {
-            "show_empty": false
-          }
-        },
-        "separator_3rCgqX": {
-          "type": "separator",
-          "settings": {}
         },
         "description_TPyBp9": {
           "type": "description",
@@ -65,6 +50,12 @@
             "icon": "none",
             "icon_width": 20,
             "collapse_content": false
+          }
+        },
+        "text_aBQYFT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>PATENTED D945728 / D945729 / D945730 / D946850</p>"
           }
         },
         "variant_picker_JrcqNA": {
@@ -93,10 +84,6 @@
             "background": "",
             "text_color": ""
           }
-        },
-        "pickup_availability_tr6P97": {
-          "type": "pickup_availability",
-          "settings": {}
         },
         "offer_cAdAFj": {
           "type": "offer",
@@ -147,18 +134,15 @@
         }
       },
       "block_order": [
-        "vendor_UA9Epf",
+        "rating_VnPnFr",
         "title_qnQxRM",
         "badges_xbJmNd",
-        "price_AkU7qY",
-        "text_haDKB3",
-        "rating_VnPnFr",
-        "separator_3rCgqX",
+        "liquid_8gHEkX",
         "description_TPyBp9",
+        "text_aBQYFT",
         "variant_picker_JrcqNA",
         "quantity_selector_C96dnL",
         "button_XHUNJJ",
-        "pickup_availability_tr6P97",
         "offer_cAdAFj",
         "section_store_block_badge_qieYxG"
       ],
@@ -167,7 +151,7 @@
         "full_width": true,
         "product": "grill-brush-w-scraper",
         "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
+        "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "expanded",
         "mobile_carousel_control": "floating_dots",
         "flip": false,
@@ -706,18 +690,18 @@
         "text_color": ""
       }
     },
-    "apps_DLM7ff": {
+    "1779475859b9784eb0": {
       "type": "apps",
       "blocks": {
-        "loox_reviews_loox_agg_section_MhL9dV": {
+        "loox_reviews_loox_agg_section_EjMCPj": {
           "type": "shopify://apps/loox-reviews/blocks/loox-agg-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "reviews_to_display": "",
             "default_tab": "automatic",
             "only_photos": false,
             "hide_thumbnails": false,
-            "product_handle": "grill-brush-w-scraper",
-            "aggregated": true,
+            "product_handle": "",
+            "aggregated": false,
             "data-limit": 20,
             "maxwidth": 1080,
             "is_sample": true
@@ -725,7 +709,7 @@
         }
       },
       "block_order": [
-        "loox_reviews_loox_agg_section_MhL9dV"
+        "loox_reviews_loox_agg_section_EjMCPj"
       ],
       "settings": {
         "full_width": true,
@@ -747,6 +731,6 @@
     "multi_column_ybkMdN",
     "comparison_table_an4ejM",
     "rich_text_gbUWtg",
-    "apps_DLM7ff"
+    "1779475859b9784eb0"
   ]
 }
