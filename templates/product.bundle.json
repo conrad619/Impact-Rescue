@@ -1,1 +1,536 @@
-{"sections":{"main":{"type":"main-product","blocks":{"loox_reviews_loox_rating_pR7qQw":{"type":"shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e","settings":{"contentSize":16,"pattern":"","hideText":false,"alignment":"","layout":"","textColor":"","starColor":"","showAllReviews":false,"looxOpenFloatingWidget":false,"emptyRatingWidget":false}},"vendor":{"type":"vendor","disabled":true,"settings":{}},"title":{"type":"title","settings":{"heading_tag":"h2"}},"badges":{"type":"badges","settings":{}},"price":{"type":"price","settings":{"show_taxes_notice":false}},"rating":{"type":"rating","disabled":true,"settings":{"show_empty":false}},"separator":{"type":"separator","disabled":true,"settings":{}},"description":{"type":"description","settings":{"icon":"none","icon_width":20,"collapse_content":false}},"variant_picker":{"type":"variant_picker","settings":{"hide_sold_out_variants":false,"stack_blocks":true,"selector_style":"block","swatch_selector_style":"swatch","variant_image_options":"","size_chart_page":""}},"recharge_subscriptions_subscription_widget_v2_7qwFf9":{"type":"shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget-v2\/371eed76-0b44-4869-9813-730372ea378e","settings":{}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons_xffbzR":{"type":"buy_buttons","settings":{"show_payment_button":false,"show_gift_card_recipient":true,"atc_button_background":"#cb0101","atc_button_text_color":"#ffffff","payment_button_background":"","payment_button_text_color":""}},"button_4DQD7A":{"type":"button","settings":{"link":"","text":"Every Purchase Helps First Responders","size":"xl","style":"outline","stretch":true,"background":"","text_color":""}},"section_store_block_badge_EeFFmT":{"type":"shopify:\/\/apps\/section-store\/blocks\/block-badge\/d7a2e423-ea88-4344-b866-6d0fb487c3dd","settings":{"first_title":"30-Day Money Back Guarantee","first_bg_color":"#1a1a1a","first_title_color":"#ffffff","second_title":"","second_bg_color":"#22c55e","second_title_color":"#ffffff","third_title":"","third_bg_color":"#000000","third_title_color":"#ffffff","title_size":17,"font_weight":"bold","card_border":"none","card_border_width":1,"card_border_color":"#000000","card_radius":16,"card_align":"center","background_gradient":"","padding_vertical":0,"padding_sides":0}},"payment_terms":{"type":"payment_terms","settings":{}}},"block_order":["loox_reviews_loox_rating_pR7qQw","vendor","title","badges","price","rating","separator","description","variant_picker","recharge_subscriptions_subscription_widget_v2_7qwFf9","quantity_selector","buy_buttons_xffbzR","button_4DQD7A","section_store_block_badge_EeFFmT","payment_terms"],"custom_css":[],"settings":{"full_width":true,"show_fixed_add_to_cart":true,"desktop_media_width":55,"desktop_media_layout":"grid_highlight","mobile_media_size":"contained","mobile_carousel_control":"dots","enable_video_autoplay":false,"enable_video_looping":true,"enable_image_zoom":true,"max_image_zoom_level":3,"background":"","background_gradient":"","text_color":"","input_background":"rgba(0,0,0,0)","input_text_color":""}},"ss_scrolling_logo_cloud_bRVigx":{"type":"ss-scrolling-logo-cloud","blocks":{"slide_ybPTHt":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/forbes.png","link":""}},"slide_zXMn6q":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/new_york_post.png","link":""}},"slide_FXjCt8":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/variety.png","link":""}},"slide_HAPz8q":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/abc.png","link":""}},"slide_YjDm4b":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/usa_today.png","link":""}},"slide_XAy8XQ":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/nbc.png","link":""}},"slide_wiTibg":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/new_york_times.png","link":""}},"slide_M69xT9":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/entrepreneur.png","link":""}},"slide_amVQaG":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/fox.png","link":""}}},"block_order":["slide_ybPTHt","slide_zXMn6q","slide_FXjCt8","slide_HAPz8q","slide_YjDm4b","slide_XAy8XQ","slide_wiTibg","slide_M69xT9","slide_amVQaG"],"name":"SS - Scrolling logo cloud","settings":{"ss_title":"AS SEEN ON","heading_custom":false,"heading_font":"assistant_n4","header_size":20,"header_align":"center","scrolling_velocity":32,"slider_direction":"left","pause_hover":false,"shadow":false,"slider_advanced":true,"sliders_mt":0,"logo_padding_top":0,"logo_padding_bottom":0,"slider_gap":60,"slider_gap_mobile":30,"icon_width":150,"slider_background_color":"#ffffff","header_color":"#121212","background_style":"solid","background_color":"#ffffff","background_gradient":"linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)","border_color":"#121212","margin_top":0,"margin_bottom":0,"padding_top":24,"padding_bottom":8,"width":"full","content_width":1200,"border_thickness":0,"lazy":true}},"rich_text_pXY4pw":{"type":"rich-text","blocks":{"heading_tiNbNw":{"type":"heading","settings":{"text":"Over 12,000 5-Star Reviews","heading_tag":"h1","text_color":"","gradient":""}},"richtext_HLCVan":{"type":"richtext","settings":{"content":"<p>Don't just take it from us, check out what our customers have to say!<\/p>"}}},"block_order":["heading_tiNbNw","richtext_HLCVan"],"name":"Rich text","settings":{"full_width":true,"content_width":"small","text_position":"center","background":"","background_gradient":"","text_color":""}},"1767804295d4bb16f1":{"type":"apps","blocks":{"section_store_block_video_carousel_pGFQMc":{"type":"shopify:\/\/apps\/section-store\/blocks\/block-video-carousel\/d7a2e423-ea88-4344-b866-6d0fb487c3dd","settings":{"video_1":"shopify:\/\/files\/videos\/vid1.mp4","video_2":"shopify:\/\/files\/videos\/Grill Rescue Review.mp4","video_3":"shopify:\/\/files\/videos\/vid4.mp4","video_4":"shopify:\/\/files\/videos\/Brad Fs-2.mp4","video_5":"shopify:\/\/files\/videos\/Quick Customer Review of Grill.mp4","slider_style":"arrows","modal_style":"side","video_autoplay":"true","play_button_position":"none","play_button_size":"small","item_border_style":"none","item_border_width":1,"item_border_color":"linear-gradient(135deg, #667eea 0%, #764ba2 100%)","item_border_radius":16,"item_padding":0,"grid_items":"4","thumbnail_shape":"rectangle","block_border_style":"none","block_border_width":1,"block_border_color":"#d7d7d7","block_border_radius":16,"block_bg_color":"","block_padding_vertical":0,"block_padding_horizontal":0}}},"block_order":["section_store_block_video_carousel_pGFQMc"],"settings":{"full_width":true,"remove_vertical_spacing":false,"remove_horizontal_spacing":true,"background":"","background_gradient":"","text_color":""}},"17691913668d703418":{"type":"apps","blocks":{"loox_reviews_loox_card_carousel_section_GBfVQm":{"type":"shopify:\/\/apps\/loox-reviews\/blocks\/loox-card-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e","settings":{"maxWidth":1100,"borderRadius":8,"itemsPerView":5,"mobileItemsPerView":1,"maxNumberOfCharacters":100,"imageRatio":"0.72","reviewerNameColor":"#000000","textColor":"#000000","itemBackgroundColor":"#ffffff","starsColor":"","starsBackgroundColor":"#ffffff","arrows_backgroundColor":"#ffffff","arrows_iconColor":"#9a9a9a","shadow":"offset-dark","border_active":false,"border_width":2,"border_color":"#000000","productIds":"{{ product }}"}}},"block_order":["loox_reviews_loox_card_carousel_section_GBfVQm"],"settings":{"full_width":true,"remove_vertical_spacing":false,"remove_horizontal_spacing":false,"background":"","background_gradient":"","text_color":""}},"media_with_text_eNmYYV":{"type":"media-with-text","blocks":{"image_Dcb3P8":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/download.avif","media_width":50,"media_position":"start","text_position":"place-self-center text-center","icon":"none","icon_width":48,"subheading":"","title":"Created by a Firefighter","content":"<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best Grill Brush<\/strong>.<\/p>","link_text":"","link_url":"","background":"#ffffff","background_gradient":"","text_color":"#1a1a1a","text_gradient":"","button_background":"","button_text_color":""}},"image_rePByR":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/firefighter.jpg","media_width":50,"media_position":"end","text_position":"place-self-center text-center","icon":"none","icon_width":48,"subheading":"","title":"Giving Back With Every Purchase","content":"<p>We give back proudly. Through the <strong>Grill Rescue Foundation<\/strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.<\/p>","link_text":"","link_url":"","background":"#ffffff","background_gradient":"","text_color":"#1a1a1a","text_gradient":"","button_background":"","button_text_color":""}},"image_kbAk7j":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/IMG_3522_copy-2.avif","media_width":50,"media_position":"start","text_position":"place-self-center text-center","icon":"none","icon_width":48,"subheading":"","title":"Premium Construction","content":"<p><strong>Everything we build is premium grade<\/strong>, obsessivel y engineered so you can trust every part is made as strong, durable, and refined as possible every time always!<\/p>","link_text":"","link_url":"","background":"#ffffff","background_gradient":"","text_color":"#1a1a1a","text_gradient":"","button_background":"","button_text_color":""}}},"block_order":["image_Dcb3P8","image_rePByR","image_kbAk7j"],"name":"Media with text","settings":{"full_width":false,"alternate_media_position":false,"spacing":"small"}},"related-products":{"type":"related-products","settings":{"recommendations_count":3,"products":[],"full_width":true,"stack_products":false,"show_progress_bar":false,"products_per_row_mobile":"1","products_per_row_desktop":3,"subheading":"","title":"Bundle with","content":"<p>Swipe To See What Our Customers Love the Most<\/p>","background":"","background_gradient":"","text_color":"","heading_color":"","heading_gradient":"","product_card_background":"","product_card_text_color":""}}},"order":["main","ss_scrolling_logo_cloud_bRVigx","rich_text_pXY4pw","1767804295d4bb16f1","17691913668d703418","media_with_text_eNmYYV","related-products"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "loox_reviews_loox_rating_pR7qQw": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-rating/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "contentSize": 16,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "layout": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "collapse_content": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "promo_WR9eLG": {
+          "type": "promo",
+          "settings": {}
+        },
+        "recharge_subscriptions_subscription_widget_v2_7qwFf9": {
+          "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget-v2/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_xffbzR": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#cb0101",
+            "atc_button_text_color": "#ffffff",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "button_4DQD7A": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "text": "Every Purchase Helps First Responders",
+            "size": "xl",
+            "style": "outline",
+            "stretch": true,
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "section_store_block_badge_EeFFmT": {
+          "type": "shopify://apps/section-store/blocks/block-badge/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "first_icon": "none",
+            "first_title": "30-Day Money Back Guarantee",
+            "first_bg_color": "#1a1a1a",
+            "first_background_gradient": "",
+            "first_title_color": "#ffffff",
+            "second_icon": "none",
+            "second_title": "",
+            "second_bg_color": "#22c55e",
+            "second_background_gradient": "",
+            "second_title_color": "#ffffff",
+            "third_icon": "none",
+            "third_title": "",
+            "third_bg_color": "#000000",
+            "third_background_gradient": "",
+            "third_title_color": "#ffffff",
+            "title_size": 17,
+            "icon_size": 16,
+            "font_weight": "bold",
+            "effect": "none",
+            "card_border": "none",
+            "card_border_width": 1,
+            "card_border_color": "#000000",
+            "card_radius": 16,
+            "card_align": "center",
+            "background_gradient": "",
+            "padding_vertical": 0,
+            "padding_sides": 0,
+            "card_padding_horizontal": 14,
+            "card_padding_vertical": 7
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_rating_pR7qQw",
+        "vendor",
+        "title",
+        "badges",
+        "price",
+        "rating",
+        "separator",
+        "description",
+        "variant_picker",
+        "promo_WR9eLG",
+        "recharge_subscriptions_subscription_widget_v2_7qwFf9",
+        "quantity_selector",
+        "buy_buttons_xffbzR",
+        "button_4DQD7A",
+        "section_store_block_badge_EeFFmT",
+        "payment_terms"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "grid_highlight",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "dots",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "ss_scrolling_logo_cloud_bRVigx": {
+      "type": "ss-scrolling-logo-cloud",
+      "blocks": {
+        "slide_ybPTHt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/forbes.png",
+            "link": ""
+          }
+        },
+        "slide_zXMn6q": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/new_york_post.png",
+            "link": ""
+          }
+        },
+        "slide_FXjCt8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/variety.png",
+            "link": ""
+          }
+        },
+        "slide_HAPz8q": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/abc.png",
+            "link": ""
+          }
+        },
+        "slide_YjDm4b": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/usa_today.png",
+            "link": ""
+          }
+        },
+        "slide_XAy8XQ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/nbc.png",
+            "link": ""
+          }
+        },
+        "slide_wiTibg": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/new_york_times.png",
+            "link": ""
+          }
+        },
+        "slide_M69xT9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/entrepreneur.png",
+            "link": ""
+          }
+        },
+        "slide_amVQaG": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/fox.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_ybPTHt",
+        "slide_zXMn6q",
+        "slide_FXjCt8",
+        "slide_HAPz8q",
+        "slide_YjDm4b",
+        "slide_XAy8XQ",
+        "slide_wiTibg",
+        "slide_M69xT9",
+        "slide_amVQaG"
+      ],
+      "name": "SS - Scrolling logo cloud",
+      "settings": {
+        "ss_title": "AS SEEN ON",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "header_size": 20,
+        "header_align": "center",
+        "scrolling_velocity": 32,
+        "slider_direction": "left",
+        "pause_hover": false,
+        "shadow": false,
+        "slider_advanced": true,
+        "sliders_mt": 0,
+        "logo_padding_top": 0,
+        "logo_padding_bottom": 0,
+        "slider_gap": 60,
+        "slider_gap_mobile": 30,
+        "icon_width": 150,
+        "slider_background_color": "#ffffff",
+        "header_color": "#121212",
+        "background_style": "solid",
+        "background_color": "#ffffff",
+        "background_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 24,
+        "padding_bottom": 8,
+        "width": "full",
+        "content_width": 1200,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "rich_text_pXY4pw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tiNbNw": {
+          "type": "heading",
+          "settings": {
+            "text": "Over 12,000 5-Star Reviews",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_HLCVan": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Don't just take it from us, check out what our customers have to say!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tiNbNw",
+        "richtext_HLCVan"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1767804295d4bb16f1": {
+      "type": "apps",
+      "blocks": {
+        "section_store_block_video_carousel_pGFQMc": {
+          "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "video_1": "shopify://files/videos/vid1.mp4",
+            "video_2": "shopify://files/videos/Grill Rescue Review.mp4",
+            "video_3": "shopify://files/videos/vid4.mp4",
+            "video_4": "shopify://files/videos/Brad Fs-2.mp4",
+            "video_5": "shopify://files/videos/Quick Customer Review of Grill.mp4",
+            "slider_style": "arrows",
+            "modal_style": "side",
+            "video_autoplay": "true",
+            "play_button_position": "none",
+            "play_button_size": "small",
+            "item_border_style": "none",
+            "item_border_width": 1,
+            "item_border_color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+            "item_border_radius": 16,
+            "item_padding": 0,
+            "grid_items": "4",
+            "thumbnail_shape": "rectangle",
+            "block_border_style": "none",
+            "block_border_width": 1,
+            "block_border_color": "#d7d7d7",
+            "block_border_radius": 16,
+            "block_bg_color": "",
+            "block_padding_vertical": 0,
+            "block_padding_horizontal": 0
+          }
+        }
+      },
+      "block_order": [
+        "section_store_block_video_carousel_pGFQMc"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": true,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "17691913668d703418": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_card_carousel_section_GBfVQm": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-card-carousel-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "maxWidth": 1100,
+            "borderRadius": 8,
+            "itemsPerView": 5,
+            "mobileItemsPerView": 1,
+            "maxNumberOfCharacters": 100,
+            "imageRatio": "0.72",
+            "reviewerNameColor": "#000000",
+            "textColor": "#000000",
+            "itemBackgroundColor": "#ffffff",
+            "starsColor": "",
+            "starsBackgroundColor": "#ffffff",
+            "arrows_backgroundColor": "#ffffff",
+            "arrows_iconColor": "#9a9a9a",
+            "shadow": "offset-dark",
+            "border_active": false,
+            "border_width": 2,
+            "border_color": "#000000",
+            "productIds": "{{ product }}"
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_card_carousel_section_GBfVQm"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_eNmYYV": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_Dcb3P8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/download.avif",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Created by a Firefighter",
+            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best Grill Brush</strong>.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_rePByR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/firefighter.jpg",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Giving Back With Every Purchase",
+            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation</strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "image_kbAk7j": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_3522_copy-2.avif",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Premium Construction",
+            "content": "<p><strong>Everything we build is premium grade</strong>, obsessivel y engineered so you can trust every part is made as strong, durable, and refined as possible every time always!</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Dcb3P8",
+        "image_rePByR",
+        "image_kbAk7j"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 3,
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Bundle with",
+        "content": "<p>Swipe To See What Our Customers Love the Most</p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ss_scrolling_logo_cloud_bRVigx",
+    "rich_text_pXY4pw",
+    "1767804295d4bb16f1",
+    "17691913668d703418",
+    "media_with_text_eNmYYV",
+    "related-products"
+  ]
+}
