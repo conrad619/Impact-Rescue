@@ -4,8 +4,8 @@
     "theme_name": "Impact",
     "theme_author": "Maestrooo",
     "theme_version": "7.0.1",
-    "theme_documentation_url": "https://support.maestrooo.com/",
-    "theme_support_url": "https://support.maestrooo.com/article/203-contact-us"
+    "theme_documentation_url": "https:\/\/support.maestrooo.com\/",
+    "theme_support_url": "https:\/\/support.maestrooo.com\/article\/203-contact-us"
   },
   {
     "name": "Appearance and spacing",
@@ -935,6 +935,41 @@
         "id": "favicon",
         "label": "Image",
         "info": "180 x 180px .png recommended"
+      }
+    ]
+  },
+  {
+    "name": "Promo Settings",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "promo_enabled",
+        "label": "Promo enabled",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "promo_text",
+        "label": "Promo Text",
+        "default": "SAVE UP TO 50%"
+      },
+      {
+        "type": "text",
+        "id": "promo_sub_text",
+        "label": "Promo Sub Text",
+        "default": "NO COUPON CODE NEEDED"
+      },
+      {
+        "type": "color",
+        "id": "promo_background",
+        "label": "Promo Background Color",
+        "default": "rgb(248, 58, 58)"
+      },
+      {
+        "type": "color",
+        "id": "promo_text_color",
+        "label": "Promo Text Color",
+        "default": "#ffffff"
       }
     ]
   }

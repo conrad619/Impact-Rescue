@@ -435,6 +435,9 @@ Supported variables
               {%- render 'icon' with 'share' -%} {{- 'general.social.share' | t -}}
             </button>
           </div>
+        
+        {%- when 'promo' -%}
+          {%- render 'promo', class: 'product-info__promo' -%}
       {%- endcase -%}
     {%- endcapture -%}
 

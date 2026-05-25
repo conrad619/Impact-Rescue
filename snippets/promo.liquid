@@ -1,0 +1,21 @@
+{%- comment -%}
+----------------------------------------------------------------------------------------------------------------------
+PRODUCT PROMO
+----------------------------------------------------------------------------------------------------------------------
+
+This component is used to generate a promo banner, by checking the existence of a promo setting, and fallback
+to the automatic one if none is found
+
+********************************************
+Supported variables
+********************************************
+
+{%- endcomment -%}
+
+{% assign disabled = product.metafields.custom.promo_disabled.value | default: false %}
+{%- if disabled == false and settings.promo_enabled == true -%}
+    <div class="{{ class }} promo" style="background-color: {{ settings.promo_background | default: 'rgb(248, 58, 58)' }}; color: {{ settings.promo_text_color | default: '#ffffff' }};">
+      <p class="promo_text">{%if product.metafields.custom.promo_text != blank %}{{- product.metafields.custom.promo_text -}}{% else %}{{- settings.promo_text -}}{% endif %}</p>
+      <p class="promo_sub_text">{% if product.metafields.custom.promo_sub_text !=blank %}{{- product.metafields.custom.promo_sub_text -}}{% else %}{{- settings.promo_sub_text -}}{% endif %}</p>
+    </div>
+{%- endif -%}

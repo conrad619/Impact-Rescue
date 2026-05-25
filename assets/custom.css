@@ -111,6 +111,26 @@
   object-fit: contain;
   object-position: center;
 }
+.promo {
+  background: rgb(var(--accent));
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  width: 100%;
+}
+.promo_text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+.promo_sub_text {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+}
 @media screen and (max-width: 768px) {
   .product-quick-add {
     top: calc(
