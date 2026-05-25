@@ -167,6 +167,7 @@
         "products": [
           "rescue-grilling-gloves-usa-edition",
           "rescue-grilling-gloves-pre-sale",
+          "rescue-gloves-leather-edition",
           "ultimate-grilling-enthusiast-pack",
           "grill-brush-w-scraper"
         ],
@@ -811,6 +812,158 @@
         "input_text_color": ""
       }
     },
+    "featured_product_6UVTEx": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_LDym7p": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title_4jXLtc": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges_E7mT6X": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price_XCWDmg": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_tGKWcn": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "separator_aWPMB8": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description_t73xxK": {
+          "type": "description",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "collapse_content": false
+          }
+        },
+        "variant_picker_pGaAxt": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_eMEX7d": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_3XJGpJ": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "button_wgA3G8": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "text": "Every Purchase Helps First Responders",
+            "size": "xl",
+            "style": "outline",
+            "stretch": true,
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "section_store_block_badge_NEQVym": {
+          "type": "shopify://apps/section-store/blocks/block-badge/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "first_icon": "none",
+            "first_title": "30-Day Money Back Guarantee",
+            "first_bg_color": "#1a1a1a",
+            "first_background_gradient": "",
+            "first_title_color": "#ffffff",
+            "second_icon": "none",
+            "second_title": "",
+            "second_bg_color": "#22c55e",
+            "second_background_gradient": "",
+            "second_title_color": "#ffffff",
+            "third_icon": "none",
+            "third_title": "",
+            "third_bg_color": "#dc2626",
+            "third_background_gradient": "",
+            "third_title_color": "#ffffff",
+            "title_size": 17,
+            "icon_size": 16,
+            "font_weight": "bold",
+            "effect": "none",
+            "card_border": "none",
+            "card_border_width": 1,
+            "card_border_color": "#000000",
+            "card_radius": 16,
+            "card_align": "center",
+            "background_gradient": "",
+            "padding_vertical": 4,
+            "padding_sides": 0,
+            "card_padding_horizontal": 14,
+            "card_padding_vertical": 7
+          }
+        }
+      },
+      "block_order": [
+        "vendor_LDym7p",
+        "title_4jXLtc",
+        "badges_E7mT6X",
+        "price_XCWDmg",
+        "rating_tGKWcn",
+        "separator_aWPMB8",
+        "description_t73xxK",
+        "variant_picker_pGaAxt",
+        "quantity_selector_eMEX7d",
+        "buy_buttons_3XJGpJ",
+        "button_wgA3G8",
+        "section_store_block_badge_NEQVym"
+      ],
+      "custom_css": [
+        "{padding-bottom: 100px;}"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "full_width": true,
+        "product": "rescue-gloves-leather-edition",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "flip": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
     "faq_6tmAaQ": {
       "type": "faq",
       "blocks": {
@@ -895,6 +1048,7 @@
     "rich_text_Y9eeg6",
     "featured_product_jbzPnM",
     "featured_product_ayAN6M",
+    "featured_product_6UVTEx",
     "faq_6tmAaQ",
     "custom_liquid_GdEbmN"
   ]
