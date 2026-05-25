@@ -35,8 +35,18 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "image_dWVECA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Fathers_Day_Sale_Graphic_Announcement_BAr.svg",
+            "url": "",
+            "image_height_mobile": 32,
+            "image_height_desktop": 40
+          }
+        },
         "image_jNLEcd": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Rescue_Graphics_Website_Homepage_Memorial_Day_Graphic_Announcement_Bar_2.svg",
             "url": "",
@@ -70,6 +80,7 @@
         }
       },
       "block_order": [
+        "image_dWVECA",
         "image_jNLEcd",
         "message_HYKCAL",
         "message_GQKmjf",
