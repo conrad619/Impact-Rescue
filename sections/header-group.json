@@ -84,6 +84,7 @@
         "message_GQKmjf",
         "message"
       ],
+      "disabled": true,
       "custom_css": [
         ".announcement-bar {padding: 0 10px;}"
       ],
