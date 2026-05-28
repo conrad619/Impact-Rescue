@@ -13,9 +13,7 @@
   "sections": {
     "header_timer_pXcKRV": {
       "type": "header-timer",
-      "custom_css": [
-        "{display: none;}"
-      ],
+      "custom_css": [],
       "name": "Header Timer",
       "settings": {
         "prefix_text": "FOX SALE ENDS IN",
