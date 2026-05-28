@@ -50,7 +50,7 @@
           "type": "button",
           "settings": {
             "button_text": "Shop Gloves",
-            "button_link": "shopify://collections/grilling"
+            "button_link": "shopify://collections/gloves"
           }
         }
       },
