@@ -13,7 +13,9 @@
   "sections": {
     "header_timer_pXcKRV": {
       "type": "header-timer",
-      "custom_css": [],
+      "custom_css": [
+        "{display:none;}"
+      ],
       "name": "Header Timer",
       "settings": {
         "prefix_text": "FOX SALE ENDS IN",
@@ -84,7 +86,6 @@
         "message_GQKmjf",
         "message"
       ],
-      "disabled": true,
       "custom_css": [
         ".announcement-bar {padding: 0 10px;}"
       ],
