@@ -52,7 +52,7 @@
         "liquid_dUe9q4": {
           "type": "liquid",
           "settings": {
-            "liquid": "⚠️ Father's Day Buy One Get One ends as soon as well out. Once it's gone, it's gone."
+            "liquid": "<span style=\"font-size:18px\">⚠️ <b>Father's Day Buy One Get One ends as soon as well out. Once it's gone, it's gone.</b></span>"
           }
         },
         "rating": {
