@@ -48,6 +48,12 @@
             "show_taxes_notice": false
           }
         },
+        "liquid_dUe9q4": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "⚠️ Father's Day BOGO ends as soon as well out. Once it's gone, it's gone."
+          }
+        },
         "rating": {
           "type": "rating",
           "disabled": true,
@@ -166,6 +172,7 @@
         "title",
         "badges",
         "price",
+        "liquid_dUe9q4",
         "rating",
         "separator",
         "description",
