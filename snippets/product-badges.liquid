@@ -65,17 +65,21 @@ Supported variables
 
             {%- if show_on_sale_badge -%}
               <on-sale-badge class="badge badge--on-sale">
-                {%- liquid
-                  if context == 'product'
-                    echo 'product.general.discount_badge_html' | t: savings: savings
-                  elsif context == 'card'
-                    if product.compare_at_price_varies or variant.compare_at_price == blank
-                      echo 'product.general.on_sale_badge' | t
-                    else
+                {% if block != blank and block.settings.badge_text != blank %}
+                  {{ block.settings.badge_text }}
+                {% else %}
+                  {%- liquid
+                    if context == 'product'
                       echo 'product.general.discount_badge_html' | t: savings: savings
+                    elsif context == 'card'
+                      if product.compare_at_price_varies or variant.compare_at_price == blank
+                        echo 'product.general.on_sale_badge' | t
+                      else
+                        echo 'product.general.discount_badge_html' | t: savings: savings
+                      endif
                     endif
-                  endif
-                -%}
+                  -%}
+                {% endif %}
               </on-sale-badge>
             {%- endif -%}
           {%- endif -%}
