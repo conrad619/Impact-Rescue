@@ -1028,7 +1028,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "liquid": "<style>\n#shopify-section-sections--24037872337055__header_timer_pXcKRV{\ndisplay:block !important;\n}\nshopify-section-sections--24037872337055__announcement-bar{\ndisplay:none!important;\n}\n</style>",
+        "liquid": "<style>\n#shopify-section-sections--24037872337055__header_timer_pXcKRV{\ndisplay:block !important;\n}\n#shopify-section-sections--24037872337055__announcement-bar{\ndisplay:none!important;\n}\n</style>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
