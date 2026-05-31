@@ -45,6 +45,7 @@
         },
         "image_jNLEcd": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Rescue_Graphics_Website_Homepage_Memorial_Day_Graphic_Announcement_Bar_2.svg",
             "url": "",
