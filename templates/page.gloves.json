@@ -42,8 +42,15 @@
         },
         "text_kQcTjm": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Premium tools for the people</p><p>who serve and protect</p>"
+          }
+        },
+        "text_r7CAir": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Premium Tools for the one's love</p><p>Happy Father's Day</p>"
           }
         },
         "button_wJt9Vt": {
@@ -59,6 +66,7 @@
         "subheading_qQaDeD",
         "heading_RBxbRH",
         "text_kQcTjm",
+        "text_r7CAir",
         "button_wJt9Vt"
       ],
       "custom_css": [
