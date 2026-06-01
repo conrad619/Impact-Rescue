@@ -51,7 +51,7 @@
         "liquid_dUe9q4": {
           "type": "liquid",
           "settings": {
-            "liquid": "⚠️ Father's Day BOGO ends as soon as well out. Once it's gone, it's gone."
+            "liquid": "<span style=\"font-size:18px\">⚠️ <b>Father's Day Buy One Get One Free ends as soon as we sell out. Once it's gone, it's gone.</b></span>"
           }
         },
         "rating": {
@@ -76,12 +76,14 @@
         },
         "text_bLdT8C": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>{{ product.metafields.custom.patent_number.value }}</p>"
           }
         },
         "promo_CyJFmi": {
           "type": "promo",
+          "disabled": true,
           "settings": {}
         },
         "variant_picker": {
