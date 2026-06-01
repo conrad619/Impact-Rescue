@@ -45,7 +45,8 @@
         "price": {
           "type": "price",
           "settings": {
-            "show_taxes_notice": false
+            "show_taxes_notice": false,
+            "badge_text": "BUY 1 GET 1 FREE"
           }
         },
         "liquid_dUe9q4": {
@@ -320,6 +321,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "custom_css": [
         "{padding-top: 50px; padding-bottom: 100px;}"
       ],
