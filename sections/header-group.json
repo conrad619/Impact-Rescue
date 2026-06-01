@@ -13,7 +13,6 @@
   "sections": {
     "header_timer_pXcKRV": {
       "type": "header-timer",
-      "disabled": true,
       "custom_css": [],
       "name": "Header Timer",
       "settings": {
