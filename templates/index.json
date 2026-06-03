@@ -58,7 +58,8 @@
         ".shopify-block {margin-inline-start: calc(-1 * var(--container-outer-width)); margin-inline-end: calc(-1 * var(--container-outer-width));}",
         "[class*=\"ai-video-hero__wrapper\"] {width: fit-content;}",
         "[class*=\"ai-video-hero__wrapper\"] > * {margin: 20px;}",
-        "[class*=\"ai-video-hero__video\"] {object-position: top;}"
+        "[class*=\"ai-video-hero__video\"] {object-position: top;}",
+        ".extra-image{display:none;}"
       ],
       "name": "Video hero blocks",
       "settings": {
