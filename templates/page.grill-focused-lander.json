@@ -1,1 +1,749 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"custom_css":["h1 {display: none;}"],"settings":{"content_width":"100ch"}},"rich_text_MnhYbY":{"type":"rich-text","blocks":{"heading_GfP4fC":{"type":"heading","settings":{"text":"🔥 13 Million Wire Grill Brushes Recalled. Here's the Bristle-Free Fix","heading_tag":"h4","text_color":"","gradient":""}}},"block_order":["heading_GfP4fC"],"custom_css":[".rich-text {margin: 0px; padding: 0px;}"],"name":"Alert Banner","settings":{"full_width":false,"content_width":"large","text_position":"center","background":"#df0000","background_gradient":"","text_color":"#ffffff"}},"image_with_text_overlay_WVp8xi":{"type":"image-with-text-overlay","blocks":{"subheading_EYnykj":{"type":"subheading","settings":{"text":"The Father's Day Gift That Actually Gets Used"}},"heading_wWF9Ke":{"type":"heading","settings":{"text":"The Best Gift for a Man Who Owns a [Brand]","heading_tag":"h2"}},"richtext_dA4PBL":{"type":"richtext","settings":{"content":"<p>He babies that grill. He won't shut up about it. So get him the one thing he'd never buy himself: a firefighter-designed brush that cleans his grates in 60 seconds, with zero wire bristles. No more scrubbing. No more danger.<\/p>"}},"button_ziAmyX":{"type":"button","settings":{"style":"fill","size":"lg","text":"Shop the Gift He'll Actually use","url":"","background":"","text_color":""}},"richtext_8EfLFi":{"type":"richtext","settings":{"content":"<p>⭐ 4.8 · 12,000+ five-star reviews · 250,000+ grillers<\/p>"}}},"block_order":["subheading_EYnykj","heading_wWF9Ke","richtext_dA4PBL","button_ziAmyX","richtext_8EfLFi"],"name":"Welcome Hero","settings":{"full_width":false,"allow_transparent_header":false,"enable_parallax":false,"image_size":"lg","image":"shopify:\/\/shop_images\/Rescue_StaticImage_Website_GrillRescueAprons_WornwhileusingtheNon-ScraperBrush_1.png","mobile_text_position":"place-self-center text-center","desktop_text_position":"sm:place-self-center-start sm:text-start","text_color":"#ffffff","overlay_color":"#121212","overlay_opacity":60}},"custom_html_L9RU9U":{"type":"custom-html","name":"Page Break","settings":{"full_width":true,"remove_vertical_spacing":false,"remove_horizontal_spacing":false,"html":"<hr>","background":"","background_gradient":"","text_color":""}},"rich_text_UHiPTQ":{"type":"rich-text","blocks":{"subheading_NiGP3n":{"type":"subheading","settings":{"text":"Why The Old Brush Has To Go"}},"heading_heapHk":{"type":"heading","settings":{"text":"That Wire Brush in His Garage Is a Hospital Visit Waiting to Happen","heading_tag":"h4","text_color":"","gradient":""}},"richtext_VhQ8kp":{"type":"richtext","settings":{"content":"<p>Here's what most [Brand] owners don't know: those tiny wire bristles snap off, stick to the grates, and end up in the food. Every year, more than<strong>1,000 people land in the ER <\/strong>after swallowing one. And in early 2026, regulators recalled<strong>13 million <\/strong>wire grill brushes.<\/p>"}},"richtext_qxKVAM":{"type":"richtext","settings":{"content":"<p>He spent good money on that [Brand]. The brush he's cleaning it with shouldn't be the most dangerous thing in the backyard.<\/p>"}},"divider_3g8PnH":{"type":"divider","settings":{}},"liquid_DqtYwT":{"type":"liquid","settings":{"liquid":"<div style=\"background:#FEE7E7; border-left:4px solid #CB0101; border-radius:0 8px 8px 0; padding:16px 24px; margin:24px 0;\">\n      <div style=\"font-size:14px; font-weight:700; color:#CB0101; margin-bottom:4px;\">⚠️ Safety Warning<\/div>\n      <div style=\"font-size:15px; line-height:1.6;\">A single detached wire bristle can lodge in the throat or stomach and require surgery. You'd never see it on the burger.<\/div>\n    <\/div>\n  <\/div>"}}},"block_order":["subheading_NiGP3n","heading_heapHk","richtext_VhQ8kp","richtext_qxKVAM","divider_3g8PnH","liquid_DqtYwT"],"name":"Safety Warning","settings":{"full_width":false,"content_width":"small","text_position":"start","background":"#ffffff","background_gradient":"","text_color":""}},"custom_html_Pt6YEq":{"type":"custom-html","name":"Page Break","settings":{"full_width":true,"remove_vertical_spacing":false,"remove_horizontal_spacing":false,"html":"<hr>","background":"","background_gradient":"","text_color":""}},"media_with_text_zWxzPt":{"type":"media-with-text","blocks":{"image_ye8QAQ":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/NEWGRGLOVESLIFESTYLEIMAGE6.png","media_width":50,"media_position":"start","text_position":"place-self-center-start text-start","icon":"none","icon_width":48,"subheading":"What Happens When He Opens It","title":"He Rolled His Eyes. Then He Tried It Once.","content":"<p>Most guys who own a [Brand] think they've got cleaning figured out. They don't want another gadget. So when the brush shows up as a gift, the reaction is usually a polite \"…thanks.\"<\/p><p>Then they dip it in water, press it on the hot grates, and watch steam blast the grime off in under a minute. No scrubbing, no bristles, no mess. That's the moment the eye-roll turns into \"where has this been my whole life.\"<\/p>","link_text":"","link_url":"","background":"#f0f0f0","background_gradient":"","text_color":"#121212","text_gradient":"","button_background":"","button_text_color":""}}},"block_order":["image_ye8QAQ"],"name":"When He Opens It","settings":{"full_width":false,"alternate_media_position":false,"spacing":"small"}},"custom_html_pyqKpr":{"type":"custom-html","name":"Page Break","settings":{"full_width":true,"remove_vertical_spacing":false,"remove_horizontal_spacing":false,"html":"<hr>","background":"","background_gradient":"","text_color":""}},"multi_column_bfYXpQ":{"type":"multi-column","blocks":{"item_DkhKJy":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/NEWGRGLOVESLIFESTYLEIMAGE1.png","show_controls":false,"column_size":"3","title":"1. Dip","heading_tag":"h4","content":"<p>Dunk the aramid-fiber head in water. It's the same material in firefighter gear.<\/p>","link_url":"","link_text":"","link_style":"link"}},"item_cjeUhk":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/NEWGRGLOVESLIFESTYLEIMAGE2.png","show_controls":false,"column_size":"3","title":"2. Press","heading_tag":"h4","content":"<p>Spotless grates in 60 seconds. Head pops off, goes in the dishwasher.<\/p>","link_url":"","link_text":"","link_style":"link"}},"item_VTfCYh":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/NEWGRGLOVESLIFESTYLEIMAGE4.png","show_controls":false,"column_size":"3","title":"3. Done","heading_tag":"h4","content":"<p>Spotless grates in 60 seconds. Head pops off, goes in the dishwasher.<\/p>","link_url":"","link_text":"","link_style":"link"}}},"block_order":["item_DkhKJy","item_cjeUhk","item_VTfCYh"],"name":"How It Works","settings":{"full_width":true,"stack_on_mobile":true,"gap":"x-large","text_alignment":"center","subheading":"How It Works","title":"Steam Does the Scrubbing. He Just Holds It.","content":"","background":"","background_gradient":"","text_color":""}},"rich_text_aawpTM":{"type":"rich-text","blocks":{"button_8iUTBY":{"type":"button","settings":{"style":"fill","size":"xl","text":"Get his Grill Rescue","url":"","background":"","text_color":""}}},"block_order":["button_8iUTBY"],"custom_css":[],"name":"How It Works Button","settings":{"full_width":true,"content_width":"small","text_position":"center","background":"","background_gradient":"","text_color":""}},"custom_html_WJ9Uax":{"type":"custom-html","name":"Page Break","settings":{"full_width":true,"remove_vertical_spacing":false,"remove_horizontal_spacing":false,"html":"<hr>","background":"","background_gradient":"","text_color":""}},"comparison_table_bk_taAaLk":{"type":"comparison-table-bk","blocks":{"headings_8DyFDV":{"type":"headings","settings":{"heading_1":"Safety","heading_2":"Cleaning Method","heading_3":"Safe on [Brand] Grills","heading_4":"Time to Clean","heading_5":"Dishwasher Safe","heading_6":"","heading_7":"","heading_8":"","heading_9":"","heading_10":"","heading_11":"","heading_12":"","heading_13":"","heading_14":"","heading_15":"","heading_16":"","heading_17":"","heading_18":"","heading_19":"","heading_20":""}},"values_LHnk9n":{"type":"values","settings":{"product":"","value_1":"<p>✓ Bristle-Free<\/p>","value_2":"<p>✓ Steam Power<\/p>","value_3":"<p>✓ Yes<\/p>","value_4":"<p>✓ 60 Seconds<\/p>","value_5":"<p>✓ Yes<\/p>","value_6":"","value_7":"","value_8":"","value_9":"","value_10":"","value_11":"","value_12":"","value_13":"","value_14":"","value_15":"","value_16":"","value_17":"","value_18":"","value_19":"","value_20":"","view_button_background":"","view_button_text_color":""}},"values_J7b9wN":{"type":"values","settings":{"product":"","value_1":"<p>✗ Loose Wires<\/p>","value_2":"<p>✗ Hard Scrubbing<\/p>","value_3":"<p>✗ Scratches<\/p>","value_4":"<p>✗ Several Minutes<\/p>","value_5":"<p>✗ No<\/p>","value_6":"","value_7":"","value_8":"","value_9":"","value_10":"","value_11":"","value_12":"","value_13":"","value_14":"","value_15":"","value_16":"","value_17":"","value_18":"","value_19":"","value_20":"","view_button_background":"","view_button_text_color":""}}},"block_order":["headings_8DyFDV","values_LHnk9n","values_J7b9wN"],"name":"An Easy Upgrade","settings":{"full_width":true,"subheading":"Grill Rescue vs. The Wire Brush","title":"An Easy Upgrade From What He's Using Now","content":"","button_text":"","button_url":"","text_position":"start","max_rows":5,"view_all_text":"View all","view_less_text":"View less","view_product":"View","show_product_info":false,"show_product_image":false,"show_product_swatch":false,"viewing_product":"","background":"#ffffff","background_gradient":"","text_color":"","heading_color":"","heading_gradient":"","button_background":"","button_text_color":"","chart_background":"","chart_text_color":"","chart_true_false_color":""}},"custom_html_m8BkVN":{"type":"custom-html","name":"Page Break","settings":{"full_width":true,"remove_vertical_spacing":false,"remove_horizontal_spacing":false,"html":"<hr>","background":"","background_gradient":"","text_color":""}},"rich_text_LVAxUn":{"type":"rich-text","blocks":{"subheading_eaLxAz":{"type":"subheading","settings":{"text":"Why 250,000+ Grillers Trust It"}}},"block_order":["subheading_eaLxAz"],"name":"250k Grillers Trust It","settings":{"full_width":true,"content_width":"small","text_position":"center","background":"","background_gradient":"","text_color":""}},"impact_text_hPy6N6":{"type":"impact-text","blocks":{"item_PaMFP3":{"type":"item","settings":{"title":"250k+","subheading":"","content":"<p>Happy customers<\/p>","button_text":"","button_url":"","animate_impact_text":true,"animate_impact_text_duration":2}},"item_GKgyYn":{"type":"item","settings":{"title":"12,000+","subheading":"","content":"<p>Five-star reviews<\/p>","button_text":"","button_url":"","animate_impact_text":true,"animate_impact_text_duration":2}},"item_wfytPx":{"type":"item","settings":{"title":"60 sec","subheading":"","content":"<p>To a clean grill<\/p>","button_text":"","button_url":"","animate_impact_text":true,"animate_impact_text_duration":2}}},"block_order":["item_PaMFP3","item_GKgyYn","item_wfytPx"],"name":"Trust it Numbers","settings":{"full_width":false,"stack_mobile":true,"text_alignment":"center","impact_text_style":"fill","text_divider":"line","impact_text_size_ratio":0.5,"background":"#ffffff","background_gradient":"","heading_text_color":"#df0000","heading_gradient":"","text_color":"","button_background":"","button_text_color":""}},"rich_text_GJtkLq":{"type":"rich-text","blocks":{"heading_CnXXcm":{"type":"heading","settings":{"text":"🚒 Firefighter Designed","heading_tag":"h3","text_color":"","gradient":""}},"richtext_8Ji7Fy":{"type":"richtext","settings":{"content":"<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"}}},"block_order":["heading_CnXXcm","richtext_8Ji7Fy"],"name":"Fire Fighter Designed","settings":{"full_width":false,"content_width":"large","text_position":"center","background":"#1a1a1a","background_gradient":"","text_color":"#ffffff"}},"custom_html_rTfYnf":{"type":"custom-html","name":"Page Break","settings":{"full_width":true,"remove_vertical_spacing":false,"remove_horizontal_spacing":false,"html":"<hr>","background":"","background_gradient":"","text_color":""}},"faq_tXUzeN":{"type":"faq","blocks":{"item_QC9aAM":{"type":"item","settings":{"title":"Will it work on his [Brand]?","content":"<p>Yes. It's safe on [Brand] Grills, cast iron, stainless steel, and chrome grates, exactly what [Brand] grills use.<\/p>"}},"item_yEdbV7":{"type":"item","settings":{"title":"Is it really safer than a wire brush?","content":"<p>There are no bristles to break off, period. Nothing can detach and end up in the food.<\/p>"}},"item_rUGLT7":{"type":"item","settings":{"title":"Does it make a good gift?","content":"<p>It's our most-gifted item for a reason: useful, surprising, and something he'd never think to buy himself. Father's Day, birthdays, and the holidays are when it moves fastest.<\/p>"}},"item_bi4kAK":{"type":"item","settings":{"title":"Is cleanup a hassle?","content":"<p>No. The head pops off and goes straight in the dishwasher. Replacement heads are available too.<\/p>"}}},"block_order":["item_QC9aAM","item_yEdbV7","item_rUGLT7","item_bi4kAK"],"name":"FAQ","settings":{"full_width":false,"subheading":"Before You Ask","title":"Quick Answers","content":"","team_avatar_width":160,"support_hours":"","answer_time":"","button_text":"","button_url":"","text_position":"center","background":"","background_gradient":"","text_color":"","heading_color":"","heading_gradient":"","button_background":"","button_text_color":"","accordion_background":"","accordion_text_color":""}},"featured_collection_8r33XG":{"type":"featured-collection","name":"Featured collection","settings":{"collection":"","products":[],"full_width":true,"stack_products":true,"show_progress_bar":false,"products_count":3,"products_per_row_mobile":"1","products_per_row_desktop":3,"subheading":"","title":"Give the Man Who Owns a [Brand] Something He'll Actually Thank You For","content":"<p>Skip the socks and the grill tools he already has three of. Pick the set that matches his [Brand]. Every option keeps the wire bristles out of the family's food.<\/p>","link_url":"","link_text":"","background":"#ffffff","background_gradient":"","text_color":"","heading_color":"","heading_gradient":"","product_card_background":"","product_card_text_color":""}},"rich_text_ri99Fx":{"type":"rich-text","blocks":{"richtext_4t78FE":{"type":"richtext","settings":{"content":"<p>⭐ 4.8 from 12,000+ reviews · Dishwasher-safe · Bristle-free guarantee<\/p>"}}},"block_order":["richtext_4t78FE"],"name":"Rich text","settings":{"full_width":true,"content_width":"small","text_position":"center","background":"#ffffff","background_gradient":"","text_color":""}}},"order":["main","rich_text_MnhYbY","image_with_text_overlay_WVp8xi","custom_html_L9RU9U","rich_text_UHiPTQ","custom_html_Pt6YEq","media_with_text_zWxzPt","custom_html_pyqKpr","multi_column_bfYXpQ","rich_text_aawpTM","custom_html_WJ9Uax","comparison_table_bk_taAaLk","custom_html_m8BkVN","rich_text_LVAxUn","impact_text_hPy6N6","rich_text_GJtkLq","custom_html_rTfYnf","faq_tXUzeN","featured_collection_8r33XG","rich_text_ri99Fx"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "h1 {display: none;}"
+      ],
+      "settings": {
+        "content_width": "100ch"
+      }
+    },
+    "rich_text_MnhYbY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GfP4fC": {
+          "type": "heading",
+          "settings": {
+            "text": "{{ page.metafields.custom.lander_metafields.value.title.value }}",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_GfP4fC"
+      ],
+      "custom_css": [
+        ".rich-text {margin: 0px; padding: 0px;}"
+      ],
+      "name": "Alert Banner",
+      "settings": {
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#df0000",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "image_with_text_overlay_WVp8xi": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_EYnykj": {
+          "type": "subheading",
+          "settings": {
+            "text": "The Father's Day Gift That Actually Gets Used"
+          }
+        },
+        "heading_wWF9Ke": {
+          "type": "heading",
+          "settings": {
+            "text": "The Best Gift for a Man Who Owns a [Brand]",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_dA4PBL": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>He babies that grill. He won't shut up about it. So get him the one thing he'd never buy himself: a firefighter-designed brush that cleans his grates in 60 seconds, with zero wire bristles. No more scrubbing. No more danger.</p>"
+          }
+        },
+        "button_ziAmyX": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Shop the Gift He'll Actually use",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "richtext_8EfLFi": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>⭐ 4.8 · 12,000+ five-star reviews · 250,000+ grillers</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_EYnykj",
+        "heading_wWF9Ke",
+        "richtext_dA4PBL",
+        "button_ziAmyX",
+        "richtext_8EfLFi"
+      ],
+      "name": "Welcome Hero",
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "lg",
+        "image": "shopify://shop_images/Rescue_StaticImage_Website_GrillRescueAprons_WornwhileusingtheNon-ScraperBrush_1.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center-start sm:text-start",
+        "text_color": "#ffffff",
+        "overlay_color": "#121212",
+        "overlay_opacity": 60
+      }
+    },
+    "custom_html_L9RU9U": {
+      "type": "custom-html",
+      "name": "Page Break",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<hr>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_UHiPTQ": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_NiGP3n": {
+          "type": "subheading",
+          "settings": {
+            "text": "Why The Old Brush Has To Go"
+          }
+        },
+        "heading_heapHk": {
+          "type": "heading",
+          "settings": {
+            "text": "That Wire Brush in His Garage Is a Hospital Visit Waiting to Happen",
+            "heading_tag": "h4",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_VhQ8kp": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Here's what most [Brand] owners don't know: those tiny wire bristles snap off, stick to the grates, and end up in the food. Every year, more than<strong>1,000 people land in the ER </strong>after swallowing one. And in early 2026, regulators recalled<strong>13 million </strong>wire grill brushes.</p>"
+          }
+        },
+        "richtext_qxKVAM": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>He spent good money on that [Brand]. The brush he's cleaning it with shouldn't be the most dangerous thing in the backyard.</p>"
+          }
+        },
+        "divider_3g8PnH": {
+          "type": "divider",
+          "settings": {}
+        },
+        "liquid_DqtYwT": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"background:#FEE7E7; border-left:4px solid #CB0101; border-radius:0 8px 8px 0; padding:16px 24px; margin:24px 0;\">\n      <div style=\"font-size:14px; font-weight:700; color:#CB0101; margin-bottom:4px;\">⚠️ Safety Warning</div>\n      <div style=\"font-size:15px; line-height:1.6;\">A single detached wire bristle can lodge in the throat or stomach and require surgery. You'd never see it on the burger.</div>\n    </div>\n  </div>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_NiGP3n",
+        "heading_heapHk",
+        "richtext_VhQ8kp",
+        "richtext_qxKVAM",
+        "divider_3g8PnH",
+        "liquid_DqtYwT"
+      ],
+      "name": "Safety Warning",
+      "settings": {
+        "full_width": false,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_html_Pt6YEq": {
+      "type": "custom-html",
+      "name": "Page Break",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<hr>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_zWxzPt": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_ye8QAQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/NEWGRGLOVESLIFESTYLEIMAGE6.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "What Happens When He Opens It",
+            "title": "He Rolled His Eyes. Then He Tried It Once.",
+            "content": "<p>Most guys who own a [Brand] think they've got cleaning figured out. They don't want another gadget. So when the brush shows up as a gift, the reaction is usually a polite \"…thanks.\"</p><p>Then they dip it in water, press it on the hot grates, and watch steam blast the grime off in under a minute. No scrubbing, no bristles, no mess. That's the moment the eye-roll turns into \"where has this been my whole life.\"</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f0f0f0",
+            "background_gradient": "",
+            "text_color": "#121212",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_ye8QAQ"
+      ],
+      "name": "When He Opens It",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
+    "custom_html_pyqKpr": {
+      "type": "custom-html",
+      "name": "Page Break",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<hr>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_bfYXpQ": {
+      "type": "multi-column",
+      "blocks": {
+        "item_DkhKJy": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/NEWGRGLOVESLIFESTYLEIMAGE1.png",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "1. Dip",
+            "heading_tag": "h4",
+            "content": "<p>Dunk the aramid-fiber head in water. It's the same material in firefighter gear.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_cjeUhk": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/NEWGRGLOVESLIFESTYLEIMAGE2.png",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "2. Press",
+            "heading_tag": "h4",
+            "content": "<p>Spotless grates in 60 seconds. Head pops off, goes in the dishwasher.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_VTfCYh": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/NEWGRGLOVESLIFESTYLEIMAGE4.png",
+            "show_controls": false,
+            "column_size": "3",
+            "title": "3. Done",
+            "heading_tag": "h4",
+            "content": "<p>Spotless grates in 60 seconds. Head pops off, goes in the dishwasher.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_DkhKJy",
+        "item_cjeUhk",
+        "item_VTfCYh"
+      ],
+      "name": "How It Works",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "x-large",
+        "text_alignment": "center",
+        "subheading": "How It Works",
+        "title": "Steam Does the Scrubbing. He Just Holds It.",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_aawpTM": {
+      "type": "rich-text",
+      "blocks": {
+        "button_8iUTBY": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Get his Grill Rescue",
+            "url": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_8iUTBY"
+      ],
+      "custom_css": [],
+      "name": "How It Works Button",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_html_WJ9Uax": {
+      "type": "custom-html",
+      "name": "Page Break",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<hr>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "comparison_table_bk_taAaLk": {
+      "type": "comparison-table-bk",
+      "blocks": {
+        "headings_8DyFDV": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Safety",
+            "heading_2": "Cleaning Method",
+            "heading_3": "Safe on [Brand] Grills",
+            "heading_4": "Time to Clean",
+            "heading_5": "Dishwasher Safe",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "values_LHnk9n": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>✓ Bristle-Free</p>",
+            "value_2": "<p>✓ Steam Power</p>",
+            "value_3": "<p>✓ Yes</p>",
+            "value_4": "<p>✓ 60 Seconds</p>",
+            "value_5": "<p>✓ Yes</p>",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        },
+        "values_J7b9wN": {
+          "type": "values",
+          "settings": {
+            "product": "",
+            "value_1": "<p>✗ Loose Wires</p>",
+            "value_2": "<p>✗ Hard Scrubbing</p>",
+            "value_3": "<p>✗ Scratches</p>",
+            "value_4": "<p>✗ Several Minutes</p>",
+            "value_5": "<p>✗ No</p>",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": "",
+            "view_button_background": "",
+            "view_button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "headings_8DyFDV",
+        "values_LHnk9n",
+        "values_J7b9wN"
+      ],
+      "name": "An Easy Upgrade",
+      "settings": {
+        "full_width": true,
+        "subheading": "Grill Rescue vs. The Wire Brush",
+        "title": "An Easy Upgrade From What He's Using Now",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "view_product": "View",
+        "show_product_info": false,
+        "show_product_image": false,
+        "show_product_swatch": false,
+        "viewing_product": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
+    "custom_html_m8BkVN": {
+      "type": "custom-html",
+      "name": "Page Break",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<hr>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_LVAxUn": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_eaLxAz": {
+          "type": "subheading",
+          "settings": {
+            "text": "Why 250,000+ Grillers Trust It"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_eaLxAz"
+      ],
+      "name": "250k Grillers Trust It",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "impact_text_hPy6N6": {
+      "type": "impact-text",
+      "blocks": {
+        "item_PaMFP3": {
+          "type": "item",
+          "settings": {
+            "title": "250k+",
+            "subheading": "",
+            "content": "<p>Happy customers</p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "item_GKgyYn": {
+          "type": "item",
+          "settings": {
+            "title": "12,000+",
+            "subheading": "",
+            "content": "<p>Five-star reviews</p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "item_wfytPx": {
+          "type": "item",
+          "settings": {
+            "title": "60 sec",
+            "subheading": "",
+            "content": "<p>To a clean grill</p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "item_PaMFP3",
+        "item_GKgyYn",
+        "item_wfytPx"
+      ],
+      "name": "Trust it Numbers",
+      "settings": {
+        "full_width": false,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "line",
+        "impact_text_size_ratio": 0.5,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "heading_text_color": "#df0000",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "rich_text_GJtkLq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CnXXcm": {
+          "type": "heading",
+          "settings": {
+            "text": "🚒 Firefighter Designed",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_8Ji7Fy": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CnXXcm",
+        "richtext_8Ji7Fy"
+      ],
+      "name": "Fire Fighter Designed",
+      "settings": {
+        "full_width": false,
+        "content_width": "large",
+        "text_position": "center",
+        "background": "#1a1a1a",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "custom_html_rTfYnf": {
+      "type": "custom-html",
+      "name": "Page Break",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "html": "<hr>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "faq_tXUzeN": {
+      "type": "faq",
+      "blocks": {
+        "item_QC9aAM": {
+          "type": "item",
+          "settings": {
+            "title": "Will it work on his [Brand]?",
+            "content": "<p>Yes. It's safe on [Brand] Grills, cast iron, stainless steel, and chrome grates, exactly what [Brand] grills use.</p>"
+          }
+        },
+        "item_yEdbV7": {
+          "type": "item",
+          "settings": {
+            "title": "Is it really safer than a wire brush?",
+            "content": "<p>There are no bristles to break off, period. Nothing can detach and end up in the food.</p>"
+          }
+        },
+        "item_rUGLT7": {
+          "type": "item",
+          "settings": {
+            "title": "Does it make a good gift?",
+            "content": "<p>It's our most-gifted item for a reason: useful, surprising, and something he'd never think to buy himself. Father's Day, birthdays, and the holidays are when it moves fastest.</p>"
+          }
+        },
+        "item_bi4kAK": {
+          "type": "item",
+          "settings": {
+            "title": "Is cleanup a hassle?",
+            "content": "<p>No. The head pops off and goes straight in the dishwasher. Replacement heads are available too.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_QC9aAM",
+        "item_yEdbV7",
+        "item_rUGLT7",
+        "item_bi4kAK"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": false,
+        "subheading": "Before You Ask",
+        "title": "Quick Answers",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
+    "featured_collection_8r33XG": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "",
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 3,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Give the Man Who Owns a [Brand] Something He'll Actually Thank You For",
+        "content": "<p>Skip the socks and the grill tools he already has three of. Pick the set that matches his [Brand]. Every option keeps the wire bristles out of the family's food.</p>",
+        "link_url": "",
+        "link_text": "",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "rich_text_ri99Fx": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_4t78FE": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>⭐ 4.8 from 12,000+ reviews · Dishwasher-safe · Bristle-free guarantee</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_4t78FE"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_MnhYbY",
+    "image_with_text_overlay_WVp8xi",
+    "custom_html_L9RU9U",
+    "rich_text_UHiPTQ",
+    "custom_html_Pt6YEq",
+    "media_with_text_zWxzPt",
+    "custom_html_pyqKpr",
+    "multi_column_bfYXpQ",
+    "rich_text_aawpTM",
+    "custom_html_WJ9Uax",
+    "comparison_table_bk_taAaLk",
+    "custom_html_m8BkVN",
+    "rich_text_LVAxUn",
+    "impact_text_hPy6N6",
+    "rich_text_GJtkLq",
+    "custom_html_rTfYnf",
+    "faq_tXUzeN",
+    "featured_collection_8r33XG",
+    "rich_text_ri99Fx"
+  ]
+}
