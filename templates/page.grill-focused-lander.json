@@ -36,7 +36,8 @@
         "heading_GfP4fC"
       ],
       "custom_css": [
-        ".rich-text {margin: 0px; padding: 0px;}"
+        ".rich-text {margin: 0px; padding: 0px;}",
+        ".text-custom {padding: 20px 0;}"
       ],
       "name": "Alert Banner",
       "settings": {
