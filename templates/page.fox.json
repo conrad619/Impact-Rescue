@@ -305,16 +305,19 @@
         "lazy": true
       }
     },
-    "featured_collection_C7WchY": {
+    "featured_collection_UB4tKf": {
       "type": "featured-collection",
+      "custom_css": [
+        "{padding-top: 50px; padding-bottom: 50px;}"
+      ],
       "name": "Featured collection",
       "settings": {
         "collection": "grilling",
         "products": [
-          "ultimate-grill-expert-bundle",
+          "copy-of-just-for-me-1-brush-2-cleaning-heads-w-scraper",
           "griddle-brush-w-scraper",
           "rescue-pro",
-          "copy-of-just-for-me-1-brush-2-cleaning-heads-w-scraper"
+          "rescue-gift-bundle"
         ],
         "full_width": true,
         "stack_products": true,
@@ -372,22 +375,22 @@
     "blocks_zDxmi9": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_efa3b28_4kYxFg": {
+        "ai_gen_block_efa3b28_3V4Gxa": {
           "type": "ai_gen_block_efa3b28",
           "settings": {
-            "video_1": "shopify://files/videos/Camo - Julian.mov",
-            "video_2": "shopify://files/videos/vid1.mp4",
-            "video_3": "shopify://files/videos/UGC - Camo Gloves.mp4",
-            "video_4": "shopify://files/videos/USA - Alex 4.mov",
+            "video_1": "shopify://files/videos/vid1.mp4",
+            "video_2": "shopify://files/videos/Testimonials hey yall.mov",
+            "video_3": "shopify://files/videos/default_47d8bc35-1b4a-4f11-92dd-a968c7b37d91.mp4",
+            "video_4": "shopify://files/videos/Testimonials scraper.mov",
             "desktop_width_percent": 100,
-            "gap": 16,
+            "gap": 20,
             "corner_radius": 8
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_efa3b28_4kYxFg"
+        "ai_gen_block_efa3b28_3V4Gxa"
       ],
       "name": "Video gallery",
       "settings": {
@@ -399,13 +402,13 @@
         "text_color": ""
       }
     },
-    "collection_list_HaJrCH": {
+    "collection_list_jXiKA3": {
       "type": "collection-list",
       "blocks": {
-        "collection_tiangT": {
+        "collection_9DEYB9": {
           "type": "collection",
           "settings": {
-            "collection": "standard",
+            "collection": "grilling-copy",
             "subheading": "",
             "title": "",
             "url": "https://grillrescue.com/collections/grilling-copy",
@@ -416,10 +419,10 @@
             "overlay_opacity": 30
           }
         },
-        "collection_JYWrfW": {
+        "collection_teh8yr": {
           "type": "collection",
           "settings": {
-            "collection": "flat-top",
+            "collection": "flat-top-grill",
             "subheading": "",
             "title": "",
             "url": "https://grillrescue.com/collections/flat-top-grill",
@@ -430,12 +433,12 @@
             "overlay_opacity": 30
           }
         },
-        "collection_tynne7": {
+        "collection_ijNLyj": {
           "type": "collection",
           "settings": {
-            "collection": "grill-grates",
+            "collection": "grill-with-grill-grates",
             "subheading": "",
-            "title": "",
+            "title": "Grill Grates",
             "url": "https://grillrescue.com/collections/grill-with-grill-grates",
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
@@ -446,23 +449,25 @@
         }
       },
       "block_order": [
-        "collection_tiangT",
-        "collection_JYWrfW",
-        "collection_tynne7"
+        "collection_9DEYB9",
+        "collection_teh8yr",
+        "collection_ijNLyj"
       ],
-      "disabled": true,
+      "custom_css": [
+        "{padding-top: 50px; padding-bottom: 100px;}"
+      ],
       "name": "Collection list",
       "settings": {
         "full_width": true,
         "stack_collections": true,
         "collections_per_row_mobile": "1",
         "collections_per_row": 3,
-        "show_progress_bar": false,
+        "show_progress_bar": true,
         "subheading": "",
         "title": "Perfect for All Grills",
         "content": "<p>Find the Tool Designed Specifically for Your Grill</p>",
         "link_url": "https://grillrescue.com/collections/flat-top-grill",
-        "link_text": "View all",
+        "link_text": "",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -510,41 +515,36 @@
         "text_color": ""
       }
     },
-    "featured_product_jbzPnM": {
+    "featured_product_3a7xJ8": {
       "type": "featured-product",
       "blocks": {
-        "vendor_6jPfK7": {
-          "type": "vendor",
-          "settings": {}
-        },
-        "title_aJd3iF": {
+        "title_DjyJ6C": {
           "type": "title",
           "settings": {
             "heading_tag": "h2"
           }
         },
-        "badges_xCQCA9": {
+        "badges_xyCK8f": {
           "type": "badges",
           "settings": {}
         },
-        "price_wbfdRy": {
+        "price_ibPNkL": {
           "type": "price",
           "settings": {
             "show_taxes_notice": false
           }
         },
-        "rating_hRzfUA": {
+        "rating_V8UUE4": {
           "type": "rating",
-          "disabled": true,
           "settings": {
             "show_empty": false
           }
         },
-        "separator_REmKgi": {
+        "separator_W7GXtM": {
           "type": "separator",
           "settings": {}
         },
-        "description_ca6Jky": {
+        "description_GBhapT": {
           "type": "description",
           "settings": {
             "icon": "none",
@@ -552,7 +552,7 @@
             "collapse_content": false
           }
         },
-        "variant_picker_qftjJN": {
+        "variant_picker_Tj7ATX": {
           "type": "variant_picker",
           "settings": {
             "hide_sold_out_variants": false,
@@ -563,11 +563,11 @@
             "size_chart_page": ""
           }
         },
-        "quantity_selector_VYwcjx": {
+        "quantity_selector_aMqexw": {
           "type": "quantity_selector",
           "settings": {}
         },
-        "buy_buttons_iAhDpr": {
+        "buy_buttons_66dwbQ": {
           "type": "buy_buttons",
           "settings": {
             "show_payment_button": false,
@@ -578,7 +578,7 @@
             "payment_button_text_color": ""
           }
         },
-        "button_d834eF": {
+        "button_XwkfUT": {
           "type": "button",
           "settings": {
             "link": "",
@@ -590,7 +590,7 @@
             "text_color": ""
           }
         },
-        "section_store_block_badge_3G7ywC": {
+        "section_store_block_badge_eqYKtj": {
           "type": "shopify://apps/section-store/blocks/block-badge/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
             "first_icon": "none",
@@ -623,338 +623,43 @@
             "card_padding_horizontal": 14,
             "card_padding_vertical": 7
           }
+        },
+        "payment_terms_HzCLJ7": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "pickup_availability_bAiMND": {
+          "type": "pickup_availability",
+          "settings": {}
         }
       },
       "block_order": [
-        "vendor_6jPfK7",
-        "title_aJd3iF",
-        "badges_xCQCA9",
-        "price_wbfdRy",
-        "rating_hRzfUA",
-        "separator_REmKgi",
-        "description_ca6Jky",
-        "variant_picker_qftjJN",
-        "quantity_selector_VYwcjx",
-        "buy_buttons_iAhDpr",
-        "button_d834eF",
-        "section_store_block_badge_3G7ywC"
+        "title_DjyJ6C",
+        "badges_xyCK8f",
+        "price_ibPNkL",
+        "rating_V8UUE4",
+        "separator_W7GXtM",
+        "description_GBhapT",
+        "variant_picker_Tj7ATX",
+        "quantity_selector_aMqexw",
+        "buy_buttons_66dwbQ",
+        "button_XwkfUT",
+        "section_store_block_badge_eqYKtj",
+        "payment_terms_HzCLJ7",
+        "pickup_availability_bAiMND"
       ],
       "custom_css": [
-        "{padding-bottom: 100px;}"
+        "{padding-top: 50px; padding-bottom: 100px;}"
       ],
       "name": "Featured product",
       "settings": {
         "full_width": true,
         "product": "rescue-grilling-gloves-usa-edition",
-        "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
-        "mobile_media_size": "expanded",
-        "mobile_carousel_control": "floating_dots",
-        "flip": false,
-        "enable_video_autoplay": true,
-        "enable_video_looping": false,
-        "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
-      }
-    },
-    "featured_product_ayAN6M": {
-      "type": "featured-product",
-      "blocks": {
-        "vendor_UaCVDc": {
-          "type": "vendor",
-          "settings": {}
-        },
-        "title_MtGYzw": {
-          "type": "title",
-          "settings": {
-            "heading_tag": "h2"
-          }
-        },
-        "badges_mbF3KU": {
-          "type": "badges",
-          "settings": {}
-        },
-        "price_KGtBt8": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
-          }
-        },
-        "rating_cLQPD4": {
-          "type": "rating",
-          "disabled": true,
-          "settings": {
-            "show_empty": false
-          }
-        },
-        "separator_kKdmbK": {
-          "type": "separator",
-          "settings": {}
-        },
-        "description_TcAgdc": {
-          "type": "description",
-          "settings": {
-            "icon": "none",
-            "icon_width": 20,
-            "collapse_content": false
-          }
-        },
-        "variant_picker_wGNKiy": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_style": "block",
-            "swatch_selector_style": "swatch",
-            "variant_image_options": "",
-            "size_chart_page": ""
-          }
-        },
-        "quantity_selector_qEzXRf": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_yUCcjg": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": false,
-            "show_gift_card_recipient": true,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
-        },
-        "button_RrVr4w": {
-          "type": "button",
-          "settings": {
-            "link": "",
-            "text": "Every Purchase Helps First Responders",
-            "size": "xl",
-            "style": "outline",
-            "stretch": true,
-            "background": "",
-            "text_color": ""
-          }
-        },
-        "section_store_block_badge_6baDkQ": {
-          "type": "shopify://apps/section-store/blocks/block-badge/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
-          "settings": {
-            "first_icon": "none",
-            "first_title": "30-Day Money Back Guarantee",
-            "first_bg_color": "#1a1a1a",
-            "first_background_gradient": "",
-            "first_title_color": "#ffffff",
-            "second_icon": "none",
-            "second_title": "",
-            "second_bg_color": "#22c55e",
-            "second_background_gradient": "",
-            "second_title_color": "#ffffff",
-            "third_icon": "none",
-            "third_title": "",
-            "third_bg_color": "#dc2626",
-            "third_background_gradient": "",
-            "third_title_color": "#ffffff",
-            "title_size": 17,
-            "icon_size": 16,
-            "font_weight": "bold",
-            "effect": "none",
-            "card_border": "none",
-            "card_border_width": 1,
-            "card_border_color": "#000000",
-            "card_radius": 16,
-            "card_align": "center",
-            "background_gradient": "",
-            "padding_vertical": 4,
-            "padding_sides": 0,
-            "card_padding_horizontal": 14,
-            "card_padding_vertical": 7
-          }
-        }
-      },
-      "block_order": [
-        "vendor_UaCVDc",
-        "title_MtGYzw",
-        "badges_mbF3KU",
-        "price_KGtBt8",
-        "rating_cLQPD4",
-        "separator_kKdmbK",
-        "description_TcAgdc",
-        "variant_picker_wGNKiy",
-        "quantity_selector_qEzXRf",
-        "buy_buttons_yUCcjg",
-        "button_RrVr4w",
-        "section_store_block_badge_6baDkQ"
-      ],
-      "custom_css": [
-        "{padding-bottom: 100px;}"
-      ],
-      "name": "Featured product",
-      "settings": {
-        "full_width": true,
-        "product": "rescue-grilling-gloves-pre-sale",
-        "desktop_media_width": 55,
+        "desktop_media_width": 45,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",
         "mobile_carousel_control": "floating_dots",
         "flip": true,
-        "enable_video_autoplay": true,
-        "enable_video_looping": false,
-        "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
-      }
-    },
-    "featured_product_6UVTEx": {
-      "type": "featured-product",
-      "blocks": {
-        "vendor_LDym7p": {
-          "type": "vendor",
-          "settings": {}
-        },
-        "title_4jXLtc": {
-          "type": "title",
-          "settings": {
-            "heading_tag": "h2"
-          }
-        },
-        "badges_E7mT6X": {
-          "type": "badges",
-          "settings": {}
-        },
-        "price_XCWDmg": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
-          }
-        },
-        "rating_tGKWcn": {
-          "type": "rating",
-          "disabled": true,
-          "settings": {
-            "show_empty": false
-          }
-        },
-        "separator_aWPMB8": {
-          "type": "separator",
-          "settings": {}
-        },
-        "description_t73xxK": {
-          "type": "description",
-          "settings": {
-            "icon": "none",
-            "icon_width": 20,
-            "collapse_content": false
-          }
-        },
-        "variant_picker_pGaAxt": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_style": "block",
-            "swatch_selector_style": "swatch",
-            "variant_image_options": "",
-            "size_chart_page": ""
-          }
-        },
-        "quantity_selector_eMEX7d": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_3XJGpJ": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": false,
-            "show_gift_card_recipient": true,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
-        },
-        "button_wgA3G8": {
-          "type": "button",
-          "settings": {
-            "link": "",
-            "text": "Every Purchase Helps First Responders",
-            "size": "xl",
-            "style": "outline",
-            "stretch": true,
-            "background": "",
-            "text_color": ""
-          }
-        },
-        "section_store_block_badge_NEQVym": {
-          "type": "shopify://apps/section-store/blocks/block-badge/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
-          "settings": {
-            "first_icon": "none",
-            "first_title": "30-Day Money Back Guarantee",
-            "first_bg_color": "#1a1a1a",
-            "first_background_gradient": "",
-            "first_title_color": "#ffffff",
-            "second_icon": "none",
-            "second_title": "",
-            "second_bg_color": "#22c55e",
-            "second_background_gradient": "",
-            "second_title_color": "#ffffff",
-            "third_icon": "none",
-            "third_title": "",
-            "third_bg_color": "#dc2626",
-            "third_background_gradient": "",
-            "third_title_color": "#ffffff",
-            "title_size": 17,
-            "icon_size": 16,
-            "font_weight": "bold",
-            "effect": "none",
-            "card_border": "none",
-            "card_border_width": 1,
-            "card_border_color": "#000000",
-            "card_radius": 16,
-            "card_align": "center",
-            "background_gradient": "",
-            "padding_vertical": 4,
-            "padding_sides": 0,
-            "card_padding_horizontal": 14,
-            "card_padding_vertical": 7
-          }
-        }
-      },
-      "block_order": [
-        "vendor_LDym7p",
-        "title_4jXLtc",
-        "badges_E7mT6X",
-        "price_XCWDmg",
-        "rating_tGKWcn",
-        "separator_aWPMB8",
-        "description_t73xxK",
-        "variant_picker_pGaAxt",
-        "quantity_selector_eMEX7d",
-        "buy_buttons_3XJGpJ",
-        "button_wgA3G8",
-        "section_store_block_badge_NEQVym"
-      ],
-      "custom_css": [
-        "{padding-bottom: 100px;}"
-      ],
-      "name": "Featured product",
-      "settings": {
-        "full_width": true,
-        "product": "rescue-gloves-leather-edition",
-        "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
-        "mobile_media_size": "expanded",
-        "mobile_carousel_control": "floating_dots",
-        "flip": false,
         "enable_video_autoplay": true,
         "enable_video_looping": false,
         "enable_image_zoom": true,
@@ -1043,14 +748,12 @@
     "blocks_VyqQPW",
     "featured_collection_adU84t",
     "ss_scrolling_logo_cloud_FfcECw",
-    "featured_collection_C7WchY",
+    "featured_collection_UB4tKf",
     "rich_text_t6GBfp",
     "blocks_zDxmi9",
-    "collection_list_HaJrCH",
+    "collection_list_jXiKA3",
     "rich_text_Y9eeg6",
-    "featured_product_jbzPnM",
-    "featured_product_ayAN6M",
-    "featured_product_6UVTEx",
+    "featured_product_3a7xJ8",
     "faq_6tmAaQ",
     "custom_liquid_GdEbmN"
   ]
