@@ -224,6 +224,9 @@
       "block_order": [
         "image_ye8QAQ"
       ],
+      "custom_css": [
+        "img {aspect-ratio: 16/9;}"
+      ],
       "name": "When He Opens It",
       "settings": {
         "full_width": false,
@@ -295,6 +298,9 @@
         "item_cjeUhk",
         "item_VTfCYh"
       ],
+      "custom_css": [
+        "img{aspect-ratio: 1/1;}"
+      ],
       "name": "How It Works",
       "settings": {
         "full_width": true,
@@ -327,11 +333,13 @@
       "block_order": [
         "button_8iUTBY"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".button {width: 400px;}"
+      ],
       "name": "How It Works Button",
       "settings": {
         "full_width": true,
-        "content_width": "small",
+        "content_width": "large",
         "text_position": "center",
         "background": "",
         "background_gradient": "",
