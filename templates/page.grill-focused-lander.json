@@ -60,7 +60,7 @@
         "heading_wWF9Ke": {
           "type": "heading",
           "settings": {
-            "text": "The Best Gift for a Man Who Owns a [Brand]",
+            "text": "{{ page.metafields.custom.lander_metafields.value.welcome_hero_heading.value }}",
             "heading_tag": "h2"
           }
         },
