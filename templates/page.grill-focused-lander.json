@@ -359,6 +359,118 @@
         "text_color": ""
       }
     },
+    "comparison_table_mbrtNU": {
+      "type": "comparison-table",
+      "blocks": {
+        "headings_yr9kP7": {
+          "type": "headings",
+          "settings": {
+            "heading_1": "Safety",
+            "heading_2": "Cleaning Method",
+            "heading_3": "Safe on [Brand] Grills",
+            "heading_4": "Time to Clean",
+            "heading_5": "Dishwasher Safe",
+            "heading_6": "",
+            "heading_7": "",
+            "heading_8": "",
+            "heading_9": "",
+            "heading_10": "",
+            "heading_11": "",
+            "heading_12": "",
+            "heading_13": "",
+            "heading_14": "",
+            "heading_15": "",
+            "heading_16": "",
+            "heading_17": "",
+            "heading_18": "",
+            "heading_19": "",
+            "heading_20": ""
+          }
+        },
+        "values_wC6Rh6": {
+          "type": "values",
+          "settings": {
+            "custom_title": "Grill Rescue",
+            "value_1": "<p>✓ Bristle-Free</p>",
+            "value_2": "<p>✓ Steam Power</p>",
+            "value_3": "<p>✓ Yes</p>",
+            "value_4": "<p>✓ 60 Seconds</p>",
+            "value_5": "<p>✓ Yes</p>",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": ""
+          }
+        },
+        "values_i3BPcY": {
+          "type": "values",
+          "settings": {
+            "custom_title": "The Wire BRush",
+            "value_1": "<p>✗ Loose Wires</p>",
+            "value_2": "<p>✗ Hard Scrubbing</p>",
+            "value_3": "<p>✗ Scratches</p>",
+            "value_4": "<p>✗ Several Minues</p>",
+            "value_5": "<p>✗ No</p>",
+            "value_6": "",
+            "value_7": "",
+            "value_8": "",
+            "value_9": "",
+            "value_10": "",
+            "value_11": "",
+            "value_12": "",
+            "value_13": "",
+            "value_14": "",
+            "value_15": "",
+            "value_16": "",
+            "value_17": "",
+            "value_18": "",
+            "value_19": "",
+            "value_20": ""
+          }
+        }
+      },
+      "block_order": [
+        "headings_yr9kP7",
+        "values_wC6Rh6",
+        "values_i3BPcY"
+      ],
+      "name": "Custom Comparison table",
+      "settings": {
+        "full_width": true,
+        "subheading": "Compare",
+        "title": "Product comparison",
+        "content": "<p>Give your customers useful information about your products and showcase differences between them.</p>",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "max_rows": 5,
+        "view_all_text": "View all",
+        "view_less_text": "View less",
+        "show_product_info": true,
+        "show_product_image": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "chart_background": "",
+        "chart_text_color": "",
+        "chart_true_false_color": ""
+      }
+    },
     "comparison_table_bk_taAaLk": {
       "type": "comparison-table-bk",
       "blocks": {
@@ -449,6 +561,7 @@
         "values_LHnk9n",
         "values_J7b9wN"
       ],
+      "disabled": true,
       "name": "An Easy Upgrade",
       "settings": {
         "full_width": true,
@@ -745,6 +858,7 @@
     "multi_column_bfYXpQ",
     "rich_text_aawpTM",
     "custom_html_WJ9Uax",
+    "comparison_table_mbrtNU",
     "comparison_table_bk_taAaLk",
     "custom_html_m8BkVN",
     "rich_text_LVAxUn",
