@@ -36,6 +36,7 @@
       "blocks": {
         "image_dWVECA": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Rescue_Graphics_Website_Homepage_Father_s_Day_Graphic_70_Off-02.svg",
             "url": "",
@@ -63,9 +64,8 @@
         },
         "message_GQKmjf": {
           "type": "message",
-          "disabled": true,
           "settings": {
-            "text": "All Purchases Help First Responders",
+            "text": "UP TO 70% OFF SITEWIDE",
             "url": ""
           }
         },
@@ -86,7 +86,7 @@
         "message"
       ],
       "custom_css": [
-        ".announcement-bar {padding: 0 10px;}"
+        ".announcement-bar {padding: 10px 10px;}"
       ],
       "settings": {
         "enable_sticky": false,
@@ -95,7 +95,7 @@
         "autoplay": false,
         "cycle_speed": 6,
         "scrolling_speed": 30,
-        "text_size": "text-base",
+        "text_size": "text-lg",
         "background": "#0f1d3e",
         "background_gradient": "",
         "text_color": "#ffffff"
