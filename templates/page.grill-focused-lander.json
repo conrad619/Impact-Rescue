@@ -26,7 +26,7 @@
           "type": "heading",
           "settings": {
             "text": "{{ page.metafields.custom.lander_metafields.value.title.value }}",
-            "heading_tag": "h4",
+            "heading_tag": "h5",
             "text_color": "",
             "gradient": ""
           }
@@ -446,13 +446,13 @@
         "values_X4btEp"
       ],
       "custom_css": [
-        ".feature-chart__table{border-radius:20px;}",
-        ".feature-chart__table-row.feature-chart__table-row--product{background: black !important;color: white;padding: 0 20px;}",
-        "feature-chart.feature-chart.bg-custom.text-custom{padding:0;}",
-        ".feature-chart__table .feature-chart__product{padding:20px 0;}",
-        ".feature-chart__table .feature-chart__product:first-child{background:red;}",
-        ".feature-chart__table-row{padding:20px;}",
-        ".feature-chart__table-row:nth-child(odd){background:#eee;}"
+        ".feature-chart__table {border-radius: 20px;}",
+        ".feature-chart__table-row.feature-chart__table-row--product {background: black !important; color: white; padding: 0 20px;}",
+        "feature-chart.feature-chart.bg-custom.text-custom {padding: 0;}",
+        ".feature-chart__table .feature-chart__product {padding: 20px 0;}",
+        ".feature-chart__table .feature-chart__product:first-child {background: red;}",
+        ".feature-chart__table-row {padding: 20px;}",
+        ".feature-chart__table-row:nth-child(odd) {background: #eee;}"
       ],
       "name": "An Easy Upgrade",
       "settings": {
