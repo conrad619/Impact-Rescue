@@ -14,9 +14,16 @@
       "blocks": {
         "image_a6FCrU": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Rescue_Graphics_Website_Homepage_Father_s_Day_Graphic_70_Off-01.svg",
             "image_width": 500
+          }
+        },
+        "heading_ptmKwM": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>AS SEEN ON FOX</strong>"
           }
         },
         "subheading_8bhJLU": {
@@ -26,17 +33,10 @@
             "text": "Welcome to our store"
           }
         },
-        "heading_GEjkzV": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "Discover amazing products"
-          }
-        },
         "text_gUJTXw": {
           "type": "text",
           "settings": {
-            "text": "<p>Premium Tools for the one's you love</p><p>Happy Father's Day</p>"
+            "text": "<p>Home of the World's Best Grill Brush & Grilling Tools.</p>"
           }
         },
         "button_8zPjeD": {
@@ -49,8 +49,8 @@
       },
       "block_order": [
         "image_a6FCrU",
+        "heading_ptmKwM",
         "subheading_8bhJLU",
-        "heading_GEjkzV",
         "text_gUJTXw",
         "button_8zPjeD"
       ],
@@ -59,7 +59,7 @@
         "[class*=\"ai-video-hero__wrapper\"] {width: fit-content;}",
         "[class*=\"ai-video-hero__wrapper\"] > * {margin: 20px;}",
         "[class*=\"ai-video-hero__video\"] {object-position: top;}",
-        ".extra-image{display:none;}"
+        ".extra-image {display: none;}"
       ],
       "name": "Video hero blocks",
       "settings": {
@@ -71,7 +71,7 @@
         "overlay_color": "#000000",
         "overlay_opacity": 0.5,
         "content_max_width": 1600,
-        "text_alignment": "center",
+        "text_alignment": "left",
         "content_vertical_alignment_mobile": "center",
         "content_vertical_alignment_desktop": "center",
         "content_horizontal_alignment_mobile": "center",
@@ -80,8 +80,8 @@
         "heading_font": "assistant_n4",
         "subheading_size_mobile": 14,
         "subheading_size_desktop": 16,
-        "heading_size_mobile": 32,
-        "heading_size_desktop": 60,
+        "heading_size_mobile": 38,
+        "heading_size_desktop": 88,
         "paragraph_size_mobile": 16,
         "paragraph_size_desktop": 20,
         "button_background": "#cb0101",
