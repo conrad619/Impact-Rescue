@@ -34,18 +34,8 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "image_4tEVzM": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Rescue_Graphics_Website_Homepage_Father_s_Day_Graphic_70_Off-02.svg",
-            "url": "",
-            "image_height_mobile": 32,
-            "image_height_desktop": 40
-          }
-        },
         "image_dWVECA": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Rescue_Graphics_Website_Homepage_Father_s_Day_Graphic_70_Off-02.svg",
             "url": "",
@@ -89,7 +79,6 @@
         }
       },
       "block_order": [
-        "image_4tEVzM",
         "image_dWVECA",
         "image_jNLEcd",
         "message_HYKCAL",
