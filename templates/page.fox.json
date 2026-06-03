@@ -21,6 +21,7 @@
       "blocks": {
         "image_eCyBPq": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Rescue_Graphics_Website_Homepage_Father_s_Day_Graphic_70_Off-01.svg",
             "image_width": 500
@@ -35,7 +36,6 @@
         },
         "heading_RBxbRH": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "text": "Discover amazing products"
           }
@@ -69,6 +69,7 @@
         "text_r7CAir",
         "button_gVUxmb"
       ],
+      "disabled": true,
       "custom_css": [
         ".shopify-block {margin-inline-start: calc(-1 * var(--container-outer-width)); margin-inline-end: calc(-1 * var(--container-outer-width));}",
         "[class*=\"ai-video-hero__wrapper\"] {width: fit-content;}",
@@ -149,7 +150,6 @@
       "block_order": [
         "ai_gen_block_072ad83_HzgYUe"
       ],
-      "disabled": true,
       "custom_css": [
         ".shopify-block {margin-inline-start: calc(-1 * var(--container-outer-width)); margin-inline-end: calc(-1 * var(--container-outer-width));}",
         "[class*=\"ai-video-hero__content\"] {width: 100%; margin: 0 auto;}"
