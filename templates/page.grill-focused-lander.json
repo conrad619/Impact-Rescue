@@ -54,7 +54,7 @@
         "subheading_EYnykj": {
           "type": "subheading",
           "settings": {
-            "text": "The Father's Day Gift That Actually Gets Used"
+            "text": "{{ page.metafields.custom.lander_metafields.value.welcome_hero_subheading.value }}"
           }
         },
         "heading_wWF9Ke": {
@@ -67,7 +67,7 @@
         "richtext_dA4PBL": {
           "type": "richtext",
           "settings": {
-            "content": "<p>He babies that grill. He won't shut up about it. So get him the one thing he'd never buy himself: a firefighter-designed brush that cleans his grates in 60 seconds, with zero wire bristles. No more scrubbing. No more danger.</p>"
+            "content": "{{ page.metafields.custom.lander_metafields.value.welcome_hero_paragraph | metafield_tag }}"
           }
         },
         "button_ziAmyX": {
@@ -75,7 +75,7 @@
           "settings": {
             "style": "fill",
             "size": "lg",
-            "text": "Shop the Gift He'll Actually use",
+            "text": "{{ page.metafields.custom.lander_metafields.value.welcome_hero_button_text.value }}",
             "url": "",
             "background": "",
             "text_color": ""
