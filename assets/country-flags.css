@@ -1,6 +1,6 @@
 .country-flags {
-  background: -webkit-image-set(url("//grillrescue.com/cdn/shop/t/34/assets/country-flags.png?v=37230036826556269641776434678") 1x, url("//grillrescue.com/cdn/shop/t/34/assets/country-flags-2x.png?v=119388446682176363021776434677") 2x) no-repeat top left;
-  background: image-set(url("//grillrescue.com/cdn/shop/t/34/assets/country-flags.png?v=37230036826556269641776434678") 1x, url("//grillrescue.com/cdn/shop/t/34/assets/country-flags-2x.png?v=119388446682176363021776434677") 2x) no-repeat top left;
+  background: -webkit-image-set(url("//grillrescue.com/cdn/shop/t/41/assets/country-flags.png?v=37230036826556269641780330669") 1x, url("//grillrescue.com/cdn/shop/t/41/assets/country-flags-2x.png?v=119388446682176363021780330669") 2x) no-repeat top left;
+  background: image-set(url("//grillrescue.com/cdn/shop/t/41/assets/country-flags.png?v=37230036826556269641780330669") 1x, url("//grillrescue.com/cdn/shop/t/41/assets/country-flags-2x.png?v=119388446682176363021780330669") 2x) no-repeat top left;
   width: 20px;
   height: 20px;
   flex-shrink: 0;
