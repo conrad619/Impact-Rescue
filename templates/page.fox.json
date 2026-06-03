@@ -53,11 +53,11 @@
             "text": "<p>Premium Tools for the one's you love</p><p>Happy Father's Day</p>"
           }
         },
-        "button_wJt9Vt": {
+        "button_gVUxmb": {
           "type": "button",
           "settings": {
-            "button_text": "SHOP GLOVES",
-            "button_link": "shopify://collections/gloves"
+            "button_text": "Shop Best Sellers",
+            "button_link": "shopify://collections/grilling"
           }
         }
       },
@@ -67,7 +67,7 @@
         "heading_RBxbRH",
         "text_kQcTjm",
         "text_r7CAir",
-        "button_wJt9Vt"
+        "button_gVUxmb"
       ],
       "custom_css": [
         ".shopify-block {margin-inline-start: calc(-1 * var(--container-outer-width)); margin-inline-end: calc(-1 * var(--container-outer-width));}",
