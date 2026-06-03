@@ -160,7 +160,7 @@
         "liquid_DqtYwT": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"background:#FEE7E7; border-left:4px solid #CB0101; border-radius:0 8px 8px 0; padding:16px 24px; margin:24px 0;\">\n      <div style=\"font-size:14px; font-weight:700; color:#CB0101; margin-bottom:4px;\">⚠️ Safety Warning</div>\n      <div style=\"font-size:15px; line-height:1.6;\">A single detached wire bristle can lodge in the throat or stomach and require surgery. You'd never see it on the burger.</div>\n    </div>\n  </div>"
+            "liquid": "<div style=\"background:#FEE7E7; border-left:4px solid #CB0101; border-radius:0 8px 8px 0; padding:16px 24px; margin:24px 0;height:100%\">\n      <div style=\" font-weight:700; color:#CB0101; margin-bottom:4px;\">⚠️ Safety Warning</div>\n      <div style=\" line-height:1.6;\">A single detached wire bristle can lodge in the throat or stomach and require surgery. You'd never see it on the burger.</div>\n    </div>\n  </div>"
           }
         }
       },
