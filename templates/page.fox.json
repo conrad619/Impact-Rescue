@@ -171,14 +171,8 @@
       ],
       "name": "Featured collection",
       "settings": {
-        "collection": "grilling-gloves",
-        "products": [
-          "rescue-grilling-gloves-usa-edition",
-          "rescue-grilling-gloves-pre-sale",
-          "rescue-gloves-leather-edition",
-          "ultimate-grilling-enthusiast-pack",
-          "grill-brush-w-scraper"
-        ],
+        "collection": "grilling",
+        "products": [],
         "full_width": true,
         "stack_products": true,
         "show_progress_bar": false,
