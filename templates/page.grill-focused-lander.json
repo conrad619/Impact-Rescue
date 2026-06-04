@@ -334,7 +334,8 @@
         "button_8iUTBY"
       ],
       "custom_css": [
-        ".button {width: 400px;}"
+        ".rich-text,.rich-text__wrapper {width: 100%;}",
+        ".button {max-width: 300px; width: -webkit-fill-available;}"
       ],
       "name": "How It Works Button",
       "settings": {
