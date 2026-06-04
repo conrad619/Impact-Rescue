@@ -217,8 +217,14 @@
     position:relative;
     overflow:visible;
   }
+
+  
+  .pricing-card-{{ section.id }} .most-popular{
+    display:none;
+  }
   
   .pricing-card-{{ section.id }}:nth-child(2) .most-popular{
+    display:block;
     border-radius:100px;
     background:#DF0000;
     color:#fff;
