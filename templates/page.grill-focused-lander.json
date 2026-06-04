@@ -323,8 +323,8 @@
           "settings": {
             "style": "fill",
             "size": "xl",
-            "text": "Get his Grill Rescue",
-            "url": "",
+            "text": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_button_text.value }}",
+            "url": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_url.value }}",
             "background": "",
             "text_color": ""
           }
