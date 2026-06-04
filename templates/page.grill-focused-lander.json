@@ -157,10 +157,10 @@
           "type": "divider",
           "settings": {}
         },
-        "liquid_DqtYwT": {
-          "type": "liquid",
+        "safety_TqjmNM": {
+          "type": "safety",
           "settings": {
-            "liquid": "<div style=\"background:#FEE7E7; border-left:4px solid #CB0101; border-radius:0 8px 8px 0; padding:16px 24px; margin:24px 0;\">\n      <div style=\" font-weight:700; color:#CB0101; margin-bottom:4px;\">⚠️ Safety Warning</div>\n      <div style=\"line-height:1.6;\">A single detached wire bristle can lodge in the throat or stomach and require surgery. You'd never see it on the burger.</div>\n    </div>\n  </div>\n{{ page.metafields.custom.lander_metafields.value.safety_warning_liquid.value}}"
+            "safety": "A single detached wire bristle can lodge in the throat or stomach and require surgery. You'd never see it on the burger."
           }
         }
       },
@@ -170,7 +170,7 @@
         "richtext_VhQ8kp",
         "richtext_qxKVAM",
         "divider_3g8PnH",
-        "liquid_DqtYwT"
+        "safety_TqjmNM"
       ],
       "name": "Safety Warning",
       "settings": {
