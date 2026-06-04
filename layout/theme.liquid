@@ -104,7 +104,14 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
     {%- endif -%}
 
     <main role="main" id="main" class="anchor">
-      {{ content_for_layout }}
+      {%- capture page_content -%}
+        {{ content_for_layout }}
+      {%- endcapture -%}
+
+      {%- assign page_brand = page.metafields.custom.brand.value | default: '[Brand]' -%}
+      {%- assign page_brand_lower = page.metafields.custom.brand_lower.value | default: '[Brand_lower]' -%}
+
+      {{ page_content | replace: '[Brand]', page_brand | replace: '[Brand_lower]', page_brand_lower }}
 
       {%- comment -%}
       IMPLEMENTATION NOTE: due to the very complex logic of margin/padding collapsing in Impact, the footer group is
