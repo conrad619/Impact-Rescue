@@ -334,7 +334,8 @@
         "button_8iUTBY"
       ],
       "custom_css": [
-        ".button {width: 400px;}"
+        ".rich-text,.rich-text__wrapper {width: 100%;}",
+        ".button {max-width: 300px; width: -webkit-fill-available;}"
       ],
       "name": "How It Works Button",
       "settings": {
@@ -445,15 +446,7 @@
         "values_wC6Rh6",
         "values_i3BPcY"
       ],
-      "custom_css": [
-        ".feature-chart__table {border-radius: 20px;}",
-        ".feature-chart__table-row.feature-chart__table-row--product {background: black !important; color: white; padding: 0 20px;}",
-        "feature-chart.feature-chart.bg-custom.text-custom {padding: 0;}",
-        ".feature-chart__table .feature-chart__product {padding: 20px 0;}",
-        ".feature-chart__table .feature-chart__product:first-child {background: red;}",
-        ".feature-chart__table-row {padding: 20px;}",
-        ".feature-chart__table-row:nth-child(odd) {background: #eee;}"
-      ],
+      "custom_css": [],
       "name": "Custom Comparison table",
       "settings": {
         "full_width": true,
@@ -838,11 +831,11 @@
         "heading_LM7gwH": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Give the Man Who Owns a [Brand] Something He'll Actually Thank You For</p>",
+            "heading": "<p>{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_heading.value }}</p>",
             "heading_custom": false,
             "heading_font": "barlow_n4",
             "heading_size": 44,
-            "heading_size_mobile": 32,
+            "heading_size_mobile": 24,
             "heading_height": 130,
             "heading_mt": 0,
             "heading_mt_mobile": 0,
@@ -854,11 +847,11 @@
         "subheading_dBgrXi": {
           "type": "subheading",
           "settings": {
-            "subheading": "<p>Skip the socks and the grill tools he already has three of. Pick the set that matches his [Brand]. Every option keeps the wire bristles out of the family's food.<br/><br/></p>",
+            "subheading": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_paragraph | metafield_tag }}",
             "subheading_custom": false,
             "subheading_font": "josefin_sans_n4",
             "subheading_size": 18,
-            "subheading_size_mobile": 16,
+            "subheading_size_mobile": 14,
             "subheading_height": 130,
             "subheading_mt": 12,
             "subheading_mt_mobile": 6,
@@ -877,18 +870,18 @@
         "card_k9HQwr": {
           "type": "card",
           "settings": {
-            "title": "Title",
-            "text": "<p>Tell your story</p>",
-            "price_text": "$10",
-            "price_compare_text": "$5",
-            "price_save_text": "You save $5",
-            "button_text": "Choose item 1",
-            "url": "",
-            "first_left_text": "Feature 1",
+            "title": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_1_heading.value }}",
+            "text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_1_paragraph | metafield_tag }}",
+            "price_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_1_price.value }}",
+            "price_compare_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.princing_table_item_1_compared_price.value }}",
+            "price_save_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.princing_table_item_1_save_price.value }}",
+            "button_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_button_text.value }}",
+            "url": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_1_button_link.value }}",
+            "first_left_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_1_featured_1.value }}",
             "first_right_text": "✓",
-            "second_left_text": "Feature 2",
+            "second_left_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_1_featured_2.value }}",
             "second_right_text": "✓",
-            "third_left_text": "Feature 3",
+            "third_left_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_1_featured_3.value }}",
             "third_right_text": "✓",
             "fourth_left_text": "",
             "fourth_right_text": "",
@@ -915,18 +908,18 @@
         "card_ANXizb": {
           "type": "card",
           "settings": {
-            "title": "Title",
-            "text": "<p>Tell your story</p>",
-            "price_text": "$10",
-            "price_compare_text": "$5",
-            "price_save_text": "You save $5",
-            "button_text": "Choose item 1",
-            "url": "",
-            "first_left_text": "Feature 1",
+            "title": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_2_heading.value }}",
+            "text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_2_paragraph | metafield_tag }}",
+            "price_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_2_price.value }}",
+            "price_compare_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_2_compared_price.value }}",
+            "price_save_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_2_save_price.value }}",
+            "button_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_2_button_text.value }}",
+            "url": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_2_button_link.value }}",
+            "first_left_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_2_featured_1.value }}",
             "first_right_text": "✓",
-            "second_left_text": "Feature 2",
+            "second_left_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_2_featured_2.value }}",
             "second_right_text": "✓",
-            "third_left_text": "Feature 3",
+            "third_left_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_2_featured_3.value }}",
             "third_right_text": "✓",
             "fourth_left_text": "",
             "fourth_right_text": "",
@@ -953,18 +946,18 @@
         "card_C4BdMK": {
           "type": "card",
           "settings": {
-            "title": "Title",
-            "text": "<p>Tell your story</p>",
-            "price_text": "$10",
-            "price_compare_text": "$5",
-            "price_save_text": "You save $5",
-            "button_text": "Choose item 1",
-            "url": "",
-            "first_left_text": "Feature 1",
+            "title": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_3_heading.value }}",
+            "text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_2_paragraph | metafield_tag }}",
+            "price_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_2_price.value }}",
+            "price_compare_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_3_compared_price.value }}",
+            "price_save_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_3_save_price.value }}",
+            "button_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_3_button_text.value }}",
+            "url": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_3_button_link.value }}",
+            "first_left_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_3_featured_1.value }}",
             "first_right_text": "✓",
-            "second_left_text": "Feature 2",
+            "second_left_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_3_featured_2.value }}",
             "second_right_text": "✓",
-            "third_left_text": "Feature 3",
+            "third_left_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_3_featured_3.value }}",
             "third_right_text": "✓",
             "fourth_left_text": "",
             "fourth_right_text": "",
@@ -1086,7 +1079,7 @@
         "tab_bg_active_color": "#ffffff",
         "tab_bg_active_gradient": "",
         "tab_border_active_color": "#dedede",
-        "background_color": "#ffffff",
+        "background_color": "rgba(0,0,0,0)",
         "background_gradient": "",
         "border_color": "#121212",
         "margin_top": 0,
@@ -1109,7 +1102,7 @@
         "richtext_4t78FE": {
           "type": "richtext",
           "settings": {
-            "content": "<p>⭐ 4.8 from 12,000+ reviews · Dishwasher-safe · Bristle-free guarantee</p>"
+            "content": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.rich_text_paragraph | metafield_tag }}"
           }
         }
       },
@@ -1122,6 +1115,19 @@
         "content_width": "small",
         "text_position": "center",
         "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_mj3UKk": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n.feature-chart__table {\n  border-radius: 20px;\n}\n.feature-chart__table-row.feature-chart__table-row--product {\n  background: black !important;\n  color: white;\n  padding: 0 20px;\n}\n.feature-chart.bg-custom.text-custom {\n  padding: 0;\n}\n.feature-chart__table .feature-chart__product {\n  padding: 20px 0;\n}\n.feature-chart__table .feature-chart__product:first-child {\n  background: red;\n}\n.feature-chart__table-row {\n  padding: 20px;\n}\n.feature-chart__table-row:nth-child(odd) {\n  background: #eee;\n}\n@media screen and (max-width: 699px){\n  .feature-chart.bg-custom.text-custom {\n    padding-right: 20px;\n  }\n  .feature-chart__table {\n    border-radius: 0px;\n  }\n.media-with-text__content{\n padding:0;\n}\n}</style>",
+        "background": "",
         "background_gradient": "",
         "text_color": ""
       }
@@ -1149,6 +1155,7 @@
     "faq_tXUzeN",
     "featured_collection_8r33XG",
     "ss_pricing_table_5_6WW8tm",
-    "rich_text_ri99Fx"
+    "rich_text_ri99Fx",
+    "custom_liquid_mj3UKk"
   ]
 }
