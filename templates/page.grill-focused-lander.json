@@ -1079,7 +1079,7 @@
         "tab_bg_active_color": "#ffffff",
         "tab_bg_active_gradient": "",
         "tab_border_active_color": "#dedede",
-        "background_color": "#ffffff",
+        "background_color": "rgba(0,0,0,0)",
         "background_gradient": "",
         "border_color": "#121212",
         "margin_top": 0,
