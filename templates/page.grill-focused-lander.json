@@ -129,13 +129,13 @@
         "subheading_NiGP3n": {
           "type": "subheading",
           "settings": {
-            "text": "Why The Old Brush Has To Go"
+            "text": "{{ page.metafields.custom.lander_metafields.value.safety_warning_subheading.value }}"
           }
         },
         "heading_heapHk": {
           "type": "heading",
           "settings": {
-            "text": "That Wire Brush in His Garage Is a Hospital Visit Waiting to Happen",
+            "text": "{{ page.metafields.custom.lander_metafields.value.safety_warning_heading.value }}",
             "heading_tag": "h4",
             "text_color": "",
             "gradient": ""
@@ -144,13 +144,13 @@
         "richtext_VhQ8kp": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Here's what most [Brand] owners don't know: those tiny wire bristles snap off, stick to the grates, and end up in the food. Every year, more than<strong>1,000 people land in the ER </strong>after swallowing one. And in early 2026, regulators recalled<strong>13 million </strong>wire grill brushes.</p>"
+            "content": "{{ page.metafields.custom.lander_metafields.value.safety_warning_paragraph_1 | metafield_tag }}"
           }
         },
         "richtext_qxKVAM": {
           "type": "richtext",
           "settings": {
-            "content": "<p>He spent good money on that [Brand]. The brush he's cleaning it with shouldn't be the most dangerous thing in the backyard.</p>"
+            "content": "{{ page.metafields.custom.lander_metafields.value.safety_warning_paragraph_2 | metafield_tag }}"
           }
         },
         "divider_3g8PnH": {
@@ -898,13 +898,13 @@
             "price_color": "#121212",
             "table_left_color": "#121212",
             "table_right_color": "#121212",
-            "card_bg_color": "#F3F3F3",
-            "table_border_color": "#DEDEDE",
+            "card_bg_color": "#f3f3f3",
+            "table_border_color": "#dedede",
             "card_border_color": "#121212",
-            "button_color": "#FFFFFF",
+            "button_color": "#ffffff",
             "button_hover_color": "#121212",
             "button_bg_color": "#121212",
-            "button_bg_hover_color": "#FFFFFF",
+            "button_bg_hover_color": "#ffffff",
             "button_bg_gradient": "",
             "button_bg_hover_gradient": "",
             "button_border_color": "#121212",
@@ -934,13 +934,13 @@
             "price_color": "#121212",
             "table_left_color": "#121212",
             "table_right_color": "#121212",
-            "card_bg_color": "#F3F3F3",
-            "table_border_color": "#DEDEDE",
+            "card_bg_color": "#f3f3f3",
+            "table_border_color": "#dedede",
             "card_border_color": "#121212",
-            "button_color": "#FFFFFF",
+            "button_color": "#ffffff",
             "button_hover_color": "#121212",
             "button_bg_color": "#121212",
-            "button_bg_hover_color": "#FFFFFF",
+            "button_bg_hover_color": "#ffffff",
             "button_bg_gradient": "",
             "button_bg_hover_gradient": "",
             "button_border_color": "#121212",
@@ -977,13 +977,13 @@
             "price_color": "#121212",
             "table_left_color": "#121212",
             "table_right_color": "#121212",
-            "card_bg_color": "#F3F3F3",
-            "table_border_color": "#DEDEDE",
+            "card_bg_color": "#f3f3f3",
+            "table_border_color": "#dedede",
             "card_border_color": "#121212",
-            "button_color": "#FFFFFF",
+            "button_color": "#ffffff",
             "button_hover_color": "#121212",
             "button_bg_color": "#121212",
-            "button_bg_hover_color": "#FFFFFF",
+            "button_bg_hover_color": "#ffffff",
             "button_bg_gradient": "",
             "button_bg_hover_gradient": "",
             "button_border_color": "#121212",
@@ -1013,13 +1013,13 @@
             "price_color": "#121212",
             "table_left_color": "#121212",
             "table_right_color": "#121212",
-            "card_bg_color": "#F3F3F3",
-            "table_border_color": "#DEDEDE",
+            "card_bg_color": "#f3f3f3",
+            "table_border_color": "#dedede",
             "card_border_color": "#121212",
-            "button_color": "#FFFFFF",
+            "button_color": "#ffffff",
             "button_hover_color": "#121212",
             "button_bg_color": "#121212",
-            "button_bg_hover_color": "#FFFFFF",
+            "button_bg_hover_color": "#ffffff",
             "button_bg_gradient": "",
             "button_bg_hover_gradient": "",
             "button_border_color": "#121212",
@@ -1065,8 +1065,8 @@
             "button_style": "link",
             "button_color": "#121212",
             "button_hover_color": "#121212",
-            "button_bg_color": "#F3F3F3",
-            "button_bg_hover_color": "#EDEDED",
+            "button_bg_color": "#f3f3f3",
+            "button_bg_hover_color": "#ededed",
             "button_bg_gradient": "",
             "button_bg_hover_gradient": "",
             "button_border_color": "#121212",
@@ -1166,16 +1166,16 @@
         "table_right_size": 24,
         "table_right_size_mobile": 20,
         "table_right_height": 130,
-        "tabs_bg_color": "#F5F5F5",
-        "tabs_border_color": "#DEDEDE",
+        "tabs_bg_color": "#f5f5f5",
+        "tabs_border_color": "#dedede",
         "tab_color": "#767676",
-        "tab_bg_color": "transparent",
-        "tab_border_color": "transparent",
+        "tab_bg_color": "rgba(0,0,0,0)",
+        "tab_border_color": "rgba(0,0,0,0)",
         "tab_active_color": "#121212",
-        "tab_bg_active_color": "#FFFFFF",
+        "tab_bg_active_color": "#ffffff",
         "tab_bg_active_gradient": "",
-        "tab_border_active_color": "#DEDEDE",
-        "background_color": "#FFFFFF",
+        "tab_border_active_color": "#dedede",
+        "background_color": "#ffffff",
         "background_gradient": "",
         "border_color": "#121212",
         "margin_top": 0,
