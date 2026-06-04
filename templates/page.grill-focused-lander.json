@@ -1126,7 +1126,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "liquid": "<style>\n.feature-chart__table {\n  border-radius: 20px;\n}\n.feature-chart__table-row.feature-chart__table-row--product {\n  background: black !important;\n  color: white;\n  padding: 0 20px;\n}\n.feature-chart.bg-custom.text-custom {\n  padding: 0;\n}\n.feature-chart__table .feature-chart__product {\n  padding: 20px 0;\n}\n.feature-chart__table .feature-chart__product:first-child {\n  background: red;\n}\n.feature-chart__table-row {\n  padding: 20px;\n}\n.feature-chart__table-row:nth-child(odd) {\n  background: #eee;\n}\n@media screen and (max-width: 699px){\n  .feature-chart.bg-custom.text-custom {\n    padding-right: 20px;\n  }\n  .feature-chart__table {\n    border-radius: 0px;\n  }\n}</style>",
+        "liquid": "<style>\n.feature-chart__table {\n  border-radius: 20px;\n}\n.feature-chart__table-row.feature-chart__table-row--product {\n  background: black !important;\n  color: white;\n  padding: 0 20px;\n}\n.feature-chart.bg-custom.text-custom {\n  padding: 0;\n}\n.feature-chart__table .feature-chart__product {\n  padding: 20px 0;\n}\n.feature-chart__table .feature-chart__product:first-child {\n  background: red;\n}\n.feature-chart__table-row {\n  padding: 20px;\n}\n.feature-chart__table-row:nth-child(odd) {\n  background: #eee;\n}\n@media screen and (max-width: 699px){\n  .feature-chart.bg-custom.text-custom {\n    padding-right: 20px;\n  }\n  .feature-chart__table {\n    border-radius: 0px;\n  }\n.media-with-text__content{\n padding:0;\n}\n}</style>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
