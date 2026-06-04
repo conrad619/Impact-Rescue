@@ -129,13 +129,13 @@
         "subheading_NiGP3n": {
           "type": "subheading",
           "settings": {
-            "text": "Why The Old Brush Has To Go"
+            "text": "{{ page.metafields.custom.lander_metafields.value.safety_warning_subheading.value }}"
           }
         },
         "heading_heapHk": {
           "type": "heading",
           "settings": {
-            "text": "That Wire Brush in His Garage Is a Hospital Visit Waiting to Happen",
+            "text": "{{ page.metafields.custom.lander_metafields.value.safety_warning_heading.value }}",
             "heading_tag": "h4",
             "text_color": "",
             "gradient": ""
@@ -144,13 +144,13 @@
         "richtext_VhQ8kp": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Here's what most [Brand] owners don't know: those tiny wire bristles snap off, stick to the grates, and end up in the food. Every year, more than<strong>1,000 people land in the ER </strong>after swallowing one. And in early 2026, regulators recalled<strong>13 million </strong>wire grill brushes.</p>"
+            "content": "{{ page.metafields.custom.lander_metafields.value.safety_warning_paragraph_1 | metafield_tag }}"
           }
         },
         "richtext_qxKVAM": {
           "type": "richtext",
           "settings": {
-            "content": "<p>He spent good money on that [Brand]. The brush he's cleaning it with shouldn't be the most dangerous thing in the backyard.</p>"
+            "content": "{{ page.metafields.custom.lander_metafields.value.safety_warning_paragraph_2 | metafield_tag }}"
           }
         },
         "divider_3g8PnH": {
@@ -201,15 +201,15 @@
         "image_ye8QAQ": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/NEWGRGLOVESLIFESTYLEIMAGE6.png",
+            "image": "{{ page.metafields.custom.lander_metafields.value.when_he_open_it_image.value }}",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
-            "subheading": "What Happens When He Opens It",
-            "title": "He Rolled His Eyes. Then He Tried It Once.",
-            "content": "<p>Most guys who own a [Brand] think they've got cleaning figured out. They don't want another gadget. So when the brush shows up as a gift, the reaction is usually a polite \"…thanks.\"</p><p>Then they dip it in water, press it on the hot grates, and watch steam blast the grime off in under a minute. No scrubbing, no bristles, no mess. That's the moment the eye-roll turns into \"where has this been my whole life.\"</p>",
+            "subheading": "{{ page.metafields.custom.lander_metafields.value.when_he_opens_it_subheading.value }}",
+            "title": "{{ page.metafields.custom.lander_metafields.value.when_he_opens_it_heading.value }}",
+            "content": "{{ page.metafields.custom.lander_metafields.value.when_he_opens_it_paragraph | metafield_tag }}",
             "link_text": "",
             "link_url": "",
             "background": "#f0f0f0",
@@ -253,12 +253,12 @@
         "item_DkhKJy": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/NEWGRGLOVESLIFESTYLEIMAGE1.png",
+            "image": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item_1_image_1.value }}",
             "show_controls": false,
             "column_size": "3",
-            "title": "1. Dip",
+            "title": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item_1_heading.value }}",
             "heading_tag": "h4",
-            "content": "<p>Dunk the aramid-fiber head in water. It's the same material in firefighter gear.</p>",
+            "content": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item_1_paragraph | metafield_tag }}",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -267,12 +267,12 @@
         "item_cjeUhk": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/NEWGRGLOVESLIFESTYLEIMAGE2.png",
+            "image": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item_2_image_2.value }}",
             "show_controls": false,
             "column_size": "3",
-            "title": "2. Press",
+            "title": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item_2_heading.value }}",
             "heading_tag": "h4",
-            "content": "<p>Spotless grates in 60 seconds. Head pops off, goes in the dishwasher.</p>",
+            "content": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item_2_paragraph | metafield_tag }}",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -281,12 +281,12 @@
         "item_VTfCYh": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/NEWGRGLOVESLIFESTYLEIMAGE4.png",
+            "image": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item3_image_3.value }}",
             "show_controls": false,
             "column_size": "3",
-            "title": "3. Done",
+            "title": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item_3_heading.value }}",
             "heading_tag": "h4",
-            "content": "<p>Spotless grates in 60 seconds. Head pops off, goes in the dishwasher.</p>",
+            "content": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item_3_paragraph | metafield_tag }}",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -307,8 +307,8 @@
         "stack_on_mobile": true,
         "gap": "x-large",
         "text_alignment": "center",
-        "subheading": "How It Works",
-        "title": "Steam Does the Scrubbing. He Just Holds It.",
+        "subheading": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_subheading.value }}",
+        "title": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_heading.value }}",
         "content": "",
         "background": "",
         "background_gradient": "",
@@ -323,8 +323,8 @@
           "settings": {
             "style": "fill",
             "size": "xl",
-            "text": "Get his Grill Rescue",
-            "url": "",
+            "text": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_button_text.value }}",
+            "url": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_url.value }}",
             "background": "",
             "text_color": ""
           }
@@ -365,11 +365,11 @@
         "headings_yr9kP7": {
           "type": "headings",
           "settings": {
-            "heading_1": "Safety",
-            "heading_2": "Cleaning Method",
-            "heading_3": "Safe on [Brand] Grills",
-            "heading_4": "Time to Clean",
-            "heading_5": "Dishwasher Safe",
+            "heading_1": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading_1_column_heading_1.value }}",
+            "heading_2": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading_1_column_heading_2.value }}",
+            "heading_3": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading_1_column_heading_3.value }}",
+            "heading_4": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading_1_column_heading_4.value }}",
+            "heading_5": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading_1_column_heading_5.value }}",
             "heading_6": "",
             "heading_7": "",
             "heading_8": "",
@@ -390,12 +390,12 @@
         "values_wC6Rh6": {
           "type": "values",
           "settings": {
-            "custom_title": "Grill Rescue",
-            "value_1": "<p>✓ Bristle-Free</p>",
-            "value_2": "<p>✓ Steam Power</p>",
-            "value_3": "<p>✓ Yes</p>",
-            "value_4": "<p>✓ 60 Seconds</p>",
-            "value_5": "<p>✓ Yes</p>",
+            "custom_title": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading_value_column_title_1.value }}",
+            "value_1": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading_2_value_1 | metafield_tag }}",
+            "value_2": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading_2_value_2 | metafield_tag }}",
+            "value_3": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading_2_value_3 | metafield_tag }}",
+            "value_4": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading_2_value_4 | metafield_tag }}",
+            "value_5": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading_2_value_5 | metafield_tag }}",
             "value_6": "",
             "value_7": "",
             "value_8": "",
@@ -416,12 +416,12 @@
         "values_i3BPcY": {
           "type": "values",
           "settings": {
-            "custom_title": "The Wire BRush",
-            "value_1": "<p>✗ Loose Wires</p>",
-            "value_2": "<p>✗ Hard Scrubbing</p>",
-            "value_3": "<p>✗ Scratches</p>",
-            "value_4": "<p>✗ Several Minues</p>",
-            "value_5": "<p>✗ No</p>",
+            "custom_title": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading_value_column_title_2.value }}",
+            "value_1": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading_3_value_1 | metafield_tag }}",
+            "value_2": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading_3_value_2 | metafield_tag }}",
+            "value_3": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading_3_value_3 | metafield_tag }}",
+            "value_4": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading_3_value_4 | metafield_tag }}",
+            "value_5": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading_3_value_5 | metafield_tag }}",
             "value_6": "",
             "value_7": "",
             "value_8": "",
@@ -457,8 +457,8 @@
       "name": "Custom Comparison table",
       "settings": {
         "full_width": true,
-        "subheading": "Grill Rescue vs. The Wire Brush",
-        "title": "An Easy Upgrade From What He's Using Now",
+        "subheading": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_subheading.value }}",
+        "title": "{{ page.metafields.custom.lander_metafields.value.custom_comparison_table.value.comparison_table_heading.value }}",
         "content": "",
         "button_text": "",
         "button_url": "",
@@ -619,7 +619,7 @@
         "subheading_eaLxAz": {
           "type": "subheading",
           "settings": {
-            "text": "Why 250,000+ Grillers Trust It"
+            "text": "{{ page.metafields.custom.lander_metafields.value[\"250k_grillers_trust_it_subheading\"].value }}"
           }
         }
       },
@@ -642,9 +642,9 @@
         "item_PaMFP3": {
           "type": "item",
           "settings": {
-            "title": "250k+",
+            "title": "{{ page.metafields.custom.lander_metafields.value.trust_it_numbers_item_1_impact_text.value }}",
             "subheading": "",
-            "content": "<p>Happy customers</p>",
+            "content": "{{ page.metafields.custom.lander_metafields.value.trust_it_numbers_item_1_paragraph | metafield_tag }}",
             "button_text": "",
             "button_url": "",
             "animate_impact_text": true,
@@ -654,9 +654,9 @@
         "item_GKgyYn": {
           "type": "item",
           "settings": {
-            "title": "12,000+",
+            "title": "{{ page.metafields.custom.lander_metafields.value.trust_it_numbers_item_2_impact_text.value }}",
             "subheading": "",
-            "content": "<p>Five-star reviews</p>",
+            "content": "{{ page.metafields.custom.lander_metafields.value.trust_it_numbers_item_2_paragraph | metafield_tag }}",
             "button_text": "",
             "button_url": "",
             "animate_impact_text": true,
@@ -666,9 +666,9 @@
         "item_wfytPx": {
           "type": "item",
           "settings": {
-            "title": "60 sec",
+            "title": "{{ page.metafields.custom.lander_metafields.value.trust_it_numbers_item_3_impact_text.value }}",
             "subheading": "",
-            "content": "<p>To a clean grill</p>",
+            "content": "{{ page.metafields.custom.lander_metafields.value.trust_it_numbers_item_3_paragraph | metafield_tag }}",
             "button_text": "",
             "button_url": "",
             "animate_impact_text": true,
@@ -704,7 +704,7 @@
         "heading_CnXXcm": {
           "type": "heading",
           "settings": {
-            "text": "🚒 Firefighter Designed",
+            "text": "{{ page.metafields.custom.lander_metafields.value.fire_fighter_designed_heading.value }}",
             "heading_tag": "h3",
             "text_color": "",
             "gradient": ""
@@ -713,7 +713,7 @@
         "richtext_8Ji7Fy": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "{{ page.metafields.custom.lander_metafields.value.fire_fighter_designed_paragraph | metafield_tag }}"
           }
         }
       },
@@ -750,29 +750,29 @@
         "item_QC9aAM": {
           "type": "item",
           "settings": {
-            "title": "Will it work on his [Brand]?",
-            "content": "<p>Yes. It's safe on [Brand] Grills, cast iron, stainless steel, and chrome grates, exactly what [Brand] grills use.</p>"
+            "title": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_item_1_question.value }}",
+            "content": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_item_1_answer | metafield_tag }}"
           }
         },
         "item_yEdbV7": {
           "type": "item",
           "settings": {
-            "title": "Is it really safer than a wire brush?",
-            "content": "<p>There are no bristles to break off, period. Nothing can detach and end up in the food.</p>"
+            "title": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_item_2_question.value }}",
+            "content": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_item_2_answer | metafield_tag }}"
           }
         },
         "item_rUGLT7": {
           "type": "item",
           "settings": {
-            "title": "Does it make a good gift?",
-            "content": "<p>It's our most-gifted item for a reason: useful, surprising, and something he'd never think to buy himself. Father's Day, birthdays, and the holidays are when it moves fastest.</p>"
+            "title": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_item_3_question.value }}",
+            "content": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_item_3_answer | metafield_tag }}"
           }
         },
         "item_bi4kAK": {
           "type": "item",
           "settings": {
-            "title": "Is cleanup a hassle?",
-            "content": "<p>No. The head pops off and goes straight in the dishwasher. Replacement heads are available too.</p>"
+            "title": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_item_4_question.value }}",
+            "content": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_item_4_answer | metafield_tag }}"
           }
         }
       },
@@ -785,8 +785,8 @@
       "name": "FAQ",
       "settings": {
         "full_width": true,
-        "subheading": "Before You Ask",
-        "title": "Quick Answers",
+        "subheading": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_subheading.value }}",
+        "title": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_heading.value }}",
         "content": "",
         "team_avatar_width": 160,
         "support_hours": "",
@@ -898,13 +898,13 @@
             "price_color": "#121212",
             "table_left_color": "#121212",
             "table_right_color": "#121212",
-            "card_bg_color": "#F3F3F3",
-            "table_border_color": "#DEDEDE",
+            "card_bg_color": "#f3f3f3",
+            "table_border_color": "#dedede",
             "card_border_color": "#121212",
-            "button_color": "#FFFFFF",
+            "button_color": "#ffffff",
             "button_hover_color": "#121212",
             "button_bg_color": "#121212",
-            "button_bg_hover_color": "#FFFFFF",
+            "button_bg_hover_color": "#ffffff",
             "button_bg_gradient": "",
             "button_bg_hover_gradient": "",
             "button_border_color": "#121212",
@@ -934,13 +934,13 @@
             "price_color": "#121212",
             "table_left_color": "#121212",
             "table_right_color": "#121212",
-            "card_bg_color": "#F3F3F3",
-            "table_border_color": "#DEDEDE",
+            "card_bg_color": "#f3f3f3",
+            "table_border_color": "#dedede",
             "card_border_color": "#121212",
-            "button_color": "#FFFFFF",
+            "button_color": "#ffffff",
             "button_hover_color": "#121212",
             "button_bg_color": "#121212",
-            "button_bg_hover_color": "#FFFFFF",
+            "button_bg_hover_color": "#ffffff",
             "button_bg_gradient": "",
             "button_bg_hover_gradient": "",
             "button_border_color": "#121212",
@@ -977,13 +977,13 @@
             "price_color": "#121212",
             "table_left_color": "#121212",
             "table_right_color": "#121212",
-            "card_bg_color": "#F3F3F3",
-            "table_border_color": "#DEDEDE",
+            "card_bg_color": "#f3f3f3",
+            "table_border_color": "#dedede",
             "card_border_color": "#121212",
-            "button_color": "#FFFFFF",
+            "button_color": "#ffffff",
             "button_hover_color": "#121212",
             "button_bg_color": "#121212",
-            "button_bg_hover_color": "#FFFFFF",
+            "button_bg_hover_color": "#ffffff",
             "button_bg_gradient": "",
             "button_bg_hover_gradient": "",
             "button_border_color": "#121212",
@@ -1013,13 +1013,13 @@
             "price_color": "#121212",
             "table_left_color": "#121212",
             "table_right_color": "#121212",
-            "card_bg_color": "#F3F3F3",
-            "table_border_color": "#DEDEDE",
+            "card_bg_color": "#f3f3f3",
+            "table_border_color": "#dedede",
             "card_border_color": "#121212",
-            "button_color": "#FFFFFF",
+            "button_color": "#ffffff",
             "button_hover_color": "#121212",
             "button_bg_color": "#121212",
-            "button_bg_hover_color": "#FFFFFF",
+            "button_bg_hover_color": "#ffffff",
             "button_bg_gradient": "",
             "button_bg_hover_gradient": "",
             "button_border_color": "#121212",
@@ -1065,8 +1065,8 @@
             "button_style": "link",
             "button_color": "#121212",
             "button_hover_color": "#121212",
-            "button_bg_color": "#F3F3F3",
-            "button_bg_hover_color": "#EDEDED",
+            "button_bg_color": "#f3f3f3",
+            "button_bg_hover_color": "#ededed",
             "button_bg_gradient": "",
             "button_bg_hover_gradient": "",
             "button_border_color": "#121212",
@@ -1166,16 +1166,16 @@
         "table_right_size": 24,
         "table_right_size_mobile": 20,
         "table_right_height": 130,
-        "tabs_bg_color": "#F5F5F5",
-        "tabs_border_color": "#DEDEDE",
+        "tabs_bg_color": "#f5f5f5",
+        "tabs_border_color": "#dedede",
         "tab_color": "#767676",
-        "tab_bg_color": "transparent",
-        "tab_border_color": "transparent",
+        "tab_bg_color": "rgba(0,0,0,0)",
+        "tab_border_color": "rgba(0,0,0,0)",
         "tab_active_color": "#121212",
-        "tab_bg_active_color": "#FFFFFF",
+        "tab_bg_active_color": "#ffffff",
         "tab_bg_active_gradient": "",
-        "tab_border_active_color": "#DEDEDE",
-        "background_color": "#FFFFFF",
+        "tab_border_active_color": "#dedede",
+        "background_color": "#ffffff",
         "background_gradient": "",
         "border_color": "#121212",
         "margin_top": 0,
