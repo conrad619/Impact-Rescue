@@ -41,6 +41,16 @@
               </div>
             {%- endif -%}
 
+            
+          {%- when 'safety' -%}
+            {%- if block.settings.safety != blank -%}
+              <div style="background:#FEE7E7; border-left:4px solid #CB0101; border-radius:0 8px 8px 0; padding:16px 24px; margin:24px 0;">
+                  <div style=" font-weight:700; color:#CB0101; margin-bottom:4px;">⚠️ Safety Warning</div>
+                  <div style="line-height:1.6;">{{- block.settings.safety -}}</div>
+                </div>
+              </div>
+            {%- endif -%}
+
           {%- when 'liquid' -%}
             {%- if block.settings.liquid != blank -%}
               <div {{ block.shopify_attributes }}>
@@ -294,6 +304,18 @@
           "type": "page",
           "id": "page",
           "label": "Page"
+        }
+      ]
+    },
+    {
+      "type": "safety",
+      "name": "Safety",
+      "settings": [
+        {
+          "type": "text",
+          "id": "safety",
+          "label": "Safety text",
+          "default": "A single detached wire bristle can lodge in the throat or stomach and require surgery. You'd never see it on the burger."
         }
       ]
     },
