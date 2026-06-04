@@ -253,12 +253,12 @@
         "item_DkhKJy": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/NEWGRGLOVESLIFESTYLEIMAGE1.png",
+            "image": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item_1_image_1.value }}",
             "show_controls": false,
             "column_size": "3",
-            "title": "1. Dip",
+            "title": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item_1_heading.value }}",
             "heading_tag": "h4",
-            "content": "<p>Dunk the aramid-fiber head in water. It's the same material in firefighter gear.</p>",
+            "content": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item_1_paragraph | metafield_tag }}",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -267,12 +267,12 @@
         "item_cjeUhk": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/NEWGRGLOVESLIFESTYLEIMAGE2.png",
+            "image": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item_2_image_2.value }}",
             "show_controls": false,
             "column_size": "3",
-            "title": "2. Press",
+            "title": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item_2_heading.value }}",
             "heading_tag": "h4",
-            "content": "<p>Spotless grates in 60 seconds. Head pops off, goes in the dishwasher.</p>",
+            "content": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item_2_paragraph | metafield_tag }}",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -281,12 +281,12 @@
         "item_VTfCYh": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/NEWGRGLOVESLIFESTYLEIMAGE4.png",
+            "image": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item3_image_3.value }}",
             "show_controls": false,
             "column_size": "3",
-            "title": "3. Done",
+            "title": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item_3_heading.value }}",
             "heading_tag": "h4",
-            "content": "<p>Spotless grates in 60 seconds. Head pops off, goes in the dishwasher.</p>",
+            "content": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_item_3_paragraph | metafield_tag }}",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -307,8 +307,8 @@
         "stack_on_mobile": true,
         "gap": "x-large",
         "text_alignment": "center",
-        "subheading": "How It Works",
-        "title": "Steam Does the Scrubbing. He Just Holds It.",
+        "subheading": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_subheading.value }}",
+        "title": "{{ page.metafields.custom.lander_metafields.value.how_it_works.value.how_it_works_heading.value }}",
         "content": "",
         "background": "",
         "background_gradient": "",
