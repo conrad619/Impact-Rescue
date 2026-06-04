@@ -160,7 +160,7 @@
         "safety_TqjmNM": {
           "type": "safety",
           "settings": {
-            "safety": "A single detached wire bristle can lodge in the throat or stomach and require surgery. You'd never see it on the burger."
+            "safety": "{{ page.metafields.custom.lander_metafields.value.safety_warning_text.value }}"
           }
         }
       },
