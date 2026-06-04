@@ -838,7 +838,7 @@
         "heading_LM7gwH": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Give the Man Who Owns a [Brand] Something He'll Actually Thank You For</p>",
+            "heading": "<p>{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_heading.value }}</p>",
             "heading_custom": false,
             "heading_font": "barlow_n4",
             "heading_size": 44,
@@ -854,7 +854,7 @@
         "subheading_dBgrXi": {
           "type": "subheading",
           "settings": {
-            "subheading": "<p>Skip the socks and the grill tools he already has three of. Pick the set that matches his [Brand]. Every option keeps the wire bristles out of the family's food.<br/><br/></p>",
+            "subheading": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_paragraph | metafield_tag }}",
             "subheading_custom": false,
             "subheading_font": "josefin_sans_n4",
             "subheading_size": 18,
@@ -877,11 +877,11 @@
         "card_k9HQwr": {
           "type": "card",
           "settings": {
-            "title": "Title",
-            "text": "<p>Tell your story</p>",
-            "price_text": "$10",
-            "price_compare_text": "$5",
-            "price_save_text": "You save $5",
+            "title": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_1_heading.value }}",
+            "text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_1_paragraph | metafield_tag }}",
+            "price_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.pricing_table_item_1_price.value }}",
+            "price_compare_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.princing_table_item_1_compared_price.value }}",
+            "price_save_text": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.princing_table_item_1_save_price.value }}",
             "button_text": "Choose item 1",
             "url": "",
             "first_left_text": "Feature 1",
@@ -1109,7 +1109,7 @@
         "richtext_4t78FE": {
           "type": "richtext",
           "settings": {
-            "content": "<p>⭐ 4.8 from 12,000+ reviews · Dishwasher-safe · Bristle-free guarantee</p>"
+            "content": "{{ page.metafields.custom.lander_metafields.value.pricing_table.value.rich_text_paragraph | metafield_tag }}"
           }
         }
       },
