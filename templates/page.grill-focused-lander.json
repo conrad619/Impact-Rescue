@@ -750,29 +750,29 @@
         "item_QC9aAM": {
           "type": "item",
           "settings": {
-            "title": "Will it work on his [Brand]?",
-            "content": "<p>Yes. It's safe on [Brand] Grills, cast iron, stainless steel, and chrome grates, exactly what [Brand] grills use.</p>"
+            "title": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_item_1_question.value }}",
+            "content": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_item_1_answer | metafield_tag }}"
           }
         },
         "item_yEdbV7": {
           "type": "item",
           "settings": {
-            "title": "Is it really safer than a wire brush?",
-            "content": "<p>There are no bristles to break off, period. Nothing can detach and end up in the food.</p>"
+            "title": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_item_2_question.value }}",
+            "content": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_item_2_answer | metafield_tag }}"
           }
         },
         "item_rUGLT7": {
           "type": "item",
           "settings": {
-            "title": "Does it make a good gift?",
-            "content": "<p>It's our most-gifted item for a reason: useful, surprising, and something he'd never think to buy himself. Father's Day, birthdays, and the holidays are when it moves fastest.</p>"
+            "title": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_item_3_question.value }}",
+            "content": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_item_3_answer | metafield_tag }}"
           }
         },
         "item_bi4kAK": {
           "type": "item",
           "settings": {
-            "title": "Is cleanup a hassle?",
-            "content": "<p>No. The head pops off and goes straight in the dishwasher. Replacement heads are available too.</p>"
+            "title": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_item_4_question.value }}",
+            "content": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_item_4_answer | metafield_tag }}"
           }
         }
       },
@@ -785,8 +785,8 @@
       "name": "FAQ",
       "settings": {
         "full_width": true,
-        "subheading": "Before You Ask",
-        "title": "Quick Answers",
+        "subheading": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_subheading.value }}",
+        "title": "{{ page.metafields.custom.lander_metafields.value.faqs.value.faq_heading.value }}",
         "content": "",
         "team_avatar_width": 160,
         "support_hours": "",
