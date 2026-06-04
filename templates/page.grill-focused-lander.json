@@ -446,15 +446,7 @@
         "values_wC6Rh6",
         "values_i3BPcY"
       ],
-      "custom_css": [
-        ".feature-chart__table {border-radius: 20px;}",
-        ".feature-chart__table-row.feature-chart__table-row--product {background: black !important; color: white; padding: 0 20px;}",
-        "feature-chart.feature-chart.bg-custom.text-custom {padding: 0;}",
-        ".feature-chart__table .feature-chart__product {padding: 20px 0;}",
-        ".feature-chart__table .feature-chart__product:first-child {background: red;}",
-        ".feature-chart__table-row {padding: 20px;}",
-        ".feature-chart__table-row:nth-child(odd) {background: #eee;}"
-      ],
+      "custom_css": [],
       "name": "Custom Comparison table",
       "settings": {
         "full_width": true,
@@ -1126,6 +1118,19 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "custom_liquid_mj3UKk": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<style>\n.feature-chart__table {\n  border-radius: 20px;\n}\n.feature-chart__table-row.feature-chart__table-row--product {\n  background: black !important;\n  color: white;\n  padding: 0 20px;\n}\n.feature-chart.bg-custom.text-custom {\n  padding: 0;\n}\n.feature-chart__table .feature-chart__product {\n  padding: 20px 0;\n}\n.feature-chart__table .feature-chart__product:first-child {\n  background: red;\n}\n.feature-chart__table-row {\n  padding: 20px;\n}\n.feature-chart__table-row:nth-child(odd) {\n  background: #eee;\n}\n@media screen and (max-width: 699px){\n  .feature-chart.bg-custom.text-custom {\n    padding-right: 20px;\n  }\n  .feature-chart__table {\n    border-radius: 0px;\n  }\n}</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -1150,6 +1155,7 @@
     "faq_tXUzeN",
     "featured_collection_8r33XG",
     "ss_pricing_table_5_6WW8tm",
-    "rich_text_ri99Fx"
+    "rich_text_ri99Fx",
+    "custom_liquid_mj3UKk"
   ]
 }
