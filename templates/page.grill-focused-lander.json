@@ -704,7 +704,7 @@
         "heading_CnXXcm": {
           "type": "heading",
           "settings": {
-            "text": "🚒 Firefighter Designed",
+            "text": "{{ page.metafields.custom.lander_metafields.value.fire_fighter_designed_heading.value }}",
             "heading_tag": "h3",
             "text_color": "",
             "gradient": ""
@@ -713,7 +713,7 @@
         "richtext_8Ji7Fy": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "{{ page.metafields.custom.lander_metafields.value.fire_fighter_designed_paragraph | metafield_tag }}"
           }
         }
       },
