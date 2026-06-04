@@ -619,7 +619,7 @@
         "subheading_eaLxAz": {
           "type": "subheading",
           "settings": {
-            "text": "Why 250,000+ Grillers Trust It"
+            "text": "{{ page.metafields.custom.lander_metafields.value[\"250k_grillers_trust_it_subheading\"].value }}"
           }
         }
       },
@@ -642,9 +642,9 @@
         "item_PaMFP3": {
           "type": "item",
           "settings": {
-            "title": "250k+",
+            "title": "{{ page.metafields.custom.lander_metafields.value.trust_it_numbers_item_1_impact_text.value }}",
             "subheading": "",
-            "content": "<p>Happy customers</p>",
+            "content": "{{ page.metafields.custom.lander_metafields.value.trust_it_numbers_item_1_paragraph | metafield_tag }}",
             "button_text": "",
             "button_url": "",
             "animate_impact_text": true,
@@ -654,9 +654,9 @@
         "item_GKgyYn": {
           "type": "item",
           "settings": {
-            "title": "12,000+",
+            "title": "{{ page.metafields.custom.lander_metafields.value.trust_it_numbers_item_2_impact_text.value }}",
             "subheading": "",
-            "content": "<p>Five-star reviews</p>",
+            "content": "{{ page.metafields.custom.lander_metafields.value.trust_it_numbers_item_2_paragraph | metafield_tag }}",
             "button_text": "",
             "button_url": "",
             "animate_impact_text": true,
@@ -666,9 +666,9 @@
         "item_wfytPx": {
           "type": "item",
           "settings": {
-            "title": "60 sec",
+            "title": "{{ page.metafields.custom.lander_metafields.value.trust_it_numbers_item_3_impact_text.value }}",
             "subheading": "",
-            "content": "<p>To a clean grill</p>",
+            "content": "{{ page.metafields.custom.lander_metafields.value.trust_it_numbers_item_3_paragraph | metafield_tag }}",
             "button_text": "",
             "button_url": "",
             "animate_impact_text": true,
