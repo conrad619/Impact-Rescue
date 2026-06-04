@@ -211,6 +211,25 @@
     flex-direction: column;
     justify-content: space-between;
   }
+  .pricing-card-{{ section.id }}:nth-child(2){
+    border-width:2px;
+    border-color:#DF0000;
+    position:relative;
+    overflow:visible;
+  }
+  
+  .pricing-card-{{ section.id }}:nth-child(2) .most-popular{
+    border-radius:100px;
+    background:#DF0000;
+    color:#fff;
+    padding:5px 14px;
+    font-size:12px;
+    font-weight:700;
+    position:absolute;
+    top:-13px;
+    left:50%;
+    transform:translateX(-50%);
+  }
 
   .pricing-title-{{ section.id }} {
     margin: 0;
@@ -237,7 +256,7 @@
     text-align: {{ card_align_mobile }};
     margin-top: {{ price_mt_mobile }}px;
     display: flex;
-    align-items: center;
+    align-items: end;
     flex-wrap: wrap;
     justify-content: {{ card_align_mobile }};
   }
@@ -248,10 +267,31 @@
     font-size: {{ price_size_mobile }}px;
     line-height: {{ price_height }}%;
     font-weight: 700;
+    line-height:1;
+  }
+  .pricing-price-{{ section.id }} .price-text{
+    color:#DF0000;
   }
 
   .pricing-price-{{ section.id }} span {
     font-size: {{ price_size_mobile | times: 0.5 }}px;
+    font-weight:400;
+    text-decoration: line-through;
+    color: #aaa;
+    margin-left: 10px;
+  }
+  
+  .pricing-price-{{ section.id }} .price-save-text {
+    font-size: {{ price_size_mobile | times: 0.3 }}px;
+    font-weight:400;
+    width:100%;
+        display: inline-block;
+    background: #E0F4E8;
+    color: #00A341;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    margin-bottom: 16px;
   }
 
   .pricing-card-button-{{ section.id }} {
@@ -646,7 +686,53 @@
           }
         </style>
       {% endif %}
+    
+    
+    {% when 'subheading' %}
+      <style>
+        {{  block.settings.subheading_font | font_face: font_display: 'swap' }}
 
+
+        
+        .pricing-subheading-{{ block.id }} {
+          margin-top: {{ block.settings.subheading_mt_mobile }}px;
+          text-align: {{ block.settings.subheading_align_mobile }};
+          position: relative;
+          z-index: 2;
+        }
+
+        .pricing-subheading-{{ block.id }} * {
+          margin: 0;
+          font-size: {{ block.settings.subheading_size_mobile }}px;
+          color: {{ block.settings.subheading_color }};
+          line-height: {{ block.settings.subheading_height }}%;
+          text-transform: unset;
+          text-decoration: none;
+          word-break: break-word;
+        }
+
+        @media(min-width: 1024px) {
+          
+          .pricing-subheading-{{ block.id }} {
+            margin-top: {{ block.settings.subheading_mt }}px;
+            text-align: {{ block.settings.subheading_align }};
+          }
+
+          .pricing-subheading-{{ block.id }} * {
+            font-size: {{ block.settings.subheading_size }}px;
+          }
+        }
+      </style>
+
+      {% if block.settings.subheading_custom %}
+        <style>
+          .pricing-subheading-{{ block.id }} * {
+            font-family: {{ block.settings.subheading_font.family }}, {{ block.settings.subheading_font.fallback_families }};
+            font-weight: {{ block.settings.subheading_font.weight }};
+            font-style: {{ block.settings.subheading_font.style }};
+          }
+        </style>
+      {% endif %}
     {% when 'caption' %}
       <style>
         {{  block.settings.text_font | font_face: font_display: 'swap' }}
@@ -867,6 +953,10 @@
         {% if block.settings.heading != blank %}
           <div class="pricing-heading-{{ block.id }}">{{ block.settings.heading }}</div>
         {% endif %}
+      {% elsif block.type == 'subheading' %}
+        {% if block.settings.subheading != blank %}
+          <div class="pricing-subheading-{{ block.id }}">{{ block.settings.subheading }}</div>
+        {% endif %}
       {% endif %}
     {% endfor %}
 
@@ -897,6 +987,7 @@
             {% assign inside_item = true %}
         {% elsif block.type == 'card' %}
           <div class="pricing-card-{{ section.id }} pricing-card-{{ block.id }}">
+            <span class="most-popular">⭐ Most Popular</span>
             <div class="pricing-card-top-{{ section.id }}">
               {% if block.settings.title != blank %}
                 <p class="pricing-title-{{ section.id }} pricing-title-{{ block.id }}">{{ block.settings.title }}</p>
@@ -909,34 +1000,16 @@
             <div class="pricing-card-bottom-{{ section.id }}">
               {% if block.settings.price_text != blank %}
                 <div class="pricing-price-{{ section.id }} pricing-price-{{ block.id }}">
-                  <p>{{ block.settings.price_text }}</p>
-                  <span>{{ price_second_text }}</span>
+                  <p class="price-text">{{ block.settings.price_text }}</p>
+                  
+                  {% if block.settings.price_compare_text != blank %}
+                  <span class="price-compare-text">{{ block.settings.price_compare_text }}</span>
+                  {% endif %}
+                  
+                  {% if block.settings.price_save_text != blank %}
+                  <p class="price-save-text">{{ block.settings.price_save_text }}</p>
+                  {% endif %}
                 </div>
-              {% endif %}
-              {% if block.settings.button_text != blank %}
-                <a
-                  href="{{ block.settings.url }}"
-                  class="pricing-card-button-{{ section.id }} pricing-card-button-{{ block.id }}"
-                >
-                  <p class="pricing-card-button-inner-{{ section.id }} pricing-card-button-inner-{{ block.id }}">
-                    {{ block.settings.button_text }}
-                    {% if block.settings.button_style == 'non_outline_arrow'
-                      or block.settings.button_style == 'outline_arrow'
-                    %}
-                      <svg
-                        width="192"
-                        height="192"
-                        viewBox="0 0 192 192"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M187.827 98.7858C188.123 98.4749 188.123 98.4749 188.123 98.1761C188.419 97.8652 188.419 97.5663 188.704 97.5663C189 96.9566 189 96.6458 189 96.0361C189 95.4263 189 94.8166 188.704 94.5058C188.704 94.195 188.408 93.8961 188.123 93.5852C188.123 93.2744 187.827 93.2744 187.827 92.9755L103.287 4.21945C102.41 3.29889 101.533 3 100.668 3C99.791 3 98.6295 3.31083 98.0488 4.21945C97.1719 5.14 96.8872 6.06058 96.8872 6.96919C96.8872 7.88974 97.1833 9.10918 98.0488 9.7189L175.587 92.0539H6.79206C4.75371 92.0539 3 93.895 3 96.0351C3 98.1751 4.75365 100.016 6.79206 100.016H175.575L97.7543 182.042C96.2967 183.572 96.2967 186.322 97.7543 187.852C99.2119 189.383 101.831 189.383 103.288 187.852L187.827 98.7858Z" fill="black"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M188.607 97.5657C188.432 97.5657 188.365 97.6788 188.27 97.8382C188.211 97.9378 188.141 98.0554 188.027 98.1748C188.027 98.4734 188.027 98.4734 187.731 98.7839L103.281 187.759C101.825 189.287 99.2085 189.287 97.7524 187.759C96.2963 186.23 96.2963 183.483 97.7524 181.954L175.492 100.013L6.88489 100.013C4.8486 100.013 3.09677 98.1739 3.09677 96.036C3.09677 93.8982 4.84866 92.059 6.88489 92.059L175.504 92.059L98.0465 9.80878C97.182 9.19968 96.8862 7.9815 96.8862 7.0619C96.8862 6.15422 97.1706 5.2346 98.0465 4.315C98.6267 3.40732 99.787 3.0968 100.663 3.0968C101.527 3.0968 102.403 3.39539 103.279 4.315L187.731 92.9796C187.731 93.1274 187.804 93.2021 187.877 93.2774C187.952 93.3543 188.027 93.4319 188.027 93.5887C188.046 93.6098 188.066 93.6308 188.085 93.6518C188.338 93.9267 188.584 94.1935 188.606 94.4689C188.607 94.482 188.607 94.4951 188.607 94.5083C188.903 94.8188 188.903 95.4279 188.903 96.037C188.903 96.6461 188.903 96.9566 188.607 97.5657ZM191.489 93.2767C191.79 93.8661 191.89 94.4204 191.934 94.7363C192.001 95.2226 192 95.7194 192 95.9856L192 96.037C192 96.0544 192 96.0729 192 96.0926C192 96.3523 192.001 96.8096 191.924 97.2931C191.828 97.8884 191.64 98.41 191.393 98.9184L190.546 100.663H190.212C190.127 100.759 190.038 100.852 189.988 100.905L189.974 100.92L105.527 189.891C102.85 192.701 98.1865 192.704 95.51 189.895C94.1476 188.464 93.5636 186.587 93.5636 184.857C93.5636 183.128 94.1468 181.252 95.5071 179.822M191.489 93.2767C191.316 92.7908 191.078 92.4357 190.938 92.2406C190.903 92.1912 190.866 92.142 190.828 92.0939V91.7408L105.522 2.17912C104.076 0.661813 102.397 0 100.663 0C99.3914 0 97.0569 0.401401 95.6212 2.37737C94.3151 3.83819 93.7895 5.45521 93.7895 7.0619C93.7895 8.26663 94.1183 10.6061 95.9608 12.111L168.333 88.9622L6.88489 88.9622C2.9981 88.9622 0 92.3316 0 96.036C0 99.7405 2.99801 103.11 6.88489 103.11L168.285 103.11" fill="black"></path>
-                        <path d="M169.5 104L16.5 102.5V90H171L97.5 10.5V7L107.5 4.5C131.167 29.6667 180.2 81.5 187 87.5C193.8 93.5 191.5 99 189.5 101L105.5 184L94 181.5L169.5 104Z" fill="black"></path>
-                      </svg>
-                    {% endif %}
-                  </p>
-                </a>
               {% endif %}
 
               <div class="pricing-card-table-{{ section.id }}">
@@ -990,6 +1063,32 @@
                     </p>
                   </div>
                 {% endif %}
+                
+              {% if block.settings.button_text != blank %}
+                <a
+                  href="{{ block.settings.url }}"
+                  class="pricing-card-button-{{ section.id }} pricing-card-button-{{ block.id }}"
+                >
+                  <p class="pricing-card-button-inner-{{ section.id }} pricing-card-button-inner-{{ block.id }}">
+                    {{ block.settings.button_text }}
+                    {% if block.settings.button_style == 'non_outline_arrow'
+                      or block.settings.button_style == 'outline_arrow'
+                    %}
+                      <svg
+                        width="192"
+                        height="192"
+                        viewBox="0 0 192 192"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M187.827 98.7858C188.123 98.4749 188.123 98.4749 188.123 98.1761C188.419 97.8652 188.419 97.5663 188.704 97.5663C189 96.9566 189 96.6458 189 96.0361C189 95.4263 189 94.8166 188.704 94.5058C188.704 94.195 188.408 93.8961 188.123 93.5852C188.123 93.2744 187.827 93.2744 187.827 92.9755L103.287 4.21945C102.41 3.29889 101.533 3 100.668 3C99.791 3 98.6295 3.31083 98.0488 4.21945C97.1719 5.14 96.8872 6.06058 96.8872 6.96919C96.8872 7.88974 97.1833 9.10918 98.0488 9.7189L175.587 92.0539H6.79206C4.75371 92.0539 3 93.895 3 96.0351C3 98.1751 4.75365 100.016 6.79206 100.016H175.575L97.7543 182.042C96.2967 183.572 96.2967 186.322 97.7543 187.852C99.2119 189.383 101.831 189.383 103.288 187.852L187.827 98.7858Z" fill="black"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M188.607 97.5657C188.432 97.5657 188.365 97.6788 188.27 97.8382C188.211 97.9378 188.141 98.0554 188.027 98.1748C188.027 98.4734 188.027 98.4734 187.731 98.7839L103.281 187.759C101.825 189.287 99.2085 189.287 97.7524 187.759C96.2963 186.23 96.2963 183.483 97.7524 181.954L175.492 100.013L6.88489 100.013C4.8486 100.013 3.09677 98.1739 3.09677 96.036C3.09677 93.8982 4.84866 92.059 6.88489 92.059L175.504 92.059L98.0465 9.80878C97.182 9.19968 96.8862 7.9815 96.8862 7.0619C96.8862 6.15422 97.1706 5.2346 98.0465 4.315C98.6267 3.40732 99.787 3.0968 100.663 3.0968C101.527 3.0968 102.403 3.39539 103.279 4.315L187.731 92.9796C187.731 93.1274 187.804 93.2021 187.877 93.2774C187.952 93.3543 188.027 93.4319 188.027 93.5887C188.046 93.6098 188.066 93.6308 188.085 93.6518C188.338 93.9267 188.584 94.1935 188.606 94.4689C188.607 94.482 188.607 94.4951 188.607 94.5083C188.903 94.8188 188.903 95.4279 188.903 96.037C188.903 96.6461 188.903 96.9566 188.607 97.5657ZM191.489 93.2767C191.79 93.8661 191.89 94.4204 191.934 94.7363C192.001 95.2226 192 95.7194 192 95.9856L192 96.037C192 96.0544 192 96.0729 192 96.0926C192 96.3523 192.001 96.8096 191.924 97.2931C191.828 97.8884 191.64 98.41 191.393 98.9184L190.546 100.663H190.212C190.127 100.759 190.038 100.852 189.988 100.905L189.974 100.92L105.527 189.891C102.85 192.701 98.1865 192.704 95.51 189.895C94.1476 188.464 93.5636 186.587 93.5636 184.857C93.5636 183.128 94.1468 181.252 95.5071 179.822M191.489 93.2767C191.316 92.7908 191.078 92.4357 190.938 92.2406C190.903 92.1912 190.866 92.142 190.828 92.0939V91.7408L105.522 2.17912C104.076 0.661813 102.397 0 100.663 0C99.3914 0 97.0569 0.401401 95.6212 2.37737C94.3151 3.83819 93.7895 5.45521 93.7895 7.0619C93.7895 8.26663 94.1183 10.6061 95.9608 12.111L168.333 88.9622L6.88489 88.9622C2.9981 88.9622 0 92.3316 0 96.036C0 99.7405 2.99801 103.11 6.88489 103.11L168.285 103.11" fill="black"></path>
+                        <path d="M169.5 104L16.5 102.5V90H171L97.5 10.5V7L107.5 4.5C131.167 29.6667 180.2 81.5 187 87.5C193.8 93.5 191.5 99 189.5 101L105.5 184L94 181.5L169.5 104Z" fill="black"></path>
+                      </svg>
+                    {% endif %}
+                  </p>
+                </a>
+              {% endif %}
               </div>
             </div>
           </div>
@@ -2156,6 +2255,98 @@
       ]
     },
     {
+      "type": "subheading",
+      "name": "Subheading",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "subheading",
+          "label": "Subheading",
+          "default": "<h3>Plan details</h3>"
+        },
+        {
+          "type": "checkbox",
+          "id": "subheading_custom",
+          "label": "Use custom font",
+          "default": false
+        },
+        {
+          "type": "font_picker",
+          "id": "subheading_font",
+          "label": "Font family",
+          "default": "josefin_sans_n4"
+        },
+        {
+          "type": "range",
+          "id": "subheading_size",
+          "min": 0,
+          "max": 72,
+          "step": 2,
+          "unit": "px",
+          "label": "Font size",
+          "default": 52
+        },
+        {
+          "type": "range",
+          "id": "subheading_size_mobile",
+          "min": 0,
+          "max": 72,
+          "step": 2,
+          "unit": "px",
+          "label": "Font size - mobile",
+          "default": 32
+        },
+        {
+          "type": "range",
+          "id": "subheading_height",
+          "min": 50,
+          "max": 200,
+          "step": 10,
+          "unit": "%",
+          "label": "Line height",
+          "default": 130
+        },
+        {
+          "type": "range",
+          "id": "subheading_mt",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "unit": "px",
+          "label": "Margin top",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "subheading_mt_mobile",
+          "min": 0,
+          "max": 100,
+          "step": 2,
+          "unit": "px",
+          "label": "Margin top - mobile",
+          "default": 0
+        },
+        {
+          "type": "text_alignment",
+          "id": "subheading_align",
+          "label": "Alignment",
+          "default": "center"
+        },
+        {
+          "type": "text_alignment",
+          "id": "subheading_align_mobile",
+          "label": "Alignment - mobile",
+          "default": "center"
+        },
+        {
+          "type": "color",
+          "label": "Color",
+          "id": "subheading_color",
+          "default": "#121212"
+        }
+      ]
+    },
+    {
       "type": "tab",
       "name": "Tab",
       "limit": 2,
@@ -2195,6 +2386,18 @@
           "id": "price_text",
           "label": "Price",
           "default": "$10"
+        },
+        {
+          "type": "text",
+          "id": "price_compare_text",
+          "label": "Compare Price",
+          "default": "$5"
+        },
+        {
+          "type": "text",
+          "id": "price_save_text",
+          "label": "Price Save",
+          "default": "You save $5"
         },
         {
           "type": "text",
@@ -2720,6 +2923,9 @@
       "blocks": [
         {
           "type": "heading"
+        },
+        {
+          "type": "subheading"
         },
         {
           "type": "tab",
