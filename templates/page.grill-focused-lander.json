@@ -160,7 +160,7 @@
         "liquid_DqtYwT": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"background:#FEE7E7; border-left:4px solid #CB0101; border-radius:0 8px 8px 0; padding:16px 24px; margin:24px 0;\">\n      <div style=\"font-size:14px; font-weight:700; color:#CB0101; margin-bottom:4px;\">⚠️ Safety Warning</div>\n      <div style=\"font-size:15px; line-height:1.6;\">A single detached wire bristle can lodge in the throat or stomach and require surgery. You'd never see it on the burger.</div>\n    </div>\n  </div>"
+            "liquid": "<div style=\"background:#FEE7E7; border-left:4px solid #CB0101; border-radius:0 8px 8px 0; padding:16px 24px; margin:24px 0;\">\n      <div style=\" font-weight:700; color:#CB0101; margin-bottom:4px;\">⚠️ Safety Warning</div>\n      <div style=\"line-height:1.6;\">A single detached wire bristle can lodge in the throat or stomach and require surgery. You'd never see it on the burger.</div>\n    </div>\n  </div>"
           }
         }
       },
@@ -987,35 +987,6 @@
             "button_border_color": "#121212",
             "button_border_hover_color": "#121212"
           }
-        },
-        "button_RYiPXB": {
-          "type": "button",
-          "settings": {
-            "button": "Learn more",
-            "url": "",
-            "button_custom": false,
-            "button_font": "josefin_sans_n4",
-            "button_size": 18,
-            "button_size_mobile": 18,
-            "button_height": 100,
-            "button_padding_horizontal": 36,
-            "button_padding_horizontal_mobile": 36,
-            "button_padding_vertical": 20,
-            "button_padding_vertical_mobile": 18,
-            "button_radius": 100,
-            "button_border_thickness": 1,
-            "button_mt": 52,
-            "button_mt_mobile": 32,
-            "button_style": "link",
-            "button_color": "#121212",
-            "button_hover_color": "#121212",
-            "button_bg_color": "#f3f3f3",
-            "button_bg_hover_color": "#ededed",
-            "button_bg_gradient": "",
-            "button_bg_hover_gradient": "",
-            "button_border_color": "#121212",
-            "button_border_hover_color": "#121212"
-          }
         }
       },
       "block_order": [
@@ -1024,8 +995,7 @@
         "tab_bGDdxm",
         "card_k9HQwr",
         "card_ANXizb",
-        "card_C4BdMK",
-        "button_RYiPXB"
+        "card_C4BdMK"
       ],
       "name": "SS - Pricing table #5",
       "settings": {
