@@ -14,7 +14,7 @@
     "header_timer_pXcKRV": {
       "type": "header-timer",
       "custom_css": [
-        "{display:none;}"
+        "{display: none;}"
       ],
       "name": "Header Timer",
       "settings": {
@@ -38,7 +38,7 @@
         "image_dWVECA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Rescue_Graphics_Website_Homepage_Father_s_Day_Graphic_70_Off-02.svg",
+            "image": "shopify://shop_images/Fathers_Day_Sale_Graphic_Announcement_BAr.svg",
             "url": "",
             "image_height_mobile": 32,
             "image_height_desktop": 40
