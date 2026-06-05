@@ -149,6 +149,7 @@
       "block_order": [
         "ai_gen_block_072ad83_HzgYUe"
       ],
+      "disabled": true,
       "custom_css": [
         ".shopify-block {margin-inline-start: calc(-1 * var(--container-outer-width)); margin-inline-end: calc(-1 * var(--container-outer-width));}",
         "[class*=\"ai-video-hero__content\"] {width: 100%; margin: 0 auto;}"
