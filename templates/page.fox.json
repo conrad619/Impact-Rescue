@@ -21,9 +21,8 @@
       "blocks": {
         "image_eCyBPq": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Rescue_Graphics_Website_Homepage_Father_s_Day_Graphic_70_Off-01.svg",
+            "image": "shopify://shop_images/fox_sales_event_ad72b784-4e39-4b93-8729-833a326be8e4.png",
             "image_width": 500
           }
         },
@@ -36,19 +35,20 @@
         },
         "heading_RBxbRH": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "Discover amazing products"
           }
         },
         "text_kQcTjm": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>Premium tools for the people</p><p>who serve and protect</p>"
+            "text": "<p>Home of the World's Best Grill Brush & Grilling Tools.<br/></p>"
           }
         },
         "text_r7CAir": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Premium Tools for the one's you love</p><p>Happy Father's Day</p>"
           }
@@ -69,7 +69,6 @@
         "text_r7CAir",
         "button_gVUxmb"
       ],
-      "disabled": true,
       "custom_css": [
         ".shopify-block {margin-inline-start: calc(-1 * var(--container-outer-width)); margin-inline-end: calc(-1 * var(--container-outer-width));}",
         "[class*=\"ai-video-hero__wrapper\"] {width: fit-content;}",
