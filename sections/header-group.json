@@ -87,7 +87,7 @@
         "message"
       ],
       "custom_css": [
-        ".announcement-bar {padding: 10px 10px;}"
+        ".announcement-bar {padding: 0px 0px;}"
       ],
       "settings": {
         "enable_sticky": false,
@@ -96,7 +96,7 @@
         "autoplay": false,
         "cycle_speed": 6,
         "scrolling_speed": 30,
-        "text_size": "text-lg",
+        "text_size": "text-xxs",
         "background": "#0f1d3e",
         "background_gradient": "",
         "text_color": "#ffffff"
