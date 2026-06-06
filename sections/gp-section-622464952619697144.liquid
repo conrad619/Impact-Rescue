@@ -320,114 +320,13 @@
     
 
     
-    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"text-3","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"geXlMFEe3b"}' data-id="geXlMFEe3b" id="geXlMFEe3b" data-same-height-subgrid-container class="geXlMFEe3b gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:solid;--bw:2px 1px 1px 1px;--bc:#EEEEEE;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--pageType:GP_STATIC;--radius:var(--g-radius-large);--mt:var(--g-s-l);--mt-mobile:0px;--mb-mobile:10px;--cg:30px;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:var(--g-c-text-3);--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
-      
-
-      <div
-      data-same-height-display-contents
-      style="--ai:normal;--jc:start;--o:0"
-      class="gcniqrkHId gp-relative gp-flex gp-flex-col"
-    >
-      
-    
-      {%- assign gpBkProduct = product -%}
-      
-      {%- liquid
-        if request.page_type == 'product'
-          if 'static' == 'static'
-            if '10719868977311' == 'latest'
-              paginate collections.all.products by 100000
-                assign product = collections.all.products | sort: 'created_at' | reverse | first
-              endpaginate
-            else
-              assign product = all_products['rescue-pro-1']
-              assign productId = '10719868977311' | times: 1
-              if product == empty or product == null
-                paginate collections.all.products by 100000
-                  for item in collections.all.products
-                    if item.id == productId
-                      assign product = item
-                    endif
-                  endfor
-                endpaginate
-              endif
-            endif
-          endif
-        else
-          if '10719868977311' == 'latest'
-            paginate collections.all.products by 100000
-              assign product = collections.all.products | sort: 'created_at'| reverse | first
-            endpaginate
-          else
-            assign product = all_products['rescue-pro-1']
-            assign productId = '10719868977311' | times: 1
-            if product == empty or product == null
-              paginate collections.all.products by 100000
-                for item in collections.all.products
-                  if item.id == productId
-                    assign product = item
-                  endif
-                endfor
-              endpaginate
-            endif
-          endif
-        endif
-      -%}
-    
-    
-    {% if product != empty and product != null %}
-      
-      {%- assign initVariantId =  -%}
-      {%- assign product_form_id = 'product-form-' | append: "gmH3NCRG4F" -%}
-      {%- assign variant = product.selected_or_first_available_variant -%}
-      {%- assign productSelectedVariant = product.selected_or_first_available_variant -%}
-      {%-if productSelectedVariant == empty or productSelectedVariant == null -%}
-        {%- assign productSelectedVariant = product.selected_or_first_available_variant -%}
-      {%- endif -%}
-      {%-if variant == empty or variant == null -%}
-        {%- assign variant = product.selected_or_first_available_variant -%}
-      {%- endif -%}
-    
-      <gp-product
-        data-uid="gmH3NCRG4F"
-        data-id="gmH3NCRG4F"
-        
-        
-        gp-context='{"productId": {{ product.id }}, "preSelectedOptionIds": [], "isSyncProduct": "", "hasPreSelected": false, "variantSelected": {{ variant | json | escape }},  "inventory_management": {{ variant.inventory_management | json | escape  }}, "inventory_policy": {{ variant.inventory_policy | json | escape }}, "inventoryQuantity": {{ variant.inventory_quantity | default: 0 }}, "quantity": 1, "formId": "{{ product_form_id }}" }'
-        gp-data='{"variantSelected": {{ variant | json | escape }}, "quantity": 1, "productUrl":{{ product.url | json | escape }}, "productHandle":{{ product.handle | json | escape }}, "collectionUrl": {{ collection.url | json | escape }}, "collectionHandle": {{ collection.handle | json | escape }}}'
-      >
-        <product-form class="product-form">
-          {%- form 'product', product, id: product_form_id, class: 'form contents', data-type: 'add-to-cart-form', autocomplete: 'off'  -%}
-            <input type="hidden" name="id" value="{{ variant.id }}" />
-            <input type="hidden" name="quantity" value="{{ quantity }}" />
-            <button type="submit" onclick="return false;" style="display:none;"></button>
-            
-    
-
-    
-
-    
-    <gp-row gp-data='{"background":{},"uid":"gmH3NCRG4F"}' data-id="gmH3NCRG4F-row" id="gmH3NCRG4F" data-same-height-subgrid-container class="gmH3NCRG4F gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--pageType:GP_STATIC;--radius:var(--g-radius-small);--mt-mobile:0px;--mb-mobile:0px;--cg:40px;--rg:0px;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--pc:start">
-      
-
-      <div
-      data-same-height-display-contents
-      style="--ai:normal;--jc:start;--o:0"
-      class="gZMQ4uAJ1N gp-relative gp-flex gp-flex-col"
-    >
-      
-    
-
-    
-
-    
-    <gp-row gp-data='{"background":{"desktop":{"attachment":"scroll","color":"#FBFBFB","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color"}},"uid":"gAY1IPNHKJ"}' data-id="gAY1IPNHKJ" id="gAY1IPNHKJ" data-same-height-subgrid-container class="gAY1IPNHKJ gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--bs:solid;--bw:1px 1px 1px 1px;--bc:rgba(18, 18, 18, 0.1);--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--pageType:GP_STATIC;--bblr:NaNpx;--bbrr:NaNpx;--btlr:16px;--btrr:16px;--pt:20px;--pl:20px;--pb:20px;--pr:20px;--cg:var(--g-s-2xl);--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--of:hidden;--of-tablet:hidden;--of-mobile:hidden;--bgc:#FBFBFB;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
+    <gp-row gp-data='{"background":{"desktop":{"type":"color","color":"#FBFBFB","image":{"src":"","width":0,"height":0},"size":"cover","position":{"x":50,"y":50},"repeat":"no-repeat","attachment":"scroll","preload":false}},"uid":"gOoxFKneNd"}' data-id="gOoxFKneNd" id="gOoxFKneNd" data-same-height-subgrid-container class="gOoxFKneNd gp-relative gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full gp-grid-rows-[1fr]" style="--pt:20px;--pl:20px;--pb:20px;--pr:20px;--mb-tablet:var(--g-s-l);--pt-tablet:20px;--pl-tablet:20px;--pb-tablet:20px;--pr-tablet:20px;--mb-mobile:var(--g-s-l);--pt-mobile:20px;--pl-mobile:20px;--pb-mobile:20px;--pr-mobile:20px;--d:grid;--d-tablet:grid;--d-mobile:grid;--bs:solid;--bw:1px 1px 1px 1px;--bc:rgba(18, 18, 18, 0.1);--bblr:16px;--bbrr:16px;--btlr:16px;--btrr:16px;--op:100%;--cg:16px;--rg:0px;--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--h:auto;--of:hidden;--of-tablet:hidden;--of-mobile:hidden;--bgc:#FBFBFB;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;--pc:start">
       
 
       <div
       data-same-height-display-contents
       style="--jc:start"
-      class="g31J1--oqq gp-relative gp-flex gp-flex-col"
+      class="gQhzl-Wwr_ gp-relative gp-flex gp-flex-col"
     >
       
     {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
@@ -466,7 +365,7 @@
       role="presentation"
       data-id="g1AKi2KFio"
       style="--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--ta:center"
-      class="gp-group/image gp-relative force-publish-1780714194248 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g1AKi2KFio"
+      class="gp-group/image gp-relative force-publish-1780714435104 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto g1AKi2KFio"
     >
       <div
         
@@ -749,7 +648,7 @@
       
     </gp-row>
   
-  <div gp-el-wrapper style="--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--pt:5px;--pb:5px;--pt-mobile:5px;--pb-mobile:5px;--pt-tablet:5px;--pb-tablet:5px" class="g37PcKPBP4 ">
+  <div gp-el-wrapper style="--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:10px;--pt:5px;--pb:5px;--pt-mobile:5px;--pb-mobile:5px;--pt-tablet:5px;--pb-tablet:5px" class="g37PcKPBP4 ">
       
     <div data-id="g37PcKPBP4" class="gp-flex gp-justify-center">
       <div style="--w:100%;--w-tablet:100%;--w-mobile:100%;--bs:solid;--bbw:2px;--bbw-tablet:2px;--bbw-mobile:2px;--t:gp-rotate(0deg);--bc:transparent" class="gp-block tablet:gp-block mobile:gp-block"></div>
@@ -834,27 +733,6 @@
       </div>
       <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
     </gp-button>
-  
-    </div>
-
-      
-    </gp-row>
-  
-  
-    </div>
-
-      
-    </gp-row>
-  
-  
-          {%- endform -%}
-        </product-form>
-      </gp-product>
-      {%- assign product = gpBkProduct -%}
-    {% else %}
-      <div class="gp-text-center">{{ 'gempages.Product.product_not_found' | t }}</div>
-    {% endif %}
-    <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-product-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
   
     </div>
 
@@ -1055,7 +933,7 @@
       role="presentation"
       data-id="gkOBl3ccUd"
       style="--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--ta:center"
-      class="gp-group/image gp-relative force-publish-1780714194267 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gkOBl3ccUd"
+      class="gp-group/image gp-relative force-publish-1780714435138 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gkOBl3ccUd"
     >
       <div
         
@@ -1634,7 +1512,7 @@
       role="presentation"
       data-id="gBBiX5Kdn4"
       style="--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-3, line-3);--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--op:100%;--ta:center"
-      class="gp-group/image gp-relative force-publish-1780714194286 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gBBiX5Kdn4"
+      class="gp-group/image gp-relative force-publish-1780714435191 gp-flex-none gp-h-auto mobile:gp-flex-none mobile:gp-h-auto tablet:gp-flex-none tablet:gp-h-auto gBBiX5Kdn4"
     >
       <div
         
