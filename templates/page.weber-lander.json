@@ -113,9 +113,10 @@
       "blocks": {
         "step_CqhXmF": {
           "type": "step",
+          "source": "{{ page.metafields.custom.lander.value.custom_steps.value }}",
           "settings": {
-            "title": "DIP",
-            "text": "<p><strong>Dunk the aramid-fiber head in water. It's the same material in firefighter gear.</strong></p>"
+            "title": "{{ page.metafields.custom.lander.value.custom_steps.value.step_title | metafield_text }}",
+            "text": "<p>{{ page.metafields.custom.lander.value.custom_steps.value.steps_eyebrow_text.value }}</p>"
           }
         },
         "step_WYYeNp": {
@@ -140,12 +141,12 @@
       ],
       "name": "Custom Steps",
       "settings": {
-        "eyebrow": "The Firefighter's Solution",
-        "heading": "Steam Does the Scrubbing. He Just Holds It.",
+        "eyebrow": "{{ page.metafields.custom.lander.value.custom_steps.value.steps_eyebrow_text.value }}",
+        "heading": "{{ page.metafields.custom.lander.value.custom_steps.value.steps_heading.value }}",
         "image": "shopify://shop_images/Asis_Grill_Rescue_Weber_GIF_06022026_REVISED.gif",
-        "image_alt": "Grill Rescue steam cleaning a Weber grill",
-        "button_label": "Shop the Gift He'll Actually Use →",
-        "button_link": "#shop-options",
+        "image_alt": "{{ page.metafields.custom.lander.value.custom_steps.value.image_alt_text.value }}",
+        "button_label": "{{ page.metafields.custom.lander.value.custom_steps.value.steps_button_label.value }}",
+        "button_link": "{{ page.metafields.custom.lander.value.custom_steps.value.button_link.value }}",
         "container_width": 1000,
         "padding_top": 24,
         "padding_bottom": 24,
