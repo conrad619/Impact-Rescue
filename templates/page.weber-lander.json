@@ -115,22 +115,24 @@
           "type": "step",
           "source": "{{ page.metafields.custom.lander.value.custom_steps.value }}",
           "settings": {
-            "title": "{{ page.metafields.custom.lander.value.custom_steps.value.step_title | metafield_text }}",
-            "text": "<p>{{ page.metafields.custom.lander.value.custom_steps.value.steps_eyebrow_text.value }}</p>"
+            "title": "{{ page.metafields.custom.lander.value.custom_steps.value.step_1.value }}",
+            "text": "<p>{{ page.metafields.custom.lander.value.custom_steps.value.step_text_1.value }}</p>"
           }
         },
         "step_WYYeNp": {
           "type": "step",
+          "source": "{{ page.metafields.custom.lander.value.custom_steps.value }}",
           "settings": {
-            "title": "PRESS",
-            "text": "<p><strong>Press it on grates at 400 to 600°F. Steam erupts and lifts grease instantly.</strong></p>"
+            "title": "{{ page.metafields.custom.lander.value.custom_steps.value.step_2.value }}",
+            "text": "<p>{{ page.metafields.custom.lander.value.custom_steps.value.step_text_2.value }}</p>"
           }
         },
         "step_KLyHDL": {
           "type": "step",
+          "source": "{{ page.metafields.custom.lander.value.custom_steps.value }}",
           "settings": {
-            "title": "DONE",
-            "text": "<p><strong>Spotless grates in 60 seconds. Head pops off, goes in the dishwasher.</strong></p>"
+            "title": "{{ page.metafields.custom.lander.value.custom_steps.value.step_3.value }}",
+            "text": "<p>{{ page.metafields.custom.lander.value.custom_steps.value.step_text_3.value }}</p>"
           }
         }
       },
