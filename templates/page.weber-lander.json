@@ -169,42 +169,11 @@
       "blocks": {
         "comparison_row_BedUUD": {
           "type": "comparison_row",
+          "repeater": "{{ page.metafields.custom.lander.value.comparison_rows.value }}",
           "settings": {
-            "feature": "Loose wires in food",
-            "us_value": "✓ Never",
-            "them_value": "✕ A Real Risk"
-          }
-        },
-        "comparison_row_iTrPbC": {
-          "type": "comparison_row",
-          "settings": {
-            "feature": "How it cleans",
-            "us_value": "✓ Steam Power",
-            "them_value": "✕ Hard Scrubbing"
-          }
-        },
-        "comparison_row_j6wHak": {
-          "type": "comparison_row",
-          "settings": {
-            "feature": "Time to clean",
-            "us_value": "✓ About 60 Sec",
-            "them_value": "✕ Several Min"
-          }
-        },
-        "comparison_row_9pMfXW": {
-          "type": "comparison_row",
-          "settings": {
-            "feature": "Dishwasher safe",
-            "us_value": "✓ Yes",
-            "them_value": "✕ No"
-          }
-        },
-        "comparison_row_9RCr9a": {
-          "type": "comparison_row",
-          "settings": {
-            "feature": "Lasts for years",
-            "us_value": "✓ Replaceable Heads",
-            "them_value": "✕ Toss It Out"
+            "feature": "{{ block.repeater.feature.value }}",
+            "us_value": "{{ block.repeater.first_column_value.value }}",
+            "them_value": "{{ block.repeater.second_column_value.value }}"
           }
         },
         "stat_tCgjHL": {
@@ -231,10 +200,6 @@
       },
       "block_order": [
         "comparison_row_BedUUD",
-        "comparison_row_iTrPbC",
-        "comparison_row_j6wHak",
-        "comparison_row_9pMfXW",
-        "comparison_row_9RCr9a",
         "stat_tCgjHL",
         "stat_4tpeCV",
         "stat_zxdakB"
