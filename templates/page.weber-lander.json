@@ -22,7 +22,7 @@
       "settings": {
         "show_banner": true,
         "icon": "{{ page.metafields.custom.lander.value.alert_banner.value.banner_icon.value }}",
-        "text": "{{ page.metafields.custom.lander.value.alert_banner.value.banner_text | metafield_tag }}",
+        "text": "<p>{{ page.metafields.custom.lander.value.alert_banner.value.banner_text | metafield_tag }}</p>",
         "button_label": "Shop Now →",
         "banner_link": "",
         "container_width": 1200,
@@ -43,7 +43,7 @@
         "eyebrow": "",
         "heading": "The Best Gift for a Man Who Owns a Weber",
         "description": "<p>He's had that grill for years and swears it'll outlive him. He babies it. So get him the one thing he'd never buy himself: a firefighter-designed brush that cleans his Weber grates in 60 seconds. No wire bristles, no scrubbing.</p>",
-        "image": "shopify://shop_images/Ventura_June02_GR_GRBrush_Weber_1x1_v2.jpg",
+        "image": "{{ page.metafields.custom.hero_banner.value.image.value }}",
         "image_alt": "Grill Rescue brush cleaning Weber grill",
         "button_label": "Shop the Gift He'll Actually Use →",
         "button_link": "#shop-options",
