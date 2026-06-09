@@ -1,0 +1,317 @@
+<section class="custom-mf-hero section-{{ section.id }}">
+  <div class="custom-mf-hero__inner">
+    {% if section.settings.eyebrow != blank %}
+      <p class="custom-mf-hero__eyebrow">
+        {{ section.settings.eyebrow }}
+      </p>
+    {% endif %}
+
+    {% if section.settings.heading != blank %}
+      <h2 class="custom-mf-hero__heading">
+        {{ section.settings.heading }}
+      </h2>
+    {% endif %}
+
+    {% if section.settings.description != blank %}
+      <div class="custom-mf-hero__description">
+        {{ section.settings.description }}
+      </div>
+    {% endif %}
+
+    {% if section.settings.image != blank %}
+      <div class="custom-mf-hero__image-wrap">
+        {{ section.settings.image
+          | image_url: width: 1600
+          | image_tag:
+            loading: 'lazy',
+            class: 'custom-mf-hero__image',
+            alt: section.settings.image_alt
+        }}
+      </div>
+    {% endif %}
+
+    {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+      <a class="custom-mf-hero__button" href="{{ section.settings.button_link }}">
+        {{ section.settings.button_label }}
+      </a>
+    {% endif %}
+
+    {% if section.settings.review_text != blank %}
+      <div class="custom-mf-hero__reviews">
+        {{ section.settings.review_text }}
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  .section-{{ section.id }} {
+    padding: {{ section.settings.padding_top }}px 20px {{ section.settings.padding_bottom }}px;
+    background: {{ section.settings.background_color }};
+  }
+
+  .section-{{ section.id }} .custom-mf-hero__inner {
+    max-width: {{ section.settings.container_width }}px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .section-{{ section.id }} .custom-mf-hero__eyebrow {
+    margin: 0 0 16px;
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: {{ section.settings.eyebrow_color }};
+  }
+
+  .section-{{ section.id }} .custom-mf-hero__heading {
+    margin: 0 0 24px;
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: {{ section.settings.heading_color }};
+  }
+
+  .section-{{ section.id }} .custom-mf-hero__description {
+    max-width: 700px;
+    margin: 0 auto 28px;
+    font-size: 20px;
+    line-height: 1.3;
+    color: {{ section.settings.text_color }};
+  }
+
+  .section-{{ section.id }} .custom-mf-hero__description p {
+    margin: 0;
+  }
+
+  .section-{{ section.id }} .custom-mf-hero__image-wrap {
+    margin: 0 auto 28px;
+  }
+
+  .section-{{ section.id }} .custom-mf-hero__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: {{ section.settings.image_radius }}px;
+  }
+
+  .section-{{ section.id }} .custom-mf-hero__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    padding: 20px 44px;
+    border-radius: 10px;
+    background: {{ section.settings.button_bg }};
+    color: {{ section.settings.button_color }};
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-decoration: none;
+    box-shadow: 1px 1px 20px rgba(203, 2, 0, 0.15);
+    transition: background 0.2s ease;
+  }
+
+  .section-{{ section.id }} .custom-mf-hero__button:hover {
+    background: {{ section.settings.button_hover_bg }};
+  }
+
+  .section-{{ section.id }} .custom-mf-hero__reviews {
+    font-size: 16px;
+    line-height: 1.8;
+    color: {{ section.settings.text_color }};
+  }
+
+  .section-{{ section.id }} .custom-mf-hero__reviews p {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .section-{{ section.id }} .custom-mf-hero__heading {
+      font-size: 32px;
+    }
+
+    .section-{{ section.id }} .custom-mf-hero__description {
+      font-size: 18px;
+    }
+
+    .section-{{ section.id }} .custom-mf-hero__button {
+      width: 100%;
+      font-size: 29px;
+      padding: 16px 10px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .section-{{ section.id }} {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .section-{{ section.id }} .custom-mf-hero__eyebrow {
+      font-size: 16px;
+    }
+
+    .section-{{ section.id }} .custom-mf-hero__heading {
+      font-size: 29px;
+    }
+
+    .section-{{ section.id }} .custom-mf-hero__description {
+      font-size: 18px;
+    }
+
+    .section-{{ section.id }} .custom-mf-hero__button {
+      font-size: 18px;
+      padding: 15px 20px;
+    }
+
+    .section-{{ section.id }} .custom-mf-hero__reviews {
+      font-size: 14px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Custom Hero",
+  "tag": "section",
+  "class": "custom-hero-section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "eyebrow",
+      "label": "Eyebrow text",
+      "default": "The Father's Day Gift That Actually Gets Used"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The Best Gift for a Man Who Owns a Weber"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>He's had that grill for years and swears it'll outlive him. He babies it. So get him the one thing he'd never buy himself: a firefighter-designed brush that cleans his Weber grates in 60 seconds. No wire bristles, no scrubbing.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Main image"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Image alt text",
+      "default": "Grill Rescue brush cleaning Weber grill"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Shop the Gift He'll Actually Use →"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "richtext",
+      "id": "review_text",
+      "label": "Review text",
+      "default": "<p>⭐️ 4.8 · 12,000+ five-star reviews · 250,000+ grillers</p>"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "label": "Container width",
+      "min": 600,
+      "max": 1400,
+      "step": 20,
+      "default": 1000
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "image_radius",
+      "label": "Image corner radius",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "eyebrow_color",
+      "label": "Eyebrow color",
+      "default": "#4f4f4f"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#2b2b2b"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#2b2b2b"
+    },
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Button background",
+      "default": "#cb0200"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_bg",
+      "label": "Button hover background",
+      "default": "#9e0401"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Hero"
+    }
+  ]
+}
+{% endschema %}

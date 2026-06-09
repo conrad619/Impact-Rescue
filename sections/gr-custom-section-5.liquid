@@ -1,0 +1,567 @@
+<section class="custom-mf-comparison section-{{ section.id }}">
+  <div class="custom-mf-comparison__inner">
+    {% if section.settings.eyebrow != blank %}
+      <p class="custom-mf-comparison__eyebrow">{{ section.settings.eyebrow }}</p>
+    {% endif %}
+
+    <div class="custom-mf-comparison__divider"></div>
+
+    {% if section.settings.heading != blank %}
+      <h2 class="custom-mf-comparison__heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="custom-mf-comparison__table-wrap">
+      <table class="custom-mf-comparison__table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>{{ section.settings.us_column }}</th>
+            <th>{{ section.settings.them_column }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for block in section.blocks %}
+            {% if block.type == 'comparison_row' %}
+              <tr {{ block.shopify_attributes }}>
+                <td>{{ block.settings.feature }}</td>
+                <td class="is-win">{{ block.settings.us_value }}</td>
+                <td class="is-lose">{{ block.settings.them_value }}</td>
+              </tr>
+            {% endif %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    {% if section.settings.stats_eyebrow != blank %}
+      <p class="custom-mf-comparison__stats-eyebrow">{{ section.settings.stats_eyebrow }}</p>
+    {% endif %}
+
+    <div class="custom-mf-comparison__stats">
+      {% for block in section.blocks %}
+        {% if block.type == 'stat' %}
+          <div class="custom-mf-comparison__stat" {{ block.shopify_attributes }}>
+            <div class="custom-mf-comparison__stat-number">{{ block.settings.number }}</div>
+            <div class="custom-mf-comparison__stat-label">{{ block.settings.label }}</div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% if section.settings.callout_title != blank or section.settings.callout_text != blank %}
+      <div class="custom-mf-comparison__callout">
+        {% if section.settings.callout_title != blank %}
+          <div class="custom-mf-comparison__callout-title">
+            {{ section.settings.callout_title }}
+          </div>
+        {% endif %}
+
+        {% if section.settings.callout_text != blank %}
+          <div class="custom-mf-comparison__callout-text">
+            {{ section.settings.callout_text }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  .section-{{ section.id }} {
+    padding: {{ section.settings.padding_top }}px 20px {{ section.settings.padding_bottom }}px;
+    background: {{ section.settings.background_color }};
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__inner {
+    max-width: {{ section.settings.container_width }}px;
+    margin: 0 auto;
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__eyebrow,
+  .section-{{ section.id }} .custom-mf-comparison__stats-eyebrow {
+    margin: 0;
+    font-family: Barlow, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: {{ section.settings.eyebrow_color }};
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__divider {
+    height: 2px;
+    margin: 12px 0;
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__heading {
+    margin: 0 0 19px;
+    font-family: Barlow, sans-serif;
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: {{ section.settings.heading_color }};
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__table-wrap {
+    overflow-x: auto;
+    border: 1px solid rgba(18, 18, 18, 0.2);
+    border-radius: 10px;
+    margin-bottom: 24px;
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    font-family: Barlow, sans-serif;
+    font-size: 15px;
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__table th {
+    padding: 20px 24px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-right: 1px solid #e5e5e5;
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__table th:first-child {
+    background: #1a1a1a;
+    color: transparent;
+    text-align: left;
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__table th:nth-child(2) {
+    background: {{ section.settings.us_header_bg }};
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__table th:nth-child(3) {
+    background: {{ section.settings.them_header_bg }};
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__table td {
+    padding: 20px 24px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e0e0e0;
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__table tr:nth-child(odd) td {
+    background: #ffffff;
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__table tr:nth-child(even) td {
+    background: #f4f4f4;
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__table td:first-child {
+    text-align: left;
+    font-weight: 700;
+    color: #1a1a2e;
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__table td:last-child,
+  .section-{{ section.id }} .custom-mf-comparison__table th:last-child {
+    border-right: none;
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__table .is-win {
+    color: {{ section.settings.win_color }};
+    font-weight: 700;
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__table .is-lose {
+    color: {{ section.settings.lose_color }};
+    font-weight: 700;
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__stats-eyebrow {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__stat {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: {{ section.settings.stat_bg }};
+    box-shadow: 1px 1px 100px 5px rgba(18, 18, 18, 0.2);
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__stat-number {
+    font-family: Barlow, sans-serif;
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: {{ section.settings.accent_color }};
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__stat-label {
+    font-family: Barlow, sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: {{ section.settings.eyebrow_color }};
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__callout {
+    padding: 20px;
+    border-radius: 10px;
+    background: {{ section.settings.callout_bg }};
+    color: {{ section.settings.callout_text_color }};
+    box-shadow: 1px 1px 100px 5px rgba(18, 18, 18, 0.2);
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__callout-title {
+    margin-bottom: 7px;
+    font-family: Barlow, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: {{ section.settings.callout_title_color }};
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__callout-title p,
+  .section-{{ section.id }} .custom-mf-comparison__callout-text p {
+    margin: 0;
+  }
+
+  .section-{{ section.id }} .custom-mf-comparison__callout-text {
+    font-family: Barlow, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .section-{{ section.id }} .custom-mf-comparison__eyebrow,
+    .section-{{ section.id }} .custom-mf-comparison__heading {
+      text-align: center;
+    }
+
+    .section-{{ section.id }} .custom-mf-comparison__heading {
+      font-size: 32px;
+      letter-spacing: 0.6px;
+    }
+
+    .section-{{ section.id }} .custom-mf-comparison__stat-number {
+      font-size: 29px;
+    }
+
+    .section-{{ section.id }} .custom-mf-comparison__stat-label {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .section-{{ section.id }} .custom-mf-comparison__heading {
+      font-size: 29px;
+    }
+
+    .section-{{ section.id }} .custom-mf-comparison__stats {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+    }
+
+    .section-{{ section.id }} .custom-mf-comparison__stat {
+      padding: 20px 10px;
+    }
+
+    .section-{{ section.id }} .custom-mf-comparison__stat-number {
+      font-size: 25px;
+    }
+
+    .section-{{ section.id }} .custom-mf-comparison__stat-label {
+      font-size: 15px;
+    }
+
+    .section-{{ section.id }} .custom-mf-comparison__table th,
+    .section-{{ section.id }} .custom-mf-comparison__table td {
+      padding: 10px 8px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Custom Comparison",
+  "tag": "section",
+  "class": "custom-comparison-section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "eyebrow",
+      "label": "Eyebrow text",
+      "default": "The Firefighter's Solution"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The Old Wire Brush Vs. Grill Rescue"
+    },
+    {
+      "type": "text",
+      "id": "us_column",
+      "label": "First column heading",
+      "default": "Grill Rescue"
+    },
+    {
+      "type": "text",
+      "id": "them_column",
+      "label": "Second column heading",
+      "default": "Wire Brush"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "stats_eyebrow",
+      "label": "Stats eyebrow",
+      "default": "The Firefighter's Solution"
+    },
+    {
+      "type": "richtext",
+      "id": "callout_title",
+      "label": "Callout title",
+      "default": "<p>🚒 Firefighter-Designed</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "callout_text",
+      "label": "Callout text",
+      "default": "<p>Created and tested by a firefighter using aramid fiber, the same heat-resistant material in turnout gear. Patented design, multiple active patents, and safe on porcelain, cast iron, stainless steel, and chrome grates.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "label": "Container width",
+      "min": 600,
+      "max": 1400,
+      "step": 20,
+      "default": 1000
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "default": 24
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "eyebrow_color",
+      "label": "Eyebrow color",
+      "default": "#4f4f4f"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#2b2b2b"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#cc0000"
+    },
+    {
+      "type": "color",
+      "id": "us_header_bg",
+      "label": "First column header background",
+      "default": "#cc0000"
+    },
+    {
+      "type": "color",
+      "id": "them_header_bg",
+      "label": "Second column header background",
+      "default": "#2a2a2a"
+    },
+    {
+      "type": "color",
+      "id": "win_color",
+      "label": "Winning text color",
+      "default": "#16a34a"
+    },
+    {
+      "type": "color",
+      "id": "lose_color",
+      "label": "Losing text color",
+      "default": "#cc0000"
+    },
+    {
+      "type": "color",
+      "id": "stat_bg",
+      "label": "Stat card background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "callout_bg",
+      "label": "Callout background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "callout_title_color",
+      "label": "Callout title color",
+      "default": "#ffaa00"
+    },
+    {
+      "type": "color",
+      "id": "callout_text_color",
+      "label": "Callout text color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "comparison_row",
+      "name": "Comparison row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "feature",
+          "label": "Feature",
+          "default": "Loose wires in food"
+        },
+        {
+          "type": "text",
+          "id": "us_value",
+          "label": "First column value",
+          "default": "✓ Never"
+        },
+        {
+          "type": "text",
+          "id": "them_value",
+          "label": "Second column value",
+          "default": "✕ A Real Risk"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "name": "Stat card",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "number",
+          "label": "Number",
+          "default": "250k+"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "label",
+          "label": "Label",
+          "default": "Happy customers"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Comparison",
+      "blocks": [
+        {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Loose wires in food",
+            "us_value": "✓ Never",
+            "them_value": "✕ A Real Risk"
+          }
+        },
+        {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "How it cleans",
+            "us_value": "✓ Steam Power",
+            "them_value": "✕ Hard Scrubbing"
+          }
+        },
+        {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Time to clean",
+            "us_value": "✓ About 60 Sec",
+            "them_value": "✕ Several Min"
+          }
+        },
+        {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Dishwasher safe",
+            "us_value": "✓ Yes",
+            "them_value": "✕ No"
+          }
+        },
+        {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Lasts for years",
+            "us_value": "✓ Replaceable Heads",
+            "them_value": "✕ Toss It Out"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "number": "250k+",
+            "label": "Happy customers"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "number": "12,000+",
+            "label": "Five-star reviews"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "number": "60 sec",
+            "label": "To a clean grill"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
