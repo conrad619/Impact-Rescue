@@ -1,1 +1,421 @@
-{"sections":{"main":{"type":"main-page","settings":{}}},"order":["main"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "gr_custom_alert_banner_PFUQbz": {
+      "type": "gr-custom-alert-banner",
+      "name": "Custom Alert Banner",
+      "settings": {
+        "show_banner": true,
+        "icon": "🔥",
+        "text": "<p>Father’s Day Sale: Save up to 50% today only</p>",
+        "button_label": "Shop Now →",
+        "banner_link": "",
+        "container_width": 1200,
+        "padding_y": 12,
+        "mobile_padding_y": 10,
+        "font_size": 18,
+        "mobile_font_size": 14,
+        "background_color": "#cb0200",
+        "text_color": "#ffffff",
+        "button_bg": "#ffcd5d",
+        "button_color": "#151515"
+      }
+    },
+    "gr_custom_section_1_ea7R7n": {
+      "type": "gr-custom-section-1",
+      "name": "Custom Hero",
+      "settings": {
+        "eyebrow": "The Father's Day Gift That Actually Gets Used",
+        "heading": "The Best Gift for a Man Who Owns a Weber",
+        "description": "<p>He's had that grill for years and swears it'll outlive him. He babies it. So get him the one thing he'd never buy himself: a firefighter-designed brush that cleans his Weber grates in 60 seconds. No wire bristles, no scrubbing.</p>",
+        "image_alt": "Grill Rescue brush cleaning Weber grill",
+        "button_label": "Shop the Gift He'll Actually Use →",
+        "button_link": "",
+        "review_text": "<p>⭐️ 4.8 · 12,000+ five-star reviews · 250,000+ grillers</p>",
+        "container_width": 1000,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "image_radius": 10,
+        "background_color": "#ffffff",
+        "eyebrow_color": "#4f4f4f",
+        "heading_color": "#2b2b2b",
+        "text_color": "#2b2b2b",
+        "button_bg": "#cb0200",
+        "button_hover_bg": "#9e0401",
+        "button_color": "#ffffff"
+      }
+    },
+    "gr_custom_section_2_eNAwd6": {
+      "type": "gr-custom-section-2",
+      "name": "Custom Warning",
+      "settings": {
+        "eyebrow": "The Hidden Danger In Almost Every Garage",
+        "heading": "That Wire Brush in His Garage Is a Hospital Visit Waiting to Happen",
+        "description": "<p>Here's what most Weber owners don't know: those tiny wire bristles snap off, stick to the grates, and end up in the food. Every year, more than <strong>1,000 people land in the ER</strong> after swallowing one. And in early 2026, regulators recalled <strong>13 million</strong> wire grill brushes, including major Weber brush models.</p>",
+        "alert_icon": "⚠️",
+        "alert_title": "Safety Warning",
+        "alert_text": "<p>A single detached wire bristle can lodge in the throat or stomach and require surgery. You'd never see it on the burger.</p>",
+        "bottom_text": "<p>He spent good money on that Weber and treats it like family. The brush he's cleaning it with shouldn't be the most dangerous thing in the backyard.</p>",
+        "container_width": 1000,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "background_color": "#f9f9f9",
+        "eyebrow_color": "#4f4f4f",
+        "heading_color": "#2b2b2b",
+        "text_color": "#000000",
+        "alert_bg": "#fff0f0",
+        "alert_border": "#cc0000",
+        "alert_title_color": "#cc0000",
+        "alert_text_color": "#2a2a2a"
+      }
+    },
+    "gr_custom_section_3_aA6hyp": {
+      "type": "gr-custom-section-3",
+      "name": "Custom Story Image",
+      "settings": {
+        "eyebrow": "What Happens When He Opens It",
+        "heading": "He Rolled His Eyes. Then He Tried It Once.",
+        "image_alt": "Grill Rescue brush on Weber grill",
+        "text": "<p>Most guys who own a Weber think they've got cleaning figured out. A wire brush and some elbow grease, same as always. So when this shows up as a gift, the reaction is usually a polite “…thanks.”</p><p>Then they dip it in water, press it on the hot grates, and watch steam blast the grime off in under a minute. No scrubbing, no bristles, no mess. That's the moment the eye-roll turns into “where has this been my whole life.”</p>",
+        "quote": "<p><em>“Thought it was a gimmick. Cleaned my whole Weber in one pass, grates looked brand new. I've thrown out every wire brush in the garage.” Dave M., verified buyer</em></p>",
+        "container_width": 1000,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "image_radius": 10,
+        "background_color": "#ffffff",
+        "eyebrow_color": "#4f4f4f",
+        "heading_color": "#2b2b2b",
+        "text_color": "#000000",
+        "quote_bg": "#fff0f0",
+        "quote_border": "#cc0000",
+        "quote_color": "#2a2a2a"
+      }
+    },
+    "gr_custom_section_4_xQM4jj": {
+      "type": "gr-custom-section-4",
+      "blocks": {
+        "step_CqhXmF": {
+          "type": "step",
+          "settings": {
+            "title": "DIP",
+            "text": "<p><strong>Dunk the aramid-fiber head in water. It's the same material in firefighter gear.</strong></p>"
+          }
+        },
+        "step_WYYeNp": {
+          "type": "step",
+          "settings": {
+            "title": "PRESS",
+            "text": "<p><strong>Press it on grates at 400 to 600°F. Steam erupts and lifts grease instantly.</strong></p>"
+          }
+        },
+        "step_KLyHDL": {
+          "type": "step",
+          "settings": {
+            "title": "DONE",
+            "text": "<p><strong>Spotless grates in 60 seconds. Head pops off, goes in the dishwasher.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_CqhXmF",
+        "step_WYYeNp",
+        "step_KLyHDL"
+      ],
+      "name": "Custom Steps",
+      "settings": {
+        "eyebrow": "The Firefighter's Solution",
+        "heading": "Steam Does the Scrubbing. He Just Holds It.",
+        "image_alt": "Grill Rescue steam cleaning a Weber grill",
+        "button_label": "Shop the Gift He'll Actually Use →",
+        "button_link": "",
+        "container_width": 1000,
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "image_radius": 10,
+        "background_color": "#f9f9f9",
+        "eyebrow_color": "#4f4f4f",
+        "heading_color": "#2b2b2b",
+        "text_color": "#121212",
+        "accent_color": "#cc0000",
+        "card_bg": "#ffffff",
+        "button_bg": "#cb0200",
+        "button_hover_bg": "#9e0401",
+        "button_color": "#ffffff"
+      }
+    },
+    "gr_custom_section_5_J4UBPD": {
+      "type": "gr-custom-section-5",
+      "blocks": {
+        "comparison_row_BedUUD": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Loose wires in food",
+            "us_value": "✓ Never",
+            "them_value": "✕ A Real Risk"
+          }
+        },
+        "comparison_row_iTrPbC": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "How it cleans",
+            "us_value": "✓ Steam Power",
+            "them_value": "✕ Hard Scrubbing"
+          }
+        },
+        "comparison_row_j6wHak": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Time to clean",
+            "us_value": "✓ About 60 Sec",
+            "them_value": "✕ Several Min"
+          }
+        },
+        "comparison_row_9pMfXW": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Dishwasher safe",
+            "us_value": "✓ Yes",
+            "them_value": "✕ No"
+          }
+        },
+        "comparison_row_9RCr9a": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Lasts for years",
+            "us_value": "✓ Replaceable Heads",
+            "them_value": "✕ Toss It Out"
+          }
+        },
+        "stat_tCgjHL": {
+          "type": "stat",
+          "settings": {
+            "number": "250k+",
+            "label": "Happy customers"
+          }
+        },
+        "stat_4tpeCV": {
+          "type": "stat",
+          "settings": {
+            "number": "12,000+",
+            "label": "Five-star reviews"
+          }
+        },
+        "stat_zxdakB": {
+          "type": "stat",
+          "settings": {
+            "number": "60 sec",
+            "label": "To a clean grill"
+          }
+        }
+      },
+      "block_order": [
+        "comparison_row_BedUUD",
+        "comparison_row_iTrPbC",
+        "comparison_row_j6wHak",
+        "comparison_row_9pMfXW",
+        "comparison_row_9RCr9a",
+        "stat_tCgjHL",
+        "stat_4tpeCV",
+        "stat_zxdakB"
+      ],
+      "name": "Custom Comparison",
+      "settings": {
+        "eyebrow": "The Firefighter's Solution",
+        "heading": "The Old Wire Brush Vs. Grill Rescue",
+        "us_column": "Grill Rescue",
+        "them_column": "Wire Brush",
+        "stats_eyebrow": "The Firefighter's Solution",
+        "callout_title": "<p>🚒 Firefighter-Designed</p>",
+        "callout_text": "<p>Created and tested by a firefighter using aramid fiber, the same heat-resistant material in turnout gear. Patented design, multiple active patents, and safe on porcelain, cast iron, stainless steel, and chrome grates.</p>",
+        "container_width": 1000,
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "background_color": "#ffffff",
+        "eyebrow_color": "#4f4f4f",
+        "heading_color": "#2b2b2b",
+        "accent_color": "#cc0000",
+        "us_header_bg": "#cc0000",
+        "them_header_bg": "#2a2a2a",
+        "win_color": "#16a34a",
+        "lose_color": "#cc0000",
+        "stat_bg": "#ffffff",
+        "callout_bg": "#000000",
+        "callout_title_color": "#ffaa00",
+        "callout_text_color": "#ffffff"
+      }
+    },
+    "gr_custom_section_6_W4D8Kd": {
+      "type": "gr-custom-section-6",
+      "blocks": {
+        "faq_FyPJjj": {
+          "type": "faq",
+          "settings": {
+            "question": "<p><strong>Will it work on his Weber?</strong></p>",
+            "answer": "<p>Yes. It's safe on porcelain-enameled, cast iron, stainless steel, and chrome grates, exactly what Weber grills use.</p>"
+          }
+        },
+        "faq_iGBPJ8": {
+          "type": "faq",
+          "settings": {
+            "question": "<p><strong>Is it really safer than a wire brush?</strong></p>",
+            "answer": "<p>There are no bristles to break off, period. Nothing can detach and end up in the food.</p>"
+          }
+        },
+        "faq_9yHGyR": {
+          "type": "faq",
+          "settings": {
+            "question": "<p><strong>Does it make a good gift?</strong></p>",
+            "answer": "<p>It's a New York Times featured Father’s Day gift of 2026 for a reason. It's the gift he'd never think to buy himself, and it sells out fastest around Father's Day.</p>"
+          }
+        },
+        "faq_Af3raY": {
+          "type": "faq",
+          "settings": {
+            "question": "<p><strong>Is cleanup a hassle?</strong></p>",
+            "answer": "<p>Then it costs you nothing. You have 60 days to return it for a full refund, no questions asked.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_FyPJjj",
+        "faq_iGBPJ8",
+        "faq_9yHGyR",
+        "faq_Af3raY"
+      ],
+      "name": "Custom FAQ Cards",
+      "settings": {
+        "eyebrow": "Before You Ask",
+        "heading": "Quick Answers",
+        "container_width": 1000,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "background_color": "#f9f9f9",
+        "card_bg": "#ffffff",
+        "eyebrow_color": "#4f4f4f",
+        "heading_color": "#2b2b2b",
+        "question_color": "#121212",
+        "answer_color": "#121212"
+      }
+    },
+    "gr_custom_section_7_CtcCFj": {
+      "type": "gr-custom-section-7",
+      "blocks": {
+        "product_card_VmWYig": {
+          "type": "product_card",
+          "settings": {
+            "featured": false,
+            "badge": "",
+            "title": "The Original Rescue Brush",
+            "subtitle": "<p><strong>The Essential</strong></p>",
+            "image_alt": "",
+            "price": "<p>$34.95</p>",
+            "compare_price": "<p>$54.95</p>",
+            "savings": "<p><strong>You save $20.00</strong></p>",
+            "feature_1": "<p>1 Grill Rescue handle</p>",
+            "feature_2": "<p>Safe on his Weber grates</p>",
+            "feature_3": "<p>Dishwasher-safe head</p>",
+            "feature_4": "",
+            "button_label": "Choose The Original →",
+            "button_link": ""
+          }
+        },
+        "product_card_PnBH3i": {
+          "type": "product_card",
+          "settings": {
+            "featured": true,
+            "badge": "⭐ Most Popular",
+            "title": "Ultimate Grilling Enthusiast Pack",
+            "subtitle": "<p><strong>Most Gifted</strong></p>",
+            "image_alt": "",
+            "price": "<p>$74.95</p>",
+            "compare_price": "<p>149.95</p>",
+            "savings": "<p><strong>You save $20.00</strong></p>",
+            "feature_1": "<p>1 Grill Rescue Pro handle</p>",
+            "feature_2": "<p>2 Scraper heads + 1 Original head</p>",
+            "feature_3": "<p>Dunk Tank + hanger included</p>",
+            "feature_4": "",
+            "button_label": "Choose The Ultimate Pack →",
+            "button_link": ""
+          }
+        },
+        "product_card_xTz7jB": {
+          "type": "product_card",
+          "settings": {
+            "featured": false,
+            "badge": "",
+            "title": "Father's Day Bundle",
+            "subtitle": "<p><strong>Best Value</strong></p>",
+            "image_alt": "",
+            "price": "<p>$99.99</p>",
+            "compare_price": "<p>$199.99</p>",
+            "savings": "<p><strong>You save $100.00</strong></p>",
+            "feature_1": "<p>1 Grill Rescue handle + 2 cleaning heads w/ scraper</p>",
+            "feature_2": "<p>1 pair USA or Camo grilling gloves</p>",
+            "feature_3": "<p>Dunk Tank + hanger included</p>",
+            "feature_4": "",
+            "button_label": "Choose The Bundle →",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_card_VmWYig",
+        "product_card_PnBH3i",
+        "product_card_xTz7jB"
+      ],
+      "name": "Custom Product Cards",
+      "settings": {
+        "section_anchor": "shop-options",
+        "heading": "Choose His Grill Rescue",
+        "subheading": "<p>Pick the set that matches his Weber. Every option keeps the wire bristles out of the family's food.</p>",
+        "bottom_text": "<p>⭐ 4.8 from 12,000+ reviews · Dishwasher-safe · Bristle-free guarantee</p>",
+        "container_width": 1200,
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "background_color": "#ffffff",
+        "card_bg": "#fbfbfb",
+        "heading_color": "#242424",
+        "text_color": "#4f4f4f",
+        "price_color": "#cb0200",
+        "compare_color": "#777777",
+        "savings_bg": "#e0f4e8",
+        "savings_color": "#00a341",
+        "check_color": "#52c41a",
+        "feature_color": "#242424",
+        "badge_bg": "#cb0200",
+        "badge_color": "#ffffff",
+        "featured_border": "#cb0200",
+        "button_bg": "#ffcd5d",
+        "button_color": "#151515",
+        "featured_button_bg": "#cb0200",
+        "featured_button_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "gr_custom_alert_banner_PFUQbz",
+    "gr_custom_section_1_ea7R7n",
+    "gr_custom_section_2_eNAwd6",
+    "gr_custom_section_3_aA6hyp",
+    "gr_custom_section_4_xQM4jj",
+    "gr_custom_section_5_J4UBPD",
+    "gr_custom_section_6_W4D8Kd",
+    "gr_custom_section_7_CtcCFj"
+  ]
+}
