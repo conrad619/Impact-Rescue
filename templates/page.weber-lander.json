@@ -233,40 +233,17 @@
     "gr_custom_section_6_W4D8Kd": {
       "type": "gr-custom-section-6",
       "blocks": {
-        "faq_FyPJjj": {
+        "faq_t8D8zN": {
           "type": "faq",
+          "repeater": "{{ page.metafields.custom.lander.value.faqs_item.value }}",
           "settings": {
-            "question": "<p><strong>Will it work on his Weber?</strong></p>",
-            "answer": "<p>Yes. It's safe on porcelain-enameled, cast iron, stainless steel, and chrome grates, exactly what Weber grills use.</p>"
-          }
-        },
-        "faq_iGBPJ8": {
-          "type": "faq",
-          "settings": {
-            "question": "<p><strong>Is it really safer than a wire brush?</strong></p>",
-            "answer": "<p>There are no bristles to break off, period. Nothing can detach and end up in the food.</p>"
-          }
-        },
-        "faq_9yHGyR": {
-          "type": "faq",
-          "settings": {
-            "question": "<p><strong>Does it make a good gift?</strong></p>",
-            "answer": "<p>It's a New York Times featured Father’s Day gift of 2026 for a reason. It's the gift he'd never think to buy himself, and it sells out fastest around Father's Day.</p>"
-          }
-        },
-        "faq_Af3raY": {
-          "type": "faq",
-          "settings": {
-            "question": "<p><strong>Is cleanup a hassle?</strong></p>",
-            "answer": "<p>Then it costs you nothing. You have 60 days to return it for a full refund, no questions asked.</p>"
+            "question": "<p>{{ block.repeater.faq_question.value }}</p>",
+            "answer": "<p>{{ block.repeater.faq_answer.value }}</p>"
           }
         }
       },
       "block_order": [
-        "faq_FyPJjj",
-        "faq_iGBPJ8",
-        "faq_9yHGyR",
-        "faq_Af3raY"
+        "faq_t8D8zN"
       ],
       "name": "Custom FAQ Cards",
       "settings": {
