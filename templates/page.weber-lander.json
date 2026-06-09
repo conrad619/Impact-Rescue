@@ -296,14 +296,14 @@
             "image": "{{ page.metafields.custom.lander.value.product_card_2.value.product_image.value }}",
             "image_alt": "{{ page.metafields.custom.lander.value.product_card_1.value.image_alt_text.value }}",
             "price": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_price.value }}</p>",
-            "compare_price": "<p>149.95</p>",
-            "savings": "<p><strong>You save $20.00</strong></p>",
-            "feature_1": "<p>1 Grill Rescue Pro handle</p>",
-            "feature_2": "<p>2 Scraper heads + 1 Original head</p>",
-            "feature_3": "<p>Dunk Tank + hanger included</p>",
-            "feature_4": "",
-            "button_label": "Choose The Ultimate Pack →",
-            "button_link": "https://grillrescue.com/cart/53159785857183:1?channel=buy_button"
+            "compare_price": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_compare_price.value }}</p>",
+            "savings": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_savings.value }}</p>",
+            "feature_1": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_feature_1.value }}</p>",
+            "feature_2": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_feature_2.value }}</p>",
+            "feature_3": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_feature_3.value }}</p>",
+            "feature_4": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_feature_4.value }}</p>",
+            "button_label": "{{ page.metafields.custom.lander.value.product_card_2.value.product_button_label.value }}",
+            "button_link": "{{ page.metafields.custom.lander.value.product_card_2.value.button_link.value }}"
           }
         },
         "product_card_xTz7jB": {
