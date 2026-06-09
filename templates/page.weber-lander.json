@@ -22,7 +22,7 @@
       "settings": {
         "show_banner": true,
         "icon": "🔥",
-        "text": "<p>Father’s Day Sale: Save up to 50% today only</p>",
+        "text": "<p><strong>13 Million Wire Grill Brushes Recalled. Here's the Bristle-Free Fix</strong></p>",
         "button_label": "Shop Now →",
         "banner_link": "",
         "container_width": 1200,
@@ -43,9 +43,10 @@
         "eyebrow": "The Father's Day Gift That Actually Gets Used",
         "heading": "The Best Gift for a Man Who Owns a Weber",
         "description": "<p>He's had that grill for years and swears it'll outlive him. He babies it. So get him the one thing he'd never buy himself: a firefighter-designed brush that cleans his Weber grates in 60 seconds. No wire bristles, no scrubbing.</p>",
+        "image": "shopify://shop_images/Ventura_June02_GR_GRBrush_Weber_1x1_v2.jpg",
         "image_alt": "Grill Rescue brush cleaning Weber grill",
         "button_label": "Shop the Gift He'll Actually Use →",
-        "button_link": "",
+        "button_link": "#shop-options",
         "review_text": "<p>⭐️ 4.8 · 12,000+ five-star reviews · 250,000+ grillers</p>",
         "container_width": 1000,
         "padding_top": 20,
@@ -90,6 +91,7 @@
       "settings": {
         "eyebrow": "What Happens When He Opens It",
         "heading": "He Rolled His Eyes. Then He Tried It Once.",
+        "image": "shopify://shop_images/Ventura_June02_GR_GRBrush_Weber_1x1_v1.jpg",
         "image_alt": "Grill Rescue brush on Weber grill",
         "text": "<p>Most guys who own a Weber think they've got cleaning figured out. A wire brush and some elbow grease, same as always. So when this shows up as a gift, the reaction is usually a polite “…thanks.”</p><p>Then they dip it in water, press it on the hot grates, and watch steam blast the grime off in under a minute. No scrubbing, no bristles, no mess. That's the moment the eye-roll turns into “where has this been my whole life.”</p>",
         "quote": "<p><em>“Thought it was a gimmick. Cleaned my whole Weber in one pass, grates looked brand new. I've thrown out every wire brush in the garage.” Dave M., verified buyer</em></p>",
@@ -140,9 +142,10 @@
       "settings": {
         "eyebrow": "The Firefighter's Solution",
         "heading": "Steam Does the Scrubbing. He Just Holds It.",
+        "image": "shopify://shop_images/Asis_Grill_Rescue_Weber_GIF_06022026_REVISED.gif",
         "image_alt": "Grill Rescue steam cleaning a Weber grill",
         "button_label": "Shop the Gift He'll Actually Use →",
-        "button_link": "",
+        "button_link": "https://grillrescue.myshopify.com/pages/grill-rescue-fathers-day-weber#g7YsAoLgRo",
         "container_width": 1000,
         "padding_top": 24,
         "padding_bottom": 24,
@@ -322,6 +325,7 @@
             "badge": "",
             "title": "The Original Rescue Brush",
             "subtitle": "<p><strong>The Essential</strong></p>",
+            "image": "shopify://shop_images/Rescue_StaticImage_Website_Non-ScraperBrush_FrontRightSideTopViewProductShotoftheNon-ScraperBrush_1.webp",
             "image_alt": "",
             "price": "<p>$34.95</p>",
             "compare_price": "<p>$54.95</p>",
@@ -331,7 +335,7 @@
             "feature_3": "<p>Dishwasher-safe head</p>",
             "feature_4": "",
             "button_label": "Choose The Original →",
-            "button_link": ""
+            "button_link": "https://grillrescue.com/cart/34493495410847:1?channel=buy_button"
           }
         },
         "product_card_PnBH3i": {
@@ -341,6 +345,7 @@
             "badge": "⭐ Most Popular",
             "title": "Ultimate Grilling Enthusiast Pack",
             "subtitle": "<p><strong>Most Gifted</strong></p>",
+            "image": "shopify://shop_images/Rescue_Graphic_ProductPhoto_UltimateGrillingEnthusiastPack_WebsiteMainImage_1-1.webp",
             "image_alt": "",
             "price": "<p>$74.95</p>",
             "compare_price": "<p>149.95</p>",
@@ -350,7 +355,7 @@
             "feature_3": "<p>Dunk Tank + hanger included</p>",
             "feature_4": "",
             "button_label": "Choose The Ultimate Pack →",
-            "button_link": ""
+            "button_link": "https://grillrescue.com/cart/53159785857183:1?channel=buy_button"
           }
         },
         "product_card_xTz7jB": {
@@ -360,6 +365,7 @@
             "badge": "",
             "title": "Father's Day Bundle",
             "subtitle": "<p><strong>Best Value</strong></p>",
+            "image": "shopify://shop_images/Bundle1.webp",
             "image_alt": "",
             "price": "<p>$99.99</p>",
             "compare_price": "<p>$199.99</p>",
@@ -369,7 +375,7 @@
             "feature_3": "<p>Dunk Tank + hanger included</p>",
             "feature_4": "",
             "button_label": "Choose The Bundle →",
-            "button_link": ""
+            "button_link": "https://grillrescue.com/cart/62736434921631:1?channel=buy_button"
           }
         }
       },
