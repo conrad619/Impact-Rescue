@@ -178,23 +178,26 @@
         },
         "stat_tCgjHL": {
           "type": "stat",
+          "source": "{{ page.metafields.custom.lander.value.stat_card_1.value }}",
           "settings": {
-            "number": "250k+",
-            "label": "Happy customers"
+            "number": "{{ page.metafields.custom.lander.value.stat_card_1.value.stat_number.value }}",
+            "label": "{{ page.metafields.custom.lander.value.stat_card_1.value.stat_label.value }}"
           }
         },
         "stat_4tpeCV": {
           "type": "stat",
+          "source": "{{ page.metafields.custom.lander.value.stat_card_2.value }}",
           "settings": {
-            "number": "12,000+",
-            "label": "Five-star reviews"
+            "number": "{{ page.metafields.custom.lander.value.stat_card_2.value.stat_number.value }}",
+            "label": "{{ page.metafields.custom.lander.value.stat_card_2.value.stat_label.value }}"
           }
         },
         "stat_zxdakB": {
           "type": "stat",
+          "source": "{{ page.metafields.custom.lander.value.stat_card_3.value }}",
           "settings": {
-            "number": "60 sec",
-            "label": "To a clean grill"
+            "number": "{{ page.metafields.custom.lander.value.stat_card_3.value.stat_number.value }}",
+            "label": "{{ page.metafields.custom.lander.value.stat_card_3.value.stat_label.value }}"
           }
         }
       },
