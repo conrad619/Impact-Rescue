@@ -19,7 +19,7 @@
         "code_text": "",
         "enable_timer": true,
         "visibility_mode": "selected_pages",
-        "visibility_rules": "page.gloves\n/pages/gloves",
+        "visibility_rules": "/pages/gloves",
         "timer_minutes": 54,
         "reset_hour": 20,
         "bg_color": "#ffb74a",
