@@ -1,3 +1,40 @@
+{%- liquid
+  assign show_header_timer = true
+  assign visibility_mode = section.settings.visibility_mode | default: 'all'
+  assign visibility_rules = section.settings.visibility_rules | default: ''
+
+  if visibility_mode == 'selected_pages'
+    assign show_header_timer = false
+    assign current_path = request.path | downcase
+    assign current_template = template.name | append: '.' | append: template.suffix | downcase
+    assign current_template_name = template.name | downcase
+    assign current_template_suffix = template.suffix | downcase
+    assign current_page_type = request.page_type | downcase
+    assign page_rules = visibility_rules | newline_to_br | split: '<br />'
+
+    for page_rule in page_rules
+      assign normalized_rule = page_rule | strip | downcase
+
+      if normalized_rule != blank
+        assign first_character = normalized_rule | slice: 0
+        assign path_rule = normalized_rule
+
+        if first_character != '/'
+          assign path_rule = '/' | append: normalized_rule
+        endif
+
+        assign path_rule_with_slash = path_rule | append: '/'
+
+        if current_path == path_rule or current_path == path_rule_with_slash or normalized_rule == current_template or normalized_rule == current_template_name or normalized_rule == current_template_suffix or normalized_rule == current_page_type
+          assign show_header_timer = true
+          break
+        endif
+      endif
+    endfor
+  endif
+-%}
+
+{%- if show_header_timer -%}
 {% style %}
   #shopify-section-{{ section.id }} .fox-header-bar {
     width: 100%;
@@ -21,6 +58,10 @@
 
   #shopify-section-{{ section.id }} .fox-header-bar__timer {
     color: {{ section.settings.timer_color }};
+  }
+
+  #shopify-section-{{ section.id }} ~ .shopify-section--announcement-bar {
+    display: none !important;
   }
 
   @media screen and (max-width: 749px) {
@@ -124,6 +165,7 @@
     setInterval(updateTimer, 1000);
   });
 </script>
+{%- endif -%}
 
 {% schema %}
 {
@@ -146,6 +188,28 @@
       "id": "enable_timer",
       "label": "Enable countdown timer",
       "default": true
+    },
+    {
+      "type": "select",
+      "id": "visibility_mode",
+      "label": "Show timer on",
+      "options": [
+        {
+          "value": "all",
+          "label": "All pages"
+        },
+        {
+          "value": "selected_pages",
+          "label": "Selected pages only"
+        }
+      ],
+      "default": "all"
+    },
+    {
+      "type": "textarea",
+      "id": "visibility_rules",
+      "label": "Selected pages",
+      "info": "Add one match per line. Use URL paths like /pages/gloves, template names like page.gloves, or page types like product."
     },
     {
       "type": "range",

@@ -13,14 +13,13 @@
   "sections": {
     "header_timer_pXcKRV": {
       "type": "header-timer",
-      "custom_css": [
-        "{display: none;}"
-      ],
       "name": "Header Timer",
       "settings": {
         "prefix_text": "FOX SALE ENDS IN",
         "code_text": "",
         "enable_timer": true,
+        "visibility_mode": "selected_pages",
+        "visibility_rules": "page.gloves\n/pages/gloves",
         "timer_minutes": 54,
         "reset_hour": 20,
         "bg_color": "#ffb74a",
