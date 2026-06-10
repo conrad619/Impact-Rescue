@@ -1028,19 +1028,6 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
-    },
-    "custom_liquid_GdEbmN": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<style>\n#shopify-section-sections--24036250779807__header_timer_pXcKRV{\ndisplay:block !important;\n}\n#shopify-section-sections--24036250779807__announcement-bar{\ndisplay:block!important;\n}\n</style>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
     }
   },
   "order": [
@@ -1057,7 +1044,6 @@
     "featured_product_jbzPnM",
     "featured_product_ayAN6M",
     "featured_product_6UVTEx",
-    "faq_6tmAaQ",
-    "custom_liquid_GdEbmN"
+    "faq_6tmAaQ"
   ]
 }
