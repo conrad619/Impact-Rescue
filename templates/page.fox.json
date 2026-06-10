@@ -727,19 +727,6 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
-    },
-    "custom_liquid_GdEbmN": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<style>\n[id*=header_timer]{\ndisplay:block!important;\n}\n[id*=announcement-bar]{\ndisplay:none!important;\n}\n</style>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
     }
   },
   "order": [
@@ -754,7 +741,6 @@
     "collection_list_jXiKA3",
     "rich_text_Y9eeg6",
     "featured_product_3a7xJ8",
-    "faq_6tmAaQ",
-    "custom_liquid_GdEbmN"
+    "faq_6tmAaQ"
   ]
 }
