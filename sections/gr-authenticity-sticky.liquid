@@ -1,0 +1,275 @@
+{%- liquid
+  assign sticky_product = section.settings.product
+  if sticky_product == blank
+    assign sticky_product = all_products['grill-brush-w-scraper']
+  endif
+
+  if sticky_product != blank
+    assign sticky_variant = sticky_product.selected_or_first_available_variant
+  endif
+-%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --gr-sticky-bg: {{ section.settings.background_color }};
+    --gr-sticky-text: {{ section.settings.text_color }};
+    --gr-sticky-red: {{ section.settings.accent_color }};
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-sticky {
+    position: fixed;
+    z-index: 40;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0,0,0,.12);
+    background: var(--gr-sticky-bg);
+    color: var(--gr-sticky-text);
+    box-shadow: 0 -12px 36px rgba(0,0,0,.12);
+    transform: translateY(110%);
+    transition: transform .25s ease;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-sticky.is-visible {
+    transform: translateY(0);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-sticky__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 20px;
+    align-items: center;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-sticky__product {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: 13px;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-sticky__image {
+    width: 58px;
+    height: 58px;
+    flex: 0 0 58px;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #eee;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-sticky__image img,
+  #shopify-section-{{ section.id }} .gr-auth-sticky__image svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-sticky__title {
+    overflow: hidden;
+    margin: 0 0 2px;
+    font-size: .98rem;
+    font-weight: 850;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-sticky__price {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-weight: 850;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-sticky__compare {
+    font-size: .78rem;
+    font-weight: 500;
+    opacity: .5;
+    text-decoration: line-through;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-sticky__form {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-sticky__select {
+    min-height: 45px;
+    max-width: 190px;
+    padding: 0 34px 0 12px;
+    border: 1px solid rgba(0,0,0,.18);
+    border-radius: 7px;
+    background: #fff;
+    color: #111;
+    font: inherit;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-sticky__button {
+    min-height: 45px;
+    padding: 0 24px;
+    border: 0;
+    border-radius: 7px;
+    color: #fff;
+    background: var(--gr-sticky-red);
+    font: inherit;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-sticky__button[disabled] {
+    opacity: .45;
+  }
+
+  @media screen and (max-width: 699px) {
+    #shopify-section-{{ section.id }} .gr-auth-sticky {
+      padding: 8px 0 calc(8px + env(safe-area-inset-bottom));
+    }
+
+    #shopify-section-{{ section.id }} .gr-auth-sticky__inner {
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+    }
+
+    #shopify-section-{{ section.id }} .gr-auth-sticky__image {
+      width: 46px;
+      height: 46px;
+      flex-basis: 46px;
+    }
+
+    #shopify-section-{{ section.id }} .gr-auth-sticky__title {
+      max-width: 38vw;
+      font-size: .84rem;
+    }
+
+    #shopify-section-{{ section.id }} .gr-auth-sticky__price {
+      font-size: .84rem;
+    }
+
+    #shopify-section-{{ section.id }} .gr-auth-sticky__select {
+      display: none;
+    }
+
+    #shopify-section-{{ section.id }} .gr-auth-sticky__button {
+      min-height: 44px;
+      padding: 0 14px;
+      font-size: .75rem;
+    }
+  }
+</style>
+
+{%- if sticky_product != blank and section.settings.enabled -%}
+  <div class="gr-auth-sticky" data-gr-sticky-bar>
+    <div class="container gr-auth-sticky__inner">
+      <div class="gr-auth-sticky__product">
+        <div class="gr-auth-sticky__image">
+          {%- if section.settings.image != blank -%}
+            {{ section.settings.image | image_url: width: 160 | image_tag: loading: 'lazy', widths: '80,120,160', sizes: '58px', alt: sticky_product.title }}
+          {%- elsif sticky_product.featured_image != blank -%}
+            {{ sticky_product.featured_image | image_url: width: 160 | image_tag: loading: 'lazy', widths: '80,120,160', sizes: '58px', alt: sticky_product.title }}
+          {%- else -%}
+            {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        </div>
+        <div style="min-width:0">
+          <p class="gr-auth-sticky__title">{{ section.settings.title | default: sticky_product.title }}</p>
+          <div class="gr-auth-sticky__price">
+            <span data-gr-sticky-price>{{ sticky_variant.price | money }}</span>
+            <s class="gr-auth-sticky__compare" data-gr-sticky-compare {% unless sticky_variant.compare_at_price > sticky_variant.price %}hidden{% endunless %}>{{ sticky_variant.compare_at_price | money }}</s>
+          </div>
+        </div>
+      </div>
+
+      {%- form 'product', sticky_product, is: 'product-form', class: 'gr-auth-sticky__form' -%}
+        {%- if sticky_product.variants.size > 1 -%}
+          <select class="gr-auth-sticky__select" name="id" aria-label="Choose an option" data-gr-sticky-variant>
+            {%- for variant in sticky_product.variants -%}
+              <option
+                value="{{ variant.id }}"
+                data-price="{{ variant.price | money | escape }}"
+                data-compare="{{ variant.compare_at_price | money | escape }}"
+                data-has-compare="{% if variant.compare_at_price > variant.price %}true{% else %}false{% endif %}"
+                {% if variant == sticky_variant %}selected{% endif %}
+                {% unless variant.available %}disabled{% endunless %}
+              >
+                {{ variant.title }}{% unless variant.available %} — Sold out{% endunless %}
+              </option>
+            {%- endfor -%}
+          </select>
+        {%- else -%}
+          <input type="hidden" name="id" value="{{ sticky_variant.id }}">
+        {%- endif -%}
+        <input type="hidden" name="quantity" value="1">
+        <button class="button gr-auth-sticky__button" type="submit" {% unless sticky_variant.available %}disabled{% endunless %}>
+          {% if sticky_variant.available %}{{ section.settings.button_text }}{% else %}Sold out{% endif %}
+        </button>
+      {%- endform -%}
+    </div>
+  </div>
+{%- endif -%}
+
+<script>
+  (() => {
+    const section = document.getElementById('shopify-section-{{ section.id }}');
+    if (!section || section.dataset.grStickyReady === 'true') return;
+    section.dataset.grStickyReady = 'true';
+
+    const bar = section.querySelector('[data-gr-sticky-bar]');
+    if (!bar) return;
+
+    const buySection = document.getElementById('gr-auth-buy');
+    let buyVisible = false;
+
+    const update = () => {
+      const shouldShow = window.scrollY > {{ section.settings.show_after }} && !buyVisible;
+      bar.classList.toggle('is-visible', shouldShow);
+    };
+
+    if (buySection && 'IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        buyVisible = entries.some((entry) => entry.isIntersecting);
+        update();
+      }, { threshold: 0.12 });
+      observer.observe(buySection);
+    }
+
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+
+    const select = section.querySelector('[data-gr-sticky-variant]');
+    const price = section.querySelector('[data-gr-sticky-price]');
+    const compare = section.querySelector('[data-gr-sticky-compare]');
+
+    if (select && price && compare) {
+      select.addEventListener('change', () => {
+        const option = select.options[select.selectedIndex];
+        price.textContent = option.dataset.price || '';
+        compare.textContent = option.dataset.compare || '';
+        compare.hidden = option.dataset.hasCompare !== 'true';
+      });
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "GR Sticky Buy Bar",
+  "tag": "section",
+  "class": "shopify-section--gr-auth-sticky",
+  "settings": [
+    { "type": "checkbox", "id": "enabled", "label": "Enable sticky bar", "default": true },
+    { "type": "product", "id": "product", "label": "Product" },
+    { "type": "image_picker", "id": "image", "label": "Thumbnail override" },
+    { "type": "text", "id": "title", "label": "Short title", "default": "The real Grill Rescue" },
+    { "type": "text", "id": "button_text", "label": "Button text", "default": "Add to cart" },
+    { "type": "range", "id": "show_after", "label": "Show after scrolling", "min": 0, "max": 1200, "step": 50, "unit": "px", "default": 500 },
+    { "type": "color", "id": "background_color", "label": "Background color", "default": "#ffffff" },
+    { "type": "color", "id": "text_color", "label": "Text color", "default": "#111111" },
+    { "type": "color", "id": "accent_color", "label": "Accent color", "default": "#d91f26" }
+  ],
+  "presets": [
+    { "name": "GR Sticky Buy Bar" }
+  ]
+}
+{% endschema %}

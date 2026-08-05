@@ -1,0 +1,310 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --gr-details-bg: {{ section.settings.background_color }};
+    --gr-details-text: {{ section.settings.text_color }};
+    --gr-details-red: {{ section.settings.accent_color }};
+    --gr-details-card: {{ section.settings.card_color }};
+    --gr-details-radius: {{ section.settings.corner_radius }}px;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-details {
+    background: var(--gr-details-bg);
+    color: var(--gr-details-text);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-details__header {
+    max-width: 800px;
+    margin-bottom: clamp(36px, 6vw, 70px);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-details__eyebrow,
+  #shopify-section-{{ section.id }} .gr-auth-details__item-eyebrow {
+    margin: 0 0 12px;
+    color: var(--gr-details-red);
+    font-size: .78rem;
+    font-weight: 850;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-details__heading {
+    margin: 0;
+    font-size: clamp(2.3rem, 4.5vw, 5rem);
+    line-height: .96;
+    letter-spacing: -.05em;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-details__header-copy {
+    margin-top: 18px;
+    max-width: 680px;
+    font-size: 1.05rem;
+    opacity: .72;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-details__list {
+    display: grid;
+    gap: clamp(42px, 7vw, 90px);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-details__item {
+    display: grid;
+    grid-template-columns: minmax(0, 1.02fr) minmax(320px, .98fr);
+    gap: clamp(28px, 6vw, 82px);
+    align-items: center;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-details__item--reverse .gr-auth-details__media {
+    order: 2;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-details__media {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: var(--gr-details-radius);
+    background: #ececec;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-details__media img,
+  #shopify-section-{{ section.id }} .gr-auth-details__media svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-details__number {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    display: grid;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    border-radius: 50%;
+    color: #fff;
+    background: var(--gr-details-red);
+    font-size: 1.1rem;
+    font-weight: 900;
+    box-shadow: 0 8px 24px rgba(0,0,0,.2);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-details__content {
+    padding: clamp(4px, 2vw, 24px);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-details__item-heading {
+    margin: 0;
+    max-width: 16ch;
+    font-size: clamp(2rem, 3.5vw, 3.8rem);
+    line-height: .98;
+    letter-spacing: -.045em;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-details__text {
+    margin-top: 18px;
+    font-size: 1.02rem;
+    line-height: 1.6;
+    opacity: .76;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-details__callout {
+    display: flex;
+    gap: 11px;
+    margin-top: 22px;
+    padding: 16px 18px;
+    border-radius: 10px;
+    background: var(--gr-details-card);
+    font-weight: 750;
+    line-height: 1.4;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-details__callout::before {
+    content: "✓";
+    color: var(--gr-details-red);
+    font-weight: 950;
+  }
+
+  @media screen and (max-width: 899px) {
+    #shopify-section-{{ section.id }} .gr-auth-details__item {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    #shopify-section-{{ section.id }} .gr-auth-details__item--reverse .gr-auth-details__media {
+      order: 0;
+    }
+
+    #shopify-section-{{ section.id }} .gr-auth-details__content {
+      padding: 0 4px;
+    }
+  }
+</style>
+
+<section class="section gr-auth-details">
+  <div class="container">
+    <header class="gr-auth-details__header">
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="gr-auth-details__eyebrow">{{ section.settings.eyebrow }}</p>
+      {%- endif -%}
+      <h2 class="h1 gr-auth-details__heading">{{ section.settings.heading }}</h2>
+      {%- if section.settings.text != blank -%}
+        <div class="gr-auth-details__header-copy rte">{{ section.settings.text }}</div>
+      {%- endif -%}
+    </header>
+
+    <div class="gr-auth-details__list">
+      {%- for block in section.blocks -%}
+        <article class="gr-auth-details__item{% if block.settings.image_position == 'right' %} gr-auth-details__item--reverse{% endif %}" {{ block.shopify_attributes }}>
+          <div class="gr-auth-details__media">
+            {%- if block.settings.image != blank -%}
+              {{ block.settings.image
+                | image_url: width: 1500
+                | image_tag:
+                  loading: 'lazy',
+                  widths: '450,700,900,1200,1500',
+                  sizes: '(max-width: 899px) 100vw, 52vw',
+                  alt: block.settings.heading
+              }}
+            {%- else -%}
+              {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+            <span class="gr-auth-details__number">{{ forloop.index }}</span>
+          </div>
+
+          <div class="gr-auth-details__content">
+            {%- if block.settings.eyebrow != blank -%}
+              <p class="gr-auth-details__item-eyebrow">{{ block.settings.eyebrow }}</p>
+            {%- endif -%}
+            <h3 class="gr-auth-details__item-heading">{{ block.settings.heading }}</h3>
+            {%- if block.settings.text != blank -%}
+              <div class="gr-auth-details__text rte">{{ block.settings.text }}</div>
+            {%- endif -%}
+            {%- if block.settings.callout != blank -%}
+              <div class="gr-auth-details__callout">{{ block.settings.callout }}</div>
+            {%- endif -%}
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "GR Authenticity Details",
+  "tag": "section",
+  "class": "shopify-section--gr-auth-details",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Look closer"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "How to spot the real Grill Rescue."
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Use close-up campaign imagery to show the design, materials, branding, packaging, and details that separate the authentic product from lookalikes.</p>"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_color",
+      "label": "Callout background",
+      "default": "#f3f3f3"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#d91f26"
+    },
+    {
+      "type": "range",
+      "id": "corner_radius",
+      "label": "Image corner radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    }
+  ],
+  "blocks": [
+    {
+      "type": "detail",
+      "name": "Detail",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "select",
+          "id": "image_position",
+          "label": "Image position",
+          "options": [
+            { "value": "left", "label": "Left" },
+            { "value": "right", "label": "Right" }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "text",
+          "id": "eyebrow",
+          "label": "Eyebrow",
+          "default": "Authenticity check"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Check the construction."
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Explain the visible design or material detail shown in your image and why it matters to cleaning performance or durability.</p>"
+        },
+        {
+          "type": "text",
+          "id": "callout",
+          "label": "Highlighted takeaway",
+          "default": "Only the authentic product is backed by Grill Rescue."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "GR Authenticity Details",
+      "blocks": [
+        { "type": "detail", "settings": { "eyebrow": "01 — Cleaning head", "heading": "Start with the material.", "text": "<p>Use a macro image to show the authentic premium aramid-fiber cleaning head and explain how it is designed for Grill Rescue’s steam-cleaning system.</p>", "callout": "Authentic Grill Rescue heads are replaceable and dishwasher friendly.", "image_position": "left" } },
+        { "type": "detail", "settings": { "eyebrow": "02 — Handle and scraper", "heading": "Look at the complete build.", "text": "<p>Show the handle, scraper, connection points, branding, or other construction details that make the real product easy to identify.</p>", "callout": "The original design is patented and firefighter-designed.", "image_position": "right" } },
+        { "type": "detail", "settings": { "eyebrow": "03 — Seller and support", "heading": "Buy from the source.", "text": "<p>Explain where customers should purchase and what official warranty, replacement-part, and customer-support benefits come with the authentic product.</p>", "callout": "Buying direct connects customers to official Grill Rescue support.", "image_position": "left" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

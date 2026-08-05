@@ -1,0 +1,173 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --gr-faq-bg: {{ section.settings.background_color }};
+    --gr-faq-card: {{ section.settings.card_color }};
+    --gr-faq-text: {{ section.settings.text_color }};
+    --gr-faq-red: {{ section.settings.accent_color }};
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-faq {
+    background: var(--gr-faq-bg);
+    color: var(--gr-faq-text);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-faq__grid {
+    display: grid;
+    grid-template-columns: minmax(280px, .7fr) minmax(0, 1.3fr);
+    gap: clamp(32px, 6vw, 90px);
+    align-items: start;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-faq__eyebrow {
+    margin: 0 0 10px;
+    color: var(--gr-faq-red);
+    font-size: .78rem;
+    font-weight: 850;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-faq__heading {
+    margin: 0;
+    font-size: clamp(2.2rem, 4vw, 4.5rem);
+    line-height: .96;
+    letter-spacing: -.045em;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-faq__text {
+    margin-top: 18px;
+    line-height: 1.55;
+    opacity: .72;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-faq__button {
+    display: inline-flex;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+    padding: 0 24px;
+    border-radius: 8px;
+    color: #fff;
+    background: var(--gr-faq-red);
+    font-weight: 850;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-faq__list {
+    overflow: hidden;
+    border-radius: 14px;
+    background: var(--gr-faq-card);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-faq__item + .gr-auth-faq__item {
+    border-top: 1px solid rgba(0,0,0,.1);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-faq__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 22px 24px;
+    cursor: pointer;
+    font-weight: 850;
+    list-style: none;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-faq__question::-webkit-details-marker {
+    display: none;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-faq__question::after {
+    content: "+";
+    color: var(--gr-faq-red);
+    font-size: 1.55rem;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  #shopify-section-{{ section.id }} details[open] .gr-auth-faq__question::after {
+    content: "−";
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-faq__answer {
+    padding: 0 24px 24px;
+    line-height: 1.6;
+    opacity: .74;
+  }
+
+  @media screen and (max-width: 799px) {
+    #shopify-section-{{ section.id }} .gr-auth-faq__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<section class="section gr-auth-faq">
+  <div class="container">
+    <div class="gr-auth-faq__grid">
+      <div>
+        {%- if section.settings.eyebrow != blank -%}<p class="gr-auth-faq__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+        <h2 class="h1 gr-auth-faq__heading">{{ section.settings.heading }}</h2>
+        {%- if section.settings.text != blank -%}<div class="gr-auth-faq__text rte">{{ section.settings.text }}</div>{%- endif -%}
+        {%- if section.settings.button_text != blank -%}
+          <a class="button gr-auth-faq__button" href="{{ section.settings.button_link | default: '#gr-auth-buy' }}">{{ section.settings.button_text }}</a>
+        {%- endif -%}
+      </div>
+
+      <div class="gr-auth-faq__list">
+        {%- for block in section.blocks -%}
+          <details class="gr-auth-faq__item" {% if forloop.first and section.settings.open_first %}open{% endif %} {{ block.shopify_attributes }}>
+            <summary class="gr-auth-faq__question">{{ block.settings.question }}</summary>
+            <div class="gr-auth-faq__answer rte">{{ block.settings.answer }}</div>
+          </details>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "GR Authenticity FAQ",
+  "tag": "section",
+  "class": "shopify-section--gr-auth-faq",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Questions answered" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Why buy the original?" },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Use this area to answer authenticity, care, replacement-head, shipping, and guarantee questions before customers reach checkout.</p>" },
+    { "type": "checkbox", "id": "open_first", "label": "Open first question", "default": true },
+    { "type": "text", "id": "button_text", "label": "Button text", "default": "Get the real Grill Rescue" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "color", "id": "background_color", "label": "Background color", "default": "#ffffff" },
+    { "type": "color", "id": "card_color", "label": "Card color", "default": "#f3f3f3" },
+    { "type": "color", "id": "text_color", "label": "Text color", "default": "#111111" },
+    { "type": "color", "id": "accent_color", "label": "Accent color", "default": "#d91f26" }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "Question",
+      "limit": 10,
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question", "default": "What makes Grill Rescue different?" },
+        { "type": "richtext", "id": "answer", "label": "Answer", "default": "<p>Add your approved answer here.</p>" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "GR Authenticity FAQ",
+      "blocks": [
+        { "type": "faq", "settings": { "question": "What makes the authentic Grill Rescue different?", "answer": "<p>It is the original firefighter-designed, patented bristle-free brush and scraper, engineered as a complete steam-cleaning system with official replacement parts and Grill Rescue support.</p>" } },
+        { "type": "faq", "settings": { "question": "Does Grill Rescue use wire bristles?", "answer": "<p>No. Grill Rescue uses a bristle-free premium aramid-fiber cleaning head.</p>" } },
+        { "type": "faq", "settings": { "question": "Can I replace and clean the head?", "answer": "<p>Yes. The cleaning head is replaceable and dishwasher friendly. Follow the care instructions included with your product.</p>" } },
+        { "type": "faq", "settings": { "question": "How can I make sure I am buying the real product?", "answer": "<p>Purchase directly from Grill Rescue or an authorized seller, and compare the product branding, construction, packaging, and seller information with the authenticity details shown on this page.</p>" } },
+        { "type": "faq", "settings": { "question": "Is the authentic brush covered by a guarantee?", "answer": "<p>Grill Rescue currently promotes a 30-day guarantee on its site. Update this answer if your campaign terms change.</p>" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

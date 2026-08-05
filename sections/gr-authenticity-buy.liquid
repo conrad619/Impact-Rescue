@@ -1,0 +1,432 @@
+{%- liquid
+  assign main_product = section.settings.product
+  if main_product == blank
+    assign main_product = all_products['grill-brush-w-scraper']
+  endif
+
+  if main_product != blank
+    assign main_variant = main_product.selected_or_first_available_variant
+    assign main_form_id = 'gr-auth-buy-form-' | append: section.id
+  endif
+-%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --gr-buy-bg: {{ section.settings.background_color }};
+    --gr-buy-card: {{ section.settings.card_color }};
+    --gr-buy-text: {{ section.settings.text_color }};
+    --gr-buy-red: {{ section.settings.accent_color }};
+    --gr-buy-radius: {{ section.settings.corner_radius }}px;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy {
+    background: var(--gr-buy-bg);
+    color: var(--gr-buy-text);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__panel {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(360px, .85fr);
+    gap: clamp(28px, 5vw, 70px);
+    align-items: center;
+    padding: clamp(22px, 4vw, 52px);
+    border-radius: var(--gr-buy-radius);
+    background: var(--gr-buy-card);
+    box-shadow: 0 22px 70px rgba(0,0,0,.1);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__media {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: calc(var(--gr-buy-radius) * .75);
+    background: #efefef;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__media img,
+  #shopify-section-{{ section.id }} .gr-auth-buy__media svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__eyebrow {
+    margin: 0 0 10px;
+    color: var(--gr-buy-red);
+    font-size: .78rem;
+    font-weight: 850;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__heading {
+    margin: 0;
+    font-size: clamp(2.35rem, 4vw, 4.8rem);
+    line-height: .94;
+    letter-spacing: -.05em;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__copy {
+    margin-top: 18px;
+    line-height: 1.55;
+    opacity: .74;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__bullets {
+    display: grid;
+    gap: 9px;
+    margin: 22px 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__bullets li {
+    display: flex;
+    gap: 10px;
+    font-weight: 700;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__bullets li::before {
+    content: "✓";
+    color: var(--gr-buy-red);
+    font-weight: 950;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__price {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 16px;
+    font-size: 1.55rem;
+    font-weight: 900;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__compare {
+    font-size: .95rem;
+    font-weight: 500;
+    opacity: .5;
+    text-decoration: line-through;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__form {
+    display: grid;
+    grid-template-columns: 92px 1fr;
+    gap: 10px;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__field {
+    min-height: 54px;
+    width: 100%;
+    padding: 0 14px;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 8px;
+    background: #fff;
+    color: #111;
+    font: inherit;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__variant {
+    grid-column: 1 / -1;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__button {
+    min-height: 54px;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    background: var(--gr-buy-red);
+    font: inherit;
+    font-weight: 900;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__button[disabled] {
+    opacity: .45;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__microcopy {
+    margin: 10px 0 0;
+    font-size: .8rem;
+    text-align: center;
+    opacity: .62;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__addons-title {
+    margin: clamp(38px, 6vw, 70px) 0 20px;
+    text-align: center;
+    font-size: clamp(1.8rem, 3vw, 3rem);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__addons {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__addon {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: calc(var(--gr-buy-radius) * .75);
+    background: var(--gr-buy-card);
+    box-shadow: 0 10px 30px rgba(0,0,0,.07);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__addon-image {
+    aspect-ratio: 4 / 3;
+    background: #efefef;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__addon-image img,
+  #shopify-section-{{ section.id }} .gr-auth-buy__addon-image svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__addon-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 18px;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__addon-title {
+    margin: 0 0 6px;
+    font-size: 1.15rem;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__addon-price {
+    margin-bottom: 15px;
+    font-weight: 850;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-buy__addon-button {
+    width: 100%;
+    min-height: 46px;
+    margin-top: auto;
+    border: 2px solid var(--gr-buy-red);
+    border-radius: 7px;
+    color: var(--gr-buy-red);
+    background: transparent;
+    font: inherit;
+    font-weight: 850;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 899px) {
+    #shopify-section-{{ section.id }} .gr-auth-buy__panel {
+      grid-template-columns: 1fr;
+    }
+
+    #shopify-section-{{ section.id }} .gr-auth-buy__addons {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+    #shopify-section-{{ section.id }} .gr-auth-buy__panel {
+      padding: 18px;
+    }
+
+    #shopify-section-{{ section.id }} .gr-auth-buy__addons {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<section id="gr-auth-buy" class="section gr-auth-buy">
+  <div class="container">
+    <div class="gr-auth-buy__panel">
+      <div class="gr-auth-buy__media">
+        {%- if section.settings.image != blank -%}
+          {{ section.settings.image
+            | image_url: width: 1500
+            | image_tag:
+              loading: 'lazy',
+              widths: '450,700,900,1200,1500',
+              sizes: '(max-width: 899px) 100vw, 54vw',
+              alt: section.settings.heading
+          }}
+        {%- elsif main_product != blank and main_product.featured_image != blank -%}
+          {{ main_product.featured_image
+            | image_url: width: 1500
+            | image_tag:
+              loading: 'lazy',
+              widths: '450,700,900,1200,1500',
+              sizes: '(max-width: 899px) 100vw, 54vw',
+              alt: main_product.title
+          }}
+        {%- else -%}
+          {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      </div>
+
+      <div>
+        {%- if section.settings.eyebrow != blank -%}
+          <p class="gr-auth-buy__eyebrow">{{ section.settings.eyebrow }}</p>
+        {%- endif -%}
+        <h2 class="h1 gr-auth-buy__heading">{{ section.settings.heading }}</h2>
+        {%- if section.settings.text != blank -%}
+          <div class="gr-auth-buy__copy rte">{{ section.settings.text }}</div>
+        {%- endif -%}
+
+        <ul class="gr-auth-buy__bullets" role="list">
+          {%- if section.settings.bullet_1 != blank -%}<li>{{ section.settings.bullet_1 }}</li>{%- endif -%}
+          {%- if section.settings.bullet_2 != blank -%}<li>{{ section.settings.bullet_2 }}</li>{%- endif -%}
+          {%- if section.settings.bullet_3 != blank -%}<li>{{ section.settings.bullet_3 }}</li>{%- endif -%}
+        </ul>
+
+        {%- if main_product != blank -%}
+          <div class="gr-auth-buy__price">
+            <span data-gr-buy-price>{{ main_variant.price | money }}</span>
+            <s class="gr-auth-buy__compare" data-gr-buy-compare {% unless main_variant.compare_at_price > main_variant.price %}hidden{% endunless %}>{{ main_variant.compare_at_price | money }}</s>
+          </div>
+
+          {%- form 'product', main_product, id: main_form_id, is: 'product-form' -%}
+            <div class="gr-auth-buy__form">
+              {%- if main_product.variants.size > 1 -%}
+                <select class="gr-auth-buy__field gr-auth-buy__variant" name="id" aria-label="Choose an option" data-gr-buy-variant>
+                  {%- for variant in main_product.variants -%}
+                    <option
+                      value="{{ variant.id }}"
+                      data-price="{{ variant.price | money | escape }}"
+                      data-compare="{{ variant.compare_at_price | money | escape }}"
+                      data-has-compare="{% if variant.compare_at_price > variant.price %}true{% else %}false{% endif %}"
+                      {% if variant == main_variant %}selected{% endif %}
+                      {% unless variant.available %}disabled{% endunless %}
+                    >
+                      {{ variant.title }}{% unless variant.available %} — Sold out{% endunless %}
+                    </option>
+                  {%- endfor -%}
+                </select>
+              {%- else -%}
+                <input type="hidden" name="id" value="{{ main_variant.id }}">
+              {%- endif -%}
+
+              <input class="gr-auth-buy__field" type="number" name="quantity" value="1" min="1" inputmode="numeric" aria-label="Quantity">
+              <button class="button gr-auth-buy__button" type="submit" {% unless main_variant.available %}disabled{% endunless %}>
+                {% if main_variant.available %}{{ section.settings.button_text }}{% else %}Sold out{% endif %}
+              </button>
+            </div>
+          {%- endform -%}
+
+          {%- if section.settings.microcopy != blank -%}
+            <p class="gr-auth-buy__microcopy">{{ section.settings.microcopy }}</p>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- assign visible_addons = 0 -%}
+    {%- for block in section.blocks -%}
+      {%- if block.settings.product != blank -%}
+        {%- assign visible_addons = visible_addons | plus: 1 -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- if visible_addons > 0 -%}
+      <h3 class="gr-auth-buy__addons-title">{{ section.settings.addons_heading }}</h3>
+      <div class="gr-auth-buy__addons">
+        {%- for block in section.blocks -%}
+          {%- assign addon_product = block.settings.product -%}
+          {%- if addon_product != blank -%}
+            {%- assign addon_variant = addon_product.selected_or_first_available_variant -%}
+            <article class="gr-auth-buy__addon" {{ block.shopify_attributes }}>
+              <div class="gr-auth-buy__addon-image">
+                {%- if block.settings.image != blank -%}
+                  {{ block.settings.image | image_url: width: 800 | image_tag: loading: 'lazy', widths: '300,500,800', sizes: '(max-width: 599px) 100vw, 33vw', alt: addon_product.title }}
+                {%- elsif addon_product.featured_image != blank -%}
+                  {{ addon_product.featured_image | image_url: width: 800 | image_tag: loading: 'lazy', widths: '300,500,800', sizes: '(max-width: 599px) 100vw, 33vw', alt: addon_product.title }}
+                {%- else -%}
+                  {{ 'product-2' | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- endif -%}
+              </div>
+              <div class="gr-auth-buy__addon-content">
+                <h4 class="gr-auth-buy__addon-title">{{ addon_product.title }}</h4>
+                <div class="gr-auth-buy__addon-price">{{ addon_variant.price | money }}</div>
+                {%- form 'product', addon_product, is: 'product-form' -%}
+                  <input type="hidden" name="id" value="{{ addon_variant.id }}">
+                  <input type="hidden" name="quantity" value="1">
+                  <button class="gr-auth-buy__addon-button" type="submit" {% unless addon_variant.available %}disabled{% endunless %}>
+                    {% if addon_variant.available %}{{ block.settings.button_text }}{% else %}Sold out{% endif %}
+                  </button>
+                {%- endform -%}
+              </div>
+            </article>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+<script>
+  (() => {
+    const section = document.getElementById('shopify-section-{{ section.id }}');
+    if (!section || section.dataset.grBuyReady === 'true') return;
+    section.dataset.grBuyReady = 'true';
+
+    const select = section.querySelector('[data-gr-buy-variant]');
+    const price = section.querySelector('[data-gr-buy-price]');
+    const compare = section.querySelector('[data-gr-buy-compare]');
+    if (!select || !price || !compare) return;
+
+    select.addEventListener('change', () => {
+      const option = select.options[select.selectedIndex];
+      price.textContent = option.dataset.price || '';
+      compare.textContent = option.dataset.compare || '';
+      compare.hidden = option.dataset.hasCompare !== 'true';
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "GR Shoppable Buy Box",
+  "tag": "section",
+  "class": "shopify-section--gr-auth-buy",
+  "settings": [
+    { "type": "product", "id": "product", "label": "Main product" },
+    { "type": "image_picker", "id": "image", "label": "Main image override" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Get the authentic original" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Buy the real Grill Rescue." },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Shop direct for the original firefighter-designed brush, official support, and compatible replacement parts.</p>" },
+    { "type": "text", "id": "bullet_1", "label": "Bullet 1", "default": "Original bristle-free steam-cleaning design" },
+    { "type": "text", "id": "bullet_2", "label": "Bullet 2", "default": "Replaceable dishwasher-friendly cleaning head" },
+    { "type": "text", "id": "bullet_3", "label": "Bullet 3", "default": "Every purchase helps support first responders" },
+    { "type": "text", "id": "button_text", "label": "Button text", "default": "Add the real one to cart" },
+    { "type": "text", "id": "microcopy", "label": "Under-button text", "default": "Official Grill Rescue product • 30-day guarantee" },
+    { "type": "text", "id": "addons_heading", "label": "Add-ons heading", "default": "Complete your Grill Rescue setup" },
+    { "type": "color", "id": "background_color", "label": "Background color", "default": "#111111" },
+    { "type": "color", "id": "card_color", "label": "Card color", "default": "#ffffff" },
+    { "type": "color", "id": "text_color", "label": "Text color", "default": "#111111" },
+    { "type": "color", "id": "accent_color", "label": "Accent color", "default": "#d91f26" },
+    { "type": "range", "id": "corner_radius", "label": "Corner radius", "min": 0, "max": 30, "step": 2, "unit": "px", "default": 18 }
+  ],
+  "blocks": [
+    {
+      "type": "addon",
+      "name": "Add-on product",
+      "limit": 3,
+      "settings": [
+        { "type": "product", "id": "product", "label": "Product" },
+        { "type": "image_picker", "id": "image", "label": "Image override" },
+        { "type": "text", "id": "button_text", "label": "Button text", "default": "Add to cart" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "GR Shoppable Buy Box",
+      "blocks": [
+        { "type": "addon" },
+        { "type": "addon" },
+        { "type": "addon" }
+      ]
+    }
+  ]
+}
+{% endschema %}

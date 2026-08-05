@@ -1,0 +1,476 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --gr-compare-bg: {{ section.settings.background_color }};
+    --gr-compare-card: {{ section.settings.card_color }};
+    --gr-compare-text: {{ section.settings.text_color }};
+    --gr-compare-red: {{ section.settings.accent_color }};
+    --gr-compare-muted: {{ section.settings.muted_color }};
+    --gr-compare-radius: {{ section.settings.corner_radius }}px;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare {
+    background: var(--gr-compare-bg);
+    color: var(--gr-compare-text);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__intro {
+    max-width: 820px;
+    margin: 0 auto 42px;
+    text-align: center;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__eyebrow {
+    margin: 0 0 12px;
+    color: var(--gr-compare-red);
+    font-size: .78rem;
+    font-weight: 850;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__title {
+    margin: 0;
+    font-size: clamp(2.2rem, 4vw, 4.6rem);
+    line-height: .96;
+    letter-spacing: -.045em;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__copy {
+    margin-top: 18px;
+    font-size: 1.05rem;
+    opacity: .72;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 18px;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__product {
+    display: grid;
+    grid-template-columns: minmax(110px, 180px) 1fr;
+    gap: 22px;
+    align-items: center;
+    min-height: 250px;
+    padding: 22px;
+    border: 1px solid rgba(0,0,0,.09);
+    border-radius: var(--gr-compare-radius);
+    background: var(--gr-compare-card);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__product--real {
+    border: 3px solid var(--gr-compare-red);
+    box-shadow: 0 18px 50px rgba(0,0,0,.08);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__image {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: calc(var(--gr-compare-radius) * .7);
+    background: #f1f1f1;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__image img,
+  #shopify-section-{{ section.id }} .gr-auth-compare__image svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__badge {
+    display: inline-flex;
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    color: #fff;
+    background: var(--gr-compare-red);
+    font-size: .72rem;
+    font-weight: 850;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__product--fake .gr-auth-compare__badge {
+    background: #595959;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__product-title {
+    margin: 0 0 8px;
+    font-size: clamp(1.45rem, 2.3vw, 2.2rem);
+    line-height: 1;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__product-text {
+    margin: 0;
+    line-height: 1.5;
+    opacity: .72;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__table {
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,.09);
+    border-radius: var(--gr-compare-radius);
+    background: var(--gr-compare-card);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__row {
+    display: grid;
+    grid-template-columns: minmax(180px, 1.35fr) minmax(150px, 1fr) minmax(150px, 1fr);
+    align-items: stretch;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__row + .gr-auth-compare__row {
+    border-top: 1px solid rgba(0,0,0,.09);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__cell {
+    display: flex;
+    align-items: center;
+    min-height: 82px;
+    padding: 17px 20px;
+    line-height: 1.35;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__cell + .gr-auth-compare__cell {
+    border-left: 1px solid rgba(0,0,0,.09);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__feature {
+    font-weight: 800;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__answer {
+    gap: 10px;
+    font-size: .92rem;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__answer--real {
+    background: color-mix(in srgb, var(--gr-compare-red) 7%, transparent);
+    font-weight: 750;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__answer--fake {
+    color: var(--gr-compare-muted);
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__mark {
+    display: grid;
+    width: 25px;
+    height: 25px;
+    flex: 0 0 25px;
+    place-items: center;
+    border-radius: 50%;
+    color: #fff;
+    background: var(--gr-compare-red);
+    font-size: 13px;
+    font-weight: 900;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__answer--fake .gr-auth-compare__mark {
+    background: #777;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  #shopify-section-{{ section.id }} .gr-auth-compare__button {
+    display: inline-flex;
+    min-height: 54px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 28px;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    background: var(--gr-compare-red);
+    font-weight: 850;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 899px) {
+    #shopify-section-{{ section.id }} .gr-auth-compare__product {
+      grid-template-columns: 115px 1fr;
+    }
+  }
+
+  @media screen and (max-width: 699px) {
+    #shopify-section-{{ section.id }} .gr-auth-compare__products {
+      grid-template-columns: 1fr;
+    }
+
+    #shopify-section-{{ section.id }} .gr-auth-compare__product {
+      min-height: 0;
+      grid-template-columns: 105px 1fr;
+      padding: 16px;
+    }
+
+    #shopify-section-{{ section.id }} .gr-auth-compare__table {
+      overflow-x: auto;
+    }
+
+    #shopify-section-{{ section.id }} .gr-auth-compare__row {
+      min-width: 720px;
+    }
+
+    #shopify-section-{{ section.id }} .gr-auth-compare__cell {
+      min-height: 72px;
+      padding: 14px;
+    }
+  }
+</style>
+
+<section class="section gr-auth-compare">
+  <div class="container">
+    <div class="gr-auth-compare__intro">
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="gr-auth-compare__eyebrow">{{ section.settings.eyebrow }}</p>
+      {%- endif -%}
+      <h2 class="h1 gr-auth-compare__title">{{ section.settings.heading }}</h2>
+      {%- if section.settings.text != blank -%}
+        <div class="gr-auth-compare__copy rte">{{ section.settings.text }}</div>
+      {%- endif -%}
+    </div>
+
+    <div class="gr-auth-compare__products">
+      <article class="gr-auth-compare__product gr-auth-compare__product--real">
+        <div class="gr-auth-compare__image">
+          {%- if section.settings.real_image != blank -%}
+            {{ section.settings.real_image
+              | image_url: width: 700
+              | image_tag:
+                loading: 'lazy',
+                widths: '240,360,500,700',
+                sizes: '(max-width: 699px) 105px, 180px',
+                alt: section.settings.real_title
+            }}
+          {%- else -%}
+            {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        </div>
+        <div>
+          <span class="gr-auth-compare__badge">{{ section.settings.real_badge }}</span>
+          <h3 class="gr-auth-compare__product-title">{{ section.settings.real_title }}</h3>
+          <p class="gr-auth-compare__product-text">{{ section.settings.real_text }}</p>
+        </div>
+      </article>
+
+      <article class="gr-auth-compare__product gr-auth-compare__product--fake">
+        <div class="gr-auth-compare__image">
+          {%- if section.settings.fake_image != blank -%}
+            {{ section.settings.fake_image
+              | image_url: width: 700
+              | image_tag:
+                loading: 'lazy',
+                widths: '240,360,500,700',
+                sizes: '(max-width: 699px) 105px, 180px',
+                alt: section.settings.fake_title
+            }}
+          {%- else -%}
+            {{ 'product-2' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+        </div>
+        <div>
+          <span class="gr-auth-compare__badge">{{ section.settings.fake_badge }}</span>
+          <h3 class="gr-auth-compare__product-title">{{ section.settings.fake_title }}</h3>
+          <p class="gr-auth-compare__product-text">{{ section.settings.fake_text }}</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="gr-auth-compare__table" role="table" aria-label="Real Grill Rescue versus imitation comparison">
+      {%- for block in section.blocks -%}
+        <div class="gr-auth-compare__row" role="row" {{ block.shopify_attributes }}>
+          <div class="gr-auth-compare__cell gr-auth-compare__feature" role="cell">{{ block.settings.feature }}</div>
+          <div class="gr-auth-compare__cell gr-auth-compare__answer gr-auth-compare__answer--real" role="cell">
+            <span class="gr-auth-compare__mark" aria-hidden="true">✓</span>
+            <span>{{ block.settings.real_answer }}</span>
+          </div>
+          <div class="gr-auth-compare__cell gr-auth-compare__answer gr-auth-compare__answer--fake" role="cell">
+            <span class="gr-auth-compare__mark" aria-hidden="true">?</span>
+            <span>{{ block.settings.fake_answer }}</span>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+
+    {%- if section.settings.button_text != blank -%}
+      <div class="gr-auth-compare__footer">
+        <a class="button gr-auth-compare__button" href="{{ section.settings.button_link | default: '#gr-auth-buy' }}">
+          {{ section.settings.button_text }}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "GR Real vs Fake",
+  "tag": "section",
+  "class": "shopify-section--gr-auth-compare",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Know what you’re buying"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The original isn’t the same as a lookalike."
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Similar-looking listings do not guarantee the same materials, specifications, quality control, warranty, or customer support.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "real_image",
+      "label": "Real product image"
+    },
+    {
+      "type": "text",
+      "id": "real_badge",
+      "label": "Real badge",
+      "default": "The real one"
+    },
+    {
+      "type": "text",
+      "id": "real_title",
+      "label": "Real title",
+      "default": "Grill Rescue"
+    },
+    {
+      "type": "textarea",
+      "id": "real_text",
+      "label": "Real description",
+      "default": "The firefighter-designed original, sold and supported by Grill Rescue."
+    },
+    {
+      "type": "image_picker",
+      "id": "fake_image",
+      "label": "Imitation product image"
+    },
+    {
+      "type": "text",
+      "id": "fake_badge",
+      "label": "Imitation badge",
+      "default": "The lookalike"
+    },
+    {
+      "type": "text",
+      "id": "fake_title",
+      "label": "Imitation title",
+      "default": "Online imitation"
+    },
+    {
+      "type": "textarea",
+      "id": "fake_text",
+      "label": "Imitation description",
+      "default": "Materials, construction, seller support, and performance may vary by listing."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Shop the authentic brush"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#f7f7f7"
+    },
+    {
+      "type": "color",
+      "id": "card_color",
+      "label": "Card color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#d91f26"
+    },
+    {
+      "type": "color",
+      "id": "muted_color",
+      "label": "Imitation text color",
+      "default": "#686868"
+    },
+    {
+      "type": "range",
+      "id": "corner_radius",
+      "label": "Corner radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Comparison row",
+      "limit": 10,
+      "settings": [
+        {
+          "type": "text",
+          "id": "feature",
+          "label": "Feature",
+          "default": "Product origin"
+        },
+        {
+          "type": "text",
+          "id": "real_answer",
+          "label": "Grill Rescue answer",
+          "default": "Original firefighter-designed product"
+        },
+        {
+          "type": "text",
+          "id": "fake_answer",
+          "label": "Imitation answer",
+          "default": "Varies by seller"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "GR Real vs Fake",
+      "blocks": [
+        { "type": "row", "settings": { "feature": "Design", "real_answer": "The patented original", "fake_answer": "Similar appearance; specifications may vary" } },
+        { "type": "row", "settings": { "feature": "Cleaning head", "real_answer": "Premium aramid-fiber head", "fake_answer": "Material may be unclear or different" } },
+        { "type": "row", "settings": { "feature": "Steam cleaning", "real_answer": "Engineered as a complete steam-cleaning system", "fake_answer": "Performance may not match the original" } },
+        { "type": "row", "settings": { "feature": "Replacement parts", "real_answer": "Official replacement heads and accessories", "fake_answer": "Compatibility and availability may vary" } },
+        { "type": "row", "settings": { "feature": "Warranty and support", "real_answer": "Backed by Grill Rescue", "fake_answer": "Depends on the third-party seller" } },
+        { "type": "row", "settings": { "feature": "Gives back", "real_answer": "Purchases help support first responders", "fake_answer": "Not connected to the Grill Rescue mission" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
