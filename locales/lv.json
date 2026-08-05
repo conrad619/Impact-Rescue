@@ -115,7 +115,7 @@
     "volume_pricing": {
       "title": "Cenu noteikšana pēc apjoma",
       "minimum": "{{ minimum_quantity }}+",
-      "price_at_each": "{{ price }}/gab"
+      "price_at_each": "{{ price }}\/gab"
     },
     "rating_count": {
       "zero": "Nav atsauksmju",

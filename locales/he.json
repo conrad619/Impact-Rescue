@@ -115,7 +115,7 @@
     "volume_pricing": {
       "title": "תמחור לפי כמות",
       "minimum": "{{ minimum_quantity }}+",
-      "price_at_each": "{{ price }}/ליחידה"
+      "price_at_each": "{{ price }}\/ליחידה"
     },
     "rating_count": {
       "zero": "אין ביקורות",

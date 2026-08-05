@@ -36,7 +36,8 @@
         "price": {
           "type": "price",
           "settings": {
-            "show_taxes_notice": false
+            "show_taxes_notice": false,
+            "badge_text": ""
           }
         },
         "rating": {
@@ -59,6 +60,19 @@
             "collapse_content": false
           }
         },
+        "offer_XwFnkp": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-percent",
+            "icon_width": 20,
+            "title": "USE CODE: FOX",
+            "content": "<p>AT CHECKOUT TO RECEIVE AN ADDITIONAL 50% OFF AND A FREE PAIR OF GLOVES<\/p>",
+            "background": "#a10c10",
+            "text_color": "#ffffff"
+          }
+        },
         "text_bLdT8C": {
           "type": "text",
           "settings": {
@@ -76,8 +90,9 @@
             "size_chart_page": ""
           }
         },
-        "promo_nCchcp": {
+        "promo_yGNbAK": {
           "type": "promo",
+          "disabled": true,
           "settings": {}
         },
         "recharge_subscriptions_subscription_widget_v2_7qwFf9": {
@@ -99,17 +114,17 @@
             "payment_button_text_color": ""
           }
         },
-        "offer_aaPQaW": {
+        "offer_iYdcGG": {
           "type": "offer",
           "settings": {
             "text_alignment": "center",
             "icon_position": "aligned",
-            "icon": "none",
+            "icon": "picto-award-gift",
             "icon_width": 20,
-            "title": "",
-            "content": "<h5>Every Purchase Helps First Responders<\/h5>",
+            "title": "Every Purchase Helps First Responders",
+            "content": "",
             "background": "#f0f0f0",
-            "text_color": "#cb0101"
+            "text_color": "#121212"
           }
         },
         "section_store_block_badge_EeFFmT": {
@@ -160,13 +175,14 @@
         "rating",
         "separator",
         "description",
+        "offer_XwFnkp",
         "text_bLdT8C",
         "variant_picker",
-        "promo_nCchcp",
+        "promo_yGNbAK",
         "recharge_subscriptions_subscription_widget_v2_7qwFf9",
         "quantity_selector",
         "buy_buttons",
-        "offer_aaPQaW",
+        "offer_iYdcGG",
         "section_store_block_badge_EeFFmT",
         "payment_terms"
       ],
@@ -302,14 +318,16 @@
     },
     "related-products": {
       "type": "related-products",
-      "custom_css": [
-        "{padding-top: 50px; padding-bottom: 100px;}"
-      ],
       "settings": {
         "recommendations_count": 4,
-        "products": "{{ product.metafields[\"shopify--discovery--product_recommendation\"].complementary_products.value }}",
+        "products": [
+          "rescue-gift-bundle",
+          "rescue-grilling-gloves-pre-sale",
+          "rescue-gloves-leather-edition",
+          "rescue-grilling-gloves-usa-edition"
+        ],
         "full_width": true,
-        "stack_products": false,
+        "stack_products": true,
         "show_progress_bar": false,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
@@ -503,8 +521,8 @@
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "{{ product.metafields.custom.featured_video_title.value }}",
-            "content": "<p>{{ product.metafields.custom.featured_video_description | metafield_tag }}<\/p>",
+            "title": "Ultra Heat Resistant",
+            "content": "<p>Rescue Grilling Gloves give you tough, unbeatable protection for indoor cooking and serious outdoor grilling.<\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -609,7 +627,7 @@
             "column_size": "3",
             "title": "Created by a Firefighter",
             "heading_tag": "h4",
-            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best <\/strong><strong>{{ product.metafields.custom.created_by_a_firefighter_description_product_title.value }}<\/strong>.<br\/><br\/><\/p>",
+            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best Cleaning Sponge.<\/strong><br\/><br\/><\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -621,9 +639,9 @@
             "image": "shopify:\/\/shop_images\/firefighter.jpg",
             "show_controls": false,
             "column_size": "3",
-            "title": "Giving Back With Every Purchase",
+            "title": "Give Back With Every Purchase",
             "heading_tag": "h4",
-            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation<\/strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.<\/p>",
+            "content": "<p>We give back proudly. Through the<strong>Grill Rescue Foundation<\/strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.<\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -649,13 +667,10 @@
         "item_rEGXHV",
         "item_N3Hnwq"
       ],
-      "custom_css": [
-        "img {aspect-ratio: 1;}"
-      ],
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": true,
+        "stack_on_mobile": false,
         "gap": "medium",
         "text_alignment": "start",
         "subheading": "",
@@ -697,8 +712,7 @@
         "values_n9Bhtw": {
           "type": "values",
           "settings": {
-            "custom_title": "{{ product.metafields.custom.comparison_title.value }}",
-            "custom_image": "{{ product.metafields.custom.comparison_image.value }}",
+            "custom_title": "Steam Brush",
             "value_1": "<p>✔<\/p>",
             "value_2": "<p>✔<\/p>",
             "value_3": "<p>✔<\/p>",
@@ -797,7 +811,7 @@
         "view_all_text": "",
         "view_less_text": "",
         "show_product_info": true,
-        "show_product_image": true,
+        "show_product_image": false,
         "background": "rgba(0,0,0,0)",
         "background_gradient": "",
         "text_color": "",
@@ -875,8 +889,8 @@
       ],
       "settings": {
         "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
         "background": "",
         "background_gradient": "",
         "text_color": ""

@@ -1,19 +1,10 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
       "type": "main-product",
       "blocks": {
         "loox_reviews_loox_rating_pR7qQw": {
-          "type": "shopify://apps/loox-reviews/blocks/loox-rating/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "contentSize": 16,
             "pattern": "",
@@ -45,7 +36,8 @@
         "price": {
           "type": "price",
           "settings": {
-            "show_taxes_notice": false
+            "show_taxes_notice": false,
+            "badge_text": ""
           }
         },
         "rating": {
@@ -71,7 +63,21 @@
         "text_bLdT8C": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.patent_number.value }}</p>"
+            "text": "<p>{{ product.metafields.custom.patent_number.value }}<\/p>"
+          }
+        },
+        "offer_qFjjxh": {
+          "type": "offer",
+          "disabled": true,
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-percent",
+            "icon_width": 20,
+            "title": "USE CODE: FOX",
+            "content": "<p>AT CHECKOUT TO RECEIVE AN ADDITIONAL 50% OFF AND A FREE BRUSH*<\/p>",
+            "background": "#a10c10",
+            "text_color": "#ffffff"
           }
         },
         "promo_CyJFmi": {
@@ -90,7 +96,7 @@
           }
         },
         "recharge_subscriptions_subscription_widget_v2_7qwFf9": {
-          "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget-v2/371eed76-0b44-4869-9813-730372ea378e",
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget-v2\/371eed76-0b44-4869-9813-730372ea378e",
           "settings": {}
         },
         "quantity_selector": {
@@ -116,13 +122,13 @@
             "icon": "none",
             "icon_width": 20,
             "title": "",
-            "content": "<h5>Every Purchase Helps First Responders</h5>",
+            "content": "<h5>Every Purchase Helps First Responders<\/h5>",
             "background": "#f0f0f0",
             "text_color": "#cb0101"
           }
         },
         "section_store_block_badge_EeFFmT": {
-          "type": "shopify://apps/section-store/blocks/block-badge/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "type": "shopify:\/\/apps\/section-store\/blocks\/block-badge\/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
             "first_icon": "none",
             "first_title": "30-Day Money Back Guarantee",
@@ -170,6 +176,7 @@
         "separator",
         "description",
         "text_bLdT8C",
+        "offer_qFjjxh",
         "promo_CyJFmi",
         "variant_picker",
         "recharge_subscriptions_subscription_widget_v2_7qwFf9",
@@ -203,63 +210,63 @@
         "slide_ybPTHt": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/forbes.png",
+            "image": "shopify:\/\/shop_images\/forbes.png",
             "link": ""
           }
         },
         "slide_zXMn6q": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/new_york_post.png",
+            "image": "shopify:\/\/shop_images\/new_york_post.png",
             "link": ""
           }
         },
         "slide_FXjCt8": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/variety.png",
+            "image": "shopify:\/\/shop_images\/variety.png",
             "link": ""
           }
         },
         "slide_HAPz8q": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/abc.png",
+            "image": "shopify:\/\/shop_images\/abc.png",
             "link": ""
           }
         },
         "slide_YjDm4b": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/usa_today.png",
+            "image": "shopify:\/\/shop_images\/usa_today.png",
             "link": ""
           }
         },
         "slide_XAy8XQ": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/nbc.png",
+            "image": "shopify:\/\/shop_images\/nbc.png",
             "link": ""
           }
         },
         "slide_wiTibg": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/new_york_times.png",
+            "image": "shopify:\/\/shop_images\/new_york_times.png",
             "link": ""
           }
         },
         "slide_M69xT9": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/entrepreneur.png",
+            "image": "shopify:\/\/shop_images\/entrepreneur.png",
             "link": ""
           }
         },
         "slide_amVQaG": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/fox.png",
+            "image": "shopify:\/\/shop_images\/fox.png",
             "link": ""
           }
         }
@@ -324,7 +331,7 @@
         "products_per_row_desktop": 4,
         "subheading": "",
         "title": "Bundle with",
-        "content": "<p>Swipe To See What Our Customers Love the Most</p>",
+        "content": "<p>Swipe To See What Our Customers Love the Most<\/p>",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -349,7 +356,7 @@
         "richtext_HLCVan": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Don't just take it from us, check out what our customers have to say!</p>"
+            "content": "<p>Don't just take it from us, check out what our customers have to say!<\/p>"
           }
         }
       },
@@ -384,10 +391,10 @@
           "type": "ai_gen_block_efa3b28",
           "disabled": true,
           "settings": {
-            "video_1": "shopify://files/videos/vid1.mp4",
-            "video_2": "shopify://files/videos/Grill Rescue Review.mp4",
-            "video_3": "shopify://files/videos/vid4.mp4",
-            "video_4": "shopify://files/videos/Brad Fs-2.mp4",
+            "video_1": "shopify:\/\/files\/videos\/vid1.mp4",
+            "video_2": "shopify:\/\/files\/videos\/Grill Rescue Review.mp4",
+            "video_3": "shopify:\/\/files\/videos\/vid4.mp4",
+            "video_4": "shopify:\/\/files\/videos\/Brad Fs-2.mp4",
             "desktop_width_percent": 100,
             "gap": 16,
             "corner_radius": 8
@@ -413,13 +420,13 @@
       "type": "apps",
       "blocks": {
         "section_store_block_video_carousel_pGFQMc": {
-          "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "type": "shopify:\/\/apps\/section-store\/blocks\/block-video-carousel\/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
-            "video_1": "shopify://files/videos/vid1.mp4",
-            "video_2": "shopify://files/videos/Grill Rescue Review.mp4",
-            "video_3": "shopify://files/videos/vid4.mp4",
-            "video_4": "shopify://files/videos/Brad Fs-2.mp4",
-            "video_5": "shopify://files/videos/Quick Customer Review of Grill.mp4",
+            "video_1": "shopify:\/\/files\/videos\/vid1.mp4",
+            "video_2": "shopify:\/\/files\/videos\/Grill Rescue Review.mp4",
+            "video_3": "shopify:\/\/files\/videos\/vid4.mp4",
+            "video_4": "shopify:\/\/files\/videos\/Brad Fs-2.mp4",
+            "video_5": "shopify:\/\/files\/videos\/Quick Customer Review of Grill.mp4",
             "slider_style": "arrows",
             "modal_style": "side",
             "video_autoplay": "true",
@@ -459,7 +466,7 @@
       "type": "apps",
       "blocks": {
         "loox_reviews_loox_card_carousel_section_GBfVQm": {
-          "type": "shopify://apps/loox-reviews/blocks/loox-card-carousel-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-card-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "maxWidth": 1100,
             "borderRadius": 8,
@@ -514,7 +521,7 @@
             "video": "{{ product.metafields.custom.featured_video.value }}",
             "external_video_url": "",
             "poster_image": "{{ product.metafields.custom.featured_video_placeholder_image.value }}",
-            "aspect_ratio": "16/9",
+            "aspect_ratio": "16\/9",
             "autoplay": false,
             "media_width": 50,
             "media_position": "end",
@@ -523,7 +530,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "{{ product.metafields.custom.featured_video_title.value }}",
-            "content": "<p>{{ product.metafields.custom.featured_video_description | metafield_tag }}</p>",
+            "content": "<p>{{ product.metafields.custom.featured_video_description | metafield_tag }}<\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -538,7 +545,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/download.avif",
+            "image": "shopify:\/\/shop_images\/download.avif",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -546,7 +553,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Created by a Firefighter",
-            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best Grill Brush</strong>.</p>",
+            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best Grill Brush<\/strong>.<\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -561,7 +568,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/firefighter.jpg",
+            "image": "shopify:\/\/shop_images\/firefighter.jpg",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -569,7 +576,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Giving Back With Every Purchase",
-            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation</strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.</p>",
+            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation<\/strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.<\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -584,7 +591,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/IMG_3522_copy-2.avif",
+            "image": "shopify:\/\/shop_images\/IMG_3522_copy-2.avif",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -592,7 +599,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Premium Construction",
-            "content": "<p><strong>Everything we build is premium grade</strong>, obsessivel y engineered so you can trust every part is made as strong, durable, and refined as possible every time always!</p>",
+            "content": "<p><strong>Everything we build is premium grade<\/strong>, obsessivel y engineered so you can trust every part is made as strong, durable, and refined as possible every time always!<\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -628,7 +635,7 @@
             "column_size": "3",
             "title": "Created by a Firefighter",
             "heading_tag": "h4",
-            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best </strong><strong>{{ product.metafields.custom.created_by_a_firefighter_description_product_title.value }}</strong>.<br/><br/></p>",
+            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best <\/strong><strong>{{ product.metafields.custom.created_by_a_firefighter_description_product_title.value }}<\/strong>.<br\/><br\/><\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -637,12 +644,12 @@
         "item_rEGXHV": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/firefighter.jpg",
+            "image": "shopify:\/\/shop_images\/firefighter.jpg",
             "show_controls": false,
             "column_size": "3",
             "title": "Giving Back With Every Purchase",
             "heading_tag": "h4",
-            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation</strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.</p>",
+            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation<\/strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.<\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -656,7 +663,7 @@
             "column_size": "3",
             "title": "Premium Construction",
             "heading_tag": "h4",
-            "content": "<p><strong>Everything we build is premium grade</strong>, obsessively engineered so you can trust every part is made as strong, durable, and refined as possible every time always!<br/><br/></p>",
+            "content": "<p><strong>Everything we build is premium grade<\/strong>, obsessively engineered so you can trust every part is made as strong, durable, and refined as possible every time always!<br\/><br\/><\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -715,15 +722,15 @@
           "settings": {
             "custom_title": "{{ product.metafields.custom.comparison_title.value }}",
             "custom_image": "{{ product.metafields.custom.comparison_image.value }}",
-            "value_1": "<p>✔</p>",
-            "value_2": "<p>✔</p>",
-            "value_3": "<p>✔</p>",
-            "value_4": "<p>✔</p>",
-            "value_5": "<p>✔</p>",
-            "value_6": "<p>✔</p>",
-            "value_7": "<p>✔</p>",
-            "value_8": "<p>✔</p>",
-            "value_9": "<p>✔</p>",
+            "value_1": "<p>✔<\/p>",
+            "value_2": "<p>✔<\/p>",
+            "value_3": "<p>✔<\/p>",
+            "value_4": "<p>✔<\/p>",
+            "value_5": "<p>✔<\/p>",
+            "value_6": "<p>✔<\/p>",
+            "value_7": "<p>✔<\/p>",
+            "value_8": "<p>✔<\/p>",
+            "value_9": "<p>✔<\/p>",
             "value_10": "",
             "value_11": "",
             "value_12": "",
@@ -741,16 +748,16 @@
           "type": "values",
           "settings": {
             "custom_title": "Bristle Brushes",
-            "custom_image": "shopify://shop_images/wirebrush.webp",
-            "value_1": "<p>✕</p>",
-            "value_2": "<p>✔</p>",
-            "value_3": "<p>✕</p>",
-            "value_4": "<p>✕</p>",
-            "value_5": "<p>✕</p>",
-            "value_6": "<p>✕</p>",
-            "value_7": "<p>✕</p>",
-            "value_8": "<p>✕</p>",
-            "value_9": "<p>✕</p>",
+            "custom_image": "shopify:\/\/shop_images\/wirebrush.webp",
+            "value_1": "<p>✕<\/p>",
+            "value_2": "<p>✔<\/p>",
+            "value_3": "<p>✕<\/p>",
+            "value_4": "<p>✕<\/p>",
+            "value_5": "<p>✕<\/p>",
+            "value_6": "<p>✕<\/p>",
+            "value_7": "<p>✕<\/p>",
+            "value_8": "<p>✕<\/p>",
+            "value_9": "<p>✕<\/p>",
             "value_10": "",
             "value_11": "",
             "value_12": "",
@@ -768,16 +775,16 @@
           "type": "values",
           "settings": {
             "custom_title": "Wood Scraper",
-            "custom_image": "shopify://shop_images/wood_scraper.webp",
-            "value_1": "<p>✔</p>",
-            "value_2": "<p>✔</p>",
-            "value_3": "<p>✔</p>",
-            "value_4": "<p>✕</p>",
-            "value_5": "<p>✕</p>",
-            "value_6": "<p>✕</p>",
-            "value_7": "<p>✕</p>",
-            "value_8": "<p>✔</p>",
-            "value_9": "<p>✔</p>",
+            "custom_image": "shopify:\/\/shop_images\/wood_scraper.webp",
+            "value_1": "<p>✔<\/p>",
+            "value_2": "<p>✔<\/p>",
+            "value_3": "<p>✔<\/p>",
+            "value_4": "<p>✕<\/p>",
+            "value_5": "<p>✕<\/p>",
+            "value_6": "<p>✕<\/p>",
+            "value_7": "<p>✕<\/p>",
+            "value_8": "<p>✔<\/p>",
+            "value_9": "<p>✔<\/p>",
             "value_10": "",
             "value_11": "",
             "value_12": "",
@@ -804,7 +811,7 @@
         "full_width": false,
         "subheading": "",
         "title": "Compare Grill Rescue",
-        "content": "<p>Find out how Grill Rescue compares to other leading grill brushes<br/><br/></p>",
+        "content": "<p>Find out how Grill Rescue compares to other leading grill brushes<br\/><br\/><\/p>",
         "button_text": "",
         "button_url": "",
         "text_position": "center",
@@ -833,7 +840,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "html": "<section class=\"compare-grill-rescue\">\n  <style>\n    .compare-grill-rescue {\n      padding: 30px 16px 40px;\n      font-family: Arial, Helvetica, sans-serif;\n      color: #222;\n    }\n\n    .compare-grill-rescue * {\n      box-sizing: border-box;\n    }\n\n    .compare-grill-rescue .compare-wrap {\n      max-width: 1600px;\n      margin: 0 auto;\n    }\n\n    .compare-grill-rescue .compare-title {\n      text-align: center;\n      margin: 0 0 6px;\n      font-size: 28px;\n      font-weight: 700;\n    }\n\n    .compare-grill-rescue .compare-subtitle {\n      text-align: center;\n      margin: 0 0 24px;\n      font-size: 14px;\n      letter-spacing: 0.5px;\n      color: #555;\n    }\n\n    .compare-grill-rescue .compare-table {\n      display: grid;\n      grid-template-columns: 1.1fr 1fr 1fr 1fr;\n      gap: 0;\n      align-items: stretch;\n    }\n\n    .compare-grill-rescue .cell {\n      padding: 14px 18px;\n    }\n\n    .compare-grill-rescue .header-empty {\n      background: transparent;\n    }\n\n    .compare-grill-rescue .header {\n      background: #c94536;\n      color: #fff;\n      text-align: center;\n      font-size: 24px;\n      font-weight: 500;\n      padding: 14px 10px;\n      width:100%;\n    }\n\n    .compare-grill-rescue .type-label {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n      min-height: 175px;\n      font-size: 23px;\n      font-weight: 500;\n    }\n\n    .compare-grill-rescue .product-image {\n      min-height: 175px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      padding: 20px;\n      mix-blend-mode: darken;\n    }\n\n    .compare-grill-rescue .product-image img {\n      max-width: 100%;\n      max-height: 130px;\n      object-fit: contain;\n      display: block;\n    }\n\n    .compare-grill-rescue .feature {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n      min-height: 52px;\n      font-size: 18px;\n      line-height: 1.3;\n      border-bottom: 1px solid #9d9d9d;\n      padding-left: 10px;\n      padding-right: 10px;\n    }\n\n    .compare-grill-rescue .value {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      min-height: 52px;\n      font-size: 28px;\n      font-weight: 700;\n    }\n\n    .compare-grill-rescue .yes {\n      color: #3d4246;\n    }\n\n    .compare-grill-rescue .no {\n      color: #d63c30;\n    }\n\n    .compare-grill-rescue .button-row {\n      min-height: 74px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    .compare-grill-rescue .shop-button {\n      display: inline-block;\n      background: #c94536;\n      color: #fff;\n      text-decoration: none;\n      padding: 12px 28px;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.5px;\n      transition: opacity 0.2s ease;\n      text-align: center;\n      white-space: nowrap;\n    }\n\n    .compare-grill-rescue .shop-button:hover {\n      opacity: 0.9;\n    }\n\n    /* Tablet */\n    @media (max-width: 991px) {\n      .compare-grill-rescue .compare-table {\n        grid-template-columns: 1.4fr 1fr 1fr 1fr;\n      }\n\n      .compare-grill-rescue .header {\n        font-size: 20px;\n      }\n\n      .compare-grill-rescue .type-label {\n        font-size: 18px;\n        min-height: 150px;\n      }\n\n      .compare-grill-rescue .product-image {\n        min-height: 150px;\n      }\n\n      .compare-grill-rescue .feature {\n        font-size: 15px;\n      }\n\n      .compare-grill-rescue .value {\n        font-size: 24px;\n      }\n    }\n\n    /* Mobile */\n    @media (max-width: 767px) {\n      .compare-grill-rescue {\n        padding: 24px 12px 30px;\n      }\n\n      .compare-grill-rescue .compare-title {\n        font-size: 24px;\n        line-height: 1.2;\n      }\n\n      .compare-grill-rescue .compare-subtitle {\n        font-size: 13px;\n        line-height: 1.4;\n        margin-bottom: 18px;\n      }\n\n      .compare-grill-rescue .compare-table {\n        grid-template-columns: 1.5fr 1fr 1fr 1fr;\n        min-width: 760px;\n      }\n\n      .compare-grill-rescue .compare-scroll {\n        overflow-x: auto;\n        -webkit-overflow-scrolling: touch;\n      }\n\n      .compare-grill-rescue .cell {\n        padding: 10px 8px;\n      }\n\n      .compare-grill-rescue .header {\n        font-size: 16px;\n        line-height: 1.2;\n        padding: 12px 8px;\n      }\n\n      .compare-grill-rescue .type-label {\n        font-size: 16px;\n        min-height: 120px;\n        line-height: 1.3;\n      }\n\n      .compare-grill-rescue .product-image {\n        min-height: 120px;\n        padding: 12px;\n      }\n\n      .compare-grill-rescue .product-image img {\n        max-height: 85px;\n      }\n\n      .compare-grill-rescue .feature {\n        justify-content: flex-start;\n        text-align: left;\n        font-size: 14px;\n        min-height: 54px;\n        line-height: 1.35;\n      }\n\n      .compare-grill-rescue .value {\n        font-size: 22px;\n        min-height: 54px;\n      }\n\n      .compare-grill-rescue .button-row {\n        min-height: 68px;\n      }\n\n      .compare-grill-rescue .shop-button {\n        font-size: 12px;\n        padding: 10px 18px;\n      }\n    }\n\n    /* Very small phones */\n    @media (max-width: 480px) {\n      .compare-grill-rescue .compare-title {\n        font-size: 21px;\n      }\n\n      .compare-grill-rescue .compare-subtitle {\n        font-size: 12px;\n      }\n\n      .compare-grill-rescue .compare-table {\n        min-width: 700px;\n      }\n\n      .compare-grill-rescue .feature {\n        font-size: 13px;\n      }\n\n      .compare-grill-rescue .header {\n        font-size: 15px;\n      }\n    }\n  </style>\n\n  <div class=\"compare-wrap\">\n    <h2 class=\"compare-title\">Compare Grill Rescue</h2>\n    <p class=\"compare-subtitle\">\n      Find out how Grill Rescue compares to other leading grill brushes\n    </p>\n\n    <div class=\"compare-scroll\">\n      <div class=\"compare-table\">\n        <div class=\"cell header-empty\"></div>\n        <div class=\"cell header\">Grill Rescue</div>\n        <div class=\"cell header\">Wire Brushes</div>\n        <div class=\"cell header\">Wood Scraper</div>\n\n        <div class=\"cell type-label\">Type Of Grill Brush</div>\n        <div class=\"cell product-image\">\n          <img src=\"https://ucarecdn.com/11e32f0d-892a-4115-b667-dfd5422afd36/-/format/auto/-/preview/3000x3000/-/quality/lighter/\" alt=\"Grill Rescue brush\">\n        </div>\n        <div class=\"cell product-image\">\n          <img src=\"https://ucarecdn.com/1a322ffa-57e2-4e62-bc96-0b69ffa509b2/-/format/auto/-/preview/3000x3000/-/quality/lighter/\" alt=\"Wire brushes\">\n        </div>\n        <div class=\"cell product-image\">\n          <img src=\"https://ucarecdn.com/a5b947dd-11ff-4d37-9698-57f9af717246/-/format/auto/-/preview/3000x3000/-/quality/lighter/\" alt=\"Wood scraper\">\n        </div>\n\n        <div class=\"cell feature\">Won't Send You To The Emergency Room</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value no\">✕</div>\n        <div class=\"cell value yes\">✓</div>\n\n        <div class=\"cell feature\">Doesn’t Leave A Residue On Your Grill</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value yes\">✓</div>\n\n        <div class=\"cell feature\">Doesn’t Fall Off And Get Stuck In Your Food</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value no\">✕</div>\n        <div class=\"cell value yes\">✓</div>\n\n        <div class=\"cell feature\">Cleans Exceptionally Well</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value no\">✕</div>\n        <div class=\"cell value no\">✕</div>\n\n        <div class=\"cell feature\">Uses Steam To Clean</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value no\">✕</div>\n        <div class=\"cell value no\">✕</div>\n\n        <div class=\"cell feature\">Has A Long Life Span</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value no\">✕</div>\n        <div class=\"cell value no\">✕</div>\n\n        <div class=\"cell feature\">Dishwasher Friendly</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value no\">✕</div>\n        <div class=\"cell value no\">✕</div>\n\n        <div class=\"cell feature\">Can Use On A Hot Surface</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value no\">✕</div>\n        <div class=\"cell value yes\">✓</div>\n\n        <div class=\"cell feature\">Doesn’t Get Clogged With Grease And Grime</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value no\">✕</div>\n        <div class=\"cell value yes\">✓</div>\n\n        <div class=\"cell button-row\"></div>\n        <div class=\"cell button-row\">\n          <a href=\"#main\" class=\"shop-button\">SHOP GRILL RESCUE</a>\n        </div>\n        <div class=\"cell button-row\"></div>\n        <div class=\"cell button-row\"></div>\n      </div>\n    </div>\n  </div>\n</section>",
+        "html": "<section class=\"compare-grill-rescue\">\n  <style>\n    .compare-grill-rescue {\n      padding: 30px 16px 40px;\n      font-family: Arial, Helvetica, sans-serif;\n      color: #222;\n    }\n\n    .compare-grill-rescue * {\n      box-sizing: border-box;\n    }\n\n    .compare-grill-rescue .compare-wrap {\n      max-width: 1600px;\n      margin: 0 auto;\n    }\n\n    .compare-grill-rescue .compare-title {\n      text-align: center;\n      margin: 0 0 6px;\n      font-size: 28px;\n      font-weight: 700;\n    }\n\n    .compare-grill-rescue .compare-subtitle {\n      text-align: center;\n      margin: 0 0 24px;\n      font-size: 14px;\n      letter-spacing: 0.5px;\n      color: #555;\n    }\n\n    .compare-grill-rescue .compare-table {\n      display: grid;\n      grid-template-columns: 1.1fr 1fr 1fr 1fr;\n      gap: 0;\n      align-items: stretch;\n    }\n\n    .compare-grill-rescue .cell {\n      padding: 14px 18px;\n    }\n\n    .compare-grill-rescue .header-empty {\n      background: transparent;\n    }\n\n    .compare-grill-rescue .header {\n      background: #c94536;\n      color: #fff;\n      text-align: center;\n      font-size: 24px;\n      font-weight: 500;\n      padding: 14px 10px;\n      width:100%;\n    }\n\n    .compare-grill-rescue .type-label {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n      min-height: 175px;\n      font-size: 23px;\n      font-weight: 500;\n    }\n\n    .compare-grill-rescue .product-image {\n      min-height: 175px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      padding: 20px;\n      mix-blend-mode: darken;\n    }\n\n    .compare-grill-rescue .product-image img {\n      max-width: 100%;\n      max-height: 130px;\n      object-fit: contain;\n      display: block;\n    }\n\n    .compare-grill-rescue .feature {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n      min-height: 52px;\n      font-size: 18px;\n      line-height: 1.3;\n      border-bottom: 1px solid #9d9d9d;\n      padding-left: 10px;\n      padding-right: 10px;\n    }\n\n    .compare-grill-rescue .value {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      min-height: 52px;\n      font-size: 28px;\n      font-weight: 700;\n    }\n\n    .compare-grill-rescue .yes {\n      color: #3d4246;\n    }\n\n    .compare-grill-rescue .no {\n      color: #d63c30;\n    }\n\n    .compare-grill-rescue .button-row {\n      min-height: 74px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    .compare-grill-rescue .shop-button {\n      display: inline-block;\n      background: #c94536;\n      color: #fff;\n      text-decoration: none;\n      padding: 12px 28px;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.5px;\n      transition: opacity 0.2s ease;\n      text-align: center;\n      white-space: nowrap;\n    }\n\n    .compare-grill-rescue .shop-button:hover {\n      opacity: 0.9;\n    }\n\n    \/* Tablet *\/\n    @media (max-width: 991px) {\n      .compare-grill-rescue .compare-table {\n        grid-template-columns: 1.4fr 1fr 1fr 1fr;\n      }\n\n      .compare-grill-rescue .header {\n        font-size: 20px;\n      }\n\n      .compare-grill-rescue .type-label {\n        font-size: 18px;\n        min-height: 150px;\n      }\n\n      .compare-grill-rescue .product-image {\n        min-height: 150px;\n      }\n\n      .compare-grill-rescue .feature {\n        font-size: 15px;\n      }\n\n      .compare-grill-rescue .value {\n        font-size: 24px;\n      }\n    }\n\n    \/* Mobile *\/\n    @media (max-width: 767px) {\n      .compare-grill-rescue {\n        padding: 24px 12px 30px;\n      }\n\n      .compare-grill-rescue .compare-title {\n        font-size: 24px;\n        line-height: 1.2;\n      }\n\n      .compare-grill-rescue .compare-subtitle {\n        font-size: 13px;\n        line-height: 1.4;\n        margin-bottom: 18px;\n      }\n\n      .compare-grill-rescue .compare-table {\n        grid-template-columns: 1.5fr 1fr 1fr 1fr;\n        min-width: 760px;\n      }\n\n      .compare-grill-rescue .compare-scroll {\n        overflow-x: auto;\n        -webkit-overflow-scrolling: touch;\n      }\n\n      .compare-grill-rescue .cell {\n        padding: 10px 8px;\n      }\n\n      .compare-grill-rescue .header {\n        font-size: 16px;\n        line-height: 1.2;\n        padding: 12px 8px;\n      }\n\n      .compare-grill-rescue .type-label {\n        font-size: 16px;\n        min-height: 120px;\n        line-height: 1.3;\n      }\n\n      .compare-grill-rescue .product-image {\n        min-height: 120px;\n        padding: 12px;\n      }\n\n      .compare-grill-rescue .product-image img {\n        max-height: 85px;\n      }\n\n      .compare-grill-rescue .feature {\n        justify-content: flex-start;\n        text-align: left;\n        font-size: 14px;\n        min-height: 54px;\n        line-height: 1.35;\n      }\n\n      .compare-grill-rescue .value {\n        font-size: 22px;\n        min-height: 54px;\n      }\n\n      .compare-grill-rescue .button-row {\n        min-height: 68px;\n      }\n\n      .compare-grill-rescue .shop-button {\n        font-size: 12px;\n        padding: 10px 18px;\n      }\n    }\n\n    \/* Very small phones *\/\n    @media (max-width: 480px) {\n      .compare-grill-rescue .compare-title {\n        font-size: 21px;\n      }\n\n      .compare-grill-rescue .compare-subtitle {\n        font-size: 12px;\n      }\n\n      .compare-grill-rescue .compare-table {\n        min-width: 700px;\n      }\n\n      .compare-grill-rescue .feature {\n        font-size: 13px;\n      }\n\n      .compare-grill-rescue .header {\n        font-size: 15px;\n      }\n    }\n  <\/style>\n\n  <div class=\"compare-wrap\">\n    <h2 class=\"compare-title\">Compare Grill Rescue<\/h2>\n    <p class=\"compare-subtitle\">\n      Find out how Grill Rescue compares to other leading grill brushes\n    <\/p>\n\n    <div class=\"compare-scroll\">\n      <div class=\"compare-table\">\n        <div class=\"cell header-empty\"><\/div>\n        <div class=\"cell header\">Grill Rescue<\/div>\n        <div class=\"cell header\">Wire Brushes<\/div>\n        <div class=\"cell header\">Wood Scraper<\/div>\n\n        <div class=\"cell type-label\">Type Of Grill Brush<\/div>\n        <div class=\"cell product-image\">\n          <img src=\"https:\/\/ucarecdn.com\/11e32f0d-892a-4115-b667-dfd5422afd36\/-\/format\/auto\/-\/preview\/3000x3000\/-\/quality\/lighter\/\" alt=\"Grill Rescue brush\">\n        <\/div>\n        <div class=\"cell product-image\">\n          <img src=\"https:\/\/ucarecdn.com\/1a322ffa-57e2-4e62-bc96-0b69ffa509b2\/-\/format\/auto\/-\/preview\/3000x3000\/-\/quality\/lighter\/\" alt=\"Wire brushes\">\n        <\/div>\n        <div class=\"cell product-image\">\n          <img src=\"https:\/\/ucarecdn.com\/a5b947dd-11ff-4d37-9698-57f9af717246\/-\/format\/auto\/-\/preview\/3000x3000\/-\/quality\/lighter\/\" alt=\"Wood scraper\">\n        <\/div>\n\n        <div class=\"cell feature\">Won't Send You To The Emergency Room<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value no\">✕<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n\n        <div class=\"cell feature\">Doesn’t Leave A Residue On Your Grill<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n\n        <div class=\"cell feature\">Doesn’t Fall Off And Get Stuck In Your Food<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value no\">✕<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n\n        <div class=\"cell feature\">Cleans Exceptionally Well<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value no\">✕<\/div>\n        <div class=\"cell value no\">✕<\/div>\n\n        <div class=\"cell feature\">Uses Steam To Clean<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value no\">✕<\/div>\n        <div class=\"cell value no\">✕<\/div>\n\n        <div class=\"cell feature\">Has A Long Life Span<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value no\">✕<\/div>\n        <div class=\"cell value no\">✕<\/div>\n\n        <div class=\"cell feature\">Dishwasher Friendly<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value no\">✕<\/div>\n        <div class=\"cell value no\">✕<\/div>\n\n        <div class=\"cell feature\">Can Use On A Hot Surface<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value no\">✕<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n\n        <div class=\"cell feature\">Doesn’t Get Clogged With Grease And Grime<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value no\">✕<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n\n        <div class=\"cell button-row\"><\/div>\n        <div class=\"cell button-row\">\n          <a href=\"#main\" class=\"shop-button\">SHOP GRILL RESCUE<\/a>\n        <\/div>\n        <div class=\"cell button-row\"><\/div>\n        <div class=\"cell button-row\"><\/div>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/section>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -872,7 +879,7 @@
       "type": "apps",
       "blocks": {
         "loox_reviews_loox_dynamic_section_iPW3WE": {
-          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "reviews_to_display": "product_reviews_only",
             "default_tab": "automatic",

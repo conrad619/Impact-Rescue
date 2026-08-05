@@ -115,7 +115,7 @@
     "volume_pricing": {
       "title": "Оптовая цена",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "{{ price }}/кажд."
+      "price_at_each": "{{ price }}\/кажд."
     },
     "rating_count": {
       "zero": "Немає відгуків",

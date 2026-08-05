@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -41,7 +32,7 @@
         "liquid_8gHEkX": {
           "type": "liquid",
           "settings": {
-            "liquid": "<price-list class=\"price-list price-list--lg \"><sale-price class=\"text-lg text-on-sale\">\n      <span class=\"sr-only\">Sale price</span>$126.51</sale-price><compare-at-price class=\"text-subdued line-through\">\n        <span class=\"sr-only\">Regular price</span>$224.95</compare-at-price></price-list>"
+            "liquid": "<price-list class=\"price-list price-list--lg \"><sale-price class=\"text-lg text-on-sale\">\n      <span class=\"sr-only\">Sale price<\/span>$126.51<\/sale-price><compare-at-price class=\"text-subdued line-through\">\n        <span class=\"sr-only\">Regular price<\/span>$224.95<\/compare-at-price><\/price-list>"
           }
         },
         "description_TPyBp9": {
@@ -70,7 +61,7 @@
         "button_XHUNJJ": {
           "type": "button",
           "settings": {
-            "link": "https://grillrescue.com/cart/62736434921631:1?discount=GRPDPHOLIDAY&storefront=true",
+            "link": "https:\/\/grillrescue.com\/cart\/62736434921631:1?discount=GRPDPHOLIDAY&storefront=true",
             "text": "ADD TO CART",
             "size": "xl",
             "style": "fill",
@@ -87,13 +78,13 @@
             "icon": "none",
             "icon_width": 20,
             "title": "",
-            "content": "<h5>Every Purchase Helps First Responders</h5>",
+            "content": "<h5>Every Purchase Helps First Responders<\/h5>",
             "background": "#f0f0f0",
             "text_color": "#cb0101"
           }
         },
         "section_store_block_badge_qieYxG": {
-          "type": "shopify://apps/section-store/blocks/block-badge/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "type": "shopify:\/\/apps\/section-store\/blocks\/block-badge\/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
             "first_icon": "none",
             "first_title": "30-Day Money Back Guarantee",
@@ -165,63 +156,63 @@
         "slide_EgU8RR": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/forbes.png",
+            "image": "shopify:\/\/shop_images\/forbes.png",
             "link": ""
           }
         },
         "slide_nbEJR4": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/new_york_post.png",
+            "image": "shopify:\/\/shop_images\/new_york_post.png",
             "link": ""
           }
         },
         "slide_djCM6K": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/variety.png",
+            "image": "shopify:\/\/shop_images\/variety.png",
             "link": ""
           }
         },
         "slide_pLMV4E": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/abc.png",
+            "image": "shopify:\/\/shop_images\/abc.png",
             "link": ""
           }
         },
         "slide_yKmhxA": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/usa_today.png",
+            "image": "shopify:\/\/shop_images\/usa_today.png",
             "link": ""
           }
         },
         "slide_WmGzL7": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/nbc.png",
+            "image": "shopify:\/\/shop_images\/nbc.png",
             "link": ""
           }
         },
         "slide_kKkNyc": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/new_york_times.png",
+            "image": "shopify:\/\/shop_images\/new_york_times.png",
             "link": ""
           }
         },
         "slide_XiH6cf": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/entrepreneur.png",
+            "image": "shopify:\/\/shop_images\/entrepreneur.png",
             "link": ""
           }
         },
         "slide_kQT6gy": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/fox.png",
+            "image": "shopify:\/\/shop_images\/fox.png",
             "link": ""
           }
         }
@@ -286,7 +277,7 @@
         "richtext_76fWi4": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Don't just take it from us, check out what our customers have to say!</p>"
+            "content": "<p>Don't just take it from us, check out what our customers have to say!<\/p>"
           }
         }
       },
@@ -310,10 +301,10 @@
         "ai_gen_block_efa3b28_8tA8G4": {
           "type": "ai_gen_block_efa3b28",
           "settings": {
-            "video_1": "shopify://files/videos/vid1.mp4",
-            "video_2": "shopify://files/videos/Grill Rescue Review.mp4",
-            "video_3": "shopify://files/videos/vid4.mp4",
-            "video_4": "shopify://files/videos/Brad Fs-2.mp4",
+            "video_1": "shopify:\/\/files\/videos\/vid1.mp4",
+            "video_2": "shopify:\/\/files\/videos\/Grill Rescue Review.mp4",
+            "video_3": "shopify:\/\/files\/videos\/vid4.mp4",
+            "video_4": "shopify:\/\/files\/videos\/Brad Fs-2.mp4",
             "desktop_width_percent": 100,
             "gap": 16,
             "corner_radius": 8
@@ -340,10 +331,10 @@
         "video_hr7KiL": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/GR Banner Video.mp4",
+            "video": "shopify:\/\/files\/videos\/GR Banner Video.mp4",
             "external_video_url": "",
-            "poster_image": "shopify://shop_images/Rescue_StaticImage_Website_ScraperBrush_ScraperBrushusedonaGrill_62aee89d-55aa-47f7-9529-54cf4d64c3ac.png",
-            "aspect_ratio": "16/9",
+            "poster_image": "shopify:\/\/shop_images\/Rescue_StaticImage_Website_ScraperBrush_ScraperBrushusedonaGrill_62aee89d-55aa-47f7-9529-54cf4d64c3ac.png",
+            "aspect_ratio": "16\/9",
             "autoplay": false,
             "media_width": 50,
             "media_position": "end",
@@ -352,7 +343,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Get Clean. Stay Clean.",
-            "content": "<p>Remove the fear of swallowing wire bristles from your life and keep an overall cleaner grill.</p>",
+            "content": "<p>Remove the fear of swallowing wire bristles from your life and keep an overall cleaner grill.<\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -367,7 +358,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/download.avif",
+            "image": "shopify:\/\/shop_images\/download.avif",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -375,7 +366,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Created by a Firefighter",
-            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best Grill Brush</strong>.</p>",
+            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best Grill Brush<\/strong>.<\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -390,7 +381,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/firefighter.jpg",
+            "image": "shopify:\/\/shop_images\/firefighter.jpg",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -398,7 +389,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Giving Back With Every Purchase",
-            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation</strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.</p>",
+            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation<\/strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.<\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -413,7 +404,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/IMG_3522_copy-2.avif",
+            "image": "shopify:\/\/shop_images\/IMG_3522_copy-2.avif",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -421,7 +412,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Premium Construction",
-            "content": "<p><strong>Everything we build is premium grade</strong>, obsessivel y engineered so you can trust every part is made as strong, durable, and refined as possible every time always!</p>",
+            "content": "<p><strong>Everything we build is premium grade<\/strong>, obsessivel y engineered so you can trust every part is made as strong, durable, and refined as possible every time always!<\/p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -452,12 +443,12 @@
         "item_kQBcTH": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/download.avif",
+            "image": "shopify:\/\/shop_images\/download.avif",
             "show_controls": false,
             "column_size": "3",
             "title": "Created by a Firefighter",
             "heading_tag": "h4",
-            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best Grill Brush</strong>.<br/><br/></p>",
+            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best Grill Brush<\/strong>.<br\/><br\/><\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -466,12 +457,12 @@
         "item_RDKYLq": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/firefighter.jpg",
+            "image": "shopify:\/\/shop_images\/firefighter.jpg",
             "show_controls": false,
             "column_size": "3",
             "title": "Giving Back With Every Purchase",
             "heading_tag": "h4",
-            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation</strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.</p>",
+            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation<\/strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.<\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -480,12 +471,12 @@
         "item_iVVbGg": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Rescue_StaticImage_Website_ScraperBrush_CloseupshotoftheScraperBrushHeadPart_066fbc0e-6e74-445c-98f9-1518a578eb50.png",
+            "image": "shopify:\/\/shop_images\/Rescue_StaticImage_Website_ScraperBrush_CloseupshotoftheScraperBrushHeadPart_066fbc0e-6e74-445c-98f9-1518a578eb50.png",
             "show_controls": false,
             "column_size": "3",
             "title": "Premium Construction",
             "heading_tag": "h4",
-            "content": "<p><strong>Everything we build is premium grade</strong>, obsessively engineered so you can trust every part is made as strong, durable, and refined as possible every time always!<br/><br/></p>",
+            "content": "<p><strong>Everything we build is premium grade<\/strong>, obsessively engineered so you can trust every part is made as strong, durable, and refined as possible every time always!<br\/><br\/><\/p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -543,16 +534,16 @@
           "type": "values",
           "settings": {
             "custom_title": "Scraper Brush",
-            "custom_image": "shopify://shop_images/Rescue_Image_Product_Image_Scraper_Brush_Transparent_Typical_Profile.png",
-            "value_1": "<p>✔</p>",
-            "value_2": "<p>✔</p>",
-            "value_3": "<p>✔</p>",
-            "value_4": "<p>✔</p>",
-            "value_5": "<p>✔</p>",
-            "value_6": "<p>✔</p>",
-            "value_7": "<p>✔</p>",
-            "value_8": "<p>✔</p>",
-            "value_9": "<p>✔</p>",
+            "custom_image": "shopify:\/\/shop_images\/Rescue_Image_Product_Image_Scraper_Brush_Transparent_Typical_Profile.png",
+            "value_1": "<p>✔<\/p>",
+            "value_2": "<p>✔<\/p>",
+            "value_3": "<p>✔<\/p>",
+            "value_4": "<p>✔<\/p>",
+            "value_5": "<p>✔<\/p>",
+            "value_6": "<p>✔<\/p>",
+            "value_7": "<p>✔<\/p>",
+            "value_8": "<p>✔<\/p>",
+            "value_9": "<p>✔<\/p>",
             "value_10": "",
             "value_11": "",
             "value_12": "",
@@ -570,16 +561,16 @@
           "type": "values",
           "settings": {
             "custom_title": "Bristle Brushes",
-            "custom_image": "shopify://shop_images/wirebrush.webp",
-            "value_1": "<p>✕</p>",
-            "value_2": "<p>✔</p>",
-            "value_3": "<p>✕</p>",
-            "value_4": "<p>✕</p>",
-            "value_5": "<p>✕</p>",
-            "value_6": "<p>✕</p>",
-            "value_7": "<p>✕</p>",
-            "value_8": "<p>✕</p>",
-            "value_9": "<p>✕</p>",
+            "custom_image": "shopify:\/\/shop_images\/wirebrush.webp",
+            "value_1": "<p>✕<\/p>",
+            "value_2": "<p>✔<\/p>",
+            "value_3": "<p>✕<\/p>",
+            "value_4": "<p>✕<\/p>",
+            "value_5": "<p>✕<\/p>",
+            "value_6": "<p>✕<\/p>",
+            "value_7": "<p>✕<\/p>",
+            "value_8": "<p>✕<\/p>",
+            "value_9": "<p>✕<\/p>",
             "value_10": "",
             "value_11": "",
             "value_12": "",
@@ -597,16 +588,16 @@
           "type": "values",
           "settings": {
             "custom_title": "Wood Scraper",
-            "custom_image": "shopify://shop_images/wood_scraper.webp",
-            "value_1": "<p>✔</p>",
-            "value_2": "<p>✔</p>",
-            "value_3": "<p>✔</p>",
-            "value_4": "<p>✕</p>",
-            "value_5": "<p>✕</p>",
-            "value_6": "<p>✕</p>",
-            "value_7": "<p>✕</p>",
-            "value_8": "<p>✔</p>",
-            "value_9": "<p>✔</p>",
+            "custom_image": "shopify:\/\/shop_images\/wood_scraper.webp",
+            "value_1": "<p>✔<\/p>",
+            "value_2": "<p>✔<\/p>",
+            "value_3": "<p>✔<\/p>",
+            "value_4": "<p>✕<\/p>",
+            "value_5": "<p>✕<\/p>",
+            "value_6": "<p>✕<\/p>",
+            "value_7": "<p>✕<\/p>",
+            "value_8": "<p>✔<\/p>",
+            "value_9": "<p>✔<\/p>",
             "value_10": "",
             "value_11": "",
             "value_12": "",
@@ -633,7 +624,7 @@
         "full_width": false,
         "subheading": "",
         "title": "Compare Grill Rescue",
-        "content": "<p>Find out how Grill Rescue compares to other leading grill brushes<br/><br/></p>",
+        "content": "<p>Find out how Grill Rescue compares to other leading grill brushes<br\/><br\/><\/p>",
         "button_text": "",
         "button_url": "",
         "text_position": "center",
@@ -687,7 +678,7 @@
       "type": "apps",
       "blocks": {
         "loox_reviews_loox_agg_section_EjMCPj": {
-          "type": "shopify://apps/loox-reviews/blocks/loox-agg-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "reviews_to_display": "product_reviews_only",
             "default_tab": "automatic",
@@ -720,7 +711,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "liquid": "<script>\ndocument.addEventListener('DOMContentLoaded', () => {\n  const variantid=\"62736434921631\"\n  const discount=\"GRPDPHOLIDAY\"\n  const buybutton=\"button_XHUNJJ\"\n  const qtyInput = document.querySelector('.quantity-selector__input');\n  const button = document.querySelector(`[data-block-id=\"${buybutton}\"] .button`);\n\n  if (!qtyInput || !button) return;\n\n  const baseUrl =\n    `https://grillrescue.com/cart/${variantid}:1?discount=${discount}&storefront=true`;\n\n  const updatePermalinkQuantity = () => {\n    const qty = parseInt(qtyInput.value, 10) || 1;\n\n    // Replace the quantity after the colon\n    const updatedUrl = baseUrl.replace(/:\\d+/, `:${qty}`);\n\n    button.href = updatedUrl;\n  };\n\n  // Initial set\n  updatePermalinkQuantity();\n\n  // Watch quantity changes\n  qtyInput.addEventListener('input', updatePermalinkQuantity);\n  qtyInput.addEventListener('change', updatePermalinkQuantity);\n});\n</script>",
+        "liquid": "<script>\ndocument.addEventListener('DOMContentLoaded', () => {\n  const variantid=\"62736434921631\"\n  const discount=\"GRPDPHOLIDAY\"\n  const buybutton=\"button_XHUNJJ\"\n  const qtyInput = document.querySelector('.quantity-selector__input');\n  const button = document.querySelector(`[data-block-id=\"${buybutton}\"] .button`);\n\n  if (!qtyInput || !button) return;\n\n  const baseUrl =\n    `https:\/\/grillrescue.com\/cart\/${variantid}:1?discount=${discount}&storefront=true`;\n\n  const updatePermalinkQuantity = () => {\n    const qty = parseInt(qtyInput.value, 10) || 1;\n\n    \/\/ Replace the quantity after the colon\n    const updatedUrl = baseUrl.replace(\/:\\d+\/, `:${qty}`);\n\n    button.href = updatedUrl;\n  };\n\n  \/\/ Initial set\n  updatePermalinkQuantity();\n\n  \/\/ Watch quantity changes\n  qtyInput.addEventListener('input', updatePermalinkQuantity);\n  qtyInput.addEventListener('change', updatePermalinkQuantity);\n});\n<\/script>",
         "background": "",
         "background_gradient": "",
         "text_color": ""

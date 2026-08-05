@@ -116,7 +116,7 @@
     "volume_pricing": {
       "title": "Kiekybinė kainodara",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "po {{ price }}/vnt."
+      "price_at_each": "po {{ price }}\/vnt."
     },
     "rating_count": {
       "zero": "{{ count }} peržiūrų",

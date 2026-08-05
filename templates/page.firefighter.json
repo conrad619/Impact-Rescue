@@ -22,11 +22,11 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0.6,
             "subheading": "",
-            "heading": "<strong>GET THE SAFEST GRILL BRUSH<\/strong>",
-            "paragraph": "<p><strong>SEND YOUR RECALLED WIRE BRUSH WITH YOUR NAME & ADDRESS TO:<\/strong><\/p><p>7999 N Federal Hwy Delray Beach. Suite 100, FL, 33483<\/p>",
+            "heading": "<strong>INSANE FOX DEAL ENDS SOON<\/strong>",
+            "paragraph": "<p><strong>Use Code: FOX <\/strong>for 50% OFF + GET ANOTHER FREE*<br\/><br\/><\/p>",
             "content_max_width": 1600,
             "text_alignment": "left",
-            "content_vertical_alignment_mobile": "flex-end",
+            "content_vertical_alignment_mobile": "center",
             "content_vertical_alignment_desktop": "center",
             "content_horizontal_alignment_mobile": "center",
             "content_horizontal_alignment_desktop": "center",
@@ -37,10 +37,10 @@
             "heading_size_mobile": 32,
             "heading_size_desktop": 60,
             "paragraph_size_mobile": 14,
-            "paragraph_size_desktop": 16,
-            "button_text": "Shop Best Sellers",
+            "paragraph_size_desktop": 20,
+            "button_text": "Claim Your FOX Deal",
             "button_link": "shopify:\/\/collections\/grilling",
-            "button_background": "#b20101",
+            "button_background": "#cb0101",
             "button_text_color": "#ffffff",
             "button_hover_background": "#a00000",
             "button_hover_text_color": "#ffffff",
@@ -53,6 +53,7 @@
       "block_order": [
         "ai_gen_block_072ad83_jDw6We"
       ],
+      "disabled": true,
       "custom_css": [
         ".shopify-block {margin-inline-start: calc(-1 * var(--container-outer-width)); margin-inline-end: calc(-1 * var(--container-outer-width));}",
         "[class*=\"ai-video-hero__content\"] {width: 100%; margin: 0 auto;}",
@@ -68,8 +69,75 @@
         "text_color": ""
       }
     },
+    "video_hero_xyHqt6": {
+      "type": "video-hero",
+      "blocks": {
+        "heading_mtXnUC": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>INSANE FOX DEAL ENDS SOON<\/strong>"
+          }
+        },
+        "text_kq3nae": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Use Code: FOX<\/strong> for 50% OFF + GET ANOTHER FREE*<\/p>"
+          }
+        },
+        "button_Dy6xmU": {
+          "type": "button",
+          "settings": {
+            "button_text": "Claim Your FOX Deal",
+            "button_link": "shopify:\/\/collections\/grilling"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mtXnUC",
+        "text_kq3nae",
+        "button_Dy6xmU"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".shopify-block {margin-inline-start: calc(-1 * var(--container-outer-width)); margin-inline-end: calc(-1 * var(--container-outer-width));}",
+        "[class*=\"ai-video-hero__wrapper\"] {width: fit-content;}",
+        "[class*=\"ai-video-hero__wrapper\"] > * {margin: 20px;}",
+        "[class*=\"ai-video-hero__video\"] {object-position: top;}"
+      ],
+      "name": "Video hero blocks",
+      "settings": {
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/3c390287cf3a444ebaabd23a2c4a5986.mp4",
+        "section_height_mobile": 500,
+        "section_height_desktop": 600,
+        "show_flag": true,
+        "flag_width": 200,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0.5,
+        "content_max_width": 1600,
+        "text_alignment": "left",
+        "content_vertical_alignment_mobile": "center",
+        "content_vertical_alignment_desktop": "center",
+        "content_horizontal_alignment_mobile": "center",
+        "content_horizontal_alignment_desktop": "flex-start",
+        "text_color": "#ffffff",
+        "heading_font": "barlow_n4",
+        "subheading_size_mobile": 14,
+        "subheading_size_desktop": 16,
+        "heading_size_mobile": 32,
+        "heading_size_desktop": 60,
+        "paragraph_size_mobile": 16,
+        "paragraph_size_desktop": 20,
+        "button_background": "#cb0101",
+        "button_text_color": "#ffffff",
+        "button_hover_background": "#a00000",
+        "button_hover_text_color": "#ffffff",
+        "button_font_size": 16,
+        "button_border_radius": 8
+      }
+    },
     "featured_collection_k6CPta": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
         "{padding-top: 50px; padding-bottom: 50px;}"
       ],
@@ -84,8 +152,8 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
         "subheading": "",
-        "title": "Shop Best Sellers",
-        "content": "<p>Discover our most popular <strong>firefighter-designed<\/strong> grilling tools today.<\/p>",
+        "title": "Deals Ending Soon",
+        "content": "<p>Use Code: <strong>FOX<\/strong> at checkout to receive an additional <strong>50% OFF and a FREE BRUSH*<\/strong><\/p>",
         "link_url": "shopify:\/\/collections\/grilling",
         "link_text": "Shop All",
         "background": "",
@@ -552,6 +620,7 @@
         "payment_terms_zzGdTL",
         "pickup_availability_X77Ppx"
       ],
+      "disabled": true,
       "custom_css": [
         "{padding-top: 50px; padding-bottom: 100px;}"
       ],
@@ -792,6 +861,7 @@
   "order": [
     "main",
     "blocks_tA3bTB",
+    "video_hero_xyHqt6",
     "featured_collection_k6CPta",
     "ss_scrolling_logo_cloud_HKCztC",
     "featured_collection_BnEwKA",

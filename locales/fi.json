@@ -115,7 +115,7 @@
     "volume_pricing": {
       "title": "Volyymihinnoittelu",
       "minimum": "Yli {{ quantity }}",
-      "price_at_each": "{{ price }}/kpl"
+      "price_at_each": "{{ price }}\/kpl"
     },
     "rating_count": {
       "zero": "Ei arvosteluja",

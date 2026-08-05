@@ -117,7 +117,7 @@
     "volume_pricing": {
       "title": "Ceny s objemovou slevou",
       "minimum": "{{ quantity }} a více",
-      "price_at_each": "{{ price }} / ks"
+      "price_at_each": "{{ price }} \/ ks"
     },
     "rating_count": {
       "zero": "Žádné recenze",

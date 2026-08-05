@@ -115,7 +115,7 @@
     "volume_pricing": {
       "title": "Τιμολόγηση βάσει ποσότητας",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "στα {{ price }}/τμχ"
+      "price_at_each": "στα {{ price }}\/τμχ"
     },
     "rating_count": {
       "zero": "Δεν υπάρχουν αξιολογήσεις",

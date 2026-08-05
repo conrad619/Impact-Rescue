@@ -36,7 +36,8 @@
         "price": {
           "type": "price",
           "settings": {
-            "show_taxes_notice": false
+            "show_taxes_notice": false,
+            "badge_text": ""
           }
         },
         "rating": {
@@ -61,9 +62,28 @@
         },
         "text_bLdT8C": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>{{ product.metafields.custom.patent_number.value }}<\/p>"
           }
+        },
+        "offer_qFjjxh": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-percent",
+            "icon_width": 20,
+            "title": "USE CODE: FOX",
+            "content": "<p>AT CHECKOUT TO RECEIVE AN ADDITIONAL 50% OFF AND A FREE BRUSH*<\/p>",
+            "background": "#a10c10",
+            "text_color": "#ffffff"
+          }
+        },
+        "promo_CyJFmi": {
+          "type": "promo",
+          "disabled": true,
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -75,10 +95,6 @@
             "variant_image_options": "",
             "size_chart_page": ""
           }
-        },
-        "promo_nCchcp": {
-          "type": "promo",
-          "settings": {}
         },
         "recharge_subscriptions_subscription_widget_v2_7qwFf9": {
           "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget-v2\/371eed76-0b44-4869-9813-730372ea378e",
@@ -161,8 +177,9 @@
         "separator",
         "description",
         "text_bLdT8C",
+        "offer_qFjjxh",
+        "promo_CyJFmi",
         "variant_picker",
-        "promo_nCchcp",
         "recharge_subscriptions_subscription_widget_v2_7qwFf9",
         "quantity_selector",
         "buy_buttons",
@@ -176,7 +193,7 @@
         "desktop_media_width": 45,
         "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "contained",
-        "mobile_carousel_control": "dots",
+        "mobile_carousel_control": "free_scroll",
         "enable_video_autoplay": false,
         "enable_video_looping": true,
         "enable_image_zoom": true,
@@ -307,7 +324,12 @@
       ],
       "settings": {
         "recommendations_count": 4,
-        "products": "{{ product.metafields[\"shopify--discovery--product_recommendation\"].complementary_products.value }}",
+        "products": [
+          "ultimate-grilling-enthusiast-pack",
+          "rescue-gift-bundle",
+          "double-up-2-brushes-4-cleaning-heads-w-scraper",
+          "rescue-gloves-leather-edition"
+        ],
         "full_width": true,
         "stack_products": false,
         "show_progress_bar": false,
@@ -486,6 +508,16 @@
         "text_color": ""
       }
     },
+    "product_features_kTqqmc": {
+      "type": "product-features",
+      "disabled": true,
+      "name": "Product features",
+      "settings": {
+        "heading": "Feel the difference",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
     "media_with_text_eNmYYV": {
       "type": "media-with-text",
       "blocks": {
@@ -649,9 +681,6 @@
         "item_rEGXHV",
         "item_N3Hnwq"
       ],
-      "custom_css": [
-        "img {aspect-ratio: 1;}"
-      ],
       "name": "Multi-column",
       "settings": {
         "full_width": true,
@@ -782,7 +811,6 @@
         "values_Dh6rRf",
         "values_PDr6Vb"
       ],
-      "disabled": true,
       "custom_css": [],
       "name": "Comparison table",
       "settings": {
@@ -891,6 +919,7 @@
     "blocks_CXG9n8",
     "1767804295d4bb16f1",
     "17691913668d703418",
+    "product_features_kTqqmc",
     "media_with_text_eNmYYV",
     "multi_column_FHmxjT",
     "comparison_table_GwKhPW",

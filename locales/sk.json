@@ -118,7 +118,7 @@
     "volume_pricing": {
       "title": "Objemové ceny",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "{{ price }}/kus"
+      "price_at_each": "{{ price }}\/kus"
     },
     "rating_count": {
       "zero": "Zatiaľ žiadne hodnotenia",

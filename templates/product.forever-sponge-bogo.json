@@ -21,7 +21,8 @@
         "price": {
           "type": "price",
           "settings": {
-            "show_taxes_notice": false
+            "show_taxes_notice": false,
+            "badge_text": ""
           }
         },
         "rating": {
@@ -44,8 +45,22 @@
             "collapse_content": false
           }
         },
+        "offer_YhwPgG": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-percent",
+            "icon_width": 20,
+            "title": "USE CODE: FOX",
+            "content": "<p>AT CHECKOUT TO RECEIVE AN ADDITIONAL 50% OFF AND ANOTHER FREE SPONGE OR SPONGES<\/p>",
+            "background": "#a10c10",
+            "text_color": "#ffffff"
+          }
+        },
         "liquid_Unxd4D": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "<style>\n.custom-variant-swatches{\ndisplay:flex;\ngap:.5rem;\nmargin-bottom:1rem;\n}\n.custom-variant-swatches a {\nflex-grow:1;\n}\n.custom-variant-swatches a img{\n    width: -webkit-fill-available;\n\tborder:1px solid transparent;\n\tborder-radius:5px;\n}\n.custom-variant-swatches a:hover img{\n\tborder:1px solid black;\n}\n<\/style>\n\n <div class=\"custom-variant-swatches\">\n   {% for variant_product in collections['kitchen-black-sponge'].products %}\n     <a href=\"{{ variant_product.url }}\"><img style=\"{% if variant_product.handle == product.handle %}border:1px solid black;{% endif %}\" src=\"{{ variant_product.featured_image.src | image_url: width: 160 }}\"><\/a>\n   {% endfor %}\n <\/div>\n <div class=\"custom-variant-swatches\">\n   {% for variant_product in collections['kitchen-blue-sponge'].products %}\n     <a href=\"{{ variant_product.url }}\"><img style=\"{% if variant_product.handle == product.handle %}border:1px solid black;{% endif %}\" src=\"{{ variant_product.featured_image.src | image_url: width: 160 }}\"><\/a>\n   {% endfor %}\n <\/div>"
           }
@@ -63,6 +78,7 @@
         },
         "promo_XAwbwy": {
           "type": "promo",
+          "disabled": true,
           "settings": {}
         },
         "recharge_subscriptions_subscription_widget_v2_7qwFf9": {
@@ -144,6 +160,7 @@
         "rating",
         "separator",
         "description",
+        "offer_YhwPgG",
         "liquid_Unxd4D",
         "variant_picker",
         "promo_XAwbwy",
@@ -160,7 +177,7 @@
         "desktop_media_width": 45,
         "desktop_media_layout": "carousel_thumbnails_bottom",
         "mobile_media_size": "contained",
-        "mobile_carousel_control": "dots",
+        "mobile_carousel_control": "free_scroll",
         "enable_video_autoplay": false,
         "enable_video_looping": true,
         "enable_image_zoom": true,

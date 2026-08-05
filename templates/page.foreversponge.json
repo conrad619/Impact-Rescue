@@ -16,17 +16,17 @@
         "ai_gen_block_072ad83_jDw6We": {
           "type": "ai_gen_block_072ad83",
           "settings": {
-            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/3c390287cf3a444ebaabd23a2c4a5986.mp4",
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/eff008f8601c4524b039a9aaf6e1aee0.mp4",
             "section_height_mobile": 500,
             "section_height_desktop": 600,
             "overlay_color": "#000000",
             "overlay_opacity": 0.6,
             "subheading": "",
-            "heading": "<strong>GET THE SAFEST GRILL BRUSH<\/strong>",
-            "paragraph": "<p><strong>SEND YOUR RECALLED WIRE BRUSH WITH YOUR NAME & ADDRESS TO:<\/strong><\/p><p>7999 N Federal Hwy Delray Beach. Suite 100, FL, 33483<\/p>",
+            "heading": "<strong>INSANE FOX DEAL ENDS SOON<\/strong>",
+            "paragraph": "<p><strong>Use Code: FOX <\/strong>for 50% OFF + GET ANOTHER FREE*<br\/><br\/><\/p>",
             "content_max_width": 1600,
             "text_alignment": "left",
-            "content_vertical_alignment_mobile": "flex-end",
+            "content_vertical_alignment_mobile": "center",
             "content_vertical_alignment_desktop": "center",
             "content_horizontal_alignment_mobile": "center",
             "content_horizontal_alignment_desktop": "center",
@@ -37,12 +37,12 @@
             "heading_size_mobile": 32,
             "heading_size_desktop": 60,
             "paragraph_size_mobile": 14,
-            "paragraph_size_desktop": 16,
-            "button_text": "Shop Best Sellers",
-            "button_link": "shopify:\/\/collections\/grilling",
-            "button_background": "#b20101",
+            "paragraph_size_desktop": 20,
+            "button_text": "Claim Your FOX Deal",
+            "button_link": "shopify:\/\/products\/free-sponge-bundle",
+            "button_background": "#00bbef",
             "button_text_color": "#ffffff",
-            "button_hover_background": "#a00000",
+            "button_hover_background": "#007fef",
             "button_hover_text_color": "#ffffff",
             "button_font_size": 16,
             "button_border_radius": 8
@@ -68,6 +68,72 @@
         "text_color": ""
       }
     },
+    "video_hero_xyHqt6": {
+      "type": "video-hero",
+      "blocks": {
+        "heading_mtXnUC": {
+          "type": "heading",
+          "settings": {
+            "text": "<strong>INSANE FOX DEAL ENDS SOON<\/strong>"
+          }
+        },
+        "text_kq3nae": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Use Code: FOX<\/strong> for 50% OFF + GET ANOTHER FREE*<\/p>"
+          }
+        },
+        "button_Dy6xmU": {
+          "type": "button",
+          "settings": {
+            "button_text": "Claim Your FOX Deal",
+            "button_link": "shopify:\/\/collections\/grilling"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mtXnUC",
+        "text_kq3nae",
+        "button_Dy6xmU"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".shopify-block {margin-inline-start: calc(-1 * var(--container-outer-width)); margin-inline-end: calc(-1 * var(--container-outer-width));}",
+        "[class*=\"ai-video-hero__wrapper\"] {width: fit-content;}",
+        "[class*=\"ai-video-hero__wrapper\"] > * {margin: 20px;}",
+        "[class*=\"ai-video-hero__video\"] {object-position: top right;}"
+      ],
+      "name": "Video hero blocks",
+      "settings": {
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/eff008f8601c4524b039a9aaf6e1aee0.mp4",
+        "section_height_mobile": 500,
+        "section_height_desktop": 600,
+        "show_flag": false,
+        "flag_width": 200,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0.5,
+        "content_max_width": 1600,
+        "text_alignment": "left",
+        "content_vertical_alignment_mobile": "center",
+        "content_vertical_alignment_desktop": "center",
+        "content_horizontal_alignment_mobile": "center",
+        "content_horizontal_alignment_desktop": "flex-start",
+        "text_color": "#ffffff",
+        "heading_font": "barlow_n4",
+        "subheading_size_mobile": 14,
+        "subheading_size_desktop": 16,
+        "heading_size_mobile": 32,
+        "heading_size_desktop": 60,
+        "paragraph_size_mobile": 16,
+        "paragraph_size_desktop": 20,
+        "button_background": "#00bbef",
+        "button_text_color": "#ffffff",
+        "button_hover_background": "#a00000",
+        "button_hover_text_color": "#ffffff",
+        "button_font_size": 16,
+        "button_border_radius": 8
+      }
+    },
     "featured_collection_k6CPta": {
       "type": "featured-collection",
       "custom_css": [
@@ -76,7 +142,13 @@
       "name": "Featured collection",
       "settings": {
         "collection": "grilling",
-        "products": [],
+        "products": [
+          "free-brush-bundle-copy-1",
+          "free-sponge-bundle",
+          "blue-forever-sponge-5-pack",
+          "free-scraper-bundle",
+          "free-pro-bundle-copy"
+        ],
         "full_width": true,
         "stack_products": true,
         "show_progress_bar": false,
@@ -84,9 +156,9 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
         "subheading": "",
-        "title": "Shop Best Sellers",
-        "content": "<p>Discover our most popular <strong>firefighter-designed<\/strong> grilling tools today.<\/p>",
-        "link_url": "shopify:\/\/collections\/grilling",
+        "title": "Deals Ending Soon",
+        "content": "<p>Use Code: <strong>FOX<\/strong> at checkout to receive <strong>50% OFF and Another Item*<\/strong><\/p>",
+        "link_url": "shopify:\/\/collections\/forever-sponge",
         "link_text": "Shop All",
         "background": "",
         "background_gradient": "",
@@ -283,10 +355,10 @@
         "ai_gen_block_efa3b28_FpmJGG": {
           "type": "ai_gen_block_efa3b28",
           "settings": {
-            "video_1": "shopify:\/\/files\/videos\/vid1.mp4",
-            "video_2": "shopify:\/\/files\/videos\/Testimonials hey yall.mov",
-            "video_3": "shopify:\/\/files\/videos\/default_47d8bc35-1b4a-4f11-92dd-a968c7b37d91.mp4",
-            "video_4": "shopify:\/\/files\/videos\/Testimonials scraper.mov",
+            "video_1": "shopify:\/\/files\/videos\/sponge review.mov",
+            "video_2": "shopify:\/\/files\/videos\/1700591444694_db950118-b1a8-4a85-8969-8476c051408f_h264c.mp4",
+            "video_3": "shopify:\/\/files\/videos\/Margie Edelson-22.mp4",
+            "video_4": "shopify:\/\/files\/videos\/Brad Fs-2.mp4",
             "desktop_width_percent": 100,
             "gap": 20,
             "corner_radius": 8
@@ -357,6 +429,7 @@
         "collection_N7D3en",
         "collection_HXL4Gz"
       ],
+      "disabled": true,
       "custom_css": [
         "{padding-top: 50px; padding-bottom: 100px;}"
       ],
@@ -400,7 +473,7 @@
         "richtext_wKLAVy": {
           "type": "richtext",
           "settings": {
-            "content": "<p>The Latest Innovation from Grill Rescue. This is the <strong>All-New<\/strong> <strong>Rescue Ultra Brush.<\/strong><\/p>"
+            "content": "<p>Designed by a Firefighter and made with premium materials. This is the <strong>Forever Sponge<\/strong>.<\/p>"
           }
         }
       },
@@ -558,7 +631,7 @@
       "name": "Featured product",
       "settings": {
         "full_width": true,
-        "product": "the-ultra-brush",
+        "product": "blue-forever-sponge-1-pack",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",
@@ -714,7 +787,7 @@
       "name": "Featured product",
       "settings": {
         "full_width": true,
-        "product": "rescue-grilling-gloves-usa-edition",
+        "product": "forever-sponge",
         "desktop_media_width": 45,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",
@@ -787,11 +860,25 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
+    },
+    "custom_liquid_eFLEq7": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": false,
+        "remove_vertical_spacing": true,
+        "remove_horizontal_spacing": true,
+        "liquid": "<style>\n[handle=\"blue-forever-sponge-5-pack\"] .product-card__quick-buy button.button,\n[handle=\"free-sponge-bundle\"] .product-card__quick-buy button.button,\n.fox-header-bar,\n.buy-buttons .button {\n    background: #00bbef !important;\n}\n.flag-container{\ndisplay:none !important;\n}\n<\/style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
     "main",
     "blocks_tA3bTB",
+    "video_hero_xyHqt6",
     "featured_collection_k6CPta",
     "ss_scrolling_logo_cloud_HKCztC",
     "featured_collection_BnEwKA",
@@ -801,6 +888,7 @@
     "rich_text_WzjJwQ",
     "featured_product_pBDz4E",
     "featured_product_BX8HFR",
-    "faq_LaByzJ"
+    "faq_LaByzJ",
+    "custom_liquid_eFLEq7"
   ]
 }

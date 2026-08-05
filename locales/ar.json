@@ -115,7 +115,7 @@
     "volume_pricing": {
       "title": "تسعير بالجملة",
       "minimum": "{{ minimum_quantity }}+",
-      "price_at_each": "{{ price }}/ea"
+      "price_at_each": "{{ price }}\/ea"
     },
     "rating_count": {
       "zero": "لا توجد مراجعات",

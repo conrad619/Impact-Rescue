@@ -115,7 +115,7 @@
     "volume_pricing": {
       "title": "Volumenabhängige Preisgestaltung",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "bei {{ price }}/Stück"
+      "price_at_each": "bei {{ price }}\/Stück"
     },
     "rating_count": {
       "zero": "Keine Bewertungen",
@@ -300,7 +300,7 @@
       "city": "Ort",
       "zip": "PLZ",
       "country": "Land",
-      "province": "Bundesland/Kanton",
+      "province": "Bundesland\/Kanton",
       "set_default": "Als Standardadresse festlegen"
     }
   },
@@ -316,9 +316,9 @@
       "weight": "Gewicht",
       "subtotal": "Zwischensumme",
       "total": "Gesamtbetrag",
-      "taxes_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\" class=\"link\">Versand</a> werden beim Checkout berechnet",
+      "taxes_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\" class=\"link\">Versand<\/a> werden beim Checkout berechnet",
       "taxes_included_but_shipping_at_checkout": "Inklusive Steuern, Versand wird beim Checkout berechnet",
-      "taxes_included_and_shipping_policy_html": "Inklusive Steuern. <a href=\"{{ link }}\" class=\"link\">Versand </a> wird beim Checkout berechnet",
+      "taxes_included_and_shipping_policy_html": "Inklusive Steuern. <a href=\"{{ link }}\" class=\"link\">Versand <\/a> wird beim Checkout berechnet",
       "taxes_and_shipping_at_checkout": "Steuern und Versand werden beim Checkout berechnet",
       "add_order_note": "Bestellhinweis hinzufügen",
       "edit_order_note": "Bestellhinweis bearbeiten",
@@ -345,7 +345,7 @@
     "shipping_estimator": {
       "estimate_shipping": "Versandkosten berechnen",
       "country": "Land",
-      "province": "Bundesland/Kanton",
+      "province": "Bundesland\/Kanton",
       "zip": "PLZ",
       "estimate": "Berechnen",
       "no_results": "Tut uns leid, aber wir verschicken leider nicht an deine Adresse.",

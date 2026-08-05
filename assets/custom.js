@@ -1,5 +1,4 @@
 (function () {
-  
   const TARGET_CLASS = 'loox-v2-carousel-container';
   const NEW_PRODUCT_ID = '5558467657887';
 
@@ -58,7 +57,7 @@ function findDeep(selector, root = document) {
   return null;
 }
 
-function waitForElement(selector, callback, interval = 100, timeout = 10000) {
+function waitForElement(selector, callback, interval = 100) {
   const timer = setInterval(() => {
     const el = findDeep(selector);
     if (el) {
@@ -66,10 +65,6 @@ function waitForElement(selector, callback, interval = 100, timeout = 10000) {
       callback(el);
     }
   }, interval);
-
-  setTimeout(() => {
-    clearInterval(timer);
-  }, timeout);
 }
 
 // Usage
@@ -78,10 +73,4 @@ waitForElement('.leather-limited', (el) => {
   const drop = Math.floor(Math.random() * 2) + 3;
   el.textContent = Math.max(0, current - drop);
 });
-
-waitForElement('.rc-purchase-option__subscription', (host) => {
-  const params = new URLSearchParams(window.location.search);
-  const wantsSubscription = params.get('subscription') === 'true';
-  if (!wantsSubscription) return;
-  host.querySelector('label').click()
-})
+console.log("testv3")

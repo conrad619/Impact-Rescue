@@ -117,7 +117,7 @@
     "volume_pricing": {
       "title": "Količinski popust",
       "minimum": "{{ quantity }} in več",
-      "price_at_each": "po ceni {{ price }}/kos"
+      "price_at_each": "po ceni {{ price }}\/kos"
     },
     "rating_count": {
       "zero": "Ni mnenj",

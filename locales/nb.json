@@ -115,7 +115,7 @@
     "volume_pricing": {
       "title": "Volumprissetting",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "til {{ price }}/pr. stk"
+      "price_at_each": "til {{ price }}\/pr. stk"
     },
     "rating_count": {
       "zero": "Ingen vurderinger",

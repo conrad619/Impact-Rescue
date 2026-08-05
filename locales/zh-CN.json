@@ -115,7 +115,7 @@
     "volume_pricing": {
       "title": "批量定价",
       "minimum": "{{ quantity }}+",
-      "price_at_each": "{{ price }}/件"
+      "price_at_each": "{{ price }}\/件"
     },
     "rating_count": {
       "zero": "无评价",

@@ -298,12 +298,12 @@
       },
       {
         "type": "header",
-        "content": "Drawer/popover"
+        "content": "Drawer\/popover"
       },
       {
         "type": "color",
         "id": "dialog_background",
-        "label": "Modal/popover background",
+        "label": "Modal\/popover background",
         "info": "Choose a color similar to the primary background.",
         "default": "#ffffff"
       },
@@ -342,7 +342,7 @@
       {
         "type": "header",
         "content": "Product",
-        "info": "[Learn more](https://support.maestrooo.com/article/75-collection-displaying-custom-label) about setting custom badges."
+        "info": "[Learn more](https:\/\/support.maestrooo.com\/article\/75-collection-displaying-custom-label) about setting custom badges."
       },
       {
         "type": "color",
@@ -393,7 +393,7 @@
         "type": "font_picker",
         "id": "heading_font",
         "label": "Font",
-        "info": "Selecting different fonts can affect the speed of your online store. Learn more about [system fonts.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)",
+        "info": "Selecting different fonts can affect the speed of your online store. Learn more about [system fonts.](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)",
         "default": "helvetica_n4"
       },
       {
@@ -454,7 +454,7 @@
         "type": "font_picker",
         "id": "text_font",
         "label": "Font",
-        "info": "Selecting different fonts can affect the speed of your online store. Learn more about [system fonts.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)",
+        "info": "Selecting different fonts can affect the speed of your online store. Learn more about [system fonts.](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)",
         "default": "helvetica_n4"
       },
       {
@@ -548,7 +548,7 @@
         "type": "select",
         "id": "heading_apparition",
         "label": "Heading apparition",
-        "info": "Line by line apparition can't be used for gradient heading. [Learn more](https://support.maestrooo.com/article/299-limitation-for-gradients-on-impact-theme)",
+        "info": "Line by line apparition can't be used for gradient heading. [Learn more](https:\/\/support.maestrooo.com\/article\/299-limitation-for-gradients-on-impact-theme)",
         "options": [
           {
             "value": "none",
@@ -603,7 +603,7 @@
         "id": "color_swatch_config",
         "label": "Configuration (deprecated)",
         "placeholder": "Red:#ff0000\nGreen:#00ff00\nBlue:#0000ff",
-        "info": "Native color swatch should be used instead. [Learn more](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-settings#options-with-swatches). Configuration based color swatches is deprecated and will be removed in the future. If you still need to use the configuration based system, you can [learn more](https://support.maestrooo.com/article/718-configuring-color-swatches) about the exact naming convention."
+        "info": "Native color swatch should be used instead. [Learn more](https:\/\/help.shopify.com\/en\/manual\/online-store\/themes\/theme-structure\/theme-settings#options-with-swatches). Configuration based color swatches is deprecated and will be removed in the future. If you still need to use the configuration based system, you can [learn more](https:\/\/support.maestrooo.com\/article\/718-configuring-color-swatches) about the exact naming convention."
       }
     ]
   },
@@ -632,7 +632,7 @@
         "type": "checkbox",
         "id": "show_product_rating",
         "label": "Show product rating",
-        "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/en/manual/products/product-reviews/installation)",
+        "info": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/en\/manual\/products\/product-reviews\/installation)",
         "default": false
       },
       {
@@ -805,12 +805,12 @@
         "type": "url",
         "id": "cart_empty_button_link",
         "label": "Empty button link",
-        "default": "/collections/all"
+        "default": "\/collections\/all"
       },
       {
         "type": "header",
         "content": "Free shipping bar",
-        "info": "Show a shipping bar advancement on cart page and cart drawer. Configure your [shipping rates](/admin/settings/shipping) to match the amount."
+        "info": "Show a shipping bar advancement on cart page and cart drawer. Configure your [shipping rates](\/admin\/settings\/shipping) to match the amount."
       },
       {
         "type": "checkbox",

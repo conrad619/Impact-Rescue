@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "type": "header",
   "name": "Header group",
@@ -19,12 +10,32 @@
         "code_text": "",
         "enable_timer": true,
         "visibility_mode": "selected_pages",
-        "visibility_rules": "/pages/gloves\n/pages/fox",
+        "visibility_rules": "\/pages\/gloves\n\/pages\/fox",
         "timer_minutes": 58,
         "reset_hour": 20,
         "bg_color": "#ffb74a",
         "text_color": "#000000",
         "timer_color": "#b20101",
+        "font_size": 16,
+        "mobile_font_size": 13,
+        "padding_y": 10,
+        "mobile_padding_y": 8
+      }
+    },
+    "header_timer_NDBkeb": {
+      "type": "header-timer",
+      "name": "Header Timer",
+      "settings": {
+        "prefix_text": "BLACK FRIDAY ENDS IN",
+        "code_text": "",
+        "enable_timer": true,
+        "visibility_mode": "all",
+        "visibility_rules": "\/",
+        "timer_minutes": 54,
+        "reset_hour": 20,
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "timer_color": "#fff200",
         "font_size": 16,
         "mobile_font_size": 13,
         "padding_y": 10,
@@ -37,7 +48,7 @@
         "image_dWVECA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Rescue_Graphics_Website_Homepage_Memorial_Day_Graphic_Announcement_Bar_No_Code_Required_36952d01-98ab-43ba-8fed-538cb41f7514.svg",
+            "image": "shopify:\/\/shop_images\/Rescue_Graphics_Website_Homepage_Memorial_Day_Graphic_Announcement_Bar_No_Code_Required_36952d01-98ab-43ba-8fed-538cb41f7514.svg",
             "url": "",
             "image_height_mobile": 32,
             "image_height_desktop": 40
@@ -47,7 +58,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Rescue_Graphics_Website_Homepage_Memorial_Day_Graphic_Announcement_Bar_2.svg",
+            "image": "shopify:\/\/shop_images\/Rescue_Graphics_Website_Homepage_Memorial_Day_Graphic_Announcement_Bar_2.svg",
             "url": "",
             "image_height_mobile": 13,
             "image_height_desktop": 20
@@ -106,9 +117,9 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
-        "logo": "shopify://shop_images/Black_wordmark.png",
-        "logo_max_width": 110,
-        "logo_mobile_max_width": 95,
+        "logo": "shopify:\/\/shop_images\/black_friday_logo.png",
+        "logo_max_width": 150,
+        "logo_mobile_max_width": 135,
         "menu": "main-menu",
         "sidebar_menu": "",
         "secondary_menu": "",
@@ -118,8 +129,8 @@
         "layout": "logo_left_navigation_center",
         "show_social_media": false,
         "show_locale_selector": true,
-        "show_country_selector": false,
-        "show_country_flag": false,
+        "show_country_selector": true,
+        "show_country_flag": true,
         "show_country_name": false,
         "transparent_header_text_color": "#ffffff",
         "reduce_padding": false,
@@ -130,6 +141,7 @@
   },
   "order": [
     "header_timer_pXcKRV",
+    "header_timer_NDBkeb",
     "announcement-bar",
     "header"
   ]

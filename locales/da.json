@@ -115,7 +115,7 @@
     "volume_pricing": {
       "title": "Mængderabat",
       "minimum": "Mere end {{ quantity }}",
-      "price_at_each": "til {{ price }}/stk"
+      "price_at_each": "til {{ price }}\/stk"
     },
     "rating_count": {
       "zero": "Ingen anmeldelser",

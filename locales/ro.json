@@ -115,7 +115,7 @@
     "volume_pricing": {
       "title": "Stabilire preț per volum",
       "minimum": "Peste {{ quantity }}",
-      "price_at_each": "la {{ price }}/buc."
+      "price_at_each": "la {{ price }}\/buc."
     },
     "rating_count": {
       "zero": "Nicio o recenzie",
