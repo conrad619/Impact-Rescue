@@ -21,6 +21,8 @@ Supported variables
 {%- endcomment -%}
 
 {%- assign variant_picker_block = section.blocks | where: 'type', 'variant_picker' | first -%}
+{%- assign selected_variant = product.selected_or_first_available_variant -%}
+{%- assign force_sold_out = selected_variant.metafields.custom.force_sold_out.value | default: false -%}
 
 {%- assign recipient_feature_active = false -%}
 
@@ -30,15 +32,15 @@ Supported variables
 {%- endif -%}
 
 {%- form 'product', product, is: 'product-form', id: form_id -%}
-  <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
+  <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ selected_variant.id }}">
 
   {%- assign button_disabled = false -%}
   {%- assign button_size = button_size | default: 'xl' -%}
 
-  {%- if product.selected_or_first_available_variant == nil -%}
+  {%- if selected_variant == nil -%}
     {%- capture button_content -%}{{ 'product.general.unavailable_button' | t }}{%- endcapture -%}
     {%- assign button_disabled = true -%}
-  {%- elsif product.selected_or_first_available_variant.available -%}
+  {%- elsif selected_variant.available and force_sold_out == false -%}
     {%- if product.template_suffix contains 'pre-order' -%}
       {%- capture button_content -%}{{ 'product.general.pre_order_button' | t }}{%- endcapture -%}
     {%- else -%}
@@ -84,7 +86,7 @@ Supported variables
 
         <style>
           #{{ form_id }} .shopify-payment-button {
-            {%- unless product.selected_or_first_available_variant.available -%}
+            {%- unless selected_variant.available and force_sold_out == false -%}
               display: none;
             {%- endunless -%}
 

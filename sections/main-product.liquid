@@ -59,10 +59,11 @@
 </div>
 
 {%- assign buy_buttons_block = section.blocks | where: 'type', 'buy_buttons' | first -%}
+{%- assign selected_variant_force_sold_out = product.selected_or_first_available_variant.metafields.custom.force_sold_out.value | default: false -%}
 
 {%- if section.settings.show_fixed_add_to_cart and product.available and buy_buttons_block != blank -%}
   <product-rerender id="{{ product_form_id }}-sticky-bar" observe-form="{{ product_form_id }}">
-    {%- if product.selected_or_first_available_variant.available -%}
+    {%- if product.selected_or_first_available_variant.available and selected_variant_force_sold_out == false -%}
       <product-quick-add form="{{ product_form_id }}" class="product-quick-add">
         {%- assign button_label = 'product.general.add_to_cart_button' | t -%}
 

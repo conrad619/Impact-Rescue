@@ -62,6 +62,10 @@ Color swatch specific parameters:
     if option_value.available == false
       assign disabled = true
     endif
+
+    if variant.metafields.custom.force_sold_out.value == true
+      assign disabled = true
+    endif
   elsif filter_value
     assign label = label | default: filter_value.label
     assign value = filter_value.value

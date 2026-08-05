@@ -209,7 +209,17 @@ Supported variables
       {%- endfor -%}
     {%- endif -%}
     {% comment %} start add to cart {% endcomment %}
-    {%- if show_quick_buy and product.available -%}
+    {%- liquid
+      assign has_effectively_available_variant = false
+
+      for card_variant in product.variants
+        if card_variant.available and card_variant.metafields.custom.force_sold_out.value != true
+          assign has_effectively_available_variant = true
+          break
+        endif
+      endfor
+    -%}
+    {%- if show_quick_buy and has_effectively_available_variant -%}
         <div class="product-card__quick-buy">
           {%- assign quick_add_label = 'product.general.quick_add' | t -%}
 

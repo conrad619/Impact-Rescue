@@ -41,7 +41,17 @@ Supported variables
 
     {%- if show_add_to_cart -%}
       <div class="horizontal-product__cta">
-        {%- if product.available -%}
+        {%- liquid
+          assign has_effectively_available_variant = false
+
+          for horizontal_variant in product.variants
+            if horizontal_variant.available and horizontal_variant.metafields.custom.force_sold_out.value != true
+              assign has_effectively_available_variant = true
+              break
+            endif
+          endfor
+        -%}
+        {%- if has_effectively_available_variant -%}
           {%- capture unique_id -%}{{ section.id }}-{{ block.id }}-{{ product.id }}{%- endcapture -%}
           {%- capture button_content -%}{{ 'product.general.add_to_cart_short' | t }}{%- endcapture -%}
 

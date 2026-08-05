@@ -33,7 +33,7 @@ Supported variables
 
       {%- when 'sold_out' -%}
         {%- if settings.show_sold_out_badge -%}
-          {%- if variant.available == false -%}
+          {%- if variant.available == false or variant.metafields.custom.force_sold_out.value == true -%}
             <sold-out-badge class="badge badge--sold-out">
               {{- 'product.general.sold_out_badge' | t -}}
             </sold-out-badge>

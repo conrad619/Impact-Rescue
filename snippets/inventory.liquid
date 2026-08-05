@@ -13,7 +13,7 @@ Supported variables
 * low_threshold: the inventory quantity threshold below which the inventory is shown as "red"
 {%- endcomment -%}
 
-{%- if variant != blank -%}
+{%- if variant != blank and variant.metafields.custom.force_sold_out.value != true -%}
   <variant-inventory>
     {%- if variant.available -%}
       {%- if variant.inventory_management and variant.inventory_policy == 'deny' and variant.inventory_quantity <= low_threshold and low_threshold > 0 -%}
