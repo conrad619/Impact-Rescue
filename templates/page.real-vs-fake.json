@@ -171,16 +171,93 @@
         "corner_radius": 16
       }
     },
+    "gr_never_trust_fakes_QHbqB4": {
+      "type": "gr-never-trust-fakes",
+      "blocks": {
+        "gif_item_8Rh6pN": {
+          "type": "gif_item",
+          "settings": {
+            "gif_image": "shopify:\/\/shop_images\/0811_1.gif",
+            "gif_caption": ""
+          }
+        },
+        "gif_item_iaTJJj": {
+          "type": "gif_item",
+          "settings": {
+            "gif_image": "shopify:\/\/shop_images\/0810_11.gif",
+            "gif_caption": ""
+          }
+        },
+        "gif_item_MLVM6w": {
+          "type": "gif_item",
+          "settings": {
+            "gif_image": "shopify:\/\/shop_images\/0811.gif",
+            "gif_caption": ""
+          }
+        },
+        "gif_item_0810_12": {
+          "type": "gif_item",
+          "settings": {
+            "gif_image": "shopify:\/\/shop_images\/0810_12.gif",
+            "gif_caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "gif_item_8Rh6pN",
+        "gif_item_iaTJJj",
+        "gif_item_MLVM6w",
+        "gif_item_0810_12"
+      ],
+      "name": "GR Never Trust Fakes",
+      "settings": {
+        "section_bg_color": "#ffffff",
+        "section_padding_top": 60,
+        "section_padding_bottom": 60,
+        "section_max_width": 1200,
+        "eyebrow_text": "WATCH OUT",
+        "eyebrow_color": "#c0392b",
+        "eyebrow_font_size": 13,
+        "eyebrow_font_weight": "700",
+        "eyebrow_font_family": "inherit",
+        "heading_text": "Never Trust the Fakes",
+        "heading_tag": "h2",
+        "heading_font_size": 32,
+        "heading_font_size_desktop": 52,
+        "heading_font_weight": "800",
+        "heading_color": "#1a1a1a",
+        "heading_font_family": "inherit",
+        "heading_bottom_margin": 16,
+        "subtext": "",
+        "subtext_font_size": 17,
+        "subtext_font_weight": "400",
+        "subtext_color": "#555555",
+        "subtext_font_family": "inherit",
+        "text_alignment": "center",
+        "text_bottom_margin": 40,
+        "gif_gap": 24,
+        "gif_height": 300,
+        "gif_object_fit": "cover",
+        "gif_border_radius": 8,
+        "mobile_gif_width": 80,
+        "mobile_gif_height": 220,
+        "caption_font_size": 14,
+        "caption_font_weight": "600",
+        "caption_color": "#1a1a1a",
+        "caption_font_family": "inherit"
+      }
+    },
     "details": {
       "type": "gr-authenticity-details",
       "blocks": {
         "never_trust_fakes": {
           "type": "never_trust_fakes",
+          "disabled": true,
           "settings": {
             "section_bg_color": "#ffffff",
             "section_padding_top": 60,
             "section_padding_bottom": 60,
-            "section_max_width": 1200,
+            "section_max_width": 1400,
             "text_alignment": "center",
             "text_bottom_margin": 40,
             "eyebrow_text": "",
@@ -207,12 +284,13 @@
             "gif_border_radius": 8,
             "mobile_gif_width": 80,
             "mobile_gif_height": 220,
-            "gif_image_1": "shopify:\/\/shop_images\/0810_11.gif",
+            "gif_image_1": "shopify:\/\/shop_images\/0811_1.gif",
             "gif_caption_1": "",
-            "gif_image_2": "shopify:\/\/shop_images\/0810_12.gif",
+            "gif_image_2": "shopify:\/\/shop_images\/0810_11.gif",
             "gif_caption_2": "",
-            "gif_image_3": "shopify:\/\/shop_images\/0811_1.gif",
+            "gif_image_3": "shopify:\/\/shop_images\/0811.gif",
             "gif_caption_3": "",
+            "gif_image_4": "shopify:\/\/shop_images\/0810_12.gif",
             "gif_caption_4": "",
             "caption_font_size": 14,
             "caption_font_weight": "600",
@@ -261,7 +339,7 @@
         "detail3"
       ],
       "settings": {
-        "eyebrow": "Look closer",
+        "eyebrow": "",
         "heading": "How to spot the real Grill Rescue.",
         "text": "",
         "background_color": "#ffffff",
@@ -470,6 +548,7 @@
     "hero",
     "trust",
     "compare",
+    "gr_never_trust_fakes_QHbqB4",
     "details",
     "buy",
     "faq",

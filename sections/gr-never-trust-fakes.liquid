@@ -1,7 +1,7 @@
 {% comment %}
   Section: GR Never Trust the Fakes
   - Rich text heading (center-aligned)
-  - 3 GIF blocks displayed in a row (desktop) / swipeable carousel (mobile)
+  - 4 GIF blocks displayed in a row (desktop) / swipeable carousel (mobile)
   - All text, sizes, colors, and GIF dimensions are editable via Theme Editor
 {% endcomment %}
 
@@ -61,7 +61,7 @@
 
   .gr-ntf-gif-track {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: {{ section.settings.gif_gap }}px;
   }
 
@@ -618,7 +618,7 @@
     {
       "type": "gif_item",
       "name": "GIF Block",
-      "limit": 3,
+      "limit": 4,
       "settings": [
         {
           "type": "header",
@@ -647,6 +647,7 @@
     {
       "name": "GR Never Trust Fakes",
       "blocks": [
+        { "type": "gif_item" },
         { "type": "gif_item" },
         { "type": "gif_item" },
         { "type": "gif_item" }
