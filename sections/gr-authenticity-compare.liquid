@@ -293,7 +293,8 @@
             <span>{{ block.settings.real_answer }}</span>
           </div>
           <div class="gr-auth-compare__cell gr-auth-compare__answer gr-auth-compare__answer--fake" role="cell">
-            <span class="gr-auth-compare__mark" aria-hidden="true">?</span>
+            {% comment %} <span class="gr-auth-compare__mark" aria-hidden="true">?</span> {% endcomment %}
+            <img src="https://cdn.shopify.com/s/files/1/0397/1946/9215/files/fake-stamp-1-1024x653.png?v=1786393881" alt="fake" width="40" height="40" style="filter: grayscale(1) brightness(0);"/>
             <span>{{ block.settings.fake_answer }}</span>
           </div>
         </div>
