@@ -2,13 +2,38 @@
   "sections": {
     "hero": {
       "type": "gr-authenticity-hero",
+      "blocks": {
+        "proof1": {
+          "type": "proof",
+          "settings": {
+            "text": "The original bristle-free design"
+          }
+        },
+        "proof2": {
+          "type": "proof",
+          "settings": {
+            "text": "Patented construction"
+          }
+        },
+        "proof3": {
+          "type": "proof",
+          "settings": {
+            "text": "Premium aramid-fiber head"
+          }
+        }
+      },
+      "block_order": [
+        "proof1",
+        "proof2",
+        "proof3"
+      ],
       "settings": {
         "product": "grill-brush-w-scraper",
         "image_alt": "Authentic Grill Rescue scraper brush",
         "media_label": "The original Grill Rescue",
         "eyebrow": "Real vs. fake",
         "heading": "Don’t get fooled by a fake.",
-        "text": "<p>Copycat brushes can look similar in a listing. The difference is in the materials, construction, performance, and support behind the product.</p>",
+        "text": "<p>Fake brushes might look similar, but the difference is in the materials, construction, and performance.<\/p>",
         "rating_text": "★★★★★ Over 12,000 5-star reviews",
         "button_text": "Get the real Grill Rescue",
         "microcopy": "Every purchase helps support first responders.",
@@ -18,106 +43,259 @@
         "background_color": "#f4f1ed",
         "card_color": "#ffffff",
         "corner_radius": 18
-      },
-      "blocks": {
-        "proof1": { "type": "proof", "settings": { "text": "The original bristle-free design" } },
-        "proof2": { "type": "proof", "settings": { "text": "Patented construction" } },
-        "proof3": { "type": "proof", "settings": { "text": "Premium aramid-fiber head" } },
-        "proof4": { "type": "proof", "settings": { "text": "Official Grill Rescue support" } }
-      },
-      "block_order": ["proof1", "proof2", "proof3", "proof4"]
+      }
     },
     "trust": {
       "type": "gr-authenticity-trust",
+      "blocks": {
+        "trust1": {
+          "type": "item",
+          "settings": {
+            "heading": "Created by a firefighter",
+            "text": "Designed with safety first"
+          }
+        },
+        "trust2": {
+          "type": "item",
+          "settings": {
+            "heading": "Patented construction",
+            "text": "The original Grill Rescue design"
+          }
+        },
+        "trust3": {
+          "type": "item",
+          "settings": {
+            "heading": "Replaceable cleaning head",
+            "text": "Dishwasher-friendly care"
+          }
+        },
+        "trust4": {
+          "type": "item",
+          "settings": {
+            "heading": "30-day guarantee",
+            "text": "Official Grill Rescue support"
+          }
+        }
+      },
+      "block_order": [
+        "trust1",
+        "trust2",
+        "trust3",
+        "trust4"
+      ],
       "settings": {
         "background_color": "#111111",
         "text_color": "#ffffff",
         "accent_color": "#ef3038"
-      },
-      "blocks": {
-        "trust1": { "type": "item", "settings": { "heading": "Created by a firefighter", "text": "Designed with safety first" } },
-        "trust2": { "type": "item", "settings": { "heading": "Patented construction", "text": "The original Grill Rescue design" } },
-        "trust3": { "type": "item", "settings": { "heading": "Replaceable cleaning head", "text": "Dishwasher-friendly care" } },
-        "trust4": { "type": "item", "settings": { "heading": "30-day guarantee", "text": "Official Grill Rescue support" } }
-      },
-      "block_order": ["trust1", "trust2", "trust3", "trust4"]
+      }
     },
     "compare": {
       "type": "gr-authenticity-compare",
+      "blocks": {
+        "row1": {
+          "type": "row",
+          "settings": {
+            "feature": "Design",
+            "real_answer": "Patented and created by a firefighter.",
+            "fake_answer": "Cheap copycat meant to trick customers."
+          }
+        },
+        "row2": {
+          "type": "row",
+          "settings": {
+            "feature": "Cleaning head",
+            "real_answer": "Premium, ultra-durable aramid-fiber head.",
+            "fake_answer": "Cheap alternative that won't last."
+          }
+        },
+        "row3": {
+          "type": "row",
+          "settings": {
+            "feature": "Steam cleaning",
+            "real_answer": "Engineered as a complete steam-cleaning system.",
+            "fake_answer": "May light on fire."
+          }
+        },
+        "row4": {
+          "type": "row",
+          "settings": {
+            "feature": "Replacement parts",
+            "real_answer": "Official replacement heads and accessories.",
+            "fake_answer": "Unofficial parts and heads."
+          }
+        },
+        "row5": {
+          "type": "row",
+          "settings": {
+            "feature": "Warranty and support",
+            "real_answer": "Backed by Grill Rescue.",
+            "fake_answer": "Depends on the third-party seller."
+          }
+        },
+        "row6": {
+          "type": "row",
+          "settings": {
+            "feature": "Gives back",
+            "real_answer": "All purchases help support first responders.",
+            "fake_answer": "Who knows where the money goes."
+          }
+        }
+      },
+      "block_order": [
+        "row1",
+        "row2",
+        "row3",
+        "row4",
+        "row5",
+        "row6"
+      ],
       "settings": {
         "eyebrow": "Know what you’re buying",
         "heading": "The original isn’t the same as a lookalike.",
-        "text": "<p>Similar-looking listings do not guarantee the same materials, specifications, quality control, warranty, or customer support.</p>",
+        "text": "",
+        "real_image": "shopify:\/\/shop_images\/Scraper_db0f4c7b-17ea-4b61-b24c-0e6de3247c09.jpg",
         "real_badge": "The real one",
         "real_title": "Grill Rescue",
-        "real_text": "The firefighter-designed original, sold and supported by Grill Rescue.",
-        "fake_badge": "The lookalike",
-        "fake_title": "Online imitation",
-        "fake_text": "Materials, construction, seller support, and performance may vary by listing.",
+        "real_text": "The firefighter-designed original, sold and made by Grill Rescue.",
+        "fake_image": "shopify:\/\/shop_images\/E8FCE3C7-597C-46D2-A818-AD11986FEB50.png",
+        "fake_badge": "THE FAKES",
+        "fake_title": "Don't Buy These",
+        "fake_text": "Materials, construction, and design are all cheap, flimsy, and put your family in danger.",
         "button_text": "Shop the authentic brush",
+        "button_link": "",
         "background_color": "#f7f7f7",
         "card_color": "#ffffff",
         "text_color": "#111111",
         "accent_color": "#d91f26",
         "muted_color": "#686868",
         "corner_radius": 16
-      },
-      "blocks": {
-        "row1": { "type": "row", "settings": { "feature": "Design", "real_answer": "The patented original", "fake_answer": "Similar appearance; specifications may vary" } },
-        "row2": { "type": "row", "settings": { "feature": "Cleaning head", "real_answer": "Premium aramid-fiber head", "fake_answer": "Material may be unclear or different" } },
-        "row3": { "type": "row", "settings": { "feature": "Steam cleaning", "real_answer": "Engineered as a complete steam-cleaning system", "fake_answer": "Performance may not match the original" } },
-        "row4": { "type": "row", "settings": { "feature": "Replacement parts", "real_answer": "Official replacement heads and accessories", "fake_answer": "Compatibility and availability may vary" } },
-        "row5": { "type": "row", "settings": { "feature": "Warranty and support", "real_answer": "Backed by Grill Rescue", "fake_answer": "Depends on the third-party seller" } },
-        "row6": { "type": "row", "settings": { "feature": "Gives back", "real_answer": "Purchases help support first responders", "fake_answer": "Not connected to the Grill Rescue mission" } }
-      },
-      "block_order": ["row1", "row2", "row3", "row4", "row5", "row6"]
+      }
     },
     "details": {
       "type": "gr-authenticity-details",
+      "blocks": {
+        "detail1": {
+          "type": "detail",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cleaning_head_cf0d67f6-1689-4934-8a6d-f220b73ce30a.jpg",
+            "image_position": "left",
+            "eyebrow": "It's All About Quality",
+            "heading": "Premium & Authentic",
+            "text": "<p>Featuring a next-level scraper and crazy durable aramid fiber, this authentic cleaning head is better than the rest. And yes, it's dishwasher-safe.<\/p>",
+            "callout": "Authentic Grill Rescue heads are replaceable and dishwasher friendly."
+          }
+        },
+        "detail2": {
+          "type": "detail",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brush_build.png",
+            "image_position": "right",
+            "eyebrow": "Fighter-Designed",
+            "heading": "Nothing compares to the real thing.",
+            "text": "<p>The best handle. The best cleaning head. The best scraper. Why put your family in danger with a fake when you can get the real thing?<\/p>",
+            "callout": "The original design is patented and firefighter-designed."
+          }
+        },
+        "detail3": {
+          "type": "detail",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Scott_Scraper_IMG_2060.webp",
+            "image_position": "left",
+            "eyebrow": "BUY FROM THE SOURCE",
+            "heading": "Buy Direct From Us",
+            "text": "<p>Fakes and frauds are all over the place. GrillRescue.com is the best place to buy a 100% Authentic Grill Rescue. <\/p>",
+            "callout": "Buying direct connects customers to official Grill Rescue support."
+          }
+        },
+        "never_trust_fakes": {
+          "type": "never_trust_fakes",
+          "settings": {
+            "section_bg_color": "#ffffff",
+            "section_padding_top": 60,
+            "section_padding_bottom": 60,
+            "section_max_width": 1200,
+            "text_alignment": "center",
+            "text_bottom_margin": 40,
+            "eyebrow_text": "",
+            "eyebrow_color": "#c0392b",
+            "eyebrow_font_size": 13,
+            "eyebrow_font_weight": "700",
+            "eyebrow_font_family": "inherit",
+            "heading_text": "Never Trust the Fakes",
+            "heading_tag": "h2",
+            "heading_font_size": 32,
+            "heading_font_size_desktop": 84,
+            "heading_font_weight": "800",
+            "heading_color": "#1a1a1a",
+            "heading_font_family": "inherit",
+            "heading_bottom_margin": 16,
+            "subtext": "",
+            "subtext_font_size": 17,
+            "subtext_font_weight": "400",
+            "subtext_color": "#555555",
+            "subtext_font_family": "inherit",
+            "gif_gap": 24,
+            "gif_height": 430,
+            "gif_object_fit": "cover",
+            "gif_border_radius": 8,
+            "mobile_gif_width": 80,
+            "mobile_gif_height": 220,
+            "gif_image_1": "shopify:\/\/shop_images\/0810_11.gif",
+            "gif_caption_1": "",
+            "gif_image_2": "shopify:\/\/shop_images\/0810_12.gif",
+            "gif_caption_2": "",
+            "gif_caption_3": "",
+            "caption_font_size": 14,
+            "caption_font_weight": "600",
+            "caption_color": "#1a1a1a",
+            "caption_font_family": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "detail1",
+        "detail2",
+        "detail3",
+        "never_trust_fakes"
+      ],
       "settings": {
         "eyebrow": "Look closer",
         "heading": "How to spot the real Grill Rescue.",
-        "text": "<p>Use close-up campaign imagery to show the design, materials, branding, packaging, and details that separate the authentic product from lookalikes.</p>",
+        "text": "",
         "background_color": "#ffffff",
         "card_color": "#f3f3f3",
         "text_color": "#111111",
         "accent_color": "#d91f26",
         "corner_radius": 16
-      },
-      "blocks": {
-        "detail1": { "type": "detail", "settings": { "image_position": "left", "eyebrow": "01 — Cleaning head", "heading": "Start with the material.", "text": "<p>Use a macro image to show the authentic premium aramid-fiber cleaning head and explain how it is designed for Grill Rescue’s steam-cleaning system.</p>", "callout": "Authentic Grill Rescue heads are replaceable and dishwasher friendly." } },
-        "detail2": { "type": "detail", "settings": { "image_position": "right", "eyebrow": "02 — Handle and scraper", "heading": "Look at the complete build.", "text": "<p>Show the handle, scraper, connection points, branding, or other construction details that make the real product easy to identify.</p>", "callout": "The original design is patented and firefighter-designed." } },
-        "detail3": { "type": "detail", "settings": { "image_position": "left", "eyebrow": "03 — Seller and support", "heading": "Buy from the source.", "text": "<p>Explain where customers should purchase and what official warranty, replacement-part, and customer-support benefits come with the authentic product.</p>", "callout": "Buying direct connects customers to official Grill Rescue support." } }
-      },
-      "block_order": ["detail1", "detail2", "detail3"]
-    },
-    "proof": {
-      "type": "gr-authenticity-proof",
-      "settings": {
-        "eyebrow": "The original has a following",
-        "heading": "Thousands chose the real Grill Rescue.",
-        "text": "<p>Replace these cards with approved customer photos, review graphics, press mentions, or campaign creative.</p>",
-        "button_text": "Shop the original",
-        "background_color": "#f3f0ec",
-        "card_color": "#ffffff",
-        "text_color": "#111111",
-        "accent_color": "#d91f26",
-        "corner_radius": 16
-      },
-      "blocks": {
-        "review1": { "type": "review", "settings": { "image_alt": "Grill Rescue customer", "quote": "Add an approved customer quote here.", "name": "Verified customer" } },
-        "review2": { "type": "review", "settings": { "image_alt": "Grill Rescue customer", "quote": "Add an approved customer quote here.", "name": "Verified customer" } },
-        "review3": { "type": "review", "settings": { "image_alt": "Grill Rescue customer", "quote": "Add an approved customer quote here.", "name": "Verified customer" } }
-      },
-      "block_order": ["review1", "review2", "review3"]
+      }
     },
     "buy": {
       "type": "gr-authenticity-buy",
+      "blocks": {
+        "addon1": {
+          "type": "addon",
+          "settings": {
+            "product": "dunk-tank",
+            "button_text": "Add to cart"
+          }
+        },
+        "addon2": {
+          "type": "addon",
+          "settings": {
+            "product": "ultimate-grilling-enthusiast-pack",
+            "button_text": "Add to cart"
+          }
+        }
+      },
+      "block_order": [
+        "addon1",
+        "addon2"
+      ],
       "settings": {
         "product": "grill-brush-w-scraper",
         "eyebrow": "Get the authentic original",
         "heading": "Buy the real Grill Rescue.",
-        "text": "<p>Shop direct for the original firefighter-designed brush, official support, and compatible replacement parts.</p>",
+        "text": "<p>Shop direct for the original firefighter-designed brush, official support, and compatible replacement parts.<\/p>",
         "bullet_1": "Original bristle-free steam-cleaning design",
         "bullet_2": "Replaceable dishwasher-friendly cleaning head",
         "bullet_3": "Every purchase helps support first responders",
@@ -129,34 +307,66 @@
         "text_color": "#111111",
         "accent_color": "#d91f26",
         "corner_radius": 18
-      },
-      "blocks": {
-        "addon1": { "type": "addon", "settings": { "product": "dunk-tank", "button_text": "Add to cart" } },
-        "addon2": { "type": "addon", "settings": { "product": "ultimate-grilling-enthusiast-pack", "button_text": "Add to cart" } }
-      },
-      "block_order": ["addon1", "addon2"]
+      }
     },
     "faq": {
       "type": "gr-authenticity-faq",
+      "blocks": {
+        "faq1": {
+          "type": "faq",
+          "settings": {
+            "question": "What makes the authentic Grill Rescue different?",
+            "answer": "<p>It's the original firefighter-designed, patented bristle-free brush.<\/p>"
+          }
+        },
+        "faq2": {
+          "type": "faq",
+          "settings": {
+            "question": "Does Grill Rescue use wire bristles?",
+            "answer": "<p>No. Grill Rescue uses a bristle-free premium aramid-fiber cleaning head.<\/p>"
+          }
+        },
+        "faq3": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I replace and clean the head?",
+            "answer": "<p>Yes. The cleaning head is replaceable and dishwasher-friendly. <\/p>"
+          }
+        },
+        "faq4": {
+          "type": "faq",
+          "settings": {
+            "question": "How can I make sure I am buying the real product?",
+            "answer": "<p>Purchase directly from GrillRescue.com<\/p>"
+          }
+        },
+        "faq5": {
+          "type": "faq",
+          "settings": {
+            "question": "Is the authentic brush covered by a guarantee?",
+            "answer": "<p>Yes. A 30-day guarantee on its site. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq1",
+        "faq2",
+        "faq3",
+        "faq4",
+        "faq5"
+      ],
       "settings": {
         "eyebrow": "Questions answered",
         "heading": "Why buy the original?",
-        "text": "<p>Answer authenticity, care, replacement-head, shipping, and guarantee questions before customers reach checkout.</p>",
+        "text": "<p>Nothing compares to the real thing.<\/p>",
         "open_first": true,
         "button_text": "Get the real Grill Rescue",
+        "button_link": "",
         "background_color": "#ffffff",
         "card_color": "#f3f3f3",
         "text_color": "#111111",
         "accent_color": "#d91f26"
-      },
-      "blocks": {
-        "faq1": { "type": "faq", "settings": { "question": "What makes the authentic Grill Rescue different?", "answer": "<p>It is the original firefighter-designed, patented bristle-free brush and scraper, engineered as a complete steam-cleaning system with official replacement parts and Grill Rescue support.</p>" } },
-        "faq2": { "type": "faq", "settings": { "question": "Does Grill Rescue use wire bristles?", "answer": "<p>No. Grill Rescue uses a bristle-free premium aramid-fiber cleaning head.</p>" } },
-        "faq3": { "type": "faq", "settings": { "question": "Can I replace and clean the head?", "answer": "<p>Yes. The cleaning head is replaceable and dishwasher friendly. Follow the care instructions included with your product.</p>" } },
-        "faq4": { "type": "faq", "settings": { "question": "How can I make sure I am buying the real product?", "answer": "<p>Purchase directly from Grill Rescue or an authorized seller, and compare the product branding, construction, packaging, and seller information with the authenticity details shown on this page.</p>" } },
-        "faq5": { "type": "faq", "settings": { "question": "Is the authentic brush covered by a guarantee?", "answer": "<p>Grill Rescue currently promotes a 30-day guarantee on its site. Update this answer if your campaign terms change.</p>" } }
-      },
-      "block_order": ["faq1", "faq2", "faq3", "faq4", "faq5"]
+      }
     },
     "sticky": {
       "type": "gr-authenticity-sticky",
@@ -170,7 +380,99 @@
         "text_color": "#111111",
         "accent_color": "#d91f26"
       }
+    },
+    "proof": {
+      "type": "gr-authenticity-proof",
+      "blocks": {
+        "review1": {
+          "type": "review",
+          "disabled": true,
+          "settings": {
+            "image_alt": "Grill Rescue customer",
+            "quote": "Add an approved customer quote here.",
+            "name": "Verified customer"
+          }
+        },
+        "review2": {
+          "type": "review",
+          "disabled": true,
+          "settings": {
+            "image_alt": "Grill Rescue customer",
+            "quote": "Add an approved customer quote here.",
+            "name": "Verified customer"
+          }
+        },
+        "review3": {
+          "type": "review",
+          "disabled": true,
+          "settings": {
+            "image_alt": "Grill Rescue customer",
+            "quote": "Add an approved customer quote here.",
+            "name": "Verified customer"
+          }
+        }
+      },
+      "block_order": [
+        "review1",
+        "review2",
+        "review3"
+      ],
+      "custom_css": [
+        ".gr-auth-proof {padding-bottom: 0 !important;}"
+      ],
+      "settings": {
+        "eyebrow": "The original has a following",
+        "heading": "Thousands chose the real Grill Rescue.",
+        "text": "<p>Replace these cards with approved customer photos, review graphics, press mentions, or campaign creative.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_color": "#f3f0ec",
+        "card_color": "#ffffff",
+        "text_color": "#111111",
+        "accent_color": "#d91f26",
+        "corner_radius": 16
+      }
+    },
+    "1786033496b30828b4": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_agg_section_ViytjG": {
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "product_reviews_only",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "product_handle": "grill-brush",
+            "aggregated": true,
+            "data-limit": 20,
+            "maxwidth": 1600,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_agg_section_ViytjG"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
-  "order": ["hero", "trust", "compare", "details", "proof", "buy", "faq", "sticky"]
+  "order": [
+    "hero",
+    "trust",
+    "compare",
+    "details",
+    "buy",
+    "faq",
+    "sticky",
+    "proof",
+    "1786033496b30828b4"
+  ]
 }

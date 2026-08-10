@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -22,7 +13,7 @@
       "settings": {
         "show_banner": true,
         "icon": "{{ page.metafields.custom.lander.value.alert_banner.value.banner_icon.value }}",
-        "text": "<p>{{ page.metafields.custom.lander.value.alert_banner.value.banner_text | metafield_tag }}</p>",
+        "text": "<p>{{ page.metafields.custom.lander.value.alert_banner.value.banner_text | metafield_tag }}<\/p>",
         "button_label": "Shop Now →",
         "banner_link": "",
         "container_width": 1200,
@@ -42,12 +33,12 @@
       "settings": {
         "eyebrow": "{{ page.metafields.custom.lander.value.custom_hero.value.hero_eyebrow_text.value }}",
         "heading": "{{ page.metafields.custom.lander.value.custom_hero.value.hero_heading.value }}",
-        "description": "<p>{{ page.metafields.custom.lander.value.custom_hero.value.hero_description | metafield_tag }}</p>",
+        "description": "<p>{{ page.metafields.custom.lander.value.custom_hero.value.hero_description | metafield_tag }}<\/p>",
         "image": "{{ page.metafields.custom.lander.value.custom_hero.value.image.value }}",
         "image_alt": "{{ page.metafields.custom.lander.value.custom_hero.value.image_alt_text.value }}",
         "button_label": "{{ page.metafields.custom.lander.value.custom_hero.value.hero_button_label.value }}",
         "button_link": "{{ page.metafields.custom.lander.value.custom_hero.value.button_link.value }}",
-        "review_text": "<p>{{ page.metafields.custom.lander.value.custom_hero.value.hero_review_text.value }}</p>",
+        "review_text": "<p>{{ page.metafields.custom.lander.value.custom_hero.value.hero_review_text.value }}<\/p>",
         "container_width": 1000,
         "padding_top": 20,
         "padding_bottom": 20,
@@ -67,11 +58,11 @@
       "settings": {
         "eyebrow": "{{ page.metafields.custom.lander.value.custom_warning.value.warning_eyebrow_text.value }}",
         "heading": "{{ page.metafields.custom.lander.value.custom_warning.value.warning_heading.value }}",
-        "description": "<p>{{ page.metafields.custom.lander.value.custom_warning.value.warning_description.value }}</p>",
+        "description": "<p>{{ page.metafields.custom.lander.value.custom_warning.value.warning_description.value }}<\/p>",
         "alert_icon": "{{ page.metafields.custom.lander.value.custom_warning.value.alert_icon.value }}",
         "alert_title": "{{ page.metafields.custom.lander.value.custom_warning.value.warning_alert_title.value }}",
-        "alert_text": "<p>{{ page.metafields.custom.lander.value.custom_warning.value.warning_alert_text.value }}</p>",
-        "bottom_text": "<p>{{ page.metafields.custom.lander.value.custom_warning.value.warning_bottom_text.value }}</p>",
+        "alert_text": "<p>{{ page.metafields.custom.lander.value.custom_warning.value.warning_alert_text.value }}<\/p>",
+        "bottom_text": "<p>{{ page.metafields.custom.lander.value.custom_warning.value.warning_bottom_text.value }}<\/p>",
         "container_width": 1000,
         "padding_top": 48,
         "padding_bottom": 48,
@@ -93,8 +84,8 @@
         "heading": "{{ page.metafields.custom.lander.value.custom_story_image.value.story_heading.value }}",
         "image": "{{ page.metafields.custom.lander.value.custom_story_image.value.image.value }}",
         "image_alt": "{{ page.metafields.custom.lander.value.custom_story_image.value.image_alt_text.value }}",
-        "text": "<p>{{ page.metafields.custom.lander.value.custom_story_image.value.story_text | metafield_tag }}</p>",
-        "quote": "<p>{{ page.metafields.custom.lander.value.custom_story_image.value.story_quote_box.value }}</p>",
+        "text": "<p>{{ page.metafields.custom.lander.value.custom_story_image.value.story_text | metafield_tag }}<\/p>",
+        "quote": "<p>{{ page.metafields.custom.lander.value.custom_story_image.value.story_quote_box.value }}<\/p>",
         "container_width": 1000,
         "padding_top": 48,
         "padding_bottom": 48,
@@ -116,7 +107,7 @@
           "source": "{{ page.metafields.custom.lander.value.custom_steps.value }}",
           "settings": {
             "title": "{{ page.metafields.custom.lander.value.custom_steps.value.step_1.value }}",
-            "text": "<p>{{ page.metafields.custom.lander.value.custom_steps.value.step_text_1.value }}</p>"
+            "text": "<p>{{ page.metafields.custom.lander.value.custom_steps.value.step_text_1.value }}<\/p>"
           }
         },
         "step_WYYeNp": {
@@ -124,7 +115,7 @@
           "source": "{{ page.metafields.custom.lander.value.custom_steps.value }}",
           "settings": {
             "title": "{{ page.metafields.custom.lander.value.custom_steps.value.step_2.value }}",
-            "text": "<p>{{ page.metafields.custom.lander.value.custom_steps.value.step_text_2.value }}</p>"
+            "text": "<p>{{ page.metafields.custom.lander.value.custom_steps.value.step_text_2.value }}<\/p>"
           }
         },
         "step_KLyHDL": {
@@ -132,7 +123,7 @@
           "source": "{{ page.metafields.custom.lander.value.custom_steps.value }}",
           "settings": {
             "title": "{{ page.metafields.custom.lander.value.custom_steps.value.step_3.value }}",
-            "text": "<p>{{ page.metafields.custom.lander.value.custom_steps.value.step_text_3.value }}</p>"
+            "text": "<p>{{ page.metafields.custom.lander.value.custom_steps.value.step_text_3.value }}<\/p>"
           }
         }
       },
@@ -145,7 +136,7 @@
       "settings": {
         "eyebrow": "{{ page.metafields.custom.lander.value.custom_steps.value.steps_eyebrow_text.value }}",
         "heading": "{{ page.metafields.custom.lander.value.custom_steps.value.steps_heading.value }}",
-        "image": "shopify://shop_images/Asis_Grill_Rescue_Weber_GIF_06022026_REVISED.gif",
+        "image": "shopify:\/\/shop_images\/Asis_Grill_Rescue_Weber_GIF_06022026_REVISED.gif",
         "image_alt": "{{ page.metafields.custom.lander.value.custom_steps.value.image_alt_text.value }}",
         "button_label": "{{ page.metafields.custom.lander.value.custom_steps.value.steps_button_label.value }}",
         "button_link": "{{ page.metafields.custom.lander.value.custom_steps.value.button_link.value }}",
@@ -214,8 +205,8 @@
         "us_column": "{{ page.metafields.custom.lander.value.custom_comparison.value.comparison_first_column_heading.value }}",
         "them_column": "{{ page.metafields.custom.lander.value.custom_comparison.value.comparison_second_column_heading.value }}",
         "stats_eyebrow": "{{ page.metafields.custom.lander.value.custom_comparison.value.comparison_stats_eyebrow.value }}",
-        "callout_title": "<p>{{ page.metafields.custom.lander.value.custom_comparison.value.comparison_callout_title.value }}</p>",
-        "callout_text": "<p>{{ page.metafields.custom.lander.value.custom_comparison.value.comparison_callout_text.value }}</p>",
+        "callout_title": "<p>{{ page.metafields.custom.lander.value.custom_comparison.value.comparison_callout_title.value }}<\/p>",
+        "callout_text": "<p>{{ page.metafields.custom.lander.value.custom_comparison.value.comparison_callout_text.value }}<\/p>",
         "container_width": 1000,
         "padding_top": 24,
         "padding_bottom": 24,
@@ -240,8 +231,8 @@
           "type": "faq",
           "repeater": "{{ page.metafields.custom.lander.value.faqs_item.value }}",
           "settings": {
-            "question": "<p>{{ block.repeater.faq_question.value }}</p>",
-            "answer": "<p>{{ block.repeater.faq_answer.value }}</p>"
+            "question": "<p>{{ block.repeater.faq_question.value }}<\/p>",
+            "answer": "<p>{{ block.repeater.faq_answer.value }}<\/p>"
           }
         }
       },
@@ -272,16 +263,16 @@
           "settings": {
             "badge": "{{ page.metafields.custom.lander.value.product_card_1.value.badge.value }}",
             "title": "{{ page.metafields.custom.lander.value.product_card_1.value.product_title.value }}",
-            "subtitle": "<p>{{ page.metafields.custom.lander.value.product_card_1.value.product_subtitle.value }}</p>",
+            "subtitle": "<p>{{ page.metafields.custom.lander.value.product_card_1.value.product_subtitle.value }}<\/p>",
             "image": "{{ page.metafields.custom.lander.value.product_card_1.value.product_image.value }}",
             "image_alt": "{{ page.metafields.custom.lander.value.product_card_1.value.image_alt_text.value }}",
-            "price": "<p>{{ page.metafields.custom.lander.value.product_card_1.value.product_price.value }}</p>",
-            "compare_price": "<p>{{ page.metafields.custom.lander.value.product_card_1.value.product_compare_price.value }}</p>",
-            "savings": "<p>{{ page.metafields.custom.lander.value.product_card_1.value.product_savings.value }}</p>",
-            "feature_1": "<p>{{ page.metafields.custom.lander.value.product_card_1.value.product_feature_1.value }}</p>",
-            "feature_2": "<p>{{ page.metafields.custom.lander.value.product_card_1.value.product_feature_2.value }}</p>",
-            "feature_3": "<p>{{ page.metafields.custom.lander.value.product_card_1.value.product_feature_3.value }}</p>",
-            "feature_4": "<p>{{ page.metafields.custom.lander.value.product_card_1.value.product_feature_4.value }}</p>",
+            "price": "<p>{{ page.metafields.custom.lander.value.product_card_1.value.product_price.value }}<\/p>",
+            "compare_price": "<p>{{ page.metafields.custom.lander.value.product_card_1.value.product_compare_price.value }}<\/p>",
+            "savings": "<p>{{ page.metafields.custom.lander.value.product_card_1.value.product_savings.value }}<\/p>",
+            "feature_1": "<p>{{ page.metafields.custom.lander.value.product_card_1.value.product_feature_1.value }}<\/p>",
+            "feature_2": "<p>{{ page.metafields.custom.lander.value.product_card_1.value.product_feature_2.value }}<\/p>",
+            "feature_3": "<p>{{ page.metafields.custom.lander.value.product_card_1.value.product_feature_3.value }}<\/p>",
+            "feature_4": "<p>{{ page.metafields.custom.lander.value.product_card_1.value.product_feature_4.value }}<\/p>",
             "button_label": "{{ page.metafields.custom.lander.value.product_card_1.value.product_button_label.value }}",
             "button_link": "{{ page.metafields.custom.lander.value.product_card_1.value.button_link.value }}"
           }
@@ -292,16 +283,16 @@
             "featured": true,
             "badge": "{{ page.metafields.custom.lander.value.product_card_2.value.badge.value }}",
             "title": "{{ page.metafields.custom.lander.value.product_card_2.value.product_title.value }}",
-            "subtitle": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_subtitle.value }}</p>",
+            "subtitle": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_subtitle.value }}<\/p>",
             "image": "{{ page.metafields.custom.lander.value.product_card_2.value.product_image.value }}",
             "image_alt": "{{ page.metafields.custom.lander.value.product_card_1.value.image_alt_text.value }}",
-            "price": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_price.value }}</p>",
-            "compare_price": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_compare_price.value }}</p>",
-            "savings": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_savings.value }}</p>",
-            "feature_1": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_feature_1.value }}</p>",
-            "feature_2": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_feature_2.value }}</p>",
-            "feature_3": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_feature_3.value }}</p>",
-            "feature_4": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_feature_4.value }}</p>",
+            "price": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_price.value }}<\/p>",
+            "compare_price": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_compare_price.value }}<\/p>",
+            "savings": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_savings.value }}<\/p>",
+            "feature_1": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_feature_1.value }}<\/p>",
+            "feature_2": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_feature_2.value }}<\/p>",
+            "feature_3": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_feature_3.value }}<\/p>",
+            "feature_4": "<p>{{ page.metafields.custom.lander.value.product_card_2.value.product_feature_4.value }}<\/p>",
             "button_label": "{{ page.metafields.custom.lander.value.product_card_2.value.product_button_label.value }}",
             "button_link": "{{ page.metafields.custom.lander.value.product_card_2.value.button_link.value }}"
           }
@@ -312,16 +303,16 @@
           "settings": {
             "badge": "{{ page.metafields.custom.lander.value.product_card_3.value.badge.value }}",
             "title": "{{ page.metafields.custom.lander.value.product_card_3.value.product_title.value }}",
-            "subtitle": "<p>{{ page.metafields.custom.lander.value.product_card_3.value.product_subtitle.value }}</p>",
+            "subtitle": "<p>{{ page.metafields.custom.lander.value.product_card_3.value.product_subtitle.value }}<\/p>",
             "image": "{{ page.metafields.custom.lander.value.product_card_3.value.product_image.value }}",
             "image_alt": "{{ page.metafields.custom.lander.value.product_card_3.value.image_alt_text.value }}",
-            "price": "<p>{{ page.metafields.custom.lander.value.product_card_3.value.product_price.value }}</p>",
-            "compare_price": "<p>{{ page.metafields.custom.lander.value.product_card_3.value.product_compare_price.value }}</p>",
-            "savings": "<p>{{ page.metafields.custom.lander.value.product_card_3.value.product_savings.value }}</p>",
-            "feature_1": "<p>{{ page.metafields.custom.lander.value.product_card_3.value.product_feature_1.value }}</p>",
-            "feature_2": "<p>{{ page.metafields.custom.lander.value.product_card_3.value.product_feature_2.value }}</p>",
-            "feature_3": "<p>{{ page.metafields.custom.lander.value.product_card_3.value.product_feature_3.value }}</p>",
-            "feature_4": "<p>{{ page.metafields.custom.lander.value.product_card_3.value.product_feature_4.value }}</p>",
+            "price": "<p>{{ page.metafields.custom.lander.value.product_card_3.value.product_price.value }}<\/p>",
+            "compare_price": "<p>{{ page.metafields.custom.lander.value.product_card_3.value.product_compare_price.value }}<\/p>",
+            "savings": "<p>{{ page.metafields.custom.lander.value.product_card_3.value.product_savings.value }}<\/p>",
+            "feature_1": "<p>{{ page.metafields.custom.lander.value.product_card_3.value.product_feature_1.value }}<\/p>",
+            "feature_2": "<p>{{ page.metafields.custom.lander.value.product_card_3.value.product_feature_2.value }}<\/p>",
+            "feature_3": "<p>{{ page.metafields.custom.lander.value.product_card_3.value.product_feature_3.value }}<\/p>",
+            "feature_4": "<p>{{ page.metafields.custom.lander.value.product_card_3.value.product_feature_4.value }}<\/p>",
             "button_label": "{{ page.metafields.custom.lander.value.product_card_3.value.product_button_label.value }}",
             "button_link": "{{ page.metafields.custom.lander.value.product_card_3.value.button_link.value }}"
           }
@@ -336,8 +327,8 @@
       "settings": {
         "section_anchor": "{{ page.metafields.custom.lander.value.custom_product_card.value.section_anchor_id.value }}",
         "heading": "{{ page.metafields.custom.lander.value.custom_product_card.value.product_heading.value }}",
-        "subheading": "<p>{{ page.metafields.custom.lander.value.custom_product_card.value.product_subheading.value }}</p>",
-        "bottom_text": "<p>{{ page.metafields.custom.lander.value.custom_product_card.value.product_bottom_text.value }}</p>",
+        "subheading": "<p>{{ page.metafields.custom.lander.value.custom_product_card.value.product_subheading.value }}<\/p>",
+        "bottom_text": "<p>{{ page.metafields.custom.lander.value.custom_product_card.value.product_bottom_text.value }}<\/p>",
         "container_width": 1200,
         "padding_top": 64,
         "padding_bottom": 64,

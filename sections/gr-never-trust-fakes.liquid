@@ -1,0 +1,657 @@
+{% comment %}
+  Section: GR Never Trust the Fakes
+  - Rich text heading (center-aligned)
+  - 3 GIF blocks displayed in a row (desktop) / swipeable carousel (mobile)
+  - All text, sizes, colors, and GIF dimensions are editable via Theme Editor
+{% endcomment %}
+
+<style>
+  .gr-ntf-section {
+    background-color: {{ section.settings.section_bg_color }};
+    padding-top: {{ section.settings.section_padding_top }}px;
+    padding-bottom: {{ section.settings.section_padding_bottom }}px;
+  }
+
+  .gr-ntf-inner {
+    max-width: {{ section.settings.section_max_width }}px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* ── Rich Text Block ── */
+  .gr-ntf-richtext {
+    text-align: {{ section.settings.text_alignment }};
+    margin-bottom: {{ section.settings.text_bottom_margin }}px;
+  }
+
+  .gr-ntf-eyebrow {
+    display: block;
+    font-size: {{ section.settings.eyebrow_font_size }}px;
+    font-weight: {{ section.settings.eyebrow_font_weight }};
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: {{ section.settings.eyebrow_color }};
+    margin-bottom: 8px;
+    font-family: {{ section.settings.eyebrow_font_family }};
+  }
+
+  .gr-ntf-heading {
+    font-size: {{ section.settings.heading_font_size }}px;
+    font-weight: {{ section.settings.heading_font_weight }};
+    line-height: 1.15;
+    color: {{ section.settings.heading_color }};
+    margin: 0 0 {{ section.settings.heading_bottom_margin }}px;
+    font-family: {{ section.settings.heading_font_family }};
+  }
+
+  .gr-ntf-subtext {
+    font-size: {{ section.settings.subtext_font_size }}px;
+    color: {{ section.settings.subtext_color }};
+    font-family: {{ section.settings.subtext_font_family }};
+    font-weight: {{ section.settings.subtext_font_weight }};
+    line-height: 1.6;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  /* ── GIF Grid (Desktop) ── */
+  .gr-ntf-gif-wrapper {
+    position: relative;
+  }
+
+  .gr-ntf-gif-track {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: {{ section.settings.gif_gap }}px;
+  }
+
+  .gr-ntf-gif-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .gr-ntf-gif-frame {
+    width: 100%;
+    overflow: hidden;
+    border-radius: {{ section.settings.gif_border_radius }}px;
+    line-height: 0;
+  }
+
+  .gr-ntf-gif-frame img {
+    width: 100%;
+    height: {{ section.settings.gif_height }}px;
+    object-fit: {{ section.settings.gif_object_fit }};
+    display: block;
+  }
+
+  .gr-ntf-gif-caption {
+    margin-top: 10px;
+    font-size: {{ section.settings.caption_font_size }}px;
+    font-weight: {{ section.settings.caption_font_weight }};
+    color: {{ section.settings.caption_color }};
+    font-family: {{ section.settings.caption_font_family }};
+    line-height: 1.4;
+  }
+
+  /* ── Mobile Carousel ── */
+  @media (max-width: 749px) {
+    .gr-ntf-gif-track {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: {{ section.settings.gif_gap }}px;
+      padding-bottom: 12px;
+      /* Hide scrollbar */
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .gr-ntf-gif-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .gr-ntf-gif-item {
+      flex: 0 0 {{ section.settings.mobile_gif_width }}%;
+      scroll-snap-align: start;
+    }
+
+    .gr-ntf-gif-frame img {
+      height: {{ section.settings.mobile_gif_height }}px;
+    }
+
+    /* Dot indicators */
+    .gr-ntf-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .gr-ntf-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: {{ section.settings.heading_color }};
+      opacity: 0.25;
+      transition: opacity 0.3s;
+      cursor: pointer;
+      border: none;
+      padding: 0;
+    }
+
+    .gr-ntf-dot.is-active {
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 750px) {
+    .gr-ntf-dots {
+      display: none;
+    }
+
+    .gr-ntf-heading {
+      font-size: {{ section.settings.heading_font_size_desktop }}px;
+    }
+  }
+</style>
+
+<section
+  class="gr-ntf-section"
+  id="gr-ntf-{{ section.id }}"
+>
+  <div class="gr-ntf-inner">
+
+    {% comment %} ── Rich Text ── {% endcomment %}
+    <div class="gr-ntf-richtext">
+      {% if section.settings.eyebrow_text != blank %}
+        <span class="gr-ntf-eyebrow">{{ section.settings.eyebrow_text }}</span>
+      {% endif %}
+
+      {% if section.settings.heading_text != blank %}
+        <{{ section.settings.heading_tag }} class="gr-ntf-heading">
+          {{ section.settings.heading_text }}
+        </{{ section.settings.heading_tag }}>
+      {% endif %}
+
+      {% if section.settings.subtext != blank %}
+        <p class="gr-ntf-subtext">{{ section.settings.subtext }}</p>
+      {% endif %}
+    </div>
+
+    {% comment %} ── GIF Carousel ── {% endcomment %}
+    <div class="gr-ntf-gif-wrapper">
+      <div
+        class="gr-ntf-gif-track"
+        id="gr-ntf-track-{{ section.id }}"
+      >
+        {% for block in section.blocks %}
+          {% if block.type == 'gif_item' %}
+            <div
+              class="gr-ntf-gif-item"
+              {{ block.shopify_attributes }}
+            >
+              <div class="gr-ntf-gif-frame">
+                {% if block.settings.gif_image != blank %}
+                  {{ block.settings.gif_image | image_url: width: 800 | image_tag:
+                    loading: 'lazy',
+                    alt: block.settings.gif_caption
+                  }}
+                {% else %}
+                  <div style="
+                    width: 100%;
+                    height: {{ section.settings.gif_height }}px;
+                    background: #f0f0f0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #999;
+                    font-size: 14px;
+                  ">
+                    Upload a GIF
+                  </div>
+                {% endif %}
+              </div>
+
+              {% if block.settings.gif_caption != blank %}
+                <p class="gr-ntf-gif-caption">{{ block.settings.gif_caption }}</p>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      {% comment %} Dots – only visible on mobile via CSS {% endcomment %}
+      <div class="gr-ntf-dots" id="gr-ntf-dots-{{ section.id }}" aria-hidden="true">
+        {% assign gif_count = 0 %}
+        {% for block in section.blocks %}
+          {% if block.type == 'gif_item' %}
+            {% assign gif_count = gif_count | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+
+        {% for i in (1..gif_count) %}
+          <button
+            class="gr-ntf-dot {% if forloop.first %}is-active{% endif %}"
+            data-index="{{ forloop.index0 }}"
+            aria-label="Go to GIF {{ forloop.index }}"
+          ></button>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  (function () {
+    var sectionId = '{{ section.id }}';
+    var track = document.getElementById('gr-ntf-track-' + sectionId);
+    var dots = document.querySelectorAll('#gr-ntf-dots-' + sectionId + ' .gr-ntf-dot');
+
+    if (!track || dots.length === 0) return;
+
+    // Update active dot based on scroll position
+    function updateDots() {
+      var scrollLeft = track.scrollLeft;
+      var itemWidth = track.firstElementChild ? track.firstElementChild.offsetWidth : 0;
+      if (itemWidth === 0) return;
+
+      var gap = parseInt('{{ section.settings.gif_gap }}') || 16;
+      var index = Math.round(scrollLeft / (itemWidth + gap));
+
+      dots.forEach(function (dot, i) {
+        dot.classList.toggle('is-active', i === index);
+      });
+    }
+
+    // Dot click → scroll to that item
+    dots.forEach(function (dot) {
+      dot.addEventListener('click', function () {
+        var index = parseInt(dot.getAttribute('data-index'));
+        var items = track.querySelectorAll('.gr-ntf-gif-item');
+        if (items[index]) {
+          var gap = parseInt('{{ section.settings.gif_gap }}') || 16;
+          var offset = items[index].offsetLeft - gap;
+          track.scrollTo({ left: offset, behavior: 'smooth' });
+        }
+      });
+    });
+
+    track.addEventListener('scroll', updateDots, { passive: true });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "GR Never Trust Fakes",
+  "tag": "section",
+  "class": "gr-never-trust-fakes",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Layout"
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Section Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Padding Top (px)",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Padding Bottom (px)",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_max_width",
+      "label": "Section Max Width (px)",
+      "min": 600,
+      "max": 1400,
+      "step": 20,
+      "default": 1200
+    },
+    {
+      "type": "header",
+      "content": "Rich Text – Eyebrow"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow_text",
+      "label": "Eyebrow Label",
+      "default": "WATCH OUT"
+    },
+    {
+      "type": "color",
+      "id": "eyebrow_color",
+      "label": "Eyebrow Color",
+      "default": "#c0392b"
+    },
+    {
+      "type": "range",
+      "id": "eyebrow_font_size",
+      "label": "Eyebrow Font Size (px)",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "default": 13
+    },
+    {
+      "type": "select",
+      "id": "eyebrow_font_weight",
+      "label": "Eyebrow Font Weight",
+      "options": [
+        { "value": "400", "label": "Regular" },
+        { "value": "600", "label": "Semi-Bold" },
+        { "value": "700", "label": "Bold" },
+        { "value": "800", "label": "Extra Bold" }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow_font_family",
+      "label": "Eyebrow Font Family (CSS)",
+      "default": "inherit",
+      "info": "e.g. inherit, 'Arial', 'Georgia'. Uses your theme font by default."
+    },
+    {
+      "type": "header",
+      "content": "Rich Text – Main Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Heading Text",
+      "default": "Never Trust the Fakes"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Heading HTML Tag",
+      "options": [
+        { "value": "h1", "label": "H1" },
+        { "value": "h2", "label": "H2 (recommended)" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size",
+      "label": "Heading Font Size – Mobile (px)",
+      "min": 20,
+      "max": 72,
+      "step": 2,
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size_desktop",
+      "label": "Heading Font Size – Desktop (px)",
+      "min": 20,
+      "max": 96,
+      "step": 2,
+      "default": 52
+    },
+    {
+      "type": "select",
+      "id": "heading_font_weight",
+      "label": "Heading Font Weight",
+      "options": [
+        { "value": "400", "label": "Regular" },
+        { "value": "600", "label": "Semi-Bold" },
+        { "value": "700", "label": "Bold" },
+        { "value": "800", "label": "Extra Bold" },
+        { "value": "900", "label": "Black" }
+      ],
+      "default": "800"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "text",
+      "id": "heading_font_family",
+      "label": "Heading Font Family (CSS)",
+      "default": "inherit"
+    },
+    {
+      "type": "range",
+      "id": "heading_bottom_margin",
+      "label": "Space Below Heading (px)",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Rich Text – Subtext"
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Subtext (optional)",
+      "default": "Real Grill Rescue brushes are made with authentic aramid fiber. Don't get burned by cheap imitations."
+    },
+    {
+      "type": "range",
+      "id": "subtext_font_size",
+      "label": "Subtext Font Size (px)",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "default": 17
+    },
+    {
+      "type": "select",
+      "id": "subtext_font_weight",
+      "label": "Subtext Font Weight",
+      "options": [
+        { "value": "400", "label": "Regular" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi-Bold" },
+        { "value": "700", "label": "Bold" }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "color",
+      "id": "subtext_color",
+      "label": "Subtext Color",
+      "default": "#555555"
+    },
+    {
+      "type": "text",
+      "id": "subtext_font_family",
+      "label": "Subtext Font Family (CSS)",
+      "default": "inherit"
+    },
+    {
+      "type": "header",
+      "content": "Rich Text – Alignment & Spacing"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text Alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "text_bottom_margin",
+      "label": "Space Below Text Block (px)",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "GIF Grid – Desktop"
+    },
+    {
+      "type": "range",
+      "id": "gif_gap",
+      "label": "Gap Between GIFs (px)",
+      "min": 4,
+      "max": 60,
+      "step": 2,
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "gif_height",
+      "label": "GIF Height – Desktop (px)",
+      "min": 100,
+      "max": 600,
+      "step": 10,
+      "default": 300
+    },
+    {
+      "type": "select",
+      "id": "gif_object_fit",
+      "label": "GIF Fit",
+      "options": [
+        { "value": "cover", "label": "Cover (crop to fill)" },
+        { "value": "contain", "label": "Contain (show whole GIF)" },
+        { "value": "fill", "label": "Stretch" }
+      ],
+      "default": "cover"
+    },
+    {
+      "type": "range",
+      "id": "gif_border_radius",
+      "label": "GIF Corner Radius (px)",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "GIF Grid – Mobile Carousel"
+    },
+    {
+      "type": "range",
+      "id": "mobile_gif_width",
+      "label": "Mobile GIF Width (% of screen)",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "default": 80,
+      "info": "80% shows a peek of the next GIF, 100% shows one at a time."
+    },
+    {
+      "type": "range",
+      "id": "mobile_gif_height",
+      "label": "GIF Height – Mobile (px)",
+      "min": 80,
+      "max": 400,
+      "step": 10,
+      "default": 220
+    },
+    {
+      "type": "header",
+      "content": "GIF Captions"
+    },
+    {
+      "type": "range",
+      "id": "caption_font_size",
+      "label": "Caption Font Size (px)",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "caption_font_weight",
+      "label": "Caption Font Weight",
+      "options": [
+        { "value": "400", "label": "Regular" },
+        { "value": "600", "label": "Semi-Bold" },
+        { "value": "700", "label": "Bold" }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "color",
+      "id": "caption_color",
+      "label": "Caption Color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "text",
+      "id": "caption_font_family",
+      "label": "Caption Font Family (CSS)",
+      "default": "inherit"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "gif_item",
+      "name": "GIF Block",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "header",
+          "content": "GIF Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "gif_image",
+          "label": "Upload GIF",
+          "info": "Upload your GIF file here. Shopify supports animated GIFs."
+        },
+        {
+          "type": "header",
+          "content": "Caption"
+        },
+        {
+          "type": "text",
+          "id": "gif_caption",
+          "label": "Caption Text",
+          "default": "Fake vs. Real"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "GR Never Trust Fakes",
+      "blocks": [
+        { "type": "gif_item" },
+        { "type": "gif_item" },
+        { "type": "gif_item" }
+      ]
+    }
+  ]
+}
+{% endschema %}
