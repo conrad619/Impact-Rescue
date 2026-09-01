@@ -1,10 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-product",
       "blocks": {
         "loox_reviews_loox_rating_pR7qQw": {
-          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify://apps/loox-reviews/blocks/loox-rating/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "contentSize": 16,
             "pattern": "",
@@ -36,7 +45,8 @@
         "price": {
           "type": "price",
           "settings": {
-            "show_taxes_notice": false
+            "show_taxes_notice": false,
+            "badge_text": ""
           }
         },
         "rating": {
@@ -75,7 +85,7 @@
           }
         },
         "recharge_subscriptions_subscription_widget_v2_7qwFf9": {
-          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget-v2\/371eed76-0b44-4869-9813-730372ea378e",
+          "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget-v2/371eed76-0b44-4869-9813-730372ea378e",
           "settings": {}
         },
         "quantity_selector": {
@@ -107,7 +117,7 @@
           }
         },
         "section_store_block_badge_EeFFmT": {
-          "type": "shopify:\/\/apps\/section-store\/blocks\/block-badge\/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "type": "shopify://apps/section-store/blocks/block-badge/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
             "first_icon": "none",
             "first_title": "30-Day Money Back Guarantee",
@@ -137,7 +147,8 @@
             "padding_vertical": 0,
             "padding_sides": 0,
             "card_padding_horizontal": 14,
-            "card_padding_vertical": 7
+            "card_padding_vertical": 7,
+            "custom_css": ""
           }
         },
         "payment_terms": {
@@ -187,63 +198,64 @@
         "slide_ybPTHt": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/forbes.png",
+            "image": "shopify://shop_images/forbes.png",
             "link": ""
           }
         },
         "slide_zXMn6q": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/new_york_post.png",
+            "image": "shopify://shop_images/new_york_post.png",
             "link": ""
           }
         },
         "slide_FXjCt8": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/variety.png",
+            "image": "shopify://shop_images/variety.png",
             "link": ""
           }
         },
         "slide_HAPz8q": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/abc.png",
+            "image": "shopify://shop_images/abc.png",
             "link": ""
           }
         },
         "slide_YjDm4b": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/usa_today.png",
+            "image": "shopify://shop_images/usa_today.png",
             "link": ""
           }
         },
         "slide_XAy8XQ": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/nbc.png",
+            "image": "shopify://shop_images/nbc.png",
             "link": ""
           }
         },
         "slide_wiTibg": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/new_york_times.png",
+            "image": "shopify://shop_images/new_york_times.png",
             "link": ""
           }
         },
         "slide_M69xT9": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/entrepreneur.png",
+            "image": "shopify://shop_images/entrepreneur.png",
             "link": ""
           }
         },
         "slide_amVQaG": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fox.png",
+            "image": "shopify://shop_images/fox.png",
             "link": ""
           }
         }
@@ -308,7 +320,7 @@
         "richtext_HLCVan": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Don't just take it from us, check out what our customers have to say!<\/p>"
+            "content": "<p>Don't just take it from us, check out what our customers have to say!</p>"
           }
         }
       },
@@ -332,10 +344,10 @@
         "ai_gen_block_efa3b28_9pYXCF": {
           "type": "ai_gen_block_efa3b28",
           "settings": {
-            "video_1": "shopify:\/\/files\/videos\/Phil - GRP - Myself.mov",
-            "video_2": "shopify:\/\/files\/videos\/default (1) (1).mp4",
-            "video_3": "shopify:\/\/files\/videos\/default_b8292f9b-d1a8-4fe0-af03-02798d901e2d.mp4",
-            "video_4": "shopify:\/\/files\/videos\/UGC - Rescue Pro (Husband).mp4",
+            "video_1": "shopify://files/videos/Phil - GRP - Myself.mov",
+            "video_2": "shopify://files/videos/default (1) (1).mp4",
+            "video_3": "shopify://files/videos/default_b8292f9b-d1a8-4fe0-af03-02798d901e2d.mp4",
+            "video_4": "shopify://files/videos/UGC - Rescue Pro (Husband).mp4",
             "desktop_width_percent": 100,
             "gap": 16,
             "corner_radius": 8
@@ -360,13 +372,13 @@
       "type": "apps",
       "blocks": {
         "section_store_block_video_carousel_pGFQMc": {
-          "type": "shopify:\/\/apps\/section-store\/blocks\/block-video-carousel\/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
-            "video_1": "shopify:\/\/files\/videos\/Phil - GRP - Myself.mov",
-            "video_2": "shopify:\/\/files\/videos\/default (1) (1).mp4",
-            "video_3": "shopify:\/\/files\/videos\/default_b8292f9b-d1a8-4fe0-af03-02798d901e2d.mp4",
-            "video_4": "shopify:\/\/files\/videos\/UGC - Rescue Pro (Husband).mp4",
-            "video_5": "shopify:\/\/files\/videos\/Quick Customer Review of Grill.mp4",
+            "video_1": "shopify://files/videos/Phil - GRP - Myself.mov",
+            "video_2": "shopify://files/videos/default (1) (1).mp4",
+            "video_3": "shopify://files/videos/default_b8292f9b-d1a8-4fe0-af03-02798d901e2d.mp4",
+            "video_4": "shopify://files/videos/UGC - Rescue Pro (Husband).mp4",
+            "video_5": "shopify://files/videos/Quick Customer Review of Grill.mp4",
             "slider_style": "arrows",
             "modal_style": "side",
             "video_autoplay": "true",
@@ -385,7 +397,8 @@
             "block_border_radius": 16,
             "block_bg_color": "",
             "block_padding_vertical": 0,
-            "block_padding_horizontal": 0
+            "block_padding_horizontal": 0,
+            "custom_css": ""
           }
         }
       },
@@ -406,7 +419,7 @@
       "type": "apps",
       "blocks": {
         "loox_reviews_loox_card_carousel_section_GBfVQm": {
-          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-card-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify://apps/loox-reviews/blocks/loox-card-carousel-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "maxWidth": 1100,
             "borderRadius": 8,
@@ -448,7 +461,7 @@
         "image_Dcb3P8": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/scott_pro.jpg",
+            "image": "shopify://shop_images/scott_pro.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -456,7 +469,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Created by a Firefighter",
-            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best Grill Brush<\/strong>.<\/p>",
+            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best Grill Brush</strong>.</p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -470,7 +483,7 @@
         "image_rePByR": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/firefighter.jpg",
+            "image": "shopify://shop_images/firefighter.jpg",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -478,7 +491,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Giving Back With Every Purchase",
-            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation<\/strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.<\/p>",
+            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation</strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.</p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -492,7 +505,7 @@
         "image_kbAk7j": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pro_quality.jpg",
+            "image": "shopify://shop_images/pro_quality.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -500,7 +513,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Premium Construction",
-            "content": "<p><strong>Everything we build is premium grade<\/strong>, obsessivel y engineered so you can trust every part is made as strong, durable, and refined as possible every time always!<\/p>",
+            "content": "<p><strong>Everything we build is premium grade</strong>, obsessivel y engineered so you can trust every part is made as strong, durable, and refined as possible every time always!</p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -536,7 +549,7 @@
         "products_per_row_desktop": 3,
         "subheading": "",
         "title": "Bundle with",
-        "content": "<p>Swipe To See What Our Customers Love the Most<\/p>",
+        "content": "<p>Swipe To See What Our Customers Love the Most</p>",
         "background": "",
         "background_gradient": "",
         "text_color": "",

@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -21,7 +30,8 @@
         "price": {
           "type": "price",
           "settings": {
-            "show_taxes_notice": false
+            "show_taxes_notice": false,
+            "badge_text": ""
           }
         },
         "rating": {
@@ -47,7 +57,7 @@
         "liquid_Unxd4D": {
           "type": "liquid",
           "settings": {
-            "liquid": "<style>\n.custom-variant-swatches{\ndisplay:flex;\ngap:.5rem;\nmargin-bottom:1rem;\n}\n.custom-variant-swatches a {\nflex-grow:1;\n}\n.custom-variant-swatches a img{\n    width: -webkit-fill-available;\n\tborder:1px solid transparent;\n\tborder-radius:5px;\n}\n.custom-variant-swatches a:hover img{\n\tborder:1px solid black;\n}\n<\/style>\n\n <div class=\"custom-variant-swatches\">\n   {% for variant_product in collections['kitchen-black-sponge'].products %}\n     <a href=\"{{ variant_product.url }}\"><img style=\"{% if variant_product.handle == product.handle %}border:1px solid black;{% endif %}\" src=\"{{ variant_product.featured_image.src | image_url: width: 160 }}\"><\/a>\n   {% endfor %}\n <\/div>\n <div class=\"custom-variant-swatches\">\n   {% for variant_product in collections['kitchen-blue-sponge'].products %}\n     <a href=\"{{ variant_product.url }}\"><img style=\"{% if variant_product.handle == product.handle %}border:1px solid black;{% endif %}\" src=\"{{ variant_product.featured_image.src | image_url: width: 160 }}\"><\/a>\n   {% endfor %}\n <\/div>"
+            "liquid": "<style>\n.custom-variant-swatches{\ndisplay:flex;\ngap:.5rem;\nmargin-bottom:1rem;\n}\n.custom-variant-swatches a {\nflex-grow:1;\n}\n.custom-variant-swatches a img{\n    width: -webkit-fill-available;\n\tborder:1px solid transparent;\n\tborder-radius:5px;\n}\n.custom-variant-swatches a:hover img{\n\tborder:1px solid black;\n}\n</style>\n\n <div class=\"custom-variant-swatches\">\n   {% for variant_product in collections['kitchen-black-sponge'].products %}\n     <a href=\"{{ variant_product.url }}\"><img style=\"{% if variant_product.handle == product.handle %}border:1px solid black;{% endif %}\" src=\"{{ variant_product.featured_image.src | image_url: width: 160 }}\"></a>\n   {% endfor %}\n </div>\n <div class=\"custom-variant-swatches\">\n   {% for variant_product in collections['kitchen-blue-sponge'].products %}\n     <a href=\"{{ variant_product.url }}\"><img style=\"{% if variant_product.handle == product.handle %}border:1px solid black;{% endif %}\" src=\"{{ variant_product.featured_image.src | image_url: width: 160 }}\"></a>\n   {% endfor %}\n </div>"
           }
         },
         "variant_picker": {
@@ -66,7 +76,7 @@
           "settings": {}
         },
         "recharge_subscriptions_subscription_widget_v2_7qwFf9": {
-          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget-v2\/371eed76-0b44-4869-9813-730372ea378e",
+          "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget-v2/371eed76-0b44-4869-9813-730372ea378e",
           "settings": {}
         },
         "quantity_selector": {
@@ -92,13 +102,13 @@
             "icon": "none",
             "icon_width": 20,
             "title": "",
-            "content": "<h5>Every Purchase Helps First Responders<\/h5>",
+            "content": "<h5>Every Purchase Helps First Responders</h5>",
             "background": "#f0f0f0",
             "text_color": "#cb0101"
           }
         },
         "section_store_block_badge_EeFFmT": {
-          "type": "shopify:\/\/apps\/section-store\/blocks\/block-badge\/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "type": "shopify://apps/section-store/blocks/block-badge/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
             "first_icon": "none",
             "first_title": "30-Day Money Back Guarantee",
@@ -128,7 +138,8 @@
             "padding_vertical": 0,
             "padding_sides": 0,
             "card_padding_horizontal": 14,
-            "card_padding_vertical": 7
+            "card_padding_vertical": 7,
+            "custom_css": ""
           }
         },
         "payment_terms": {
@@ -178,63 +189,64 @@
         "slide_ybPTHt": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/forbes.png",
+            "image": "shopify://shop_images/forbes.png",
             "link": ""
           }
         },
         "slide_zXMn6q": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/new_york_post.png",
+            "image": "shopify://shop_images/new_york_post.png",
             "link": ""
           }
         },
         "slide_FXjCt8": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/variety.png",
+            "image": "shopify://shop_images/variety.png",
             "link": ""
           }
         },
         "slide_HAPz8q": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/abc.png",
+            "image": "shopify://shop_images/abc.png",
             "link": ""
           }
         },
         "slide_YjDm4b": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/usa_today.png",
+            "image": "shopify://shop_images/usa_today.png",
             "link": ""
           }
         },
         "slide_XAy8XQ": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/nbc.png",
+            "image": "shopify://shop_images/nbc.png",
             "link": ""
           }
         },
         "slide_wiTibg": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/new_york_times.png",
+            "image": "shopify://shop_images/new_york_times.png",
             "link": ""
           }
         },
         "slide_M69xT9": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/entrepreneur.png",
+            "image": "shopify://shop_images/entrepreneur.png",
             "link": ""
           }
         },
         "slide_amVQaG": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fox.png",
+            "image": "shopify://shop_images/fox.png",
             "link": ""
           }
         }
@@ -299,7 +311,7 @@
         "products_per_row_desktop": 4,
         "subheading": "",
         "title": "Bundle with",
-        "content": "<p>Swipe & See What Our Customers Love the Most<\/p>",
+        "content": "<p>Swipe & See What Our Customers Love the Most</p>",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -324,7 +336,7 @@
         "richtext_HLCVan": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Don't just take it from us, check out what our customers have to say!<\/p>"
+            "content": "<p>Don't just take it from us, check out what our customers have to say!</p>"
           }
         }
       },
@@ -359,10 +371,10 @@
           "type": "ai_gen_block_efa3b28",
           "disabled": true,
           "settings": {
-            "video_1": "shopify:\/\/files\/videos\/sponge review.mov",
-            "video_2": "shopify:\/\/files\/videos\/1700591444694_db950118-b1a8-4a85-8969-8476c051408f_h264c.mp4",
-            "video_3": "shopify:\/\/files\/videos\/Margie Edelson-22.mp4",
-            "video_4": "shopify:\/\/files\/videos\/Brad Fs-2.mp4",
+            "video_1": "shopify://files/videos/sponge review.mov",
+            "video_2": "shopify://files/videos/1700591444694_db950118-b1a8-4a85-8969-8476c051408f_h264c.mp4",
+            "video_3": "shopify://files/videos/Margie Edelson-22.mp4",
+            "video_4": "shopify://files/videos/Brad Fs-2.mp4",
             "desktop_width_percent": 100,
             "gap": 16,
             "corner_radius": 8
@@ -389,13 +401,13 @@
       "type": "apps",
       "blocks": {
         "section_store_block_video_carousel_pGFQMc": {
-          "type": "shopify:\/\/apps\/section-store\/blocks\/block-video-carousel\/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
-            "video_1": "shopify:\/\/files\/videos\/sponge review.mov",
-            "video_2": "shopify:\/\/files\/videos\/1700591444694_db950118-b1a8-4a85-8969-8476c051408f_h264c.mp4",
-            "video_3": "shopify:\/\/files\/videos\/Margie Edelson-22.mp4",
-            "video_4": "shopify:\/\/files\/videos\/Brad Fs-2.mp4",
-            "video_5": "shopify:\/\/files\/videos\/Michelin Star Su Chef Carla 01-24.mp4",
+            "video_1": "shopify://files/videos/sponge review.mov",
+            "video_2": "shopify://files/videos/1700591444694_db950118-b1a8-4a85-8969-8476c051408f_h264c.mp4",
+            "video_3": "shopify://files/videos/Margie Edelson-22.mp4",
+            "video_4": "shopify://files/videos/Brad Fs-2.mp4",
+            "video_5": "shopify://files/videos/Michelin Star Su Chef Carla 01-24.mp4",
             "slider_style": "arrows",
             "modal_style": "side",
             "video_autoplay": "true",
@@ -414,7 +426,8 @@
             "block_border_radius": 16,
             "block_bg_color": "",
             "block_padding_vertical": 0,
-            "block_padding_horizontal": 0
+            "block_padding_horizontal": 0,
+            "custom_css": ""
           }
         }
       },
@@ -437,7 +450,7 @@
         "image_Dcb3P8": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/created_by_a_firefighter.jpg",
+            "image": "shopify://shop_images/created_by_a_firefighter.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -445,7 +458,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Created by a Firefighter",
-            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best Grill Brush<\/strong>.<\/p>",
+            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best Grill Brush</strong>.</p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -459,7 +472,7 @@
         "image_kbAk7j": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cut_resistant.gif",
+            "image": "shopify://shop_images/cut_resistant.gif",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -467,7 +480,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Ultra Cut-Resistant",
-            "content": "<p>Forever Sponge uses the the <strong>same cut-resistant material trusted in firefighter equipment<\/strong>. It's so tough that even even your sharpest knives don't stand a chance.<\/p>",
+            "content": "<p>Forever Sponge uses the the <strong>same cut-resistant material trusted in firefighter equipment</strong>. It's so tough that even even your sharpest knives don't stand a chance.</p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -481,7 +494,7 @@
         "image_K8W3rr": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/anti_microbial.jpg",
+            "image": "shopify://shop_images/anti_microbial.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -489,7 +502,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Anti-Microbial",
-            "content": "<p>Crafted using a blend of polyethylene, polyurethane, and spandex, each possessing individual antimicrobial properties, <strong>Forever Sponge is a germ-fighting machine<\/strong>. <\/p>",
+            "content": "<p>Crafted using a blend of polyethylene, polyurethane, and spandex, each possessing individual antimicrobial properties, <strong>Forever Sponge is a germ-fighting machine</strong>. </p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -503,7 +516,7 @@
         "image_Xkcjm9": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Lifestyle_6__1.webp",
+            "image": "shopify://shop_images/Lifestyle_6__1.webp",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -511,7 +524,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Dishwasher Safe",
-            "content": "<p>Forever Sponge is fully dishwasher-safe, built to withstand repeated wash cycles without breaking down, losing shape, or sacrificing cleaning power. <strong>Throw it in with your dishes and trust it to come out ready to perform every time<\/strong>.<\/p>",
+            "content": "<p>Forever Sponge is fully dishwasher-safe, built to withstand repeated wash cycles without breaking down, losing shape, or sacrificing cleaning power. <strong>Throw it in with your dishes and trust it to come out ready to perform every time</strong>.</p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -525,7 +538,7 @@
         "image_rePByR": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/firefighter.jpg",
+            "image": "shopify://shop_images/firefighter.jpg",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -533,7 +546,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Giving Back With Every Purchase",
-            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation<\/strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.<\/p>",
+            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation</strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.</p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -568,7 +581,7 @@
         "full_width": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "html": "<section class=\"compare-forever-sponge\">\n  <style>\n    .compare-forever-sponge {\n      padding: 30px 16px 40px;\n      font-family: Arial, Helvetica, sans-serif;\n      color: #222;\n    }\n\n    .compare-forever-sponge * {\n      box-sizing: border-box;\n    }\n\n    .compare-forever-sponge .compare-wrap {\n      max-width: 1600px;\n      margin: 0 auto;\n    }\n\n    .compare-forever-sponge .compare-title {\n      text-align: center;\n      margin: 0 0 6px;\n      font-size: 28px;\n      font-weight: 700;\n    }\n\n    .compare-forever-sponge .compare-subtitle {\n      text-align: center;\n      margin: 0 0 24px;\n      font-size: 14px;\n      letter-spacing: 0.5px;\n      color: #555;\n    }\n\n    .compare-forever-sponge .compare-scroll {\n      width: 100%;\n    }\n\n    .compare-forever-sponge .compare-table {\n      display: grid;\n      grid-template-columns: 1.2fr 1fr 1fr 1fr;\n      gap: 0;\n      align-items: stretch;\n    }\n\n    .compare-forever-sponge .cell {\n      padding: 14px 18px;\n    }\n\n    .compare-forever-sponge .header-empty {\n      background: transparent;\n    }\n\n    .compare-forever-sponge .header {\n      background: #c94536;\n      color: #fff;\n      text-align: center;\n      font-size: 24px;\n      font-weight: 500;\n      padding: 14px 10px;\nwidth:100%;\n    }\n\n    .compare-forever-sponge .type-label {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n      min-height: 175px;\n      font-size: 23px;\n      font-weight: 500;\n      line-height: 1.25;\n    }\n\n    .compare-forever-sponge .product-image {\n      min-height: 175px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      padding: 20px;\n    }\n\n    .compare-forever-sponge .product-image img {\n      max-width: 100%;\n      max-height: 130px;\n      object-fit: contain;\n      display: block;\n    }\n\n    .compare-forever-sponge .feature {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n      min-height: 52px;\n      font-size: 18px;\n      line-height: 1.3;\n      border-bottom: 1px solid #9d9d9d;\n      padding-left: 10px;\n      padding-right: 10px;\n      text-transform: none;\n    }\n\n    .compare-forever-sponge .value {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      min-height: 52px;\n      font-size: 28px;\n      font-weight: 700;\n    }\n\n    .compare-forever-sponge .yes {\n      color: #3d4246;\n    }\n\n    .compare-forever-sponge .no {\n      color: #d63c30;\n    }\n\n    .compare-forever-sponge .money {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      min-height: 52px;\n      padding: 10px;\n    }\n\n    .compare-forever-sponge .money img {\n      max-width: 100%;\n      max-height: 42px;\n      display: block;\n      object-fit: contain;\n    }\n\n    .compare-forever-sponge .button-row {\n      min-height: 74px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    .compare-forever-sponge .shop-button {\n      display: inline-block;\n      background: #c94536;\n      color: #fff;\n      text-decoration: none;\n      padding: 12px 28px;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.5px;\n      transition: opacity 0.2s ease;\n      text-align: center;\n      white-space: nowrap;\n    }\n\n    .compare-forever-sponge .shop-button:hover {\n      opacity: 0.9;\n    }\n\n    @media (max-width: 991px) {\n      .compare-forever-sponge .compare-table {\n        grid-template-columns: 1.35fr 1fr 1fr 1fr;\n      }\n\n      .compare-forever-sponge .header {\n        font-size: 20px;\n      }\n\n      .compare-forever-sponge .type-label {\n        font-size: 18px;\n        min-height: 150px;\n      }\n\n      .compare-forever-sponge .product-image {\n        min-height: 150px;\n      }\n\n      .compare-forever-sponge .feature {\n        font-size: 15px;\n      }\n\n      .compare-forever-sponge .value {\n        font-size: 24px;\n      }\n    }\n\n    @media (max-width: 767px) {\n      .compare-forever-sponge {\n        padding: 24px 12px 30px;\n      }\n\n      .compare-forever-sponge .compare-title {\n        font-size: 24px;\n        line-height: 1.2;\n      }\n\n      .compare-forever-sponge .compare-subtitle {\n        font-size: 13px;\n        line-height: 1.4;\n        margin-bottom: 18px;\n      }\n\n      .compare-forever-sponge .compare-scroll {\n        overflow-x: auto;\n        -webkit-overflow-scrolling: touch;\n      }\n\n      .compare-forever-sponge .compare-table {\n        grid-template-columns: 1.5fr 1fr 1fr 1fr;\n        min-width: 760px;\n      }\n\n      .compare-forever-sponge .cell {\n        padding: 10px 8px;\n      }\n\n      .compare-forever-sponge .header {\n        font-size: 16px;\n        line-height: 1.2;\n        padding: 12px 8px;\n      }\n\n      .compare-forever-sponge .type-label {\n        font-size: 16px;\n        min-height: 120px;\n        line-height: 1.3;\n      }\n\n      .compare-forever-sponge .product-image {\n        min-height: 120px;\n        padding: 12px;\n      }\n\n      .compare-forever-sponge .product-image img {\n        max-height: 85px;\n      }\n\n      .compare-forever-sponge .feature {\n        justify-content: flex-start;\n        text-align: left;\n        font-size: 14px;\n        min-height: 54px;\n        line-height: 1.35;\n      }\n\n      .compare-forever-sponge .value {\n        font-size: 22px;\n        min-height: 54px;\n      }\n\n      .compare-forever-sponge .money img {\n        max-height: 32px;\n      }\n\n      .compare-forever-sponge .button-row {\n        min-height: 68px;\n      }\n\n      .compare-forever-sponge .shop-button {\n        font-size: 12px;\n        padding: 10px 18px;\n      }\n    }\n\n    @media (max-width: 480px) {\n      .compare-forever-sponge .compare-title {\n        font-size: 21px;\n      }\n\n      .compare-forever-sponge .compare-subtitle {\n        font-size: 12px;\n      }\n\n      .compare-forever-sponge .compare-table {\n        min-width: 700px;\n      }\n\n      .compare-forever-sponge .feature {\n        font-size: 13px;\n      }\n\n      .compare-forever-sponge .header {\n        font-size: 15px;\n      }\n    }\n  <\/style>\n\n  <div class=\"compare-wrap\">\n    <h2 class=\"compare-title\">Compare Forever Sponge<\/h2>\n    <p class=\"compare-subtitle\">\n      Find out how Forever Sponge compares to other leading Sponges\n    <\/p>\n\n    <div class=\"compare-scroll\">\n      <div class=\"compare-table\">\n        <div class=\"cell header-empty\"><\/div>\n        <div class=\"cell header\">Forever Sponge<\/div>\n        <div class=\"cell header\">Scrub Daddy<\/div>\n        <div class=\"cell header\">Scotch Brite<\/div>\n\n        <div class=\"cell type-label\">Type Of Sponge<\/div>\n        <div class=\"cell product-image\">\n          <img src=\"https:\/\/ucarecdn.com\/9356b625-cca6-4839-8aff-8d405aabd1df\/-\/format\/auto\/-\/preview\/3000x3000\/-\/quality\/lighter\/Forever%20Sponge.png\" alt=\"Forever Sponge\">\n        <\/div>\n        <div class=\"cell product-image\">\n          <img src=\"https:\/\/ucarecdn.com\/ac377f52-c2e1-4053-ad42-08bc34ac759d\/-\/format\/auto\/-\/preview\/3000x3000\/-\/quality\/lighter\/Scrub%20Daddy.png\" alt=\"Scrub Daddy\">\n        <\/div>\n        <div class=\"cell product-image\">\n          <img src=\"https:\/\/ucarecdn.com\/cd840b08-afd5-4bd9-87cb-3c05054e0912\/-\/format\/auto\/-\/preview\/3000x3000\/-\/quality\/lighter\/Scotch%20Brite.png\" alt=\"Scotch Brite\">\n        <\/div>\n\n        <div class=\"cell feature\">Cost Per Year<\/div>\n        <div class=\"cell money\">\n          <img src=\"https:\/\/ucarecdn.com\/602a45b6-9bc0-4127-aaf6-87c26d69f85f\/-\/format\/auto\/-\/preview\/3000x3000\/-\/quality\/lighter\/$.png\" alt=\"Low cost per year\">\n        <\/div>\n        <div class=\"cell money\">\n          <img src=\"https:\/\/ucarecdn.com\/cd9b6277-d353-40a0-a5f4-7b72420c4fd1\/-\/format\/auto\/-\/preview\/3000x3000\/-\/quality\/lighter\/$$$$.png\" alt=\"High cost per year\">\n        <\/div>\n        <div class=\"cell money\">\n          <img src=\"https:\/\/ucarecdn.com\/690467f3-28f3-4319-a791-2ab8f6e5a548\/-\/format\/auto\/-\/preview\/3000x3000\/-\/quality\/lighter\/$$.png\" alt=\"Medium cost per year\">\n        <\/div>\n\n        <div class=\"cell feature\">Cut Resistant<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value no\">✕<\/div>\n        <div class=\"cell value no\">✕<\/div>\n\n        <div class=\"cell feature\">Antimicrobial<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value no\">✕<\/div>\n        <div class=\"cell value no\">✕<\/div>\n\n        <div class=\"cell feature\">Eco-Friendly<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value no\">✕<\/div>\n        <div class=\"cell value no\">✕<\/div>\n\n        <div class=\"cell feature\">Sud Retention Technology<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value no\">✕<\/div>\n        <div class=\"cell value no\">✕<\/div>\n\n        <div class=\"cell feature\">Heavy Duty<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value no\">✕<\/div>\n\n        <div class=\"cell feature\">Heat Resistant<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n\n        <div class=\"cell feature\">Dishwasher Safe<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n        <div class=\"cell value yes\">✓<\/div>\n\n        <div class=\"cell button-row\"><\/div>\n        <div class=\"cell button-row\">\n          <a href=\"#main\" class=\"shop-button\">SHOP FOREVER SPONGE<\/a>\n        <\/div>\n        <div class=\"cell button-row\"><\/div>\n        <div class=\"cell button-row\"><\/div>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/section>",
+        "html": "<section class=\"compare-forever-sponge\">\n  <style>\n    .compare-forever-sponge {\n      padding: 30px 16px 40px;\n      font-family: Arial, Helvetica, sans-serif;\n      color: #222;\n    }\n\n    .compare-forever-sponge * {\n      box-sizing: border-box;\n    }\n\n    .compare-forever-sponge .compare-wrap {\n      max-width: 1600px;\n      margin: 0 auto;\n    }\n\n    .compare-forever-sponge .compare-title {\n      text-align: center;\n      margin: 0 0 6px;\n      font-size: 28px;\n      font-weight: 700;\n    }\n\n    .compare-forever-sponge .compare-subtitle {\n      text-align: center;\n      margin: 0 0 24px;\n      font-size: 14px;\n      letter-spacing: 0.5px;\n      color: #555;\n    }\n\n    .compare-forever-sponge .compare-scroll {\n      width: 100%;\n    }\n\n    .compare-forever-sponge .compare-table {\n      display: grid;\n      grid-template-columns: 1.2fr 1fr 1fr 1fr;\n      gap: 0;\n      align-items: stretch;\n    }\n\n    .compare-forever-sponge .cell {\n      padding: 14px 18px;\n    }\n\n    .compare-forever-sponge .header-empty {\n      background: transparent;\n    }\n\n    .compare-forever-sponge .header {\n      background: #c94536;\n      color: #fff;\n      text-align: center;\n      font-size: 24px;\n      font-weight: 500;\n      padding: 14px 10px;\nwidth:100%;\n    }\n\n    .compare-forever-sponge .type-label {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n      min-height: 175px;\n      font-size: 23px;\n      font-weight: 500;\n      line-height: 1.25;\n    }\n\n    .compare-forever-sponge .product-image {\n      min-height: 175px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      padding: 20px;\n    }\n\n    .compare-forever-sponge .product-image img {\n      max-width: 100%;\n      max-height: 130px;\n      object-fit: contain;\n      display: block;\n    }\n\n    .compare-forever-sponge .feature {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n      min-height: 52px;\n      font-size: 18px;\n      line-height: 1.3;\n      border-bottom: 1px solid #9d9d9d;\n      padding-left: 10px;\n      padding-right: 10px;\n      text-transform: none;\n    }\n\n    .compare-forever-sponge .value {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      min-height: 52px;\n      font-size: 28px;\n      font-weight: 700;\n    }\n\n    .compare-forever-sponge .yes {\n      color: #3d4246;\n    }\n\n    .compare-forever-sponge .no {\n      color: #d63c30;\n    }\n\n    .compare-forever-sponge .money {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      min-height: 52px;\n      padding: 10px;\n    }\n\n    .compare-forever-sponge .money img {\n      max-width: 100%;\n      max-height: 42px;\n      display: block;\n      object-fit: contain;\n    }\n\n    .compare-forever-sponge .button-row {\n      min-height: 74px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n    }\n\n    .compare-forever-sponge .shop-button {\n      display: inline-block;\n      background: #c94536;\n      color: #fff;\n      text-decoration: none;\n      padding: 12px 28px;\n      border-radius: 999px;\n      font-size: 14px;\n      font-weight: 700;\n      letter-spacing: 0.5px;\n      transition: opacity 0.2s ease;\n      text-align: center;\n      white-space: nowrap;\n    }\n\n    .compare-forever-sponge .shop-button:hover {\n      opacity: 0.9;\n    }\n\n    @media (max-width: 991px) {\n      .compare-forever-sponge .compare-table {\n        grid-template-columns: 1.35fr 1fr 1fr 1fr;\n      }\n\n      .compare-forever-sponge .header {\n        font-size: 20px;\n      }\n\n      .compare-forever-sponge .type-label {\n        font-size: 18px;\n        min-height: 150px;\n      }\n\n      .compare-forever-sponge .product-image {\n        min-height: 150px;\n      }\n\n      .compare-forever-sponge .feature {\n        font-size: 15px;\n      }\n\n      .compare-forever-sponge .value {\n        font-size: 24px;\n      }\n    }\n\n    @media (max-width: 767px) {\n      .compare-forever-sponge {\n        padding: 24px 12px 30px;\n      }\n\n      .compare-forever-sponge .compare-title {\n        font-size: 24px;\n        line-height: 1.2;\n      }\n\n      .compare-forever-sponge .compare-subtitle {\n        font-size: 13px;\n        line-height: 1.4;\n        margin-bottom: 18px;\n      }\n\n      .compare-forever-sponge .compare-scroll {\n        overflow-x: auto;\n        -webkit-overflow-scrolling: touch;\n      }\n\n      .compare-forever-sponge .compare-table {\n        grid-template-columns: 1.5fr 1fr 1fr 1fr;\n        min-width: 760px;\n      }\n\n      .compare-forever-sponge .cell {\n        padding: 10px 8px;\n      }\n\n      .compare-forever-sponge .header {\n        font-size: 16px;\n        line-height: 1.2;\n        padding: 12px 8px;\n      }\n\n      .compare-forever-sponge .type-label {\n        font-size: 16px;\n        min-height: 120px;\n        line-height: 1.3;\n      }\n\n      .compare-forever-sponge .product-image {\n        min-height: 120px;\n        padding: 12px;\n      }\n\n      .compare-forever-sponge .product-image img {\n        max-height: 85px;\n      }\n\n      .compare-forever-sponge .feature {\n        justify-content: flex-start;\n        text-align: left;\n        font-size: 14px;\n        min-height: 54px;\n        line-height: 1.35;\n      }\n\n      .compare-forever-sponge .value {\n        font-size: 22px;\n        min-height: 54px;\n      }\n\n      .compare-forever-sponge .money img {\n        max-height: 32px;\n      }\n\n      .compare-forever-sponge .button-row {\n        min-height: 68px;\n      }\n\n      .compare-forever-sponge .shop-button {\n        font-size: 12px;\n        padding: 10px 18px;\n      }\n    }\n\n    @media (max-width: 480px) {\n      .compare-forever-sponge .compare-title {\n        font-size: 21px;\n      }\n\n      .compare-forever-sponge .compare-subtitle {\n        font-size: 12px;\n      }\n\n      .compare-forever-sponge .compare-table {\n        min-width: 700px;\n      }\n\n      .compare-forever-sponge .feature {\n        font-size: 13px;\n      }\n\n      .compare-forever-sponge .header {\n        font-size: 15px;\n      }\n    }\n  </style>\n\n  <div class=\"compare-wrap\">\n    <h2 class=\"compare-title\">Compare Forever Sponge</h2>\n    <p class=\"compare-subtitle\">\n      Find out how Forever Sponge compares to other leading Sponges\n    </p>\n\n    <div class=\"compare-scroll\">\n      <div class=\"compare-table\">\n        <div class=\"cell header-empty\"></div>\n        <div class=\"cell header\">Forever Sponge</div>\n        <div class=\"cell header\">Scrub Daddy</div>\n        <div class=\"cell header\">Scotch Brite</div>\n\n        <div class=\"cell type-label\">Type Of Sponge</div>\n        <div class=\"cell product-image\">\n          <img src=\"https://ucarecdn.com/9356b625-cca6-4839-8aff-8d405aabd1df/-/format/auto/-/preview/3000x3000/-/quality/lighter/Forever%20Sponge.png\" alt=\"Forever Sponge\">\n        </div>\n        <div class=\"cell product-image\">\n          <img src=\"https://ucarecdn.com/ac377f52-c2e1-4053-ad42-08bc34ac759d/-/format/auto/-/preview/3000x3000/-/quality/lighter/Scrub%20Daddy.png\" alt=\"Scrub Daddy\">\n        </div>\n        <div class=\"cell product-image\">\n          <img src=\"https://ucarecdn.com/cd840b08-afd5-4bd9-87cb-3c05054e0912/-/format/auto/-/preview/3000x3000/-/quality/lighter/Scotch%20Brite.png\" alt=\"Scotch Brite\">\n        </div>\n\n        <div class=\"cell feature\">Cost Per Year</div>\n        <div class=\"cell money\">\n          <img src=\"https://ucarecdn.com/602a45b6-9bc0-4127-aaf6-87c26d69f85f/-/format/auto/-/preview/3000x3000/-/quality/lighter/$.png\" alt=\"Low cost per year\">\n        </div>\n        <div class=\"cell money\">\n          <img src=\"https://ucarecdn.com/cd9b6277-d353-40a0-a5f4-7b72420c4fd1/-/format/auto/-/preview/3000x3000/-/quality/lighter/$$$$.png\" alt=\"High cost per year\">\n        </div>\n        <div class=\"cell money\">\n          <img src=\"https://ucarecdn.com/690467f3-28f3-4319-a791-2ab8f6e5a548/-/format/auto/-/preview/3000x3000/-/quality/lighter/$$.png\" alt=\"Medium cost per year\">\n        </div>\n\n        <div class=\"cell feature\">Cut Resistant</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value no\">✕</div>\n        <div class=\"cell value no\">✕</div>\n\n        <div class=\"cell feature\">Antimicrobial</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value no\">✕</div>\n        <div class=\"cell value no\">✕</div>\n\n        <div class=\"cell feature\">Eco-Friendly</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value no\">✕</div>\n        <div class=\"cell value no\">✕</div>\n\n        <div class=\"cell feature\">Sud Retention Technology</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value no\">✕</div>\n        <div class=\"cell value no\">✕</div>\n\n        <div class=\"cell feature\">Heavy Duty</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value no\">✕</div>\n\n        <div class=\"cell feature\">Heat Resistant</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value yes\">✓</div>\n\n        <div class=\"cell feature\">Dishwasher Safe</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value yes\">✓</div>\n        <div class=\"cell value yes\">✓</div>\n\n        <div class=\"cell button-row\"></div>\n        <div class=\"cell button-row\">\n          <a href=\"#main\" class=\"shop-button\">SHOP FOREVER SPONGE</a>\n        </div>\n        <div class=\"cell button-row\"></div>\n        <div class=\"cell button-row\"></div>\n      </div>\n    </div>\n  </div>\n</section>",
         "background": "",
         "background_gradient": "",
         "text_color": ""
@@ -583,7 +596,7 @@
             "video": "{{ product.metafields.custom.featured_video.value }}",
             "external_video_url": "",
             "poster_image": "{{ product.metafields.custom.featured_video_placeholder_image.value }}",
-            "aspect_ratio": "16\/9",
+            "aspect_ratio": "16/9",
             "autoplay": false,
             "media_width": 50,
             "media_position": "end",
@@ -592,7 +605,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "{{ product.metafields.custom.featured_video_title.value }}",
-            "content": "<p>{{ product.metafields.custom.featured_video_description | metafield_tag }}<\/p>",
+            "content": "<p>{{ product.metafields.custom.featured_video_description | metafield_tag }}</p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
@@ -625,7 +638,7 @@
             "column_size": "3",
             "title": "Created by a Firefighter",
             "heading_tag": "h5",
-            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best <\/strong><strong>{{ product.metafields.custom.created_by_a_firefighter_description_product_title.value }}<\/strong><strong>.<\/strong><\/p>",
+            "content": "<p>We know fire. Grill Rescue was created by a firefighter, so you can trust you have the absolute best materials on earth packed into the <strong>World's Best </strong><strong>{{ product.metafields.custom.created_by_a_firefighter_description_product_title.value }}</strong><strong>.</strong></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -634,12 +647,12 @@
         "item_U7nxbB": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/firefighter.jpg",
+            "image": "shopify://shop_images/firefighter.jpg",
             "show_controls": false,
             "column_size": "3",
             "title": "Giving Back With Every Purchase",
             "heading_tag": "h5",
-            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation<\/strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.<\/p>",
+            "content": "<p>We give back proudly. Through the <strong>Grill Rescue Foundation</strong>, every purchase helps support fire responders in need with vital aid, resources, and community support.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -653,7 +666,7 @@
             "column_size": "3",
             "title": "Premium Construction",
             "heading_tag": "h5",
-            "content": "<p><strong>Everything we build is premium grade<\/strong>, obsessively engineered so you can trust every part is made as strong, durable, and refined as possible every time always!<\/p>",
+            "content": "<p><strong>Everything we build is premium grade</strong>, obsessively engineered so you can trust every part is made as strong, durable, and refined as possible every time always!</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"

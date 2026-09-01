@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -16,14 +25,14 @@
         "ai_gen_block_072ad83_jDw6We": {
           "type": "ai_gen_block_072ad83",
           "settings": {
-            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/3c390287cf3a444ebaabd23a2c4a5986.mp4",
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/3c390287cf3a444ebaabd23a2c4a5986.mp4",
             "section_height_mobile": 500,
             "section_height_desktop": 600,
             "overlay_color": "#000000",
             "overlay_opacity": 0.6,
             "subheading": "",
-            "heading": "<strong>GET THE SAFEST GRILL BRUSH<\/strong>",
-            "paragraph": "<p><strong>SEND YOUR RECALLED WIRE BRUSH WITH YOUR NAME & ADDRESS TO:<\/strong><\/p><p>7999 N Federal Hwy Delray Beach. Suite 100, FL, 33483<\/p>",
+            "heading": "<strong>GET THE SAFEST GRILL BRUSH</strong>",
+            "paragraph": "<p><strong>SEND YOUR RECALLED WIRE BRUSH WITH YOUR NAME & ADDRESS TO:</strong></p><p>7999 N Federal Hwy Delray Beach. Suite 100, FL, 33483</p>",
             "content_max_width": 1600,
             "text_alignment": "left",
             "content_vertical_alignment_mobile": "flex-end",
@@ -39,7 +48,7 @@
             "paragraph_size_mobile": 14,
             "paragraph_size_desktop": 16,
             "button_text": "Shop Best Sellers",
-            "button_link": "shopify:\/\/collections\/grilling",
+            "button_link": "shopify://collections/grilling",
             "button_background": "#b20101",
             "button_text_color": "#ffffff",
             "button_hover_background": "#a00000",
@@ -85,8 +94,8 @@
         "products_per_row_desktop": 4,
         "subheading": "",
         "title": "Shop Best Sellers",
-        "content": "<p>Discover our most popular <strong>firefighter-designed<\/strong> grilling tools today.<\/p>",
-        "link_url": "shopify:\/\/collections\/grilling",
+        "content": "<p>Discover our most popular <strong>firefighter-designed</strong> grilling tools today.</p>",
+        "link_url": "shopify://collections/grilling",
         "link_text": "Shop All",
         "background": "",
         "background_gradient": "",
@@ -103,63 +112,63 @@
         "slide_3tkzbj": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/forbes.png",
+            "image": "shopify://shop_images/forbes.png",
             "link": ""
           }
         },
         "slide_iRazX3": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/new_york_post.png",
+            "image": "shopify://shop_images/new_york_post.png",
             "link": ""
           }
         },
         "slide_D4qyYn": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/variety.png",
+            "image": "shopify://shop_images/variety.png",
             "link": ""
           }
         },
         "slide_ztmyfz": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/abc.png",
+            "image": "shopify://shop_images/abc.png",
             "link": ""
           }
         },
         "slide_GDEMtU": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/usa_today.png",
+            "image": "shopify://shop_images/usa_today.png",
             "link": ""
           }
         },
         "slide_UBa3wB": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/nbc.png",
+            "image": "shopify://shop_images/nbc.png",
             "link": ""
           }
         },
         "slide_mkyirB": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/new_york_times.png",
+            "image": "shopify://shop_images/new_york_times.png",
             "link": ""
           }
         },
         "slide_9GjkiB": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/entrepreneur.png",
+            "image": "shopify://shop_images/entrepreneur.png",
             "link": ""
           }
         },
         "slide_yckT9g": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fox.png",
+            "image": "shopify://shop_images/fox.png",
             "link": ""
           }
         }
@@ -218,7 +227,7 @@
       "settings": {
         "collection": "grilling",
         "products": [
-          "copy-of-just-for-me-1-brush-2-cleaning-heads-w-scraper",
+          "just-for-me-scraper",
           "griddle-brush-w-scraper",
           "rescue-pro",
           "rescue-gift-bundle"
@@ -232,7 +241,7 @@
         "subheading": "",
         "title": "",
         "content": "",
-        "link_url": "shopify:\/\/collections\/best-sellers",
+        "link_url": "shopify://collections/best-sellers",
         "link_text": "",
         "background": "",
         "background_gradient": "",
@@ -258,7 +267,7 @@
         "richtext_WB6q8U": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Not only is Grill Rescue the original bristle-free brush, it's still the best in the world.<\/p>"
+            "content": "<p>Not only is Grill Rescue the original bristle-free brush, it's still the best in the world.</p>"
           }
         }
       },
@@ -283,10 +292,10 @@
         "ai_gen_block_efa3b28_FpmJGG": {
           "type": "ai_gen_block_efa3b28",
           "settings": {
-            "video_1": "shopify:\/\/files\/videos\/vid1.mp4",
-            "video_2": "shopify:\/\/files\/videos\/Testimonials hey yall.mov",
-            "video_3": "shopify:\/\/files\/videos\/default_47d8bc35-1b4a-4f11-92dd-a968c7b37d91.mp4",
-            "video_4": "shopify:\/\/files\/videos\/Testimonials scraper.mov",
+            "video_1": "shopify://files/videos/vid1.mp4",
+            "video_2": "shopify://files/videos/Testimonials hey yall.mov",
+            "video_3": "shopify://files/videos/default_47d8bc35-1b4a-4f11-92dd-a968c7b37d91.mp4",
+            "video_4": "shopify://files/videos/Testimonials scraper.mov",
             "desktop_width_percent": 100,
             "gap": 20,
             "corner_radius": 8
@@ -315,7 +324,7 @@
             "collection": "grilling-copy",
             "subheading": "",
             "title": "",
-            "url": "https:\/\/grillrescue.com\/collections\/grilling-copy",
+            "url": "https://grillrescue.com/collections/grilling-copy",
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
@@ -329,7 +338,7 @@
             "collection": "flat-top-grill",
             "subheading": "",
             "title": "",
-            "url": "https:\/\/grillrescue.com\/collections\/flat-top-grill",
+            "url": "https://grillrescue.com/collections/flat-top-grill",
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
@@ -343,7 +352,7 @@
             "collection": "grill-with-grill-grates",
             "subheading": "",
             "title": "Grill Grates",
-            "url": "https:\/\/grillrescue.com\/collections\/grill-with-grill-grates",
+            "url": "https://grillrescue.com/collections/grill-with-grill-grates",
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
@@ -369,8 +378,8 @@
         "show_progress_bar": true,
         "subheading": "",
         "title": "Perfect for All Grills",
-        "content": "<p>Find the Tool Designed Specifically for Your Grill<\/p>",
-        "link_url": "https:\/\/grillrescue.com\/collections\/flat-top-grill",
+        "content": "<p>Find the Tool Designed Specifically for Your Grill</p>",
+        "link_url": "https://grillrescue.com/collections/flat-top-grill",
         "link_text": "",
         "background": "",
         "background_gradient": "",
@@ -400,7 +409,7 @@
         "richtext_wKLAVy": {
           "type": "richtext",
           "settings": {
-            "content": "<p>The Latest Innovation from Grill Rescue. This is the <strong>All-New<\/strong> <strong>Rescue Ultra Brush.<\/strong><\/p>"
+            "content": "<p>The Latest Innovation from Grill Rescue. This is the <strong>All-New</strong> <strong>Rescue Ultra Brush.</strong></p>"
           }
         }
       },
@@ -495,7 +504,7 @@
           }
         },
         "section_store_block_badge_KTGaKg": {
-          "type": "shopify:\/\/apps\/section-store\/blocks\/block-badge\/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "type": "shopify://apps/section-store/blocks/block-badge/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
             "first_icon": "star_sparkle",
             "first_title": "30-Day Money Back Guarantee",
@@ -651,7 +660,7 @@
           }
         },
         "section_store_block_badge_xEENKa": {
-          "type": "shopify:\/\/apps\/section-store\/blocks\/block-badge\/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "type": "shopify://apps/section-store/blocks/block-badge/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
             "first_icon": "star_sparkle",
             "first_title": "30-Day Money Back Guarantee",
@@ -738,21 +747,21 @@
           "type": "item",
           "settings": {
             "title": "Revolutionize Your Grilling Experience with Grill Rescue",
-            "content": "<p>Grill Rescue proudly introduces its unparalleled grilling collection, anchored by the renowned <a href=\"https:\/\/grillrescue.com\/products\/grill-brush-w-scraper\"><span style=\"text-decoration:underline\">World's Best Grill Brush<\/span><\/a>. Engineered by a <a href=\"https:\/\/grillrescue.com\/pages\/heroes\"><span style=\"text-decoration:underline\">firefighter<\/span><\/a>, this collection brings innovation and safety to the forefront, ensuring your grilling endeavors are elevated to new heights. Whether you're looking for <a href=\"https:\/\/grillrescue.com\/products\/rescue-grilling-gloves-pre-sale\"><span style=\"text-decoration:underline\">premium gloves<\/span><\/a>, <a href=\"https:\/\/grillrescue.com\/products\/apron\"><span style=\"text-decoration:underline\">aprons <\/span><\/a>or the classic <a href=\"https:\/\/grillrescue.com\/products\/dunk-tank\"><span style=\"text-decoration:underline\">dunk tank<\/span><\/a>, Grill Rescue has it all.<\/p>"
+            "content": "<p>Grill Rescue proudly introduces its unparalleled grilling collection, anchored by the renowned <a href=\"https://grillrescue.com/products/grill-brush-w-scraper\"><span style=\"text-decoration:underline\">World's Best Grill Brush</span></a>. Engineered by a <a href=\"https://grillrescue.com/pages/heroes\"><span style=\"text-decoration:underline\">firefighter</span></a>, this collection brings innovation and safety to the forefront, ensuring your grilling endeavors are elevated to new heights. Whether you're looking for <a href=\"https://grillrescue.com/products/rescue-grilling-gloves-pre-sale\"><span style=\"text-decoration:underline\">premium gloves</span></a>, <a href=\"https://grillrescue.com/products/apron\"><span style=\"text-decoration:underline\">aprons </span></a>or the classic <a href=\"https://grillrescue.com/products/dunk-tank\"><span style=\"text-decoration:underline\">dunk tank</span></a>, Grill Rescue has it all.</p>"
           }
         },
         "item_XxwTrY": {
           "type": "item",
           "settings": {
             "title": "The World's Best Grill Brush: Unleashing the Power of Steam",
-            "content": "<p>Unlike traditional brushes, Grill Rescue embraces the power of steam to clean your grill thoroughly. With a <a href=\"https:\/\/grillrescue.com\/products\/cleaning-heads-w-scraper\"><span style=\"text-decoration:underline\">cleaning head<\/span><\/a> made from super durable aramid fiber, the same material used in firefighter gear, and a robust stainless steel scraper, this brush is a game-changer. The heat-resistant cleaning head, just as revolutionary as your <a href=\"https:\/\/grillrescue.com\/products\/forever-sponge\"><span style=\"text-decoration:underline\">cleaning sponge<\/span><\/a>, detaches easily for replacement or cleaning, ensuring a consistently effective and safe grilling experience. Discover the <a href=\"https:\/\/grillrescue.com\/products\/rescue-pro\"><span style=\"text-decoration:underline\">Rescue Pro<\/span><\/a> for even more premium durability and quality.<\/p>"
+            "content": "<p>Unlike traditional brushes, Grill Rescue embraces the power of steam to clean your grill thoroughly. With a <a href=\"https://grillrescue.com/products/cleaning-heads-w-scraper\"><span style=\"text-decoration:underline\">cleaning head</span></a> made from super durable aramid fiber, the same material used in firefighter gear, and a robust stainless steel scraper, this brush is a game-changer. The heat-resistant cleaning head, just as revolutionary as your <a href=\"https://grillrescue.com/products/forever-sponge\"><span style=\"text-decoration:underline\">cleaning sponge</span></a>, detaches easily for replacement or cleaning, ensuring a consistently effective and safe grilling experience. Discover the <a href=\"https://grillrescue.com/products/rescue-pro\"><span style=\"text-decoration:underline\">Rescue Pro</span></a> for even more premium durability and quality.</p>"
           }
         },
         "item_EY9UrR": {
           "type": "item",
           "settings": {
             "title": "Firefighter-Crafted Excellence: Unmatched Quality and Durability",
-            "content": "<p>Crafted by a firefighter, Grill Rescue embodies a commitment to excellence and safety. Trust that you have the best materials on Earth packed into a grill brush that addresses every concern associated with traditional wire bristle brushes. Our firefighter-inspired design prioritizes durability, with a <a href=\"https:\/\/grillrescue.com\/products\/grill-rescue-handle\"><span style=\"text-decoration:underline\">handle <\/span><\/a>so robust it can withstand being run over by a truck – a testament to its strength and reliability. Say farewell to aggressive brushing with Grill Rescue's steam-powered cleaning technology. Beyond creating superior products, Grill Rescue is committed to giving back. Founded on the principles of supporting those who serve, we donate to first responders in need through our foundation. <br\/><br\/><\/p>"
+            "content": "<p>Crafted by a firefighter, Grill Rescue embodies a commitment to excellence and safety. Trust that you have the best materials on Earth packed into a grill brush that addresses every concern associated with traditional wire bristle brushes. Our firefighter-inspired design prioritizes durability, with a <a href=\"https://grillrescue.com/products/grill-rescue-handle\"><span style=\"text-decoration:underline\">handle </span></a>so robust it can withstand being run over by a truck – a testament to its strength and reliability. Say farewell to aggressive brushing with Grill Rescue's steam-powered cleaning technology. Beyond creating superior products, Grill Rescue is committed to giving back. Founded on the principles of supporting those who serve, we donate to first responders in need through our foundation. <br/><br/></p>"
           }
         }
       },
