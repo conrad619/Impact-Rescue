@@ -223,7 +223,7 @@
         "products_per_row_desktop": 4,
         "subheading": "",
         "title": "Shop Best Sellers",
-        "content": "<p>Shop most popular <strong>firefighter-designed</strong> grilling tools & <strong>save up to 50%</strong> today!</p>",
+        "content": "<p>Shop most popular <strong>firefighter-designed</strong> grilling tools & <strong>SAVE UP TO 50%</strong> today!</p>",
         "link_url": "shopify://collections/grilling",
         "link_text": "Shop All",
         "background": "",
@@ -356,7 +356,7 @@
       "settings": {
         "collection": "grilling",
         "products": [
-          "copy-of-just-for-me-1-brush-2-cleaning-heads-w-scraper",
+          "just-for-me-scraper",
           "griddle-brush-w-scraper",
           "rescue-pro",
           "rescue-gift-bundle"
