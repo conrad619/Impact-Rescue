@@ -307,7 +307,7 @@
       ],
       "settings": {
         "recommendations_count": 4,
-        "products": "{{ product.metafields[\"shopify--discovery--product_recommendation\"].complementary_products.value }}",
+        "products": "{{ product.metafields[shopify--discovery--product_recommendation].complementary_products.value }}",
         "full_width": true,
         "stack_products": false,
         "show_progress_bar": false,
@@ -906,3 +906,15 @@
     "1772817505a65336f3"
   ]
 }
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: '{{ product.metafields[\"shopify--discovery--product_recommendation\"].complementary_products.value
+    }}'
+  to: "{{ product.metafields[shopify--discovery--product_recommendation].complementary_products.value
+    }}"
+  position: 9089..9186
+{% endcomment %}
